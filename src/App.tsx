@@ -2361,9 +2361,186 @@ function LessonThirteenPage() {
             <li><a href="https://www.ziyaraat.net/books/arabicanessentialgrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar, section 18.15 on the ten derived verb forms and their semantic tendencies.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/12">← Lesson 12: Six Abwāb</a><span>Next: derived nouns and participles</span></div>
+        <div className="lesson-end"><a href="#/lesson/12">← Lesson 12: Six Abwāb</a><a className="next-lesson-link" href="#/lesson/14">Next: the maṣdar →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Mujarrad and mazīd</li><li>Root and pattern</li><li>Forms I–X</li><li>Semantic tendencies</li><li>Form I vowel classes</li><li>Quadriliteral roots</li><li>Pattern practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>First find the root radicals. Then identify any prefix, infix, long vowel, or doubled radical that signals the pattern.</p></div></aside>
+    </div>
+  </main>
+}
+
+
+const lessonFourteenCopy = {
+  en: {
+    lead:'The maṣdar names the action itself. It is a verbal noun, not a verb tied to a particular person or tense.',
+    objective:'Define maṣdar, distinguish it from the active and passive participles, recognise common maṣdar patterns, and understand why Form I maṣdars must be learned with the verb.',
+    definition:'الْمَصْدَرُ is the verbal noun: it names an action or event as a noun. كَتَبَ means “he wrote”; يَكْتُبُ means “he writes”; كِتَابَةٌ means “writing”.',
+    distinction:'A maṣdar names the action. An ism fāʿil names the doer (كَاتِبٌ, a writer). An ism mafʿūl names the affected person or thing (مَكْتُوبٌ, something written).',
+    formOne:'Form I has many maṣdar patterns. The pattern is not reliably predictable from the past verb alone, so learn the maṣdar with each Form I verb and verify it in a dictionary: كَتَبَ → كِتَابَةٌ, جَلَسَ → جُلُوسٌ, فَهِمَ → فَهْمٌ.',
+    derived:'For Forms II–X, maṣdar patterns are generally more regular. Form II commonly uses تَفْعِيلٌ; Form IV إِفْعَالٌ; Form V تَفَعُّلٌ; Form VI تَفَاعُلٌ; VII اِنْفِعَالٌ; VIII اِفْتِعَالٌ; IX اِفْعِلَالٌ; and X اِسْتِفْعَالٌ. Forms II and III may have more than one pattern.',
+    caution:'These are common patterns, not permission to invent a maṣdar for every verb. Check the dictionary, especially for Form I and for the alternative maṣdar patterns of Forms II and III.',
+    practice:'Classify each noun as a maṣdar, active participle (ism fāʿil), or passive participle (ism mafʿūl).',
+    correct:'Correct category.', incorrect:'The correct category is', score:'Your score', check:'Check noun types',
+    teach:'Explain the difference between كِتَابَةٌ, كَاتِبٌ, and مَكْتُوبٌ. Then give two Form I verbs with different maṣdar patterns.',
+    summary:'Maṣdar = action noun. Ism fāʿil = doer. Ism mafʿūl = affected person or thing. Learn the Form I maṣdar with the verb; recognise the more regular patterns of derived forms.',
+    audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead:'مصدر خودِ عمل یا رویداد را نام می‌برد. مصدر اسمِ فعل است و به شخص یا زمان معینی وابسته نیست.',
+    objective:'مصدر را تعریف کنید، آن را از اسم فاعل و اسم مفعول جدا کنید، وزن‌های رایج مصدر را بشناسید و بدانید چرا مصدر باب اول را باید همراه فعل حفظ کرد.',
+    definition:'الْمَصْدَرُ اسمِ دالّ بر عمل یا رویداد است. كَتَبَ یعنی «او نوشت»؛ يَكْتُبُ یعنی «او می‌نویسد»؛ كِتَابَةٌ یعنی «نوشتن».',
+    distinction:'مصدر خودِ عمل را نام می‌برد؛ اسم فاعل انجام‌دهنده را نشان می‌دهد (كَاتِبٌ، نویسنده)؛ اسم مفعول شخص یا چیزی را نشان می‌دهد که عمل بر آن واقع شده است (مَكْتُوبٌ، نوشته‌شده).',
+    formOne:'مصدر باب اول وزن‌های متعددی دارد و از روی ماضی به‌طور مطمئن قابل پیش‌بینی نیست. مصدر را همراه هر فعل باب اول حفظ و در فرهنگ بررسی کنید: كَتَبَ ← كِتَابَةٌ، جَلَسَ ← جُلُوسٌ، فَهِمَ ← فَهْمٌ.',
+    derived:'در باب‌های دوم تا دهم، وزن مصدر معمولاً منظم‌تر است. باب دوم غالباً تَفْعِيلٌ، باب چهارم إِفْعَالٌ، پنجم تَفَعُّلٌ، ششم تَفَاعُلٌ، هفتم اِنْفِعَالٌ، هشتم اِفْتِعَالٌ، نهم اِفْعِلَالٌ و دهم اِسْتِفْعَالٌ است. باب‌های دوم و سوم ممکن است بیش از یک وزن داشته باشند.',
+    caution:'این‌ها وزن‌های رایج‌اند و مجوز ساختن مصدر برای هر فعل نیستند. به‌ویژه در باب اول و در وزن‌های جایگزین باب دوم و سوم، به فرهنگ مراجعه کنید.',
+    practice:'هر اسم را به‌عنوان مصدر، اسم فاعل یا اسم مفعول دسته‌بندی کنید.',
+    correct:'دسته‌بندی درست است.', incorrect:'دسته‌بندی درست:',
+    score:'امتیاز شما', check:'بررسی نوع اسم',
+    teach:'تفاوت كِتَابَةٌ، كَاتِبٌ و مَكْتُوبٌ را توضیح دهید. سپس دو فعل باب اول با دو مصدر متفاوت مثال بزنید.',
+    summary:'مصدر = نام عمل؛ اسم فاعل = انجام‌دهنده؛ اسم مفعول = شخص یا چیز متأثر از عمل. مصدر باب اول را همراه فعل حفظ کنید و وزن‌های منظم‌تر باب‌های مزید را بشناسید.',
+    audio:'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead:'مصدر خود عمل یا واقعے کا نام ہے۔ یہ اسمِ فعل ہے، کسی خاص شخص یا زمان کے ساتھ بندھا ہوا فعل نہیں۔',
+    objective:'مصدر کی تعریف کریں، اسے اسمِ فاعل اور اسمِ مفعول سے الگ پہچانیں، عام مصدر کے اوزان سمجھیں، اور جانیں کہ باب اول کا مصدر فعل کے ساتھ کیوں یاد کرنا چاہیے۔',
+    definition:'الْمَصْدَرُ ایسا اسم ہے جو عمل یا واقعے کا نام بتاتا ہے۔ كَتَبَ یعنی ’’اس نے لکھا‘‘؛ يَكْتُبُ یعنی ’’وہ لکھتا ہے‘‘؛ كِتَابَةٌ یعنی ’’لکھنا/لکھنے کا عمل‘‘۔',
+    distinction:'مصدر عمل کا نام ہے؛ اسمِ فاعل کام کرنے والے کو بتاتا ہے (كَاتِبٌ، لکھنے والا)؛ اسمِ مفعول اس شخص یا چیز کو بتاتا ہے جس پر عمل ہوا (مَكْتُوبٌ، لکھی ہوئی چیز)۔',
+    formOne:'باب اول کے مصدر کے کئی اوزان ہیں؛ صرف ماضی دیکھ کر اسے یقینی طور پر نہیں بتایا جا سکتا۔ ہر فعل کا مصدر اس کے ساتھ یاد کریں اور لغت سے تصدیق کریں: كَتَبَ → كِتَابَةٌ، جَلَسَ → جُلُوسٌ، فَهِمَ → فَهْمٌ۔',
+    derived:'باب دوم تا دہم کے مصادر عموماً زیادہ باقاعدہ اوزان پر آتے ہیں: باب دوم تَفْعِيلٌ، چہارم إِفْعَالٌ، پنجم تَفَعُّلٌ، ششم تَفَاعُلٌ، ہفتم اِنْفِعَالٌ، ہشتم اِفْتِعَالٌ، نہم اِفْعِلَالٌ، اور دہم اِسْتِفْعَالٌ۔ باب دوم اور سوم کے ایک سے زیادہ اوزان ہو سکتے ہیں۔',
+    caution:'یہ عام اوزان ہیں، ہر فعل کے لیے خود سے مصدر بنانے کی اجازت نہیں۔ خاص طور پر باب اول اور باب دوم/سوم کے متبادل اوزان کے لیے لغت دیکھیں۔',
+    practice:'ہر اسم کو مصدر، اسمِ فاعل یا اسمِ مفعول میں سے کسی ایک قسم میں رکھیں۔',
+    correct:'درست قسم۔', incorrect:'درست قسم ہے:', score:'آپ کا اسکور', check:'اسم کی قسم جانچیں',
+    teach:'كِتَابَةٌ، كَاتِبٌ اور مَكْتُوبٌ کا فرق بیان کریں۔ پھر باب اول کے دو ایسے افعال بتائیں جن کے مصادر کے اوزان مختلف ہوں۔',
+    summary:'مصدر = عمل کا نام؛ اسمِ فاعل = کام کرنے والا؛ اسمِ مفعول = جس پر کام ہوا۔ باب اول کا مصدر فعل کے ساتھ یاد کریں اور مزید ابواب کے زیادہ باقاعدہ اوزان پہچانیں۔',
+    audio:'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const masdarExamples = [
+  {verb:'كَتَبَ',verbLatin:'kataba',masdar:'كِتَابَةٌ',masdarLatin:'kitābah',meaning:'writing',fa:'نوشتن',ur:'لکھنا',form:'I'},
+  {verb:'جَلَسَ',verbLatin:'jalasa',masdar:'جُلُوسٌ',masdarLatin:'julūs',meaning:'sitting',fa:'نشستن',ur:'بیٹھنا',form:'I'},
+  {verb:'فَهِمَ',verbLatin:'fahima',masdar:'فَهْمٌ',masdarLatin:'fahm',meaning:'understanding',fa:'فهمیدن',ur:'سمجھنا',form:'I'},
+  {verb:'عَلَّمَ',verbLatin:'ʿallama',masdar:'تَعْلِيمٌ',masdarLatin:'taʿlīm',meaning:'teaching',fa:'آموزش',ur:'تعلیم',form:'II'},
+  {verb:'أَكْرَمَ',verbLatin:'akrama',masdar:'إِكْرَامٌ',masdarLatin:'ikrām',meaning:'honouring',fa:'گرامی‌داشتن',ur:'عزت دینا',form:'IV'},
+  {verb:'تَعَلَّمَ',verbLatin:'taʿallama',masdar:'تَعَلُّمٌ',masdarLatin:'taʿallum',meaning:'learning',fa:'یادگیری',ur:'سیکھنا',form:'V'},
+  {verb:'اِسْتَغْفَرَ',verbLatin:'istaghfara',masdar:'اِسْتِغْفَارٌ',masdarLatin:'istighfār',meaning:'seeking forgiveness',fa:'آمرزش‌خواهی',ur:'مغفرت طلب کرنا',form:'X'},
+] as const
+const masdarCategories = [
+  {form:'كِتَابَةٌ',latin:'kitābah',answer:'masdar'},
+  {form:'كَاتِبٌ',latin:'kātib',answer:'faʿil'},
+  {form:'مَكْتُوبٌ',latin:'maktūb',answer:'mafʿul'},
+  {form:'تَعْلِيمٌ',latin:'taʿlīm',answer:'masdar'},
+  {form:'مُعَلِّمٌ',latin:'muʿallim',answer:'faʿil'},
+  {form:'مُعَلَّمٌ',latin:'muʿallam',answer:'mafʿul'},
+]
+const masdarCategoryChoices = [
+  {value:'masdar',label:'مَصْدَرٌ · verbal noun / action'},
+  {value:'faʿil',label:'اِسْمُ الْفَاعِلِ · doer'},
+  {value:'mafʿul',label:'اِسْمُ الْمَفْعُولِ · affected object'},
+]
+
+function LessonFourteenPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonFourteenCopy[language]
+  const rtl = language !== 'en'
+  const score = masdarCategories.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/13" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 06 · LESSON 14</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 06 · DERIVED NOUNS</div>
+        <h1>The <em>maṣdar</em>: the action noun</h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْمَصْدَرُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-maṣdar</div>}
+          <h2>كَتَبَ · يَكْتُبُ · كِتَابَةٌ</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THREE DIFFERENT NOUN TYPES</span>
+          <h2>Action · doer · affected object</h2>
+          <div className="noun-triad">
+            <div><span>MAṢDAR · الْمَصْدَرُ</span><b lang="ar" dir="rtl">كِتَابَةٌ</b><small>kitābah · writing</small></div>
+            <div><span>ACTIVE · اِسْمُ الْفَاعِلِ</span><b lang="ar" dir="rtl">كَاتِبٌ</b><small>kātib · writer</small></div>
+            <div><span>PASSIVE · اِسْمُ الْمَفْعُولِ</span><b lang="ar" dir="rtl">مَكْتُوبٌ</b><small>maktūb · written</small></div>
+          </div>
+          <p lang={language}>{copy.distinction}</p>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">FORM I · مَصْدَرُ الثُّلَاثِيِّ الْمُجَرَّدِ</span>
+          <h2>Learn it with the verb</h2>
+          <p lang={language}>{copy.formOne}</p>
+          <div className="masdar-example-table">
+            <div className="masdar-example-head"><span>Verb</span><span>Maṣdar</span><span>Meaning</span><span>Form</span></div>
+            {masdarExamples.filter(item=>item.form==='I').map(item=><div className="masdar-example-row" key={item.verb}>
+              <div><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.verbLatin}</small>}</div>
+              <div><b lang="ar" dir="rtl">{item.masdar}</b>{showTransliteration&&<small>{item.masdarLatin}</small>}</div>
+              <span>{language==='fa'?item.fa:language==='ur'?item.ur:item.meaning}</span><small>{item.form}</small>
+            </div>)}
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">DERIVED FORMS · الْمَزِيدُ</span>
+          <h2>Common maṣdar patterns</h2>
+          <p lang={language}>{copy.derived}</p>
+          <div className="masdar-example-table">
+            <div className="masdar-example-head"><span>Verb</span><span>Maṣdar</span><span>Meaning</span><span>Form</span></div>
+            {masdarExamples.filter(item=>item.form!=='I').map(item=><div className="masdar-example-row" key={item.verb}>
+              <div><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.verbLatin}</small>}</div>
+              <div><b lang="ar" dir="rtl">{item.masdar}</b>{showTransliteration&&<small>{item.masdarLatin}</small>}</div>
+              <span>{language==='fa'?item.fa:language==='ur'?item.ur:item.meaning}</span><small>{item.form}</small>
+            </div>)}
+          </div>
+          <div className="warning-card"><strong>Do not guess the maṣdar</strong><p lang={language}>{copy.caution}</p></div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · CLASSIFY THE NOUN</span>
+          <h2>What kind of noun is it?</h2>
+          <p lang={language}>{copy.practice}</p>
+          <div className="pronoun-practice-list">
+            {masdarCategories.map((item,index)=><div className="pronoun-practice-row" key={item.form+index}>
+              <div><b lang="ar" dir="rtl">{item.form}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the noun category for '+item.form} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose type…</option>
+                {masdarCategoryChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{masdarCategoryChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==masdarCategories.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {masdarCategories.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar, section on the verbal noun and the maṣdar patterns of Forms I–X.</a></li>
+            <li><a href="https://langrit.com/learn/arabic-grammar/masdar" target="_blank" rel="noreferrer">Langrit — Verbal nouns (المصدر), with Form I examples and common derived-form patterns.</a></li>
+            <li><a href="https://elon.io/grammar/arabic-modern-standard/verbal-nouns-participles/derived-masdars" target="_blank" rel="noreferrer">Elon.io — Maṣdars of Forms II–X and attested examples.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/13">← Lesson 13: Forms I–X</a><span>Next: active and passive participles</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What is a maṣdar?</li><li>Action vs. doer vs. object</li><li>Form I maṣdars</li><li>Derived-form patterns</li><li>Category practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Memorise the Form I maṣdar with its verb. Do not try to predict it from the past-tense vowel alone.</p></div></aside>
     </div>
   </main>
 }
@@ -2391,6 +2568,7 @@ export default function App() {
   if (route === '#/lesson/11') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 11</span></header><LessonElevenPage/></div>
   if (route === '#/lesson/12') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 04 · LESSON 12</span></header><LessonTwelvePage/></div>
   if (route === '#/lesson/13') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 05 · LESSON 13</span></header><LessonThirteenPage/></div>
+  if (route === '#/lesson/14') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 14</span></header><LessonFourteenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
