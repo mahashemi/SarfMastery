@@ -227,7 +227,7 @@ const lessonTwoCopy = {
     harfExample: 'فِي — in · مِنْ — from · إِلَى — to',
     warningTitle: 'Two common confusions',
     letterWarning: 'Here حَرْفٌ means a grammatical particle, not one of the alphabet letters such as ب or ت. The same Arabic word can be used in different technical senses; context tells you which sense is intended.',
-    nameWarning: 'اِسْمٌ does not mean only a person’s proper name. كِتَابٌ (book), بَيْتٌ (house), and جَمِيلٌ (beautiful) are also examples of ism.',
+    nameWarning: 'اِسْمٌ does not mean only a person’s proper name. كِتَابٌ (book), بَيْتٌ (house), and جَمِيلٌ (beautiful) are also examples of ism.',\n    translationWarning: 'Do not force Arabic categories into English parts of speech one-to-one. For example, adjectives and pronouns are included within the broad category of ism in traditional Arabic grammar.',
     wordSentence: 'A كَلِمَةٌ is one word. A جُمْلَةٌ is a sentence. For example, كَتَبَ is one word; كَتَبَ مُحَمَّدٌ (“Muhammad wrote”) is a complete sentence.',
     practicePrompt: 'Classify each Arabic word as an اِسْمٌ (noun), فِعْلٌ (verb), or حَرْفٌ (particle).',
     correct: 'Correct classification.',
@@ -249,7 +249,7 @@ const lessonTwoCopy = {
     harfExample: 'فِي — در · مِنْ — از · إِلَى — به / سوی',
     warningTitle: 'دو اشتباه رایج',
     letterWarning: 'در این تقسیم‌بندی، حَرْفٌ به معنای حرفِ الفبا مانند ب یا ت نیست؛ بلکه منظور یک واژهٔ دستوری یا حرفِ معناست. واژهٔ عربی ممکن است در اصطلاحات مختلف معناهای فنی متفاوتی داشته باشد.',
-    nameWarning: 'اِسْمٌ فقط به معنای نام خاصِ یک شخص نیست. كِتَابٌ (کتاب)، بَيْتٌ (خانه) و جَمِيلٌ (زیبا) نیز اسم‌اند.',
+    nameWarning: 'اِسْمٌ فقط به معنای نام خاصِ یک شخص نیست. كِتَابٌ (کتاب)، بَيْتٌ (خانه) و جَمِيلٌ (زیبا) نیز اسم‌اند.',\n    translationWarning: 'دسته‌بندی‌های عربی را نباید دقیقاً با دسته‌های دستور زبان انگلیسی یکی دانست. برای نمونه، صفت‌ها و ضمیرها در دستور سنتی عربی در دستهٔ گستردهٔ اسم قرار می‌گیرند.',
     wordSentence: 'كَلِمَةٌ یعنی یک واژه و جُمْلَةٌ یعنی جمله. برای نمونه، كَتَبَ یک واژه است؛ كَتَبَ مُحَمَّدٌ («محمد نوشت») یک جملهٔ کامل است.',
     practicePrompt: 'هر واژهٔ عربی را در یکی از سه دستهٔ اِسْمٌ، فِعْلٌ یا حَرْفٌ قرار دهید.',
     correct: 'دسته‌بندی درست است.',
@@ -271,7 +271,7 @@ const lessonTwoCopy = {
     harfExample: 'فِي — میں · مِنْ — سے · إِلَى — کی طرف',
     warningTitle: 'دو عام غلط فہمیاں',
     letterWarning: 'یہاں حَرْفٌ سے مراد ب یا ت جیسے حروفِ تہجی نہیں، بلکہ ایک نحوی particle ہے۔ عربی میں ایک ہی لفظ مختلف علمی اصطلاحات میں مختلف معنی رکھ سکتا ہے؛ سیاق سے مراد واضح ہوتی ہے۔',
-    nameWarning: 'اِسْمٌ صرف کسی شخص کے خاص نام کو نہیں کہتے۔ كِتَابٌ (کتاب)، بَيْتٌ (گھر) اور جَمِيلٌ (خوبصورت) بھی اسم ہیں۔',
+    nameWarning: 'اِسْمٌ صرف کسی شخص کے خاص نام کو نہیں کہتے۔ كِتَابٌ (کتاب)، بَيْتٌ (گھر) اور جَمِيلٌ (خوبصورت) بھی اسم ہیں۔',\n    translationWarning: 'عربی کی اقسام کو انگریزی قواعد کی اقسام کے ساتھ بالکل ایک جیسا نہ سمجھیں۔ مثال کے طور پر روایتی عربی قواعد میں صفات اور ضمیر بھی اسم کی وسیع قسم میں شامل ہیں۔',
     wordSentence: 'كَلِمَةٌ کا مطلب ایک لفظ اور جُمْلَةٌ کا مطلب جملہ ہے۔ مثال کے طور پر كَتَبَ ایک لفظ ہے؛ كَتَبَ مُحَمَّدٌ (محمد نے لکھا) ایک مکمل جملہ ہے۔',
     practicePrompt: 'ہر عربی لفظ کو اِسْمٌ (اسم)، فِعْلٌ (فعل) یا حَرْفٌ (حرف) میں تقسیم کریں۔',
     correct: 'درست درجہ بندی۔',
@@ -335,7 +335,7 @@ function LessonTwoPage() {
           <span className="section-kicker">DON'T MIX THESE UP</span>
           <h2>{copy.warningTitle}</h2>
           <div className="warning-card"><strong>حَرْفٌ is not an alphabet letter</strong><p lang={language}>{copy.letterWarning}</p></div>
-          <div className="warning-card"><strong>اِسْمٌ is more than a name</strong><p lang={language}>{copy.nameWarning}</p></div>
+          <div className="warning-card"><strong>اِسْمٌ is more than a name</strong><p lang={language}>{copy.nameWarning}</p></div>\n          <div className="warning-card"><strong>Arabic and English categories do not match exactly</strong><p lang={language}>{copy.translationWarning}</p></div>
           <h3 className="subheading">Word or sentence?</h3><p lang={language}>{copy.wordSentence}</p>
         </section>
         <section className="lesson-block practice-block">
@@ -359,6 +359,15 @@ function LessonTwoPage() {
           <h2>Say it back</h2>
           <p lang={language}>{copy.teach}</p>
           <div className="example-sentence" lang={language}>{copy.summary}</div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <p>The three-part classification is a foundational feature of the Arabic grammatical tradition. These references support the category names and broad distinctions used here.</p>
+          <ul>
+            <li><a href="https://doi.org/10.1163/26670755-01010005" target="_blank" rel="noreferrer">Simona Olivieri, “Classification of the Parts of Speech in Arabic: A Discussion on Origins, Theories, and Definitions” (2021).</a></li>
+            <li><a href="https://corpus.quran.com/documentation/tagset.jsp" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — Part-of-speech Tagset.</a></li>
+          </ul>
         </section>
         <div className="lesson-end"><a href="#/lesson/01">← Lesson 1: What is Sarf?</a><span>Next: learn more about the اِسْمٌ and its signs</span></div>
       </article>
