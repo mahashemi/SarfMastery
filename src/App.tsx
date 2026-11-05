@@ -31,7 +31,7 @@ const lessonCopy = {
     nahwDesc: 'What role does the word play here? How does it relate to the other words, and what happens to its ending?',
     compare: "A simple first distinction: Sarf focuses on word formation and form changes; Nahw focuses on how words function in a sentence. The two sciences work together.",
     familyIntro: 'These examples belong to the ك ت ب word family. Their forms and meanings differ, but they are connected with the broad idea of writing.',
-    rootNote: 'The root is written here as three consonant letters. The short vowel marks (fatḥah, kasrah, ḍammah) guide pronunciation and help distinguish forms; they are not additional root consonants.',
+    rootNote: 'This example has a three-letter (triliteral) root. Arabic also has four-letter roots, which we will study later. The short vowel marks (fatḥah, kasrah, ḍammah) guide pronunciation and help distinguish forms; they are not additional root consonants.',
     kitābQuestion: 'Are كَتَبَ and كِتَابٌ the same word?',
     kitābAnswer: 'No. كَتَبَ (kataba) is a verb: “he wrote”. كِتَابٌ (kitābun) is a noun: “a book”. They share the root ك ت ب, but they are different words with different patterns and grammatical categories.',
     patternCaution: 'Important: a root does not have one exact English translation that can simply be inserted into every related word. Each word has its own established meaning, and context matters.',
@@ -61,7 +61,7 @@ const lessonCopy = {
     nahwDesc: 'این واژه در جمله چه نقشی دارد؟ با واژه‌های دیگر چه ارتباطی دارد و حرکت پایانی آن چگونه تعیین می‌شود؟',
     compare: 'به‌طور ساده: صرف به ساخت و دگرگونی صورت واژه می‌پردازد؛ نحو نقش واژه‌ها و ارتباط آن‌ها را در جمله بررسی می‌کند. این دو دانش مکمل یکدیگرند.',
     familyIntro: 'نمونه‌های زیر از خانوادهٔ ریشهٔ ک ت ب هستند. صورت و معنای آن‌ها یکسان نیست، اما با مفهوم گستردهٔ نوشتن ارتباط دارند.',
-    rootNote: 'ریشه در این‌جا با سه حرفِ صامت نوشته شده است. حرکت‌های کوتاه (فتحه، کسره و ضمه) راهنمای تلفظ و تمایز صورت‌ها هستند و حرفِ اصلیِ افزوده به ریشه نیستند.',
+    rootNote: 'ریشهٔ این نمونه سه‌حرفی است. در عربی ریشه‌های چهارحرفی نیز وجود دارند که بعداً می‌آموزیم. حرکت‌های کوتاه (فتحه، کسره و ضمه) راهنمای تلفظ و تمایز صورت‌ها هستند و حرفِ اصلیِ افزوده به ریشه نیستند.',
     kitābQuestion: 'آیا كَتَبَ و كِتَابٌ یک واژه‌اند؟',
     kitābAnswer: 'خیر. كَتَبَ (kataba) فعل و به معنای «او نوشت» است؛ كِتَابٌ (kitābun) اسم و به معنای «کتاب» است. هر دو ریشهٔ ک ت ب دارند، اما دو واژه با وزن و دستهٔ دستوری متفاوت‌اند.',
     patternCaution: 'نکتهٔ مهم: ریشه را نباید با یک ترجمهٔ ثابت در همهٔ واژه‌های هم‌ریشه جایگزین کرد. هر واژه معنای شناخته‌شدهٔ خود را دارد و سیاق نیز مهم است.',
@@ -91,7 +91,7 @@ const lessonCopy = {
     nahwDesc: 'جملے میں اس لفظ کا کیا کردار ہے؟ دوسرے الفاظ سے اس کا کیا تعلق ہے، اور اس کے آخری اعراب پر کیا اثر پڑتا ہے؟',
     compare: 'ابتدائی فرق یہ ہے: صرف لفظ کی ساخت اور اس کی صورتوں کی تبدیلی کا مطالعہ کرتا ہے؛ نحو جملے میں الفاظ کے کردار اور باہمی تعلق کو دیکھتا ہے۔ دونوں علوم ایک دوسرے کی تکمیل کرتے ہیں۔',
     familyIntro: 'یہ مثالیں ک ت ب کے مادّے سے متعلق ہیں۔ ان کی صورتیں اور معانی الگ ہیں، لیکن سب کا تعلق لکھنے کے وسیع مفہوم سے ہے۔',
-    rootNote: 'یہاں مادّہ تین صحیح حروف کی صورت میں لکھا گیا ہے۔ مختصر حرکات (فتحہ، کسرہ، ضمہ) تلفظ اور صیغوں کے فرق کو ظاہر کرتی ہیں؛ یہ مادّے کے اضافی حروف نہیں ہیں۔',
+    rootNote: 'اس مثال کا مادّہ تین اصلی حروف پر مشتمل ہے۔ عربی میں چار حرفی مادّے بھی ہوتے ہیں جنہیں ہم آگے پڑھیں گے۔ مختصر حرکات (فتحہ، کسرہ، ضمہ) تلفظ اور صیغوں کے فرق کو ظاہر کرتی ہیں؛ یہ مادّے کے اضافی حروف نہیں ہیں۔',
     kitābQuestion: 'کیا كَتَبَ اور كِتَابٌ ایک ہی لفظ ہیں؟',
     kitābAnswer: 'نہیں۔ كَتَبَ (kataba) فعل ہے، یعنی ’’اس نے لکھا‘‘؛ كِتَابٌ (kitābun) اسم ہے، یعنی ’’کتاب‘‘۔ دونوں کا مادّہ ک ت ب ہے، مگر وزن اور نحوی قسم مختلف ہے۔',
     patternCaution: 'اہم بات: مادّے کے معنی کو ہر ہم مادّہ لفظ میں ایک ہی ترجمے کے طور پر نہیں رکھ سکتے۔ ہر لفظ کا اپنا معروف معنی ہے اور سیاق بھی اہم ہوتا ہے۔',
@@ -124,14 +124,14 @@ function LessonPage() {
     </header>
     <div className="lesson-toolbar">
       <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
-        <button className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
-        <button className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
-        <button className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+        <button aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
       </div>
       <button className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
     </div>
     <div className="lesson-layout">
-      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+      <article className="lesson-article" lang={language} dir={rtl?'rtl':'ltr'}>
         <div className="eyebrow">THE FIRST STEP · NO PRIOR KNOWLEDGE NEEDED</div>
         <h1>What is <em>Sarf?</em></h1>
         <p className="lesson-lead">{copy.lead}</p>
@@ -140,6 +140,12 @@ function LessonPage() {
           {showTransliteration && <div className="lesson-translit" dir="ltr">ʿilm al-ṣarf</div>}
           <h2>The study of word forms</h2>
           <p>{copy.definition}</p>
+        <div className="term-glossary" aria-label="Key Sarf vocabulary">
+          <div><b lang="ar" dir="rtl">الْجِذْرُ</b><strong>Root</strong><span>ریشه · مادّہ</span><small>al-jidhr</small></div>
+          <div><b lang="ar" dir="rtl">الْوَزْنُ</b><strong>Pattern / scale</strong><span>وزن · وزن</span><small>al-wazn</small></div>
+          <div><b lang="ar" dir="rtl">الصِّيغَةُ</b><strong>Form</strong><span>صیغه · صیغہ</span><small>aṣ-ṣīghah</small></div>
+          <div><b lang="ar" dir="rtl">كَلِمَةٌ</b><strong>Word</strong><span>واژه · لفظ</span><small>kalimah</small></div>
+        </div>
           <div className="objective-panel"><strong>{copy.objectiveTitle}</strong><p>{copy.objective}</p></div>
           <h3 className="subheading">{copy.whyTitle}</h3><p>{copy.why}</p>
         </section>
@@ -195,7 +201,7 @@ function LessonPage() {
           <p>{copy.sourceNote}</p>
           <ul>
             <li><a href="https://academic.oup.com/edited-volume/44744/chapter-abstract/380148608" target="_blank" rel="noreferrer">Ramzi Baalbaki, “Arabic Linguistic Tradition I: Naḥw and ṣarf,” The Oxford Handbook of Arabic Linguistics (2013).</a></li>
-            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4673575/" target="_blank" rel="noreferrer">“Structure, form, and meaning in the mental lexicon: evidence from Arabic” — overview of Arabic roots and patterns.</a></li>
+            <li><a href="https://academic.oup.com/edited-volume/44744/chapter-abstract/380148475" target="_blank" rel="noreferrer">Robert R. Ratcliffe, “Morphology,” The Oxford Handbook of Arabic Linguistics (2013).</a></li>
             <li><a href="https://corpus.quran.com/documentation/morphologicalfeatures.jsp" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — morphological features, roots, and lemmas.</a></li>
           </ul>
         </section>
