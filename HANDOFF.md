@@ -75,7 +75,7 @@
 - [ ] [#11 Review and complete Unit 3, Lesson 10](https://github.com/mahashemi/SarfMastery/issues/11)
 
 ## Next session
-1. Switch repository Settings → Pages → Source to GitHub Actions so the generated Jekyll branch deployment no longer competes with the React/Vite workflow.
+1. Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; its runs have been cancelled in some pushes, so confirm the source setting to keep one deployment path.
 2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
 4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–10.
