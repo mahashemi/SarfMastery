@@ -216,3 +216,16 @@
 .command-slot small,.command-form small{font-size:9px;color:#a17f4a}
 .command-slot small{color:#778174}
 @media(max-width:620px){.command-head{display:none}.command-row{grid-template-columns:1fr 1fr;grid-template-areas:"slot slot" "amr nahy";gap:7px 12px;padding:12px}.command-slot{grid-area:slot;display:flex;flex-direction:row;align-items:center;gap:10px}.command-form:nth-child(2){grid-area:amr}.command-form:nth-child(3){grid-area:nahy}.command-slot b,.command-form b{font-size:22px}}
+
+.pronoun-group-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:16px 0}
+.pronoun-group-cards>div{display:flex;flex-direction:column;align-items:center;gap:5px;padding:13px 8px;background:#fffefa;border:1px solid var(--line);border-radius:9px;text-align:center}
+.pronoun-group-cards b{font:600 17px Amiri,serif;color:var(--green)}
+.pronoun-group-cards strong{font:500 22px Georgia,serif;color:#a17f4a}
+.pronoun-group-cards span{font-size:9px;color:#788176}
+.pronoun-slots-grid{display:grid;gap:0;margin:16px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fffefa}
+.pronoun-slots-head,.pronoun-slots-row{display:grid;grid-template-columns:34px minmax(70px,.7fr) minmax(145px,1.35fr) minmax(100px,.8fr);gap:9px;align-items:center;padding:9px 11px}
+.pronoun-slots-head{background:#eef2e9;color:#687766;font-size:9px;font-weight:700;letter-spacing:.03em}
+.pronoun-slots-row{border-top:1px solid #ecece4;min-height:49px}
+.pronoun-slots-row:nth-child(odd){background:#fcfbf7}
+.pronoun-group-label{font:600 15px Amiri,serif;color:#6b805f}
+@media(max-width:650px){.pronoun-group-cards{grid-template-columns:1fr}.pronoun-slots-head{display:none}.pronoun-slots-row{grid-template-columns:26px 1fr 1fr;grid-template-areas:"idx pron group" "idx role role";gap:5px 9px;padding:9px}.pronoun-slots-row>.conjugation-index{grid-area:idx}.pronoun-slots-row>.conjugation-pronoun{grid-area:pron}.pronoun-slots-row>.conjugation-slot{grid-area:role}.pronoun-slots-row>.pronoun-group-label{grid-area:group;justify-self:end}}
