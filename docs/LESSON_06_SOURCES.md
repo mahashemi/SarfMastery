@@ -6,37 +6,40 @@ Last reviewed: 2026-11-05
 
 | Lesson claim | Supporting source | Scope / limitation |
 |---|---|---|
-| The sound triliteral mujarrad verb has six common māḍī–muḍāriʿ patterns (Abwāb). | *Treasures of Arabic Morphology*, section on the six categories of the triliteral mujarrad verb, p. 24. [PDF](https://attahawi.com/wp-content/uploads/2010/01/treasures-of-arabic-morphology.pdf) | The source lists the six representative pairs used in this lesson and explains that membership is سماعي (established by usage), not fully predictable by a simple rule. |
-| The six traditional categories are treated in a Hawza-oriented Sarf reference. | Sayyid Muḥammad Taqī al-Ḥusaynī al-Jalālī, *Nuzhat al-Ṭarf fī ʿIlm al-Ṣarf*, p. 80. [Online page](https://ablibrary.net/book_content/b/11500/80) | This source confirms six Abwāb of the triliteral mujarrad and gives a different selection/order of representative examples. Textbook ordering and examples can vary. |
-| The middle radical's vowel in the past and present is a key distinction between the six pairs. | *Treasures of Arabic Morphology*, p. 24; see also [Quba Academy, Sarf: The Essentials of Arabic Morphology](https://qubaacademy.co.uk/wp-content/uploads/2025/06/Sarf-The-Essentials-of-Arabic-Morphology.pdf). | The lesson uses the six representative pairs listed below. It does not attempt to cover weak, hamzated, or doubled verb changes. |
+| Arabic verb conjugation is organised by person, number, and gender; independent pronouns distinguish third, second, and first person. | Haywood and Nahmad, *A New Arabic Grammar*, section 9, “The personal pronouns,” p. 44. [PDF](https://www.ghazali.org/books/haywood-65.pdf) | The reference gives the independent pronoun system and groups the dual by person. |
+| The active past conjugation changes its endings according to person, number, and gender. | Mohammad T. Alhawary, *Arabic Grammar in Context* (2016), section “Past tense,” p. 23. [PDF](https://www.fivesuper.com/support/downloads/Arabic-Grammar-in-Context_Mohammad-T.-Alhawary-%282016%29.pdf) | Lesson 7 expands the table with the traditional Hawza 14-slot order. |
+| The traditional Sarf table has 14 teaching slots: six ghāʾib, six mukhāṭab, and two mutakallim forms. | Traditional Sarf teaching convention, compared with the pronoun and conjugation tables in Haywood/Nahmad and Alhawary. | This is a 14-slot learning arrangement, not a claim that there are 14 distinct independent pronoun spellings. |
 
-## Course sequence and patterns
+## The 14-slot course order
 
-This course uses the following sequence for the six common Abwāb:
-
-| Bāb | Māḍī | Muḍāriʿ | Weight |
-|---|---|---|---|
-| Naṣr | نَصَرَ | يَنْصُرُ | فَعَلَ يَفْعُلُ |
-| Ḍarb | ضَرَبَ | يَضْرِبُ | فَعَلَ يَفْعِلُ |
-| Fatḥ | فَتَحَ | يَفْتَحُ | فَعَلَ يَفْعَلُ |
-| Samʿ | سَمِعَ | يَسْمَعُ | فَعِلَ يَفْعَلُ |
-| Karam | كَرُمَ | يَكْرُمُ | فَعُلَ يَفْعُلُ |
-| Ḥasb | حَسِبَ | يَحْسِبُ | فَعِلَ يَفْعِلُ |
-
-Some textbooks order the Abwāb differently or use different representative verbs for a given pattern. The app uses the sequence above consistently for this course; once the exact edition of the user's selected Hawza text is confirmed, terminology and order should be reconciled to that edition.
+| # | Pronoun | Group |
+|---:|---|---|
+| 1 | هُوَ | ghāʾib · third person |
+| 2 | هُمَا (masculine dual) | ghāʾib · third person |
+| 3 | هُمْ | ghāʾib · third person |
+| 4 | هِيَ | ghāʾib · third person |
+| 5 | هُمَا (feminine dual) | ghāʾib · third person |
+| 6 | هُنَّ | ghāʾib · third person |
+| 7 | أَنْتَ | mukhāṭab · second person |
+| 8 | أَنْتُمَا (masculine dual slot) | mukhāṭab · second person |
+| 9 | أَنْتُمْ | mukhāṭab · second person |
+| 10 | أَنْتِ | mukhāṭab · second person |
+| 11 | أَنْتُمَا (feminine dual slot) | mukhāṭab · second person |
+| 12 | أَنْتُنَّ | mukhāṭab · second person |
+| 13 | أَنَا | mutakallim · first person |
+| 14 | نَحْنُ | mutakallim · first person |
 
 ## Pedagogical safeguards
 
-1. These six Abwāb classify the māḍī–muḍāriʿ pairs of the triliteral mujarrad verb; they are not the six forms of every Arabic verb.
-2. The vowel on ʿayn al-fiʿl (the middle root consonant) is compared in both māḍī and muḍāriʿ.
-3. The patterns are largely سماعي. Do not tell learners they can reliably predict a verb's bāb from its root alone.
-4. Learn each verb with its muḍāriʿ and check a reliable dictionary or teacher.
-5. The maṣdar is a separate lexical item; do not assume it can always be predicted from the bāb.
-6. Weak, hamzated, and doubled verbs may show additional changes and are deferred to later lessons.
-7. No page references are assigned to Mīzān uṣ-Ṣarf, Mīzān wa Munshaʿib, or Dānesh-e Ṣarf until exact editions are identified and inspected.
+1. The 14 ṣīghahs are 14 traditional teaching slots, not 14 distinct pronoun spellings.
+2. The masculine and feminine third-person dual slots have different verb forms in the past active: كَتَبَا vs. كَتَبَتَا.
+3. The masculine and feminine second-person dual slots use the same pronoun spelling أَنْتُمَا and the same verb form كَتَبْتُمَا; they remain separate slots in the traditional table.
+4. Teach the group sequence first: six ghāʾib, six mukhāṭab, two mutakallim.
+5. This lesson introduces the pronoun order only. Full active/passive conjugation tables are taught in Lessons 7–10.
+6. No page references are assigned to Mīzān uṣ-Ṣarf, Mīzān wa Munshaʿib, or Dānesh-e Ṣarf until exact editions are identified and inspected.
 
 ## Remaining review
 
-- Have a qualified Arabic/Sarf teacher verify the six pairs, pattern labels, vowel marks, and the course's chosen order.
+- Have a qualified Arabic/Sarf teacher verify the traditional slot order and gender/dual distinctions.
 - Have fluent Persian and Urdu readers review the translations.
-- Reconcile the sequence with the exact selected Hawza textbook edition before finalising the course.
+- Reconcile the order with the exact selected Hawza textbook edition before finalising the curriculum.
