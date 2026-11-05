@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42108687770); Lessons 1–13 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
+**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42108687770); Lessons 1–14 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -36,6 +36,7 @@
 - [x] Add Lesson 11 route, six second-person imperative/prohibitive slots, hamzat al-waṣl derivation, jussive nūn deletion, and practice.
 - [x] Move the six-Abwāb lesson to Lesson 12 in Unit 4, after the 14 ṣīghahs.
 - [x] Add Lesson 13 in Unit 5 covering mujarrad/mazīd, triliteral forms I–X, and quadriliteral patterns.
+- [x] Add Lesson 14 in Unit 6 covering the maṣdar, Form I maṣdar variation, derived maṣdar patterns, and noun-category practice.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
@@ -313,6 +314,7 @@ For every lesson:
 - [ ] [#12 Review and complete Unit 3, Lesson 11 — imperative and prohibitive forms](https://github.com/mahashemi/SarfMastery/issues/12)
 - [ ] [#13 Review and complete Unit 3, Lesson 6 — introduction to the 14 ṣīghahs](https://github.com/mahashemi/SarfMastery/issues/13)
 - [ ] [#14 Review and complete Unit 5, Lesson 13 — mujarrad, mazīd, and verb forms I–X](https://github.com/mahashemi/SarfMastery/issues/14)
+- [ ] [#15 Review and complete Unit 6, Lesson 14 — the maṣdar and verbal nouns](https://github.com/mahashemi/SarfMastery/issues/15)
 
 ## 13. Session log
 | Date | Change | Verification |
@@ -332,3 +334,4 @@ For every lesson:
 | 2026-11-05 | Added Lesson 11 with six imperative/prohibitive slots, jussive derivation, hamzat al-waṣl, and nūn deletion explanations | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106827583; expert review and responsive QA pending |
 | 2026-11-05 | Corrected curriculum order: Lesson 6 now introduces the 14 ṣīghahs; the six-Abwāb lesson is Lesson 12 in Unit 4. Added a home-page lesson library with direct links to all 12 lessons. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42107792676; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 13 on mujarrad/mazīd, the ten common triliteral forms I–X, and quadriliteral patterns; added it to the home lesson library. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42108687770; expert review and responsive QA pending |
+| 2026-11-05 | Added Lesson 14 on the maṣdar, including Form I variation, derived maṣdar patterns, and noun-category practice. | Production build/deployment verification pending |
