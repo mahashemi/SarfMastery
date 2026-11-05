@@ -1051,6 +1051,7 @@ function LessonSixPage() {
               <strong>{item.name}</strong>
               <div className="bāb-pair"><div><span>{copy.past}</span><b lang="ar" dir="rtl">{item.past}</b>{showTransliteration&&<small>{item.pastLatin}</small>}</div><div><span>{copy.present}</span><b lang="ar" dir="rtl">{item.present}</b>{showTransliteration&&<small>{item.presentLatin}</small>}</div></div>
               <div className="bāb-weight"><b lang="ar" dir="rtl">{item.pastWeight}</b><span>→</span><b lang="ar" dir="rtl">{item.presentWeight}</b></div>
+              <div className="bāb-vowel-row"><span>ʿAyn in māḍī: <b lang="ar" dir="rtl">{item.pastVowel==='fatḥah'?'فَتْحَةٌ':item.pastVowel==='kasrah'?'كَسْرَةٌ':'ضَمَّةٌ'}</b></span><span>ʿAyn in muḍāriʿ: <b lang="ar" dir="rtl">{item.presentVowel==='fatḥah'?'فَتْحَةٌ':item.presentVowel==='kasrah'?'كَسْرَةٌ':'ضَمَّةٌ'}</b></span></div>
               <p>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</p>
             </div>)}
           </div>
@@ -1077,7 +1078,7 @@ function LessonSixPage() {
               <div className="classification-choices" role="group" aria-label={item.past+' '+item.present+' bāb'}>
                 {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
               </div>
-              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{item.pastWeight} · {item.presentWeight}</b></p>}
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{item.pastWeight} · {item.presentWeight}</b><span>ʿAyn: {item.pastVowel} → {item.presentVowel}</span></p>}
             </div>)}
           </div>
           <button type="button" className="primary-button" disabled={Object.keys(answers).length!==sixAbwab.length} onClick={()=>setChecked(true)}>{copy.check}</button>
