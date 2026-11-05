@@ -2,15 +2,16 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus deployment succeeded (Actions run 42102480699). Lessons 1–2 have core Persian/Urdu explanations and documented linguistic sources. Device QA and expert review remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus deployment succeeded (Actions run 42102939532). Lessons 1–3 have core Persian/Urdu explanations and documented linguistic sources. Device QA and expert review remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
 2. `docs/LESSON_01_SOURCES.md` — source map and linguistic verification boundaries for Lesson 1.
 3. `docs/LESSON_02_SOURCES.md` — source map and linguistic verification boundaries for Lesson 2.
-4. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-5. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-6. `docs/DECISIONS.md` — decisions and open questions.
+4. `docs/LESSON_03_SOURCES.md` — source map and linguistic verification boundaries for Lesson 3.
+5. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+6. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+7. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
@@ -32,11 +33,12 @@
 - [x] Neutral branding; no personal-name footer.
 - [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
 - [x] Run and verify production TypeScript/Vite build.
-- [x] Confirm GitHub Pages deployment (latest Actions run 42102480699).
+- [x] Confirm GitHub Pages deployment (latest Actions run 42102939532).
 - [x] Add refresh-safe hash route for Unit 1, Lesson 1.
 - [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
 - [x] Add core Lesson 1 explanatory paragraphs in English, Persian, and Urdu (remaining UI labels and dashboard are still English).
 - [x] Add Lesson 2 at `#/lesson/02`, with the three word categories, multilingual explanations, six-question scored practice, and explicit audio-unavailable state.
+- [x] Add Lesson 3 at `#/lesson/03`, with fiʿl/maṣdar distinctions, three verb forms, multilingual explanations, seven-question scored practice, and explicit audio-unavailable state.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
 - [ ] Qualified Arabic/Sarf and fluent Persian/Urdu review of Lesson 1.
 - [ ] Verified human audio remains outstanding.
