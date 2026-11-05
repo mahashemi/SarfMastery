@@ -1840,6 +1840,7 @@ const lessonElevenCopy = {
     formation: 'For كَتَبَ يَكْتُبُ, start from the second-person jussive تَكْتُبْ, remove the prefix تَـ, and add a helping hamzat al-waṣl because the remaining form begins with a consonant cluster: اُكْتُبْ. The hamza takes ḍammah here because the stem vowel is ḍammah.',
     nahy: 'A prohibition is formed with لَا النَّاهِيَةُ followed by the second-person muḍāriʿ in the jussive: لَا تَكْتُبْ. Do not put لَا directly before the imperative اُكْتُبْ.',
     dualNote: 'The masculine and feminine dual are separate teaching slots, but their command and prohibition forms are identical: اُكْتُبَا and لَا تَكْتُبَا. Therefore the traditional table has six slots but only five distinct surface forms.',
+    jussiveEndings: 'Notice the nūn deletion in the jussive: تَكْتُبَانِ → لَا تَكْتُبَا, تَكْتُبُونَ → لَا تَكْتُبُوا, and تَكْتُبِينَ → لَا تَكْتُبِي. The feminine-plural ending نَ remains: لَا تَكْتُبْنَ.',
     scope: 'These are direct commands/prohibitions to the second person. Indirect commands (“let him…”, “let us…”) use other constructions and are not included here.',
     practicePrompt: 'Choose the addressee that matches each command or prohibition. The dual form is shared by both genders.',
     correct: 'Correct addressee.',
@@ -1857,6 +1858,7 @@ const lessonElevenCopy = {
     formation: 'برای كَتَبَ يَكْتُبُ، از مضارع مخاطبِ مجزوم تَكْتُبْ آغاز کنید، پیشوند تَـ را بردارید و چون صورت باقی‌مانده با دو حرف ساکن آغاز می‌شود، همزهٔ وصل بیفزایید: اُكْتُبْ. در این مثال همزه ضمه می‌گیرد، چون حرکتِ میانی مضارع ضمه است.',
     nahy: 'نهی با لَا النَّاهِيَةُ و پس از آن مضارع مخاطبِ مجزوم ساخته می‌شود: لَا تَكْتُبْ. لَا را مستقیماً پیش از فعل امر اُكْتُبْ نیاورید.',
     dualNote: 'مثنای مذکر و مؤنث دو جایگاه آموزشی جدا هستند، اما صورت امر و نهی آن‌ها یکسان است: اُكْتُبَا و لَا تَكْتُبَا. بنابراین جدول سنتی شش جایگاه دارد، ولی فقط پنج صورت ظاهریِ متفاوت.',
+    jussiveEndings: 'به حذف نون در حالت جزم توجه کنید: تَكْتُبَانِ ← لَا تَكْتُبَا، تَكْتُبُونَ ← لَا تَكْتُبُوا و تَكْتُبِينَ ← لَا تَكْتُبِي. نون جمع مؤنث باقی می‌ماند: لَا تَكْتُبْنَ.',
     scope: 'این صورت‌ها امر و نهی مستقیم برای مخاطب‌اند. امر غیرمستقیم («بگذار او…»، «بیایید ما…») ساخت‌های دیگری دارد و در این درس نیست.',
     practicePrompt: 'مخاطبِ مناسب هر امر یا نهی را انتخاب کنید. صورت مثنّی برای هر دو جنس یکسان است.',
     correct: 'مخاطب درست است.',
@@ -1874,6 +1876,7 @@ const lessonElevenCopy = {
     formation: 'كَتَبَ يَكْتُبُ میں مخاطب مجزوم تَكْتُبْ سے شروع کریں، سابقہ تَـ ہٹا دیں، اور چونکہ باقی صورت دو ساکن حروف سے شروع ہوتی ہے اس لیے ہمزۃ الوصل لگائیں: اُكْتُبْ۔ یہاں ہمزہ پر پیش ہے کیونکہ مضارع کے درمیانی حرف پر پیش ہے۔',
     nahy: 'نہی لَا النَّاهِيَةُ کے بعد مضارع مخاطب مجزوم لا کر بنتی ہے: لَا تَكْتُبْ۔ لَا کو براہِ راست امر اُكْتُبْ سے پہلے نہ لگائیں۔',
     dualNote: 'مذکر اور مؤنث تثنیہ الگ تعلیمی خانے ہیں، لیکن ان کے امر اور نہی کی صورتیں ایک جیسی ہیں: اُكْتُبَا اور لَا تَكْتُبَا۔ اس لیے روایتی جدول میں چھ خانے ہیں مگر ظاہری صورتیں پانچ ہیں۔',
+    jussiveEndings: 'حالتِ جزم میں نون کے حذف پر غور کریں: تَكْتُبَانِ → لَا تَكْتُبَا، تَكْتُبُونَ → لَا تَكْتُبُوا، اور تَكْتُبِينَ → لَا تَكْتُبِي۔ مؤنث جمع کا نون باقی رہتا ہے: لَا تَكْتُبْنَ.',
     scope: 'یہ براہِ راست مخاطب کے لیے امر اور نہی ہیں۔ بالواسطہ حکم (’’اسے کرنے دو‘‘ یا ’’آؤ ہم کریں‘‘) کے لیے دوسرے طریقے ہیں، جو اس سبق میں شامل نہیں۔',
     practicePrompt: 'ہر امر یا نہی کے لیے درست مخاطب منتخب کریں۔ تثنیہ کی صورت دونوں جنسوں کے لیے ایک جیسی ہے۔',
     correct: 'درست مخاطب۔',
@@ -1966,6 +1969,7 @@ function LessonElevenPage() {
             </div>)}
           </div>
           <div className="warning-card"><strong>Why six slots but five distinct forms?</strong><p lang={language}>{copy.dualNote}</p></div>
+          <div className="warning-card"><strong>Jussive ending changes</strong><p lang={language}>{copy.jussiveEndings}</p></div>
           <div className="caution-note" lang={language}>{copy.scope}</div>
         </section>
         <section className="lesson-block practice-block">
