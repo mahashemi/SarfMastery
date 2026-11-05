@@ -42,11 +42,15 @@ jobs:
           script: |
             const staleSha = 'c8785da9366a282861fba115cfc8ba5b216c6991';
             const { owner, repo } = context.repo;
-            const { data: deployments } = await github.rest.repos.listDeployments({ owner, repo, environment: 'github-pages', per_page: 100 });
+            const { data: deployments } = await github.rest.repos.listDeployments({ owner, repo, per_page: 100 });
+            core.info(`Found ${deployments.length} deployment records.`);
+            for (const deployment of deployments) core.info(`Deployment ${deployment.id}: ${deployment.sha} (${deployment.environment})`);
             const stale = deployments.filter((deployment) => deployment.sha === staleSha);
+            core.info(`Found ${stale.length} deployment record(s) for interrupted SHA ${staleSha}.`);
             for (const deployment of stale) {
               const { data: statuses } = await github.rest.repos.listDeploymentStatuses({ owner, repo, deployment_id: deployment.id, per_page: 1 });
-              if (statuses[0]?.state === 'in_progress') {
+              core.info(`Latest status for deployment ${deployment.id}: ${statuses[0]?.state ?? 'none'}`);
+              if (statuses[0]?.state !== 'inactive' && statuses[0]?.state !== 'success') {
                 await github.rest.repos.createDeploymentStatus({ owner, repo, deployment_id: deployment.id, state: 'inactive', description: 'Superseded after an interrupted Pages publish.' });
                 core.info(`Marked interrupted Pages deployment ${deployment.id} inactive.`);
               }
