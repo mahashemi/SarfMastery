@@ -580,6 +580,169 @@ function LessonThreePage() {
   </main>
 }
 
+
+const lessonFourCopy = {
+  en: {
+    lead: 'A root gives us the original consonants. A pattern may add material around or between them. Learning to tell the two apart is essential for recognising Arabic word forms.',
+    objective: 'Identify the root letters in familiar verbs, recognise added letters in derived forms, and use the traditional mnemonic carefully rather than mechanically.',
+    definition: 'Original letters (حُرُوفٌ أَصْلِيَّةٌ) belong to the root. Added letters (حُرُوفٌ زَائِدَةٌ) are introduced by a morphological pattern. In this lesson we focus on triliteral verbs.',
+    mujarrad: 'A mujarrad verb uses its root letters without an added derivational letter. كَتَبَ is Form I: its root is ك ت ب, and all three letters are original.',
+    mazid: 'A mazīd verb has additional morphological material beyond its root. The addition may be a written letter or a patterned change such as doubling; the pattern tells us how to analyse it.',
+    mnemonic: 'The traditional mnemonic سَأَلْتُمُونِيهَا gathers ten letters that may appear as additions in Arabic word patterns. It is a memory aid—not a rule that every occurrence of one of these letters is extra.',
+    caution: 'Never remove a letter merely because it appears in the mnemonic. A letter can be part of the root. In سَأَلَ, sīn, hamza, and lām are all root letters. In وَصَلَ, wāw is the first root letter.',
+    familyIntro: 'Compare three verbs built from the same root ك ت ب. The original root remains recognisable while the pattern adds material and changes the word.',
+    practicePrompt: 'For each item, decide whether it is a mujarrad verb, a mazīd verb, or not a verb. Use the root and pattern—not the mnemonic alone.',
+    correct: 'Correct.',
+    incorrect: 'Review the root and pattern. The correct analysis is',
+    score: 'Your score',
+    check: 'Check analysis',
+    teach: 'Explain why the alif in كَاتَبَ is added, but the sīn in سَأَلَ is original. Then explain why the mnemonic is a clue rather than a complete root-finding method.',
+    summary: 'First identify a possible root, then match the word to a known pattern, and finally verify it with a reliable dictionary or teacher. The mnemonic narrows the possibilities; it does not prove the analysis.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'ریشه حروف اصلی را در اختیار ما می‌گذارد و وزن ممکن است حروفی را پیرامون یا میان آن‌ها بیفزاید. تشخیص این دو از یکدیگر برای شناخت صورت واژه‌های عربی ضروری است.',
+    objective: 'حروف اصلی فعل‌های آشنا را پیدا کنید، حروف افزوده را در صورت‌های مشتق بشناسید و از رمز سنتی با دقت استفاده کنید، نه به‌صورت مکانیکی.',
+    definition: 'حروف اصلی (حُرُوفٌ أَصْلِيَّةٌ) جزئی از ریشه‌اند. حروف زائد (حُرُوفٌ زَائِدَةٌ) به‌واسطهٔ یک وزن صرفی افزوده می‌شوند. در این درس بر فعل‌های سه‌حرفی تمرکز می‌کنیم.',
+    mujarrad: 'فعل مجرد حروف اصلی ریشه را بدون حرفِ افزودهٔ اشتقاقی به‌کار می‌برد. كَتَبَ از باب اول است؛ ریشهٔ آن ک ت ب است و هر سه حرف اصلی‌اند.',
+    mazid: 'فعل مزید افزون بر ریشه، مادهٔ صرفیِ افزوده دارد. این افزایش ممکن است با افزودن حرفِ نوشته‌شده یا با تغییری الگومند مانند تشدید باشد؛ وزن نشان می‌دهد چگونه باید آن را تحلیل کرد.',
+    mnemonic: 'رمز سنتی سَأَلْتُمُونِيهَا ده حرف را گرد می‌آورد که ممکن است در وزن‌های عربی نقش افزوده داشته باشند. این رمز وسیله‌ای برای یادسپاری است، نه قانونی که هر بار دیدن یکی از این حروف به معنای زائدبودن آن باشد.',
+    caution: 'حرفی را فقط به این دلیل که در رمز آمده حذف نکنید؛ ممکن است جزئی از ریشه باشد. در سَأَلَ، سین، همزه و لام هر سه حروف اصلی‌اند. در وَصَلَ، واو حرف نخست ریشه است.',
+    familyIntro: 'سه فعل را که از یک ریشهٔ ک ت ب ساخته شده‌اند مقایسه کنید. ریشهٔ اصلی همچنان قابل تشخیص است، اما وزن ماده‌ای می‌افزاید و صورت واژه را تغییر می‌دهد.',
+    practicePrompt: 'برای هر مورد مشخص کنید فعل مجرد است، فعل مزید است یا اصلاً فعل نیست. ریشه و وزن را بررسی کنید، نه فقط رمز را.',
+    correct: 'درست است.',
+    incorrect: 'ریشه و وزن را دوباره بررسی کنید. تحلیل درست:',
+    score: 'امتیاز شما',
+    check: 'بررسی تحلیل',
+    teach: 'توضیح دهید چرا الف در كَاتَبَ افزوده است، اما سین در سَأَلَ حرف اصلی ریشه است. سپس بگویید چرا رمز فقط سرنخ است و روش کامل یافتن ریشه نیست.',
+    summary: 'ابتدا ریشهٔ احتمالی را پیدا کنید، سپس واژه را با وزن شناخته‌شده بسنجید و در پایان آن را با فرهنگ معتبر یا استاد بررسی کنید. رمز احتمال‌ها را محدود می‌کند، اما به‌تنهایی تحلیل را ثابت نمی‌کند.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'مادّہ ہمیں اصلی حروف دیتا ہے، جبکہ وزن ان حروف کے اردگرد یا درمیان میں کچھ حروف بڑھا سکتا ہے۔ عربی الفاظ کی ساخت سمجھنے کے لیے دونوں میں فرق کرنا ضروری ہے۔',
+    objective: 'مانوس افعال میں اصلی حروف پہچانیں، مشتق صورتوں میں زائد حروف معلوم کریں، اور روایتی یادداشت کے کلمے کو احتیاط سے استعمال کریں۔',
+    definition: 'حُرُوفٌ أَصْلِيَّةٌ مادّے کے اصلی حروف ہیں۔ حُرُوفٌ زَائِدَةٌ وہ حروف ہیں جو صرفی وزن کے ذریعے بڑھائے جاتے ہیں۔ اس سبق میں ہم سہ حرفی افعال پر توجہ دیں گے۔',
+    mujarrad: 'فعلِ مجرد میں مادّے کے اصلی حروف ہوتے ہیں اور کوئی زائد اشتقاقی حرف نہیں ہوتا۔ كَتَبَ بابِ اول ہے؛ اس کا مادّہ ک ت ب ہے اور تینوں حروف اصلی ہیں۔',
+    mazid: 'فعلِ مزید میں مادّے کے علاوہ صرفی اضافہ بھی ہوتا ہے۔ یہ اضافہ لکھے جانے والے حرف کی صورت میں یا کسی مقررہ تبدیلی، مثلاً تشدید، کی صورت میں ہو سکتا ہے؛ وزن بتاتا ہے کہ اس کا تجزیہ کیسے کریں۔',
+    mnemonic: 'روایتی یادداشت سَأَلْتُمُونِيهَا میں دس ایسے حروف جمع ہیں جو عربی اوزان میں زائد ہو سکتے ہیں۔ یہ یاد رکھنے کا طریقہ ہے، ایسا اصول نہیں کہ ان حروف میں سے کوئی بھی جہاں نظر آئے وہ لازماً زائد ہو۔',
+    caution: 'کسی حرف کو صرف اس لیے نہ نکالیں کہ وہ اس یادداشت میں موجود ہے؛ وہ مادّے کا اصلی حرف بھی ہو سکتا ہے۔ سَأَلَ میں سین، ہمزہ اور لام تینوں اصلی حروف ہیں۔ وَصَلَ میں واو مادّے کا پہلا حرف ہے۔',
+    familyIntro: 'ایک ہی مادّہ ک ت ب سے بننے والے تین افعال کا موازنہ کریں۔ مادّہ پہچانا جا سکتا ہے، جبکہ وزن اضافی مواد لا کر لفظ کی صورت بدلتا ہے۔',
+    practicePrompt: 'ہر مثال کے بارے میں فیصلہ کریں کہ وہ مجرد فعل ہے، مزید فعل ہے یا فعل ہی نہیں۔ صرف یادداشت نہیں بلکہ مادّہ اور وزن دیکھیں۔',
+    correct: 'درست۔',
+    incorrect: 'مادّہ اور وزن دوبارہ دیکھیں۔ درست تجزیہ ہے:',
+    score: 'آپ کا اسکور',
+    check: 'تجزیہ جانچیں',
+    teach: 'بتائیں کہ كَاتَبَ میں الف زائد کیوں ہے، جبکہ سَأَلَ میں سین اصلی حرف ہے۔ پھر واضح کریں کہ یادداشت صرف اشارہ کیوں ہے، مادّہ معلوم کرنے کا مکمل طریقہ کیوں نہیں۔',
+    summary: 'پہلے ممکنہ مادّہ پہچانیں، پھر لفظ کو معروف وزن سے ملائیں، اور آخر میں معتبر لغت یا استاد سے تصدیق کریں۔ یادداشت امکانات کم کرتی ہے، مگر اکیلے تجزیہ ثابت نہیں کرتی۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const rootAdditionExamples = [
+  {arabic:'كَتَبَ',translit:'kataba',gloss:'he wrote',glossFa:'او نوشت',glossUr:'اس نے لکھا',answer:'mujarrad',analysis:'Root ك ت ب · no added derivational letter',analysisFa:'ریشه ک ت ب · حرف اشتقاقیِ افزوده ندارد',analysisUr:'مادّہ ک ت ب · کوئی زائد اشتقاقی حرف نہیں'},
+  {arabic:'كَاتَبَ',translit:'kātaba',gloss:'he corresponded',glossFa:'مکاتبه کرد',glossUr:'اس نے خط و کتابت کی',answer:'mazid',analysis:'Root ك ت ب · added alif · Form III',analysisFa:'ریشه ک ت ب · الف افزوده · باب سوم',analysisUr:'مادّہ ک ت ب · الف زائد · باب سوم'},
+  {arabic:'اِسْتَكْتَبَ',translit:'istaktaba',gloss:'he asked someone to write',glossFa:'از کسی خواست بنویسد',glossUr:'اس نے کسی سے لکھنے کو کہا',answer:'mazid',analysis:'Root ك ت ب · added ا س ت · Form X',analysisFa:'ریشه ک ت ب · حروف افزوده ا س ت · باب دهم',analysisUr:'مادّہ ک ت ب · زائد حروف ا س ت · باب دہم'},
+  {arabic:'سَأَلَ',translit:'saʾala',gloss:'he asked',glossFa:'او پرسید',glossUr:'اس نے پوچھا',answer:'mujarrad',analysis:'Root س أ ل · all three letters are original',analysisFa:'ریشه س أ ل · هر سه حرف اصلی‌اند',analysisUr:'مادّہ س أ ل · تینوں حروف اصلی ہیں'},
+  {arabic:'وَصَلَ',translit:'waṣala',gloss:'he arrived / connected',glossFa:'رسید / پیوند داد',glossUr:'وہ پہنچا / ملایا',answer:'mujarrad',analysis:'Root و ص ل · wāw is original',analysisFa:'ریشه و ص ل · واو حرف اصلی است',analysisUr:'مادّہ و ص ل · واو اصلی حرف ہے'},
+  {arabic:'أَكْرَمَ',translit:'akrama',gloss:'he honoured',glossFa:'او گرامی داشت',glossUr:'اس نے عزت دی',answer:'mazid',analysis:'Root ك ر م · added hamza · Form IV',analysisFa:'ریشه ک ر م · همزه افزوده · باب چهارم',analysisUr:'مادّہ ک ر م · ہمزہ زائد · باب چہارم'},
+  {arabic:'مَكْتُوبٌ',translit:'maktūbun',gloss:'written',glossFa:'نوشته‌شده',glossUr:'لکھا ہوا',answer:'notverb',analysis:'A passive participle (ism), not a verb in this exercise',analysisFa:'اسم مفعول (اسم) است، نه فعل در این تمرین',analysisUr:'اسمِ مفعول ہے، اس مشق میں فعل نہیں'},
+] as const
+
+function LessonFourPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonFourCopy[language]
+  const rtl = language !== 'en'
+  const score = rootAdditionExamples.filter((item,index)=>answers[index]===item.answer).length
+  const choices = [{value:'mujarrad',label:'Mujarrad · مُجَرَّدٌ'},{value:'mazid',label:'Mazīd · مَزِيدٌ'},{value:'notverb',label:'Not a verb · لَيْسَ فِعْلًا'}]
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/03" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 01 · LESSON 04</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 01 · FOUNDATIONS</div>
+        <h1>Original and <em>added</em> letters</h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْحُرُوفُ الْأَصْلِيَّةُ وَالزَّائِدَةُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-ḥurūf al-aṣliyyah wa-l-zāʾidah</div>}
+          <h2>Root letters and added letters</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">TWO IMPORTANT TERMS</span>
+          <div className="compare-grid">
+            <div><span className="compare-label">مُجَرَّدٌ · MUJARRAD</span><h3>Unaugmented verb</h3><p lang={language}>{copy.mujarrad}</p></div>
+            <div><span className="compare-label">مَزِيدٌ · MAZĪD</span><h3>Augmented verb</h3><p lang={language}>{copy.mazid}</p></div>
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">ONE ROOT · DIFFERENT PATTERNS</span>
+          <h2>Follow the root ك ت ب</h2>
+          <p lang={language}>{copy.familyIntro}</p>
+          <div className="root-derivation-list">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b>{showTransliteration&&<small>kataba</small>}<span>Form I · مُجَرَّدٌ</span><strong lang="ar" dir="rtl">ك ت ب</strong><em>No added derivational letter</em></div>
+            <div><b lang="ar" dir="rtl">كَاتَبَ</b>{showTransliteration&&<small>kātaba</small>}<span>Form III · مَزِيدٌ بِحَرْفٍ</span><strong lang="ar" dir="rtl">ك + ا + ت + ب</strong><em>Added alif · ا</em></div>
+            <div><b lang="ar" dir="rtl">اِسْتَكْتَبَ</b>{showTransliteration&&<small>istaktaba</small>}<span>Form X · مَزِيدٌ بِثَلَاثَةِ أَحْرُفٍ</span><strong lang="ar" dir="rtl">ا س ت + ك ت ب</strong><em>Added ا س ت</em></div>
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE TRADITIONAL MEMORY AID</span>
+          <h2 lang="ar" dir="rtl">سَأَلْتُمُونِيهَا</h2>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">saʾaltumūnīhā</div>}
+          <p lang={language}>{copy.mnemonic}</p>
+          <div className="mnemonic-letters" lang="ar" dir="rtl"><b>س</b><b>أ</b><b>ل</b><b>ت</b><b>م</b><b>و</b><b>ن</b><b>ي</b><b>ه</b><b>ا</b></div>
+          <div className="warning-card"><strong>Important limitation</strong><p lang={language}>{copy.caution}</p></div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · ROOT OR ADDITION?</span>
+          <h2>Analyse each form</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="classification-list">
+            {rootAdditionExamples.map((item,index)=><div className="classification-row" key={item.arabic}>
+              <div className="classification-word"><b lang="ar" dir="rtl">{item.arabic}</b>{showTransliteration&&<span dir="ltr">{item.translit}</span>}<small>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</small></div>
+              <div className="classification-choices" role="group" aria-label={item.arabic+' verb type'}>
+                {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
+              </div>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{language==='fa'?item.analysisFa:language==='ur'?item.analysisUr:item.analysis}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==rootAdditionExamples.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {rootAdditionExamples.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://asjp.cerist.dz/en/downArticlepdf/163/5/1/130194" target="_blank" rel="noreferrer">Zoubir Dendane, “An Overview of Verb Morphology in Arabic,” especially the discussion of bare and augmented forms and the Form III example كَاتَبَ.</a></li>
+            <li><a href="https://arabicwithoutwalls.ucdavis.edu/chapter14/grammar_note14.html" target="_blank" rel="noreferrer">University of California, Davis — Arabic Without Walls, Grammar Note 14: Verb Forms.</a></li>
+            <li><a href="https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D8%A7%D8%B3%D8%AA%D9%83%D8%AA%D8%A8" target="_blank" rel="noreferrer">Cairo Arabic Language Academy — dictionary entry for اِسْتَكْتَبَ, root ك ت ب.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/03">← Lesson 3: Verb and maṣdar</a><span>Next: the morphological scale (الميزان الصرفي)</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Original and added letters</li><li>Mujarrad and Mazīd</li><li>One root, three patterns</li><li>سَأَلْتُمُونِيهَا</li><li>Mnemonic limitations</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Do not strip letters mechanically. Find the pattern and verify the root.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
   const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
@@ -593,6 +756,7 @@ export default function App() {
   if (route === '#/lesson/01') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 01</span></header><LessonPage/></div>
   if (route === '#/lesson/02') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 02</span></header><LessonTwoPage/></div>
   if (route === '#/lesson/03') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 03</span></header><LessonThreePage/></div>
+  if (route === '#/lesson/04') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 04</span></header><LessonFourPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
