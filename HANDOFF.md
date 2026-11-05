@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42104565190). Lessons 1–6 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42105111437). Lessons 1–7 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -12,9 +12,10 @@
 5. `docs/LESSON_04_SOURCES.md` — source map and linguistic verification boundaries for Lesson 4.
 6. `docs/LESSON_05_SOURCES.md` — source map and linguistic verification boundaries for Lesson 5.
 7. `docs/LESSON_06_SOURCES.md` — source map and linguistic verification boundaries for Lesson 6.
-8. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-9. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-10. `docs/DECISIONS.md` — decisions and open questions.
+8. `docs/LESSON_07_SOURCES.md` — source map and linguistic verification boundaries for Lesson 7.
+9. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+10. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+11. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
@@ -36,7 +37,7 @@
 - [x] Neutral branding; no personal-name footer.
 - [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
 - [x] Run and verify production TypeScript/Vite build.
-- [x] Confirm custom GitHub Pages deployment (latest code Actions run 42104565190).
+- [x] Confirm custom GitHub Pages deployment (latest code Actions run 42105111437).
 - [ ] Change repository Settings → Pages → Source to GitHub Actions to stop the competing automatic Jekyll branch deployment. This setting change is not exposed through the available GitHub connector actions.
 - [x] Add refresh-safe hash route for Unit 1, Lesson 1.
 - [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
@@ -46,6 +47,7 @@
 - [x] Add Lesson 4 at `#/lesson/04`, with root/added-letter distinctions, mujarrad/mazīd examples, mnemonic limitations, seven-question scored practice, and explicit audio-unavailable state.
 - [x] Add Lesson 5 at `#/lesson/05`, with Mīzān Ṣarfī, ف ع ل mapping, six verb/noun patterns, and scored practice.
 - [x] Add Lesson 6 at `#/lesson/06`, with six Abwāb, māḍī/muḍāriʿ pairs, middle-radical vowel comparisons, and scored practice.
+- [x] Add Lesson 7 at `#/lesson/07`, with the 14-slot active-past table, transliteration, English/Persian/Urdu glosses, and pronoun practice.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
 - [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
 - [ ] Fluent Persian and Urdu review of Lessons 1–3.
@@ -71,8 +73,9 @@
 4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–4.
 5. Obtain fluent Persian and Urdu review of Lessons 1–4.
 6. Obtain qualified Arabic/Sarf and fluent Persian/Urdu review of Lessons 1–6.
-7. Add Lesson 7 on applying the six Abwāb to the 14 ṣīghahs, after Lesson 6 review.
-8. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
+7. Add Lesson 8 on the 14-form active muḍāriʿ table, after Lesson 7 review.
+8. Add the passive māḍī/muḍāriʿ tables and imperative/negative imperative in subsequent lessons.
+9. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
