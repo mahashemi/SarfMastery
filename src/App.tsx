@@ -6,7 +6,7 @@ const units = [
   ['02','The Morphological Scale','Days 7–12','Learn الميزان الصرفي and how words are weighed against ف ع ل.','1 lesson drafted'],
   ['03','The Fourteen Forms','Days 13–22','Build confidence with pronouns, conjugation, person, number, and gender.','6 lessons drafted'],
   ['04','The Six Common Abwāb','Days 23–30','Recognise common past-to-present verb patterns.','1 lesson drafted'],
-  ['05','Mujarrad and Mazīd','Days 31–38','See how additional letters create related verb forms.','Coming next'],
+  ['05','Mujarrad and Mazīd','Days 31–38','See how additional letters create related verb forms.','1 lesson drafted'],
   ['06','Derived Nouns','Days 39–45','Understand maṣdar, active/passive participles, and more.','Coming next'],
   ['07','Sound and Weak Verbs','Days 46–53','Explore sound, weak, hamzated, and doubled verb categories.','Coming next'],
   ['08','Apply, Analyse, Teach','Days 54–60','Analyse real words and explain what you have learned.','Coming next'],
@@ -2431,6 +2431,9 @@ export default function App() {
               </div></div>
               <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 4 · The Six Common Abwāb</strong><span>Days 23–30</span></div><div className="lesson-library-list">
                 <a className="lesson-library-link" href="#/lesson/12"><span>12</span><div><strong>The six Abwāb</strong><small>Past/present patterns of triliteral mujarrad verbs</small></div><ChevronRight size={16}/></a>
+              </div></div>
+              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 5 · Mujarrad and Mazīd</strong><span>Days 31–38</span></div><div className="lesson-library-list">
+                <a className="lesson-library-link" href="#/lesson/13"><span>13</span><div><strong>Triliteral forms I–X</strong><small>Root, pattern, augmentation, and quadriliteral forms</small></div><ChevronRight size={16}/></a>
               </div></div>
             </div>
           </div>
