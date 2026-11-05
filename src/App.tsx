@@ -1099,9 +1099,193 @@ function LessonSixPage() {
             <li><a href="https://ablibrary.net/book_content/b/11500/80" target="_blank" rel="noreferrer">Sayyid Muḥammad Taqī al-Ḥusaynī al-Jalālī, Nuzhat al-Ṭarf fī ʿIlm al-Ṣarf, p. 80.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/05">← Lesson 5: The Mīzān Ṣarfī</a><span>Next: applying the six Abwāb in conjugation</span></div>
+        <div className="lesson-end"><a href="#/lesson/05">← Lesson 5: The Mīzān Ṣarfī</a><a className="next-lesson-link" href="#/lesson/07">Next: the 14 ṣīghahs →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Six Abwāb</li><li>Past and present pairs</li><li>Middle radical vowels</li><li>Maṣdar caution</li><li>Classification practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write each verb as a pair: māḍī + muḍāriʿ. Learn the vowel of the middle root letter in both forms.</p></div></aside>
+    </div>
+  </main>
+}
+
+
+const lessonSevenCopy = {
+  en: {
+    lead: 'A verb changes its ending to show who performed the action. This lesson introduces the traditional 14-slot table for the active past of كَتَبَ.',
+    objective: 'Read the 14 forms in the agreed order, connect each form to its pronoun, and recognise the endings that distinguish person, gender, and number.',
+    definition: 'الْمَاضِي الْمَعْرُوفُ (al-māḍī al-maʿrūf) is the active past form. In this table, the verb ending identifies its subject. The traditional 14 slots are grouped as six third-person forms, six second-person forms, and two first-person forms.',
+    orderNote: 'The table follows the 14-slot Sarf order: ghāʾib (third person), mukhāṭab (second person), then mutakallim (first person).',
+    dualNote: 'The third-person masculine and feminine dual forms differ: كَتَبَا vs. كَتَبَتَا. The second-person dual form كَتَبْتُمَا is the same for masculine and feminine, but the traditional table keeps both gender slots.',
+    confusion: 'Watch the plural endings: هُمْ takes كَتَبُوا (katabū), while هُنَّ takes كَتَبْنَ (katabna). For “you”, compare كَتَبْتَ (masculine singular) with كَتَبْتِ (feminine singular).',
+    practicePrompt: 'Choose the pronoun that matches each past-tense verb form.',
+    correct: 'Correct pronoun.',
+    incorrect: 'Check the ending. The matching pronoun is',
+    score: 'Your score',
+    check: 'Check pronouns',
+    teach: 'Recite the 14 forms in order. Explain the difference between كَتَبُوا and كَتَبْنَ, and why أَنْتُمَا appears in two gender slots.',
+    summary: 'Learn the pronoun and its verb ending together. The 14-slot table is a learning arrangement; the two second-person dual slots share the same surface form.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'پایان فعل تغییر می‌کند تا نشان دهد چه کسی کار را انجام داده است. در این درس جدول سنتی ۱۴ صیغهٔ ماضی معلومِ كَتَبَ را می‌آموزیم.',
+    objective: 'چهارده جایگاه را به ترتیب بخوانید، هر صورت را به ضمیر مربوط کنید و پایان‌هایی را که شخص، جنس و شمار را نشان می‌دهند تشخیص دهید.',
+    definition: 'الْمَاضِي الْمَعْرُوفُ یعنی ماضی معلوم. در این جدول، پایان فعل فاعل آن را مشخص می‌کند. چهارده جایگاه سنتی در سه گروه آمده‌اند: شش صورت غایب، شش صورت مخاطب و دو صورت متکلم.',
+    orderNote: 'ترتیب جدول همان ترتیب ۱۴ صیغه در صرف است: غایب، سپس مخاطب و در پایان متکلم.',
+    dualNote: 'صورت مثنای غایب مذکر و مؤنث متفاوت است: كَتَبَا در برابر كَتَبَتَا. اما صورت مثنای مخاطب، كَتَبْتُمَا، برای مذکر و مؤنث یکسان است؛ با این حال در جدول سنتی دو جایگاه جدا دارد.',
+    confusion: 'به پایان جمع توجه کنید: برای هُمْ صورت كَتَبُوا (katabū) و برای هُنَّ صورت كَتَبْنَ (katabna) می‌آید. در مخاطب مفرد نیز كَتَبْتَ مذکر و كَتَبْتِ مؤنث است.',
+    practicePrompt: 'ضمیر مناسب هر صورت فعل ماضی را انتخاب کنید.',
+    correct: 'ضمیر درست است.',
+    incorrect: 'پایان فعل را بررسی کنید. ضمیر متناظر:',
+    score: 'امتیاز شما',
+    check: 'بررسی ضمیرها',
+    teach: 'چهارده صیغه را به ترتیب بخوانید. تفاوت كَتَبُوا و كَتَبْنَ را توضیح دهید و بگویید چرا أَنْتُمَا در دو جایگاه جنسیتی آمده است.',
+    summary: 'ضمیر و پایان فعل را با هم حفظ کنید. جدول ۱۴ صیغه یک ترتیب آموزشی است؛ دو جایگاه مثنای مخاطب در ظاهر یک صورت دارند.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'فعل کا آخری حصہ بدلتا ہے تاکہ معلوم ہو کہ کام کس نے کیا۔ اس سبق میں كَتَبَ کے ماضی معروف کی روایتی چودہ صیغوں والی جدول سیکھیں گے۔',
+    objective: 'چودہ صیغوں کو مقررہ ترتیب سے پڑھیں، ہر صورت کو اس کے ضمیر سے ملائیں، اور شخص، جنس اور تعداد ظاہر کرنے والے لاحقے پہچانیں۔',
+    definition: 'الْمَاضِي الْمَعْرُوفُ ماضی معروف ہے۔ اس جدول میں فعل کا آخری حصہ فاعل کی نشاندہی کرتا ہے۔ روایتی چودہ خانے تین گروہوں میں ہیں: چھ غائب، چھ مخاطب، اور دو متکلم کے صیغے۔',
+    orderNote: 'جدول صرف کی چودہ صیغوں والی ترتیب پر ہے: پہلے غائب، پھر مخاطب، اور آخر میں متکلم۔',
+    dualNote: 'غائب مذکر اور مؤنث تثنیہ کی صورتیں مختلف ہیں: كَتَبَا اور كَتَبَتَا۔ مخاطب تثنیہ كَتَبْتُمَا مذکر اور مؤنث دونوں کے لیے ایک جیسا ہے، مگر روایتی جدول میں دونوں جنسوں کے الگ خانے رکھے جاتے ہیں۔',
+    confusion: 'جمع کے لاحقوں پر توجہ دیں: هُمْ کے لیے كَتَبُوا (katabū) اور هُنَّ کے لیے كَتَبْنَ (katabna) آتا ہے۔ مخاطب واحد میں كَتَبْتَ مذکر اور كَتَبْتِ مؤنث ہے۔',
+    practicePrompt: 'ہر ماضی کے فعل کے لیے درست ضمیر منتخب کریں۔',
+    correct: 'درست ضمیر۔',
+    incorrect: 'فعل کا آخری حصہ دیکھیں۔ متعلقہ ضمیر ہے:',
+    score: 'آپ کا اسکور',
+    check: 'ضمائر جانچیں',
+    teach: 'چودہ صیغے ترتیب سے پڑھیں۔ كَتَبُوا اور كَتَبْنَ کا فرق بیان کریں، اور بتائیں کہ أَنْتُمَا دو صنفی خانوں میں کیوں آتا ہے۔',
+    summary: 'ضمیر اور فعل کے لاحقے کو ساتھ یاد کریں۔ چودہ خانوں والی جدول ایک تعلیمی ترتیب ہے؛ مخاطب تثنیہ کے دونوں خانے ایک ہی ظاہری صورت رکھتے ہیں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const pastActiveForms = [
+  {pronoun:'هُوَ',pronounLatin:'huwa',slot:'3rd · masculine singular',slotFa:'غایب · مذکر مفرد',slotUr:'غائب · مذکر واحد',verb:'كَتَبَ',verbLatin:'kataba',gloss:'he wrote',glossFa:'او نوشت',glossUr:'اس نے لکھا',key:'huwa'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · masculine dual',slotFa:'غایب · مذکر مثنّی',slotUr:'غائب · مذکر تثنیہ',verb:'كَتَبَا',verbLatin:'katabā',gloss:'they two (masc.) wrote',glossFa:'آن دو مرد نوشتند',glossUr:'وہ دونوں مرد لکھے',key:'huma-m'},
+  {pronoun:'هُمْ',pronounLatin:'hum',slot:'3rd · masculine plural',slotFa:'غایب · مذکر جمع',slotUr:'غائب · مذکر جمع',verb:'كَتَبُوا',verbLatin:'katabū',gloss:'they (masc.) wrote',glossFa:'آن مردان نوشتند',glossUr:'ان مردوں نے لکھا',key:'hum'},
+  {pronoun:'هِيَ',pronounLatin:'hiya',slot:'3rd · feminine singular',slotFa:'غایب · مؤنث مفرد',slotUr:'غائب · مؤنث واحد',verb:'كَتَبَتْ',verbLatin:'katabat',gloss:'she wrote',glossFa:'او نوشت',glossUr:'اس نے لکھا',key:'hiya'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · feminine dual',slotFa:'غایب · مؤنث مثنّی',slotUr:'غائب · مؤنث تثنیہ',verb:'كَتَبَتَا',verbLatin:'katabatā',gloss:'they two (fem.) wrote',glossFa:'آن دو زن نوشتند',glossUr:'ان دونوں عورتوں نے لکھا',key:'huma-f'},
+  {pronoun:'هُنَّ',pronounLatin:'hunna',slot:'3rd · feminine plural',slotFa:'غایب · مؤنث جمع',slotUr:'غائب · مؤنث جمع',verb:'كَتَبْنَ',verbLatin:'katabna',gloss:'they (fem.) wrote',glossFa:'آن زنان نوشتند',glossUr:'ان عورتوں نے لکھا',key:'hunna'},
+  {pronoun:'أَنْتَ',pronounLatin:'anta',slot:'2nd · masculine singular',slotFa:'مخاطب · مذکر مفرد',slotUr:'مخاطب · مذکر واحد',verb:'كَتَبْتَ',verbLatin:'katabta',gloss:'you (masc. sg.) wrote',glossFa:'تو (مذکر) نوشتی',glossUr:'تم (مذکر) نے لکھا',key:'anta'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · masculine dual',slotFa:'مخاطب · مذکر مثنّی',slotUr:'مخاطب · مذکر تثنیہ',verb:'كَتَبْتُمَا',verbLatin:'katabtumā',gloss:'you two (masc.) wrote',glossFa:'شما دو مرد نوشتید',glossUr:'تم دونوں مردوں نے لکھا',key:'antuma-m'},
+  {pronoun:'أَنْتُمْ',pronounLatin:'antum',slot:'2nd · masculine plural',slotFa:'مخاطب · مذکر جمع',slotUr:'مخاطب · مذکر جمع',verb:'كَتَبْتُمْ',verbLatin:'katabtum',gloss:'you (masc. pl.) wrote',glossFa:'شما مردان نوشتید',glossUr:'تم مردوں نے لکھا',key:'antum'},
+  {pronoun:'أَنْتِ',pronounLatin:'anti',slot:'2nd · feminine singular',slotFa:'مخاطب · مؤنث مفرد',slotUr:'مخاطب · مؤنث واحد',verb:'كَتَبْتِ',verbLatin:'katabti',gloss:'you (fem. sg.) wrote',glossFa:'تو (مؤنث) نوشتی',glossUr:'تم (مؤنث) نے لکھا',key:'anti'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · feminine dual',slotFa:'مخاطب · مؤنث مثنّی',slotUr:'مخاطب · مؤنث تثنیہ',verb:'كَتَبْتُمَا',verbLatin:'katabtumā',gloss:'you two (fem.) wrote',glossFa:'شما دو زن نوشتید',glossUr:'تم دونوں عورتوں نے لکھا',key:'antuma-f'},
+  {pronoun:'أَنْتُنَّ',pronounLatin:'antunna',slot:'2nd · feminine plural',slotFa:'مخاطب · مؤنث جمع',slotUr:'مخاطب · مؤنث جمع',verb:'كَتَبْتُنَّ',verbLatin:'katabtunna',gloss:'you (fem. pl.) wrote',glossFa:'شما زنان نوشتید',glossUr:'تم عورتوں نے لکھا',key:'antunna'},
+  {pronoun:'أَنَا',pronounLatin:'anā',slot:'1st · singular',slotFa:'متکلم · مفرد',slotUr:'متکلم · واحد',verb:'كَتَبْتُ',verbLatin:'katabtu',gloss:'I wrote',glossFa:'من نوشتم',glossUr:'میں نے لکھا',key:'ana'},
+  {pronoun:'نَحْنُ',pronounLatin:'naḥnu',slot:'1st · plural',slotFa:'متکلم · جمع',slotUr:'متکلم · جمع',verb:'كَتَبْنَا',verbLatin:'katabnā',gloss:'we wrote',glossFa:'ما نوشتیم',glossUr:'ہم نے لکھا',key:'nahnu'},
+] as const
+
+const pastPronounPractice = [
+  {verb:'كَتَبُوا',latin:'katabū',answer:'hum'},
+  {verb:'كَتَبْنَ',latin:'katabna',answer:'hunna'},
+  {verb:'كَتَبَتَا',latin:'katabatā',answer:'huma-f'},
+  {verb:'كَتَبْتِ',latin:'katabti',answer:'anti'},
+  {verb:'كَتَبْتُنَّ',latin:'katabtunna',answer:'antunna'},
+  {verb:'كَتَبْنَا',latin:'katabnā',answer:'nahnu'},
+]
+const pastPronounChoices = [
+  {value:'huwa',label:'هُوَ · huwa'},
+  {value:'huma-m',label:'هُمَا · masculine dual'},
+  {value:'hum',label:'هُمْ · hum'},
+  {value:'hiya',label:'هِيَ · hiya'},
+  {value:'huma-f',label:'هُمَا · feminine dual'},
+  {value:'hunna',label:'هُنَّ · hunna'},
+  {value:'anta',label:'أَنْتَ · anta'},
+  {value:'antuma-m',label:'أَنْتُمَا · masculine dual'},
+  {value:'antum',label:'أَنْتُمْ · antum'},
+  {value:'anti',label:'أَنْتِ · anti'},
+  {value:'antuma-f',label:'أَنْتُمَا · feminine dual'},
+  {value:'antunna',label:'أَنْتُنَّ · antunna'},
+  {value:'ana',label:'أَنَا · anā'},
+  {value:'nahnu',label:'نَحْنُ · naḥnu'},
+]
+
+function LessonSevenPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonSevenCopy[language]
+  const rtl = language !== 'en'
+  const score = pastPronounPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/06" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 03 · LESSON 07</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
+        <h1>Past active: <em>14 forms</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الصِّيَغُ الْأَرْبَعَ عَشْرَةَ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-ṣīghāt al-arbaʿ ʿashrah</div>}
+          <h2 lang="ar" dir="rtl">الْمَاضِي الْمَعْرُوفُ</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <h2>كَتَبَ · kataba · he wrote</h2>
+          <p lang={language}>{copy.orderNote}</p>
+          <div className="conjugation-grid">
+            <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Past active form</span><span>Meaning</span></div>
+            {pastActiveForms.map((item,index)=><div className="conjugation-row" key={index}>
+              <span className="conjugation-index">{index+1}</span>
+              <div className="conjugation-pronoun"><b lang="ar" dir="rtl">{item.pronoun}</b>{showTransliteration&&<small>{item.pronounLatin}</small>}</div>
+              <span className="conjugation-slot">{language==='fa'?item.slotFa:language==='ur'?item.slotUr:item.slot}</span>
+              <div className="conjugation-verb"><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.verbLatin}</small>}</div>
+              <span className="conjugation-gloss">{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</span>
+            </div>)}
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">TWO IMPORTANT DETAILS</span>
+          <h2>Do not merge the dual forms</h2>
+          <div className="warning-card"><strong>Third-person dual</strong><p lang={language}>{copy.dualNote}</p></div>
+          <div className="warning-card"><strong>Masculine and feminine plural</strong><p lang={language}>{copy.confusion}</p></div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE PRONOUN</span>
+          <h2>Read the ending</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="pronoun-practice-list">
+            {pastPronounPractice.map((item,index)=><div className="pronoun-practice-row" key={item.verb}>
+              <div><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the pronoun for '+item.verb} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose pronoun…</option>
+                {pastPronounChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{pastPronounChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==pastPronounPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {pastPronounPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://www.fivesuper.com/support/downloads/Arabic-Grammar-in-Context_Mohammad-T.-Alhawary-%282016%29.pdf" target="_blank" rel="noreferrer">Mohammad T. Alhawary, Arabic Grammar in Context (2016), section on the past/perfective and its conjugation endings.</a></li>
+            <li><a href="https://www.ghazali.org/books/haywood-65.pdf" target="_blank" rel="noreferrer">Haywood and Nahmad, A New Arabic Grammar, section on personal pronouns and basic verb forms.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/06">← Lesson 6: Six Abwāb</a><span>Next: present active (المضارع المعروف)</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Past active</li><li>14-slot order</li><li>Third person</li><li>Second person</li><li>First person</li><li>Dual and plural distinctions</li><li>Pronoun practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>Memorise the six ghāʾib forms first, then the six mukhāṭab forms, and finish with anā and naḥnu.</p></div></aside>
     </div>
   </main>
 }
@@ -1122,6 +1306,7 @@ export default function App() {
   if (route === '#/lesson/04') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 04</span></header><LessonFourPage/></div>
   if (route === '#/lesson/05') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 05</span></header><LessonFivePage/></div>
   if (route === '#/lesson/06') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 06</span></header><LessonSixPage/></div>
+  if (route === '#/lesson/07') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 07</span></header><LessonSevenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
