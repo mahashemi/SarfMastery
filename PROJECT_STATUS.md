@@ -273,7 +273,12 @@ For every lesson:
 - [ ] PWA install experience.
 - [ ] Privacy-conscious cloud sync only if justified.
 
-## 12. Session log
+## 12. GitHub issues
+- [ ] [#1 Verify first GitHub Pages build and responsive UI checkpoint](https://github.com/mahashemi/SarfMastery/issues/1)
+- [ ] [#2 Implement Unit 1, Lesson 1 as a complete beginner lesson](https://github.com/mahashemi/SarfMastery/issues/2)
+
+## 13. Session log
 | Date | Change | Verification |
 |---|---|---|
 | 2026-11-05 | Initial responsive app scaffold and project documentation committed | Build/deployment not yet verified |
+| 2026-11-05 | GitHub Pages workflow adjusted; two priority issues opened | Awaiting GitHub Actions run and Pages settings verification |
