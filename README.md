@@ -27,7 +27,7 @@ The repository is configured to deploy through GitHub Actions. In Settings → P
 - Absolute beginner entry point; no assumed Sarf knowledge.
 - Traditional Hawza progression, modern accessible explanations.
 - Fully vowelled Arabic examples, transliteration, and pronunciation support.
-- English primary; Persian and Urdu support planned.
+- English primary; core explanations in Lessons 1–3 include Persian and Urdu; full UI translation and fluent review remain pending.
 - Qur'an and hadith citations must be verified. Morphology is not tafsir.
 - No personal-name branding in the app.
 - Original explanations and exercises; do not reproduce copyrighted textbook chapters.
