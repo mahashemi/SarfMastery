@@ -2613,6 +2613,9 @@ export default function App() {
               <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 5 · Mujarrad and Mazīd</strong><span>Days 31–38</span></div><div className="lesson-library-list">
                 <a className="lesson-library-link" href="#/lesson/13"><span>13</span><div><strong>Triliteral forms I–X</strong><small>Root, pattern, augmentation, and quadriliteral forms</small></div><ChevronRight size={16}/></a>
               </div></div>
+              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 6 · Derived Nouns</strong><span>Days 39–45</span></div><div className="lesson-library-list">
+                <a className="lesson-library-link" href="#/lesson/14"><span>14</span><div><strong>The maṣdar</strong><small>Action nouns and verbal noun patterns</small></div><ChevronRight size={16}/></a>
+              </div></div>
             </div>
           </div>
         </section>
