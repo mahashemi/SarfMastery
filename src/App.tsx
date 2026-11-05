@@ -206,24 +206,178 @@ function LessonPage() {
             <li><a href="https://corpus.quran.com/documentation/morphologicalfeatures.jsp" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — documentation on roots, lemmas, and morphological features.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/">Return to the learning path</a><span>{copy.next}</span></div>
+        <div className="lesson-end"><a href="#/">Return to the learning path</a><a className="next-lesson-link" href="#/lesson/02">{copy.next} →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What Sarf studies</li><li>Sarf vs Nahw</li><li>Root letters and patterns</li><li>A first word family</li><li>Quick practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>Take your time. Read the Arabic aloud, then say the explanation without looking.</p></div></aside>
     </div>
   </main>
 }
 
+
+const lessonTwoCopy = {
+  en: {
+    lead: 'Every Arabic word belongs to a category. Before we conjugate verbs, we need to recognise the three basic kinds of word used in traditional Arabic grammar.',
+    objective: 'You will learn the names of the three categories, recognise their basic meanings, and classify familiar examples.',
+    definition: 'In this lesson, كَلِمَةٌ (kalimah) means a single word. Traditional Arabic grammar classifies words into three broad kinds: اِسْمٌ, فِعْلٌ, and حَرْفٌ.',
+    ism: 'An ism gives a meaning without tying that meaning to a time. It includes much more than people’s names: objects, people, qualities, ideas, pronouns, and many other nominal words.',
+    fiil: 'A fiʿl gives a meaning connected with time. A verb may describe an action or a state. Arabic verbs have different forms, including past, present/imperfect, and command.',
+    harf: 'A ḥarf in this classification is a particle or function word. Its role becomes clear through its relationship with other words. Examples include “in”, “from”, and “to”.',
+    ismExample: 'كِتَابٌ — a book · بَيْتٌ — a house · مَاءٌ — water',
+    fiilExample: 'كَتَبَ — he wrote · يَكْتُبُ — he writes · اُكْتُبْ — write!',
+    harfExample: 'فِي — in · مِنْ — from · إِلَى — to',
+    warningTitle: 'Two common confusions',
+    letterWarning: 'Here حَرْفٌ means a grammatical particle, not one of the alphabet letters such as ب or ت. The same Arabic word can be used in different technical senses; context tells you which sense is intended.',
+    nameWarning: 'اِسْمٌ does not mean only a person’s proper name. كِتَابٌ (book), بَيْتٌ (house), and جَمِيلٌ (beautiful) are also examples of ism.',
+    wordSentence: 'A كَلِمَةٌ is one word. A جُمْلَةٌ is a sentence. For example, كَتَبَ is one word; كَتَبَ مُحَمَّدٌ (“Muhammad wrote”) is a complete sentence.',
+    practicePrompt: 'Classify each Arabic word as an اِسْمٌ (noun), فِعْلٌ (verb), or حَرْفٌ (particle).',
+    correct: 'Correct classification.',
+    incorrect: 'Review this one. The correct category is',
+    score: 'Your score',
+    check: 'Check classifications',
+    teach: 'Explain all three categories without looking at the lesson. Then explain why حَرْفٌ in this lesson does not mean an alphabet letter.',
+    summary: 'Remember: ism is not tied to time; fiʿl is connected with time; ḥarf functions through its relationship with other words. These are starting definitions—later lessons will refine them.',
+  },
+  fa: {
+    lead: 'هر واژهٔ عربی در یکی از دسته‌های دستوری قرار می‌گیرد. پیش از صرف‌کردن فعل‌ها، باید سه نوع اصلی واژه را در دستور سنتی عربی بشناسیم.',
+    objective: 'نام سه دسته را می‌آموزید، معنای پایهٔ آن‌ها را تشخیص می‌دهید و نمونه‌های آشنا را دسته‌بندی می‌کنید.',
+    definition: 'در این درس، كَلِمَةٌ (kalimah) به معنای یک واژه است. در دستور سنتی عربی، واژه‌ها به سه دستهٔ کلی تقسیم می‌شوند: اِسْمٌ، فِعْلٌ و حَرْفٌ.',
+    ism: 'اسم معنا را می‌رساند، بی‌آن‌که آن را به زمان پیوند دهد. اسم فقط نام اشخاص نیست؛ اشیا، افراد، ویژگی‌ها، مفاهیم، ضمیرها و بسیاری از واژه‌های اسمی را دربرمی‌گیرد.',
+    fiil: 'فعل معنایی مرتبط با زمان می‌رساند. فعل می‌تواند بر انجام کار یا بر حالت دلالت کند. در عربی صورت‌های گوناگونی مانند ماضی، مضارع و امر دارد.',
+    harf: 'حرف در این دسته‌بندی، واژه‌ای دستوری و پیونددهنده است که نقش آن در ارتباط با واژه‌های دیگر روشن می‌شود؛ مانند «در»، «از» و «به».',
+    ismExample: 'كِتَابٌ — کتاب · بَيْتٌ — خانه · مَاءٌ — آب',
+    fiilExample: 'كَتَبَ — او نوشت · يَكْتُبُ — او می‌نویسد · اُكْتُبْ — بنویس!',
+    harfExample: 'فِي — در · مِنْ — از · إِلَى — به / سوی',
+    warningTitle: 'دو اشتباه رایج',
+    letterWarning: 'در این تقسیم‌بندی، حَرْفٌ به معنای حرفِ الفبا مانند ب یا ت نیست؛ بلکه منظور یک واژهٔ دستوری یا حرفِ معناست. واژهٔ عربی ممکن است در اصطلاحات مختلف معناهای فنی متفاوتی داشته باشد.',
+    nameWarning: 'اِسْمٌ فقط به معنای نام خاصِ یک شخص نیست. كِتَابٌ (کتاب)، بَيْتٌ (خانه) و جَمِيلٌ (زیبا) نیز اسم‌اند.',
+    wordSentence: 'كَلِمَةٌ یعنی یک واژه و جُمْلَةٌ یعنی جمله. برای نمونه، كَتَبَ یک واژه است؛ كَتَبَ مُحَمَّدٌ («محمد نوشت») یک جملهٔ کامل است.',
+    practicePrompt: 'هر واژهٔ عربی را در یکی از سه دستهٔ اِسْمٌ، فِعْلٌ یا حَرْفٌ قرار دهید.',
+    correct: 'دسته‌بندی درست است.',
+    incorrect: 'این مورد را دوباره بررسی کنید. دستهٔ درست:',
+    score: 'امتیاز شما',
+    check: 'بررسی دسته‌بندی‌ها',
+    teach: 'بدون نگاه‌کردن به درس، هر سه دسته را توضیح دهید. سپس بگویید چرا حَرْفٌ در این درس به معنای حرف الفبا نیست.',
+    summary: 'به یاد بسپارید: اسم به زمان وابسته نیست؛ فعل با زمان ارتباط دارد؛ حرف از راه ارتباط با واژه‌های دیگر نقش خود را نشان می‌دهد. این تعریف‌ها آغاز راه‌اند و در درس‌های بعد دقیق‌تر می‌شوند.',
+  },
+  ur: {
+    lead: 'ہر عربی لفظ کسی نہ کسی نحوی قسم سے تعلق رکھتا ہے۔ افعال کی گردان سیکھنے سے پہلے ہمیں عربی قواعد کی تین بنیادی اقسام پہچاننی چاہییں۔',
+    objective: 'آپ تینوں اقسام کے نام، ان کے بنیادی مفہوم اور مانوس مثالوں کی درجہ بندی سیکھیں گے۔',
+    definition: 'اس سبق میں كَلِمَةٌ (kalimah) سے مراد ایک لفظ ہے۔ روایتی عربی قواعد میں الفاظ کی تین بنیادی قسمیں ہیں: اِسْمٌ، فِعْلٌ اور حَرْفٌ۔',
+    ism: 'اسم ایسا معنی بتاتا ہے جو کسی زمانے کے ساتھ مخصوص نہیں ہوتا۔ اسم صرف کسی شخص کے نام تک محدود نہیں؛ اشیا، افراد، صفات، تصورات، ضمیر اور بہت سے دوسرے اسمی الفاظ بھی اس میں شامل ہیں۔',
+    fiil: 'فعل ایسا معنی بتاتا ہے جو زمانے سے تعلق رکھتا ہے۔ فعل کسی کام یا حالت کو ظاہر کر سکتا ہے۔ عربی میں ماضی، مضارع اور امر سمیت اس کی مختلف صورتیں ہیں۔',
+    harf: 'اس تقسیم میں حرف سے مراد نحوی particle یا ایسا لفظ ہے جس کا کردار دوسرے الفاظ کے ساتھ تعلق سے واضح ہوتا ہے؛ جیسے ’’میں‘‘، ’’سے‘‘ اور ’’کی طرف‘‘۔',
+    ismExample: 'كِتَابٌ — کتاب · بَيْتٌ — گھر · مَاءٌ — پانی',
+    fiilExample: 'كَتَبَ — اس نے لکھا · يَكْتُبُ — وہ لکھتا ہے · اُكْتُبْ — لکھو!',
+    harfExample: 'فِي — میں · مِنْ — سے · إِلَى — کی طرف',
+    warningTitle: 'دو عام غلط فہمیاں',
+    letterWarning: 'یہاں حَرْفٌ سے مراد ب یا ت جیسے حروفِ تہجی نہیں، بلکہ ایک نحوی particle ہے۔ عربی میں ایک ہی لفظ مختلف علمی اصطلاحات میں مختلف معنی رکھ سکتا ہے؛ سیاق سے مراد واضح ہوتی ہے۔',
+    nameWarning: 'اِسْمٌ صرف کسی شخص کے خاص نام کو نہیں کہتے۔ كِتَابٌ (کتاب)، بَيْتٌ (گھر) اور جَمِيلٌ (خوبصورت) بھی اسم ہیں۔',
+    wordSentence: 'كَلِمَةٌ کا مطلب ایک لفظ اور جُمْلَةٌ کا مطلب جملہ ہے۔ مثال کے طور پر كَتَبَ ایک لفظ ہے؛ كَتَبَ مُحَمَّدٌ (محمد نے لکھا) ایک مکمل جملہ ہے۔',
+    practicePrompt: 'ہر عربی لفظ کو اِسْمٌ (اسم)، فِعْلٌ (فعل) یا حَرْفٌ (حرف) میں تقسیم کریں۔',
+    correct: 'درست درجہ بندی۔',
+    incorrect: 'اس مثال کو دوبارہ دیکھیں۔ درست قسم ہے:',
+    score: 'آپ کا اسکور',
+    check: 'درجہ بندی جانچیں',
+    teach: 'سبق دیکھے بغیر تینوں اقسام کی وضاحت کریں۔ پھر بتائیں کہ اس سبق میں حَرْفٌ سے مراد حرفِ تہجی کیوں نہیں ہے۔',
+    summary: 'یاد رکھیں: اسم زمانے کے ساتھ مخصوص نہیں؛ فعل زمانے سے تعلق رکھتا ہے؛ حرف کا کردار دوسرے الفاظ سے تعلق میں ظاہر ہوتا ہے۔ یہ ابتدائی تعریفیں ہیں، آگے چل کر مزید واضح ہوں گی۔',
+  },
+} as const
+
+const classificationExamples = [
+  {arabic:'كِتَابٌ',translit:'kitābun',gloss:'a book',answer:'ism',label:'اِسْمٌ'},
+  {arabic:'كَتَبَ',translit:'kataba',gloss:'he wrote',answer:'fiil',label:'فِعْلٌ'},
+  {arabic:'فِي',translit:'fī',gloss:'in',answer:'harf',label:'حَرْفٌ'},
+  {arabic:'يَكْتُبُ',translit:'yaktubu',gloss:'he writes',answer:'fiil',label:'فِعْلٌ'},
+  {arabic:'مَاءٌ',translit:'māʾun',gloss:'water',answer:'ism',label:'اِسْمٌ'},
+  {arabic:'إِلَى',translit:'ilā',gloss:'to / towards',answer:'harf',label:'حَرْفٌ'},
+] as const
+
+function LessonTwoPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonTwoCopy[language]
+  const rtl = language !== 'en'
+  const score = classificationExamples.filter((item,index)=>answers[index]===item.answer).length
+  const choices = [{value:'ism',label:'اِسْمٌ · Ism'},{value:'fiil',label:'فِعْلٌ · Fiʿl'},{value:'harf',label:'حَرْفٌ · Ḥarf'}]
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/01" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 01 · LESSON 02</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 01 · FOUNDATIONS</div>
+        <h1>Three kinds of <em>word</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">أَقْسَامُ الْكَلِمَةِ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">aqsām al-kalimah · the categories of a word</div>}
+          <h2>What is a كَلِمَةٌ?</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE THREE CATEGORIES</span>
+          <div className="category-grid">
+            <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small lang="ar" dir="rtl">{copy.ismExample}</small></div>
+            <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small lang="ar" dir="rtl">{copy.fiilExample}</small></div>
+            <div className="category-card"><div className="category-number">03</div><b lang="ar" dir="rtl">حَرْفٌ</b>{showTransliteration&&<span dir="ltr">ḥarf</span>}<h3>Particle</h3><p lang={language}>{copy.harf}</p><small lang="ar" dir="rtl">{copy.harfExample}</small></div>
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">DON'T MIX THESE UP</span>
+          <h2>{copy.warningTitle}</h2>
+          <div className="warning-card"><strong>حَرْفٌ is not an alphabet letter</strong><p lang={language}>{copy.letterWarning}</p></div>
+          <div className="warning-card"><strong>اِسْمٌ is more than a name</strong><p lang={language}>{copy.nameWarning}</p></div>
+          <h3 className="subheading">Word or sentence?</h3><p lang={language}>{copy.wordSentence}</p>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · CLASSIFY THE WORD</span>
+          <h2>Can you recognise the category?</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="classification-list">
+            {classificationExamples.map((item,index)=><div className="classification-row" key={item.arabic}>
+              <div className="classification-word"><b lang="ar" dir="rtl">{item.arabic}</b>{showTransliteration&&<span dir="ltr">{item.translit}</span>}<small>{item.gloss}</small></div>
+              <div className="classification-choices" role="group" aria-label={item.arabic+' category'}>
+                {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
+              </div>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b lang="ar" dir="rtl">{item.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==classificationExamples.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {classificationExamples.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/01">← Lesson 1: What is Sarf?</a><span>Next: learn more about the اِسْمٌ and its signs</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What is a kalimah?</li><li>Ism</li><li>Fiʿl</li><li>Ḥarf</li><li>Word vs sentence</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>For each example, ask: does it name something, show an event linked to time, or connect words?</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
-  const [lessonOpen,setLessonOpen] = useState(window.location.hash === '#/lesson/01')
+  const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
-    const syncRoute=()=>setLessonOpen(window.location.hash === '#/lesson/01')
+    const syncRoute=()=>setRoute(window.location.hash)
     window.addEventListener('hashchange',syncRoute)
     return ()=>window.removeEventListener('hashchange',syncRoute)
   },[])
   const [active,setActive] = useState('Learn')
   const [menu,setMenu] = useState(false)
   const [translit,setTranslit] = useState(true)
-  if (lessonOpen) return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 01</span></header><LessonPage/></div>
+  if (route === '#/lesson/01') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 01</span></header><LessonPage/></div>\n  if (route === '#/lesson/02') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 02</span></header><LessonTwoPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
