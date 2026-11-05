@@ -284,12 +284,12 @@ const lessonTwoCopy = {
 } as const
 
 const classificationExamples = [
-  {arabic:'كِتَابٌ',translit:'kitābun',gloss:'a book',answer:'ism',label:'اِسْمٌ'},
-  {arabic:'كَتَبَ',translit:'kataba',gloss:'he wrote',answer:'fiil',label:'فِعْلٌ'},
-  {arabic:'فِي',translit:'fī',gloss:'in',answer:'harf',label:'حَرْفٌ'},
-  {arabic:'يَكْتُبُ',translit:'yaktubu',gloss:'he writes',answer:'fiil',label:'فِعْلٌ'},
-  {arabic:'مَاءٌ',translit:'māʾun',gloss:'water',answer:'ism',label:'اِسْمٌ'},
-  {arabic:'إِلَى',translit:'ilā',gloss:'to / towards',answer:'harf',label:'حَرْفٌ'},
+  {arabic:'كِتَابٌ',translit:'kitābun',gloss:'a book',glossFa:'کتاب',glossUr:'کتاب',answer:'ism',label:'اِسْمٌ'},
+  {arabic:'كَتَبَ',translit:'kataba',gloss:'he wrote',glossFa:'او نوشت',glossUr:'اس نے لکھا',answer:'fiil',label:'فِعْلٌ'},
+  {arabic:'فِي',translit:'fī',gloss:'in',glossFa:'در',glossUr:'میں',answer:'harf',label:'حَرْفٌ'},
+  {arabic:'يَكْتُبُ',translit:'yaktubu',gloss:'he writes',glossFa:'او می‌نویسد',glossUr:'وہ لکھتا ہے',answer:'fiil',label:'فِعْلٌ'},
+  {arabic:'مَاءٌ',translit:'māʾun',gloss:'water',glossFa:'آب',glossUr:'پانی',answer:'ism',label:'اِسْمٌ'},
+  {arabic:'إِلَى',translit:'ilā',gloss:'to / towards',glossFa:'به سوی',glossUr:'کی طرف',answer:'harf',label:'حَرْفٌ'},
 ] as const
 
 function LessonTwoPage() {
@@ -326,9 +326,9 @@ function LessonTwoPage() {
         <section className="lesson-block">
           <span className="section-kicker">THE THREE CATEGORIES</span>
           <div className="category-grid">
-            <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small lang="ar" dir="rtl">{copy.ismExample}</small></div>
-            <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small lang="ar" dir="rtl">{copy.fiilExample}</small></div>
-            <div className="category-card"><div className="category-number">03</div><b lang="ar" dir="rtl">حَرْفٌ</b>{showTransliteration&&<span dir="ltr">ḥarf</span>}<h3>Particle</h3><p lang={language}>{copy.harf}</p><small lang="ar" dir="rtl">{copy.harfExample}</small></div>
+            <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small dir={rtl?'rtl':'ltr'}>{copy.ismExample}</small></div>
+            <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small dir={rtl?'rtl':'ltr'}>{copy.fiilExample}</small></div>
+            <div className="category-card"><div className="category-number">03</div><b lang="ar" dir="rtl">حَرْفٌ</b>{showTransliteration&&<span dir="ltr">ḥarf</span>}<h3>Particle</h3><p lang={language}>{copy.harf}</p><small dir={rtl?'rtl':'ltr'}>{copy.harfExample}</small></div>
           </div>
         </section>
         <section className="lesson-block">
@@ -344,7 +344,7 @@ function LessonTwoPage() {
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="classification-list">
             {classificationExamples.map((item,index)=><div className="classification-row" key={item.arabic}>
-              <div className="classification-word"><b lang="ar" dir="rtl">{item.arabic}</b>{showTransliteration&&<span dir="ltr">{item.translit}</span>}<small>{item.gloss}</small></div>
+              <div className="classification-word"><b lang="ar" dir="rtl">{item.arabic}</b>{showTransliteration&&<span dir="ltr">{item.translit}</span>}<small>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</small></div>
               <div className="classification-choices" role="group" aria-label={item.arabic+' category'}>
                 {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
               </div>
