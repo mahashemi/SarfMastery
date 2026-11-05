@@ -1652,6 +1652,185 @@ function LessonNinePage() {
   </main>
 }
 
+
+const lessonTenCopy = {
+  en: {
+    lead: 'The passive muḍāriʿ describes an ongoing or future action without naming its doer. For a sound Form I verb, its basic pattern is يُفْعَلُ.',
+    objective: 'Recognise the passive muḍāriʿ pattern, compare it with the active present, and read its 14-slot conjugation.',
+    definition: 'الْمُضَارِعُ الْمَجْهُولُ is the passive imperfect. The agent is not expressed; the affected participant takes the role of nāʾib al-fāʿil. Like the active muḍāriʿ, it may refer to present or future action depending on context.',
+    pattern: 'For a sound Form I verb, the basic passive muḍāriʿ pattern is يُفْعَلُ. The muḍāriʿ prefix carries ḍammah, and the second root consonant carries fatḥah. Person/number endings follow the same 14-slot order.',
+    comparison: 'Compare يَنْصُرُ (yanṣuru, he helps) with يُنْصَرُ (yunṣaru, he is helped). The root ن ص ر is unchanged; the vowel pattern changes the voice.',
+    overlap: 'Some surface forms are shared by more than one slot. تُنْصَرُ can mean “she is helped” (هِيَ) or “you are helped” (أَنْتَ). تُنْصَرَانِ appears for feminine third-person dual and both second-person dual slots.',
+    scope: 'This table shows the default indicative (marfūʿ) forms. Nasb and jazm after particles such as لَنْ and لَمْ, as well as passive forms of derived and weak verbs, are studied later.',
+    practicePrompt: 'Choose the pronoun that matches each selected passive-muḍāriʿ form.',
+    correct: 'Correct pronoun.',
+    incorrect: 'Check the prefix and ending. The matching pronoun is',
+    score: 'Your score',
+    check: 'Check passive forms',
+    teach: 'Explain the difference between يَنْصُرُ and يُنْصَرُ. Then identify the four passive-muḍāriʿ prefixes and explain why some forms need context.',
+    summary: 'The passive muḍāriʿ of a sound Form I verb follows يُفْعَلُ. Read the prefix and ending, remember the shared surface forms, and identify the nāʾib al-fāʿil in a full sentence.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'مضارع مجهول عملی در حال انجام یا آینده را بدون نام‌بردن از انجام‌دهنده بیان می‌کند. وزن پایهٔ آن در فعل ثلاثی مجرد صحیح يُفْعَلُ است.',
+    objective: 'وزن مضارع مجهول را بشناسید، آن را با مضارع معلوم مقایسه کنید و جدول ۱۴ جایگاهی آن را بخوانید.',
+    definition: 'الْمُضَارِعُ الْمَجْهُولُ یعنی مضارع مجهول. فاعل بیان نمی‌شود و متأثر از عمل در جایگاه نائب فاعل قرار می‌گیرد. مانند مضارع معلوم، با توجه به بافت می‌تواند بر حال یا آینده دلالت کند.',
+    pattern: 'در فعل ثلاثی مجرد صحیح، وزن پایهٔ مضارع مجهول يُفْعَلُ است. پیشوند مضارع ضمه و حرف دوم ریشه فتحه می‌گیرد. پایان‌های شخص و شمار همان ترتیب ۱۴ جایگاهی را دنبال می‌کنند.',
+    comparison: 'يَنْصُرُ (او یاری می‌کند) را با يُنْصَرُ (به او یاری می‌شود) مقایسه کنید. ریشهٔ ن ص ر ثابت است؛ تغییر حرکت‌ها، معلوم یا مجهول بودن را نشان می‌دهد.',
+    overlap: 'برخی صورت‌های ظاهری مشترک‌اند. تُنْصَرُ می‌تواند برای هِيَ به معنای «او (زن) یاری می‌شود» یا برای أَنْتَ به معنای «تو (مذکر) یاری می‌شوی» باشد. تُنْصَرَانِ نیز برای مثنای غایب مؤنث و هر دو جایگاه مثنای مخاطب می‌آید.',
+    scope: 'این جدول صورت‌های پیش‌فرض مرفوع را نشان می‌دهد. نصب و جزم پس از حروفی مانند لَنْ و لَمْ و نیز صورت مجهول افعال مزید و معتل را بعداً می‌آموزیم.',
+    practicePrompt: 'ضمیر مناسب هر صورت منتخب مضارع مجهول را انتخاب کنید.',
+    correct: 'ضمیر درست است.',
+    incorrect: 'پیشوند و پسوند را بررسی کنید. ضمیر متناظر:',
+    score: 'امتیاز شما',
+    check: 'بررسی صورت‌های مجهول',
+    teach: 'تفاوت يَنْصُرُ و يُنْصَرُ را توضیح دهید. سپس چهار پیشوند مضارع مجهول را نام ببرید و بگویید چرا برخی صورت‌ها به بافت نیاز دارند.',
+    summary: 'مضارع مجهول فعل ثلاثی مجرد صحیح بر وزن يُفْعَلُ است. پیشوند و پسوند را بخوانید، صورت‌های مشترک را به یاد داشته باشید و نائب فاعل را در جمله پیدا کنید.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'مضارع مجہول جاری یا مستقبل عمل کو کام کرنے والے کا نام بتائے بغیر ظاہر کرتا ہے۔ صحیح ثلاثی مجرد میں اس کا بنیادی وزن يُفْعَلُ ہے۔',
+    objective: 'مضارع مجہول کا وزن پہچانیں، اسے مضارع معلوم سے ملائیں، اور اس کی چودہ خانوں والی جدول پڑھیں۔',
+    definition: 'الْمُضَارِعُ الْمَجْهُولُ مضارع مجہول ہے۔ فاعل بیان نہیں ہوتا اور جس پر عمل واقع ہو وہ نائب فاعل بنتا ہے۔ مضارع معلوم کی طرح سیاق کے مطابق حال یا مستقبل کا معنی دے سکتا ہے۔',
+    pattern: 'صحیح ثلاثی مجرد کے مضارع مجہول کا بنیادی وزن يُفْعَلُ ہے۔ مضارع کے سابقے پر پیش اور مادّے کے دوسرے حرف پر زبر آتی ہے۔ شخص اور تعداد کے لاحقے وہی چودہ خانوں والی ترتیب رکھتے ہیں۔',
+    comparison: 'يَنْصُرُ (وہ مدد کرتا ہے) کا موازنہ يُنْصَرُ (اس کی مدد کی جاتی ہے) سے کریں۔ مادّہ ن ص ر وہی ہے؛ حرکات کی تبدیلی معلوم اور مجہول میں فرق کرتی ہے۔',
+    overlap: 'کچھ ظاہری صورتیں مشترک ہوتی ہیں۔ تُنْصَرُ کا مطلب هِيَ کے لیے ’’وہ (عورت) مدد دی جاتی ہے‘‘ یا أَنْتَ کے لیے ’’تم (مرد) کی مدد کی جاتی ہے‘‘ ہو سکتا ہے۔ تُنْصَرَانِ غائب مؤنث تثنیہ اور مخاطب تثنیہ کے دونوں خانوں میں آتا ہے۔',
+    scope: 'یہ جدول عام حالتِ رفع کی صورتیں دکھاتی ہے۔ لَنْ اور لَمْ جیسے حروف کے بعد نصب و جزم اور مزید و معتل افعال کے مجہول اوزان بعد میں پڑھیں گے۔',
+    practicePrompt: 'ہر منتخب مضارع مجہول کے لیے درست ضمیر منتخب کریں۔',
+    correct: 'درست ضمیر۔',
+    incorrect: 'سابقہ اور لاحقہ دیکھیں۔ متعلقہ ضمیر ہے:',
+    score: 'آپ کا اسکور',
+    check: 'مجہول صورتیں جانچیں',
+    teach: 'يَنْصُرُ اور يُنْصَرُ کا فرق بیان کریں۔ پھر مضارع مجہول کے چار سابقے بتائیں اور واضح کریں کہ بعض صورتوں میں سیاق کیوں ضروری ہے۔',
+    summary: 'صحیح ثلاثی مجرد کا مضارع مجہول يُفْعَلُ کے وزن پر ہوتا ہے۔ سابقہ اور لاحقہ دیکھیں، مشترک صورتیں یاد رکھیں، اور جملے میں نائب فاعل پہچانیں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const presentPassiveForms = [
+  {pronoun:'هُوَ',pronounLatin:'huwa',slot:'3rd · masculine singular',slotFa:'غایب · مذکر مفرد',slotUr:'غائب · مذکر واحد',verb:'يُنْصَرُ',verbLatin:'yunṣaru',gloss:'he is helped',glossFa:'به او یاری می‌شود',glossUr:'اس کی مدد کی جاتی ہے',key:'huwa'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · masculine dual',slotFa:'غایب · مذکر مثنّی',slotUr:'غائب · مذکر تثنیہ',verb:'يُنْصَرَانِ',verbLatin:'yunṣarāni',gloss:'they two (masc.) are helped',glossFa:'به آن دو مرد یاری می‌شود',glossUr:'ان دونوں مردوں کی مدد کی جاتی ہے',key:'huma-m'},
+  {pronoun:'هُمْ',pronounLatin:'hum',slot:'3rd · masculine plural',slotFa:'غایب · مذکر جمع',slotUr:'غائب · مذکر جمع',verb:'يُنْصَرُونَ',verbLatin:'yunṣarūna',gloss:'they (masc.) are helped',glossFa:'به آن مردان یاری می‌شود',glossUr:'ان مردوں کی مدد کی جاتی ہے',key:'hum'},
+  {pronoun:'هِيَ',pronounLatin:'hiya',slot:'3rd · feminine singular',slotFa:'غایب · مؤنث مفرد',slotUr:'غائب · مؤنث واحد',verb:'تُنْصَرُ',verbLatin:'tunṣaru',gloss:'she is helped',glossFa:'به او یاری می‌شود',glossUr:'اس کی مدد کی جاتی ہے',key:'hiya'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · feminine dual',slotFa:'غایب · مؤنث مثنّی',slotUr:'غائب · مؤنث تثنیہ',verb:'تُنْصَرَانِ',verbLatin:'tunṣarāni',gloss:'they two (fem.) are helped',glossFa:'به آن دو زن یاری می‌شود',glossUr:'ان دونوں عورتوں کی مدد کی جاتی ہے',key:'huma-f'},
+  {pronoun:'هُنَّ',pronounLatin:'hunna',slot:'3rd · feminine plural',slotFa:'غایب · مؤنث جمع',slotUr:'غائب · مؤنث جمع',verb:'يُنْصَرْنَ',verbLatin:'yunṣarna',gloss:'they (fem.) are helped',glossFa:'به آن زنان یاری می‌شود',glossUr:'ان عورتوں کی مدد کی جاتی ہے',key:'hunna'},
+  {pronoun:'أَنْتَ',pronounLatin:'anta',slot:'2nd · masculine singular',slotFa:'مخاطب · مذکر مفرد',slotUr:'مخاطب · مذکر واحد',verb:'تُنْصَرُ',verbLatin:'tunṣaru',gloss:'you (masc. sg.) are helped',glossFa:'به تو (مذکر) یاری می‌شود',glossUr:'تم (مرد) کی مدد کی جاتی ہے',key:'anta'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · masculine dual',slotFa:'مخاطب · مذکر مثنّی',slotUr:'مخاطب · مذکر تثنیہ',verb:'تُنْصَرَانِ',verbLatin:'tunṣarāni',gloss:'you two (masc.) are helped',glossFa:'به شما دو مرد یاری می‌شود',glossUr:'تم دونوں مردوں کی مدد کی جاتی ہے',key:'antuma-m'},
+  {pronoun:'أَنْتُمْ',pronounLatin:'antum',slot:'2nd · masculine plural',slotFa:'مخاطب · مذکر جمع',slotUr:'مخاطب · مذکر جمع',verb:'تُنْصَرُونَ',verbLatin:'tunṣarūna',gloss:'you (masc. pl.) are helped',glossFa:'به شما مردان یاری می‌شود',glossUr:'تم سب مردوں کی مدد کی جاتی ہے',key:'antum'},
+  {pronoun:'أَنْتِ',pronounLatin:'anti',slot:'2nd · feminine singular',slotFa:'مخاطب · مؤنث مفرد',slotUr:'مخاطب · مؤنث واحد',verb:'تُنْصَرِينَ',verbLatin:'tunṣarīna',gloss:'you (fem. sg.) are helped',glossFa:'به تو (مؤنث) یاری می‌شود',glossUr:'تم (عورت) کی مدد کی جاتی ہے',key:'anti'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · feminine dual',slotFa:'مخاطب · مؤنث مثنّی',slotUr:'مخاطب · مؤنث تثنیہ',verb:'تُنْصَرَانِ',verbLatin:'tunṣarāni',gloss:'you two (fem.) are helped',glossFa:'به شما دو زن یاری می‌شود',glossUr:'تم دونوں عورتوں کی مدد کی جاتی ہے',key:'antuma-f'},
+  {pronoun:'أَنْتُنَّ',pronounLatin:'antunna',slot:'2nd · feminine plural',slotFa:'مخاطب · مؤنث جمع',slotUr:'مخاطب · مؤنث جمع',verb:'تُنْصَرْنَ',verbLatin:'tunṣarna',gloss:'you (fem. pl.) are helped',glossFa:'به شما زنان یاری می‌شود',glossUr:'تم عورتوں کی مدد کی جاتی ہے',key:'antunna'},
+  {pronoun:'أَنَا',pronounLatin:'anā',slot:'1st · singular',slotFa:'متکلم · مفرد',slotUr:'متکلم · واحد',verb:'أُنْصَرُ',verbLatin:'unṣaru',gloss:'I am helped',glossFa:'به من یاری می‌شود',glossUr:'میری مدد کی جاتی ہے',key:'ana'},
+  {pronoun:'نَحْنُ',pronounLatin:'naḥnu',slot:'1st · plural',slotFa:'متکلم · جمع',slotUr:'متکلم · جمع',verb:'نُنْصَرُ',verbLatin:'nunṣaru',gloss:'we are helped',glossFa:'به ما یاری می‌شود',glossUr:'ہماری مدد کی جاتی ہے',key:'nahnu'},
+] as const
+
+const passivePresentPractice = [
+  {verb:'يُنْصَرُونَ',latin:'yunṣarūna',answer:'hum'},
+  {verb:'يُنْصَرْنَ',latin:'yunṣarna',answer:'hunna'},
+  {verb:'تُنْصَرِينَ',latin:'tunṣarīna',answer:'anti'},
+  {verb:'تُنْصَرُونَ',latin:'tunṣarūna',answer:'antum'},
+  {verb:'أُنْصَرُ',latin:'unṣaru',answer:'ana'},
+  {verb:'نُنْصَرُ',latin:'nunṣaru',answer:'nahnu'},
+]
+
+function LessonTenPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonTenCopy[language]
+  const rtl = language !== 'en'
+  const score = passivePresentPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/09" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 03 · LESSON 10</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
+        <h1>Present passive: <em>14 forms</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْمُضَارِعُ الْمَجْهُولُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-muḍāriʿ al-majhūl</div>}
+          <h2>يُنْصَرُ · yunṣaru · he is helped</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">ACTIVE VS. PASSIVE</span>
+          <div className="compare-grid">
+            <div><span className="compare-label">ACTIVE · مَعْلُومٌ</span><b className="large-arabic" lang="ar" dir="rtl">يَنْصُرُ</b><p>yanṣuru · he helps</p></div>
+            <div><span className="compare-label">PASSIVE · مَجْهُولٌ</span><b className="large-arabic" lang="ar" dir="rtl">يُنْصَرُ</b><p>yunṣaru · he is helped</p></div>
+          </div>
+          <p lang={language}>{copy.pattern}</p>
+          <div className="caution-note" lang={language}>{copy.comparison}</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FOUR PREFIX LETTERS</span>
+          <div className="prefix-grid"><div><b>أُ</b><span>I · أَنَا</span></div><div><b>نُ</b><span>we · نَحْنُ</span></div><div><b>يُ</b><span>he/they · الغائب</span></div><div><b>تُ</b><span>you/she · المخاطب/الغائبة</span></div></div>
+          <div className="warning-card"><strong>Shared surface forms</strong><p lang={language}>{copy.overlap}</p></div>
+          <div className="warning-card"><strong>Default indicative form</strong><p lang={language}>{copy.scope}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <h2>نُصِرَ → يُنْصَرُ</h2>
+          <div className="conjugation-grid">
+            <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Present passive form</span><span>Meaning</span></div>
+            {presentPassiveForms.map((item,index)=><div className="conjugation-row" key={index}>
+              <span className="conjugation-index">{index+1}</span>
+              <div className="conjugation-pronoun"><b lang="ar" dir="rtl">{item.pronoun}</b>{showTransliteration&&<small>{item.pronounLatin}</small>}</div>
+              <span className="conjugation-slot">{language==='fa'?item.slotFa:language==='ur'?item.slotUr:item.slot}</span>
+              <div className="conjugation-verb"><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.verbLatin}</small>}</div>
+              <span className="conjugation-gloss">{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</span>
+            </div>)}
+          </div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE PRONOUN</span>
+          <h2>Read the passive prefix and ending</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="pronoun-practice-list">
+            {passivePresentPractice.map((item,index)=><div className="pronoun-practice-row" key={item.verb}>
+              <div><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the pronoun for '+item.verb} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose pronoun…</option>
+                {pastPronounChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{pastPronounChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==passivePresentPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {passivePresentPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://www.quranic-grammar.com/learn/level-3/09-passive-voice/" target="_blank" rel="noreferrer">Quranic Grammar — Passive Voice (al-Majhūl), including the present passive model يُفْعَلُ.</a></li>
+            <li><a href="https://www.fivesuper.com/support/downloads/Arabic-Grammar-in-Context_Mohammad-T.-Alhawary-%282016%29.pdf" target="_blank" rel="noreferrer">Mohammad T. Alhawary, Arabic Grammar in Context (2016), chapter 3 on present/future and passive forms.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/09">← Lesson 9: Past passive 14 forms</a><span>Next: imperative and prohibitive forms</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Passive muḍāriʿ</li><li>Pattern يُفْعَلُ</li><li>Active vs. passive</li><li>Shared surface forms</li><li>14-slot table</li><li>Pronoun practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Compare يَنْصُرُ and يُنْصَرُ. The same root can form active and passive verbs by changing the vowel pattern.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
   const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
@@ -1671,6 +1850,7 @@ export default function App() {
   if (route === '#/lesson/07') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 07</span></header><LessonSevenPage/></div>
   if (route === '#/lesson/08') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 08</span></header><LessonEightPage/></div>
   if (route === '#/lesson/09') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 09</span></header><LessonNinePage/></div>
+  if (route === '#/lesson/10') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 10</span></header><LessonTenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
