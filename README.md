@@ -3,7 +3,11 @@
 A responsive, beginner-first learning environment for Arabic morphology (علم الصرف), following a traditional Hawza sequence with clear English explanations.
 
 ## Status
-The first implementation checkpoint is being established. See [PROJECT_STATUS.md](PROJECT_STATUS.md) and [HANDOFF.md](HANDOFF.md) for the authoritative task tracker and next-session context.
+The initial app is live on GitHub Pages, and the latest production build/deployment succeeded. Lesson 1 is being expanded and reviewed; this is an early learning checkpoint, not a finished course. See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), and [Lesson 1 source notes](docs/LESSON_01_SOURCES.md) for status and verification boundaries.
+
+## Live app
+
+[Open Sarf Mastery](https://mahashemi.github.io/SarfMastery/) · [Start Lesson 1](https://mahashemi.github.io/SarfMastery/#/lesson/01)
 
 ## Run locally
 ```bash
