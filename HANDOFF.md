@@ -65,6 +65,7 @@
 - [ ] [#5 Review and complete Unit 1, Lesson 4](https://github.com/mahashemi/SarfMastery/issues/5)
 - [ ] [#6 Review and complete Unit 2, Lesson 5](https://github.com/mahashemi/SarfMastery/issues/6)
 - [ ] [#7 Review and complete Unit 2, Lesson 6](https://github.com/mahashemi/SarfMastery/issues/7)
+- [ ] [#8 Review and complete Unit 3, Lesson 7](https://github.com/mahashemi/SarfMastery/issues/8)
 
 ## Next session
 1. Switch repository Settings → Pages → Source to GitHub Actions so the generated Jekyll branch deployment no longer competes with the React/Vite workflow.
