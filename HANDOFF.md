@@ -36,6 +36,10 @@
 - [ ] Build audio/pronunciation pipeline.
 - [ ] Implement exercises, progress persistence, and revision.
 
+## GitHub issues
+- [ ] [#1 Verify first GitHub Pages build and responsive UI checkpoint](https://github.com/mahashemi/SarfMastery/issues/1)
+- [ ] [#2 Implement Unit 1, Lesson 1 as a complete beginner lesson](https://github.com/mahashemi/SarfMastery/issues/2)
+
 ## Next session
 1. Inspect GitHub Actions run and fix any build issues.
 2. Enable Pages with GitHub Actions if not already enabled.
