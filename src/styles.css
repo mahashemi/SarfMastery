@@ -154,3 +154,27 @@
 .classification-feedback span{display:block;margin-top:4px;font-size:10px;font-weight:400;line-height:1.6}
 @media(max-width:650px){.mizan-model-grid{grid-template-columns:1fr}.mizan-model-grid>div{display:grid;grid-template-columns:1fr auto;align-items:center;text-align:start}.mizan-model-grid strong{grid-row:span 2;grid-column:2}.mizan-model-grid span{justify-self:start}.mizan-model-grid p{grid-column:1/-1}.noun-pattern-grid{grid-template-columns:1fr}}
 @media(max-width:420px){.mizan-example-table{grid-template-columns:1fr}.root-map-strip>div{gap:7px;padding:8px 5px}.root-map-strip b,.root-map-strip strong{font-size:22px}}
+
+.abwab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}
+.bāb-card{position:relative;display:flex;flex-direction:column;gap:8px;min-width:0;padding:15px;background:#fffefa;border:1px solid var(--line);border-radius:10px}
+.bāb-number{position:absolute;top:12px;right:13px;color:#b5a27d;font:500 14px Georgia,serif}
+.bāb-card>strong{font:500 13px Georgia,serif;color:#45604e}
+.bāb-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.bāb-pair>div{display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 5px;background:#f8f8f2;border-radius:7px}
+.bāb-pair span{font-size:8px;color:#8a806b;text-align:center}
+.bāb-pair b{font:700 24px/1.5 Amiri,serif;color:var(--green)}
+.bāb-pair small{font-size:9px;color:#a17f4a}
+.bāb-weight{display:flex;align-items:center;justify-content:center;gap:9px;direction:ltr;padding:7px 5px;background:#eef3eb;border-radius:7px}
+.bāb-weight b{font:700 18px Amiri,serif;color:#3e5e49}
+.bāb-weight span{font-size:10px;color:#9a8967}
+.bāb-card>p{margin:0;font-size:10px;color:#6f796e;text-align:center}
+.bāb-vowel-row{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.bāb-vowel-row span{font-size:9px;color:#818879}
+.bāb-vowel-row b{font:600 14px Amiri,serif;color:#52705b}
+.vowel-observation{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:17px 0}
+.vowel-observation>div{display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 10px;background:#fffefa;border:1px solid var(--line);border-radius:9px;text-align:center}
+.vowel-observation span{font-size:9px;color:#8b806b;letter-spacing:.04em}
+.vowel-observation strong{font:700 20px Amiri,serif;color:var(--green)}
+.vowel-observation small{font-size:9px;color:#a17f4a}
+@media(max-width:620px){.abwab-grid{grid-template-columns:1fr}.vowel-observation{grid-template-columns:1fr}}
+@media(max-width:420px){.bāb-card{padding:12px}.bāb-pair b{font-size:22px}.bāb-vowel-row{flex-direction:column}}
