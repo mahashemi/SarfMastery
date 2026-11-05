@@ -229,3 +229,29 @@
 .pronoun-slots-row:nth-child(odd){background:#fcfbf7}
 .pronoun-group-label{font:600 15px Amiri,serif;color:#6b805f}
 @media(max-width:650px){.pronoun-group-cards{grid-template-columns:1fr}.pronoun-slots-head{display:none}.pronoun-slots-row{grid-template-columns:26px 1fr 1fr;grid-template-areas:"idx pron group" "idx role role";gap:5px 9px;padding:9px}.pronoun-slots-row>.conjugation-index{grid-area:idx}.pronoun-slots-row>.conjugation-pronoun{grid-area:pron}.pronoun-slots-row>.conjugation-slot{grid-area:role}.pronoun-slots-row>.pronoun-group-label{grid-area:group;justify-self:end}}
+
+.pattern-cue-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0}
+.pattern-cue-grid>div{display:flex;flex-direction:column;gap:4px;padding:11px;background:#fffefa;border:1px solid var(--line);border-radius:8px}
+.pattern-cue-grid b{font:600 11px Georgia,serif;color:#a17f4a}
+.pattern-cue-grid strong{font-size:11px;color:#425b49}
+.pattern-cue-grid span{font-size:9px;line-height:1.45;color:#7b8579}
+.form-table{display:grid;gap:0;margin:16px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fffefa}
+.form-table-head,.form-table-row{display:grid;grid-template-columns:42px minmax(85px,.75fr) minmax(115px,1fr) minmax(115px,1fr) minmax(140px,1.25fr);gap:9px;align-items:center;padding:10px 11px}
+.form-table-head{background:#eef2e9;color:#687766;font-size:9px;font-weight:700}
+.form-table-row{border-top:1px solid #ecece4;min-height:66px}
+.form-table-row:nth-child(odd){background:#fcfbf7}
+.form-table-row>strong{font:600 12px Georgia,serif;color:#a17f4a}
+.form-pattern{font:700 21px/1.5 Amiri,serif;color:var(--green)}
+.form-example{display:flex;flex-direction:column;gap:2px;min-width:0}
+.form-example>b{font:700 22px/1.5 Amiri,serif;color:var(--green)}
+.form-example small{font-size:9px;color:#a17f4a}
+.form-example .form-root{color:#7d887b;letter-spacing:.1em}
+.form-table-row>span{font-size:10px;line-height:1.5;color:#5f6e61}
+.form-table-row>small{font-size:9px;line-height:1.5;color:#7a8579}
+.quadriliteral-table{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:16px 0}
+.quadriliteral-table>div{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px;background:#fffefa;border:1px solid var(--line);border-radius:8px;text-align:center}
+.quadriliteral-table strong{font-size:9px;color:#a17f4a}
+.quadriliteral-table b,.quadriliteral-table span{font:700 20px/1.5 Amiri,serif;color:var(--green)}
+.quadriliteral-table small{font-size:9px;color:#7a8579;line-height:1.4}
+@media(max-width:760px){.form-table-head{display:none}.form-table-row{grid-template-columns:28px 1fr 1fr;grid-template-areas:"num pattern example" "num meaning tendency";gap:6px 9px;padding:10px}.form-table-row>strong{grid-area:num}.form-pattern{grid-area:pattern}.form-example{grid-area:example}.form-table-row>span{grid-area:meaning}.form-table-row>small{grid-area:tendency}.pattern-cue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quadriliteral-table{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.form-table-row{grid-template-columns:24px minmax(0,1fr) minmax(0,1fr);gap:5px 7px}.form-table-row>span,.form-table-row>small{font-size:9px}}
