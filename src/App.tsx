@@ -1831,6 +1831,183 @@ function LessonTenPage() {
   </main>
 }
 
+
+const lessonElevenCopy = {
+  en: {
+    lead: 'Commands and prohibitions address the listener directly. Unlike the 14-slot past and present tables, the direct imperative and prohibitive are taught in six second-person slots.',
+    objective: 'Recognise the six traditional addressee slots, form a positive command from the second-person jussive, and form a prohibition with لَا النَّاهِيَةُ.',
+    definition: 'فِعْلُ الْأَمْرِ is the direct imperative (“write!”). فِعْلُ النَّهْيِ is the prohibitive (“do not write!”). Both address the second person (المُخَاطَب), so they use six traditional slots: masculine/feminine singular, dual, and plural.',
+    formation: 'For كَتَبَ يَكْتُبُ, start from the second-person jussive تَكْتُبْ, remove the prefix تَـ, and add a helping hamzat al-waṣl because the remaining form begins with a consonant cluster: اُكْتُبْ. The hamza takes ḍammah here because the stem vowel is ḍammah.',
+    nahy: 'A prohibition is formed with لَا النَّاهِيَةُ followed by the second-person muḍāriʿ in the jussive: لَا تَكْتُبْ. Do not put لَا directly before the imperative اُكْتُبْ.',
+    dualNote: 'The masculine and feminine dual are separate teaching slots, but their command and prohibition forms are identical: اُكْتُبَا and لَا تَكْتُبَا. Therefore the traditional table has six slots but only five distinct surface forms.',
+    scope: 'These are direct commands/prohibitions to the second person. Indirect commands (“let him…”, “let us…”) use other constructions and are not included here.',
+    practicePrompt: 'Choose the addressee that matches each command or prohibition. The dual form is shared by both genders.',
+    correct: 'Correct addressee.',
+    incorrect: 'Check the ending. The matching addressee is',
+    score: 'Your score',
+    check: 'Check commands',
+    teach: 'Explain how اُكْتُبْ is formed from تَكْتُبْ. Then explain why a prohibition uses لَا تَكْتُبْ rather than لَا اُكْتُبْ.',
+    summary: 'The imperative is built from the second-person jussive. The prohibitive is لَا النَّاهِيَةُ plus a jussive muḍāriʿ. Both address the listener directly and have six traditional gender/number slots.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'امر و نهی مستقیماً مخاطب را خطاب می‌کنند. برخلاف جدول‌های ۱۴ جایگاهی ماضی و مضارع، امر و نهیِ مستقیم در شش جایگاه مخاطب آموزش داده می‌شوند.',
+    objective: 'شش جایگاه سنتی مخاطب را بشناسید، امر مثبت را از مضارع مخاطبِ مجزوم بسازید و نهی را با لَا النَّاهِيَةُ تشکیل دهید.',
+    definition: 'فِعْلُ الْأَمْرِ یعنی فعل امر («بنویس!»). فِعْلُ النَّهْيِ یعنی فعل نهی («ننویس!»). هر دو مخاطب (المُخَاطَب) را خطاب می‌کنند؛ بنابراین شش جایگاه سنتی دارند: مفرد، مثنّی و جمع مذکر و مؤنث.',
+    formation: 'برای كَتَبَ يَكْتُبُ، از مضارع مخاطبِ مجزوم تَكْتُبْ آغاز کنید، پیشوند تَـ را بردارید و چون صورت باقی‌مانده با دو حرف ساکن آغاز می‌شود، همزهٔ وصل بیفزایید: اُكْتُبْ. در این مثال همزه ضمه می‌گیرد، چون حرکتِ میانی مضارع ضمه است.',
+    nahy: 'نهی با لَا النَّاهِيَةُ و پس از آن مضارع مخاطبِ مجزوم ساخته می‌شود: لَا تَكْتُبْ. لَا را مستقیماً پیش از فعل امر اُكْتُبْ نیاورید.',
+    dualNote: 'مثنای مذکر و مؤنث دو جایگاه آموزشی جدا هستند، اما صورت امر و نهی آن‌ها یکسان است: اُكْتُبَا و لَا تَكْتُبَا. بنابراین جدول سنتی شش جایگاه دارد، ولی فقط پنج صورت ظاهریِ متفاوت.',
+    scope: 'این صورت‌ها امر و نهی مستقیم برای مخاطب‌اند. امر غیرمستقیم («بگذار او…»، «بیایید ما…») ساخت‌های دیگری دارد و در این درس نیست.',
+    practicePrompt: 'مخاطبِ مناسب هر امر یا نهی را انتخاب کنید. صورت مثنّی برای هر دو جنس یکسان است.',
+    correct: 'مخاطب درست است.',
+    incorrect: 'پایان فعل را بررسی کنید. مخاطب متناظر:',
+    score: 'امتیاز شما',
+    check: 'بررسی امر و نهی',
+    teach: 'توضیح دهید اُكْتُبْ چگونه از تَكْتُبْ ساخته می‌شود. سپس بگویید چرا نهی با لَا تَكْتُبْ ساخته می‌شود، نه لَا اُكْتُبْ.',
+    summary: 'امر از مضارع مخاطبِ مجزوم ساخته می‌شود. نهی از لَا النَّاهِيَةُ به‌علاوهٔ مضارع مجزوم تشکیل می‌شود. هر دو مستقیماً مخاطب را خطاب می‌کنند و شش جایگاه سنتی جنس و شمار دارند.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'امر اور نہی براہِ راست مخاطب سے خطاب کرتے ہیں۔ ماضی اور مضارع کی چودہ خانوں والی جدولوں کے برعکس، براہِ راست امر اور نہی چھ مخاطب صیغوں میں پڑھائے جاتے ہیں۔',
+    objective: 'مخاطب کے چھ روایتی خانے پہچانیں، مثبت امر کو مضارع مخاطب مجزوم سے بنائیں، اور لَا النَّاهِيَةُ کے ذریعے نہی بنائیں۔',
+    definition: 'فِعْلُ الْأَمْرِ حکم دینے کا صیغہ ہے (’’لکھو!‘‘)۔ فِعْلُ النَّهْيِ منع کرنے کا صیغہ ہے (’’مت لکھو!‘‘)۔ دونوں مخاطب (المُخَاطَب) کے لیے ہیں، اس لیے چھ روایتی خانے ہوتے ہیں: مذکر/مؤنث واحد، تثنیہ اور جمع۔',
+    formation: 'كَتَبَ يَكْتُبُ میں مخاطب مجزوم تَكْتُبْ سے شروع کریں، سابقہ تَـ ہٹا دیں، اور چونکہ باقی صورت دو ساکن حروف سے شروع ہوتی ہے اس لیے ہمزۃ الوصل لگائیں: اُكْتُبْ۔ یہاں ہمزہ پر پیش ہے کیونکہ مضارع کے درمیانی حرف پر پیش ہے۔',
+    nahy: 'نہی لَا النَّاهِيَةُ کے بعد مضارع مخاطب مجزوم لا کر بنتی ہے: لَا تَكْتُبْ۔ لَا کو براہِ راست امر اُكْتُبْ سے پہلے نہ لگائیں۔',
+    dualNote: 'مذکر اور مؤنث تثنیہ الگ تعلیمی خانے ہیں، لیکن ان کے امر اور نہی کی صورتیں ایک جیسی ہیں: اُكْتُبَا اور لَا تَكْتُبَا۔ اس لیے روایتی جدول میں چھ خانے ہیں مگر ظاہری صورتیں پانچ ہیں۔',
+    scope: 'یہ براہِ راست مخاطب کے لیے امر اور نہی ہیں۔ بالواسطہ حکم (’’اسے کرنے دو‘‘ یا ’’آؤ ہم کریں‘‘) کے لیے دوسرے طریقے ہیں، جو اس سبق میں شامل نہیں۔',
+    practicePrompt: 'ہر امر یا نہی کے لیے درست مخاطب منتخب کریں۔ تثنیہ کی صورت دونوں جنسوں کے لیے ایک جیسی ہے۔',
+    correct: 'درست مخاطب۔',
+    incorrect: 'فعل کا آخری حصہ دیکھیں۔ متعلقہ مخاطب ہے:',
+    score: 'آپ کا اسکور',
+    check: 'امر و نہی جانچیں',
+    teach: 'بتائیں کہ اُكْتُبْ، تَكْتُبْ سے کیسے بنتا ہے۔ پھر واضح کریں کہ نہی کے لیے لَا تَكْتُبْ کیوں آتا ہے، لَا اُكْتُبْ کیوں نہیں۔',
+    summary: 'امر مضارع مخاطب مجزوم سے بنتا ہے۔ نہی لَا النَّاهِيَةُ اور مضارع مجزوم سے بنتی ہے۔ دونوں براہِ راست مخاطب کے لیے ہیں اور جنس و تعداد کے چھ روایتی خانے رکھتے ہیں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const commandForms = [
+  {pronoun:'أَنْتَ',slot:'masculine singular',slotFa:'مذکر مفرد',slotUr:'مذکر واحد',amr:'اُكْتُبْ',amrLatin:'uktub',nahy:'لَا تَكْتُبْ',nahyLatin:'lā taktub',gloss:'you (masc. sg.)',answer:'anta'},
+  {pronoun:'أَنْتُمَا',slot:'masculine dual',slotFa:'مذکر مثنّی',slotUr:'مذکر تثنیہ',amr:'اُكْتُبَا',amrLatin:'uktubā',nahy:'لَا تَكْتُبَا',nahyLatin:'lā taktubā',gloss:'you two (masc.)',answer:'antuma'},
+  {pronoun:'أَنْتُمْ',slot:'masculine plural',slotFa:'مذکر جمع',slotUr:'مذکر جمع',amr:'اُكْتُبُوا',amrLatin:'uktubū',nahy:'لَا تَكْتُبُوا',nahyLatin:'lā taktubū',gloss:'you (masc. pl.)',answer:'antum'},
+  {pronoun:'أَنْتِ',slot:'feminine singular',slotFa:'مؤنث مفرد',slotUr:'مؤنث واحد',amr:'اُكْتُبِي',amrLatin:'uktubī',nahy:'لَا تَكْتُبِي',nahyLatin:'lā taktubī',gloss:'you (fem. sg.)',answer:'anti'},
+  {pronoun:'أَنْتُمَا',slot:'feminine dual',slotFa:'مؤنث مثنّی',slotUr:'مؤنث تثنیہ',amr:'اُكْتُبَا',amrLatin:'uktubā',nahy:'لَا تَكْتُبَا',nahyLatin:'lā taktubā',gloss:'you two (fem.)',answer:'antuma'},
+  {pronoun:'أَنْتُنَّ',slot:'feminine plural',slotFa:'مؤنث جمع',slotUr:'مؤنث جمع',amr:'اُكْتُبْنَ',amrLatin:'uktubna',nahy:'لَا تَكْتُبْنَ',nahyLatin:'lā taktubna',gloss:'you (fem. pl.)',answer:'antunna'},
+] as const
+
+const commandPractice = [
+  {form:'اُكْتُبْ',latin:'uktub',answer:'anta'},
+  {form:'اُكْتُبَا',latin:'uktubā',answer:'antuma'},
+  {form:'لَا تَكْتُبُوا',latin:'lā taktubū',answer:'antum'},
+  {form:'اُكْتُبِي',latin:'uktubī',answer:'anti'},
+  {form:'لَا تَكْتُبْنَ',latin:'lā taktubna',answer:'antunna'},
+  {form:'لَا تَكْتُبْ',latin:'lā taktub',answer:'anta'},
+]
+const commandChoices = [
+  {value:'anta',label:'أَنْتَ · masculine singular'},
+  {value:'antuma',label:'أَنْتُمَا · dual (either gender)'},
+  {value:'antum',label:'أَنْتُمْ · masculine plural'},
+  {value:'anti',label:'أَنْتِ · feminine singular'},
+  {value:'antunna',label:'أَنْتُنَّ · feminine plural'},
+]
+
+function LessonElevenPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonElevenCopy[language]
+  const rtl = language !== 'en'
+  const score = commandPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/10" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 03 · LESSON 11</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 03 · DIRECT COMMANDS</div>
+        <h1>Imperative and <em>prohibitive</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">فِعْلُ الْأَمْرِ وَفِعْلُ النَّهْيِ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">fiʿl al-amr wa-fiʿl al-nahy</div>}
+          <h2>Write! · Do not write!</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">HOW TO FORM THE COMMAND</span>
+          <h2 lang="ar" dir="rtl">تَكْتُبْ ← اُكْتُبْ</h2>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">taktub → uktub</div>}
+          <p lang={language}>{copy.formation}</p>
+          <div className="example-sentence"><b lang="ar" dir="rtl">اُكْتُبْ!</b> <span>Write!</span></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">HOW TO FORM THE PROHIBITION</span>
+          <h2 lang="ar" dir="rtl">لَا النَّاهِيَةُ + مُضَارِعٌ مَجْزُومٌ</h2>
+          <p lang={language}>{copy.nahy}</p>
+          <div className="example-sentence"><b lang="ar" dir="rtl">لَا تَكْتُبْ!</b> <span>Do not write!</span></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE SIX SECOND-PERSON SLOTS</span>
+          <h2>One command, six addressee slots</h2>
+          <div className="command-grid">
+            <div className="command-head"><span>Addressee</span><span>Imperative · أَمْرٌ</span><span>Prohibitive · نَهْيٌ</span></div>
+            {commandForms.map((item,index)=><div className="command-row" key={index}>
+              <div className="command-slot"><b lang="ar" dir="rtl">{item.pronoun}</b><small>{language==='fa'?item.slotFa:language==='ur'?item.slotUr:item.slot}</small></div>
+              <div className="command-form"><b lang="ar" dir="rtl">{item.amr}</b>{showTransliteration&&<small>{item.amrLatin}</small>}</div>
+              <div className="command-form"><b lang="ar" dir="rtl">{item.nahy}</b>{showTransliteration&&<small>{item.nahyLatin}</small>}</div>
+            </div>)}
+          </div>
+          <div className="warning-card"><strong>Why six slots but five distinct forms?</strong><p lang={language}>{copy.dualNote}</p></div>
+          <div className="caution-note" lang={language}>{copy.scope}</div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE ADDRESSEE</span>
+          <h2>Who is being addressed?</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="pronoun-practice-list">
+            {commandPractice.map((item,index)=><div className="pronoun-practice-row" key={item.form+index}>
+              <div><b lang="ar" dir="rtl">{item.form}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the addressee for '+item.form} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose addressee…</option>
+                {commandChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{commandChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==commandPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {commandPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://nabataea.net/media/04shop/PDFS/Arabic%20-%20Modern%20Grammar.pdf" target="_blank" rel="noreferrer">Karin C. Ryding, A Reference Grammar of Modern Standard Arabic, section on the imperative and jussive.</a></li>
+            <li><a href="https://corpus.quran.com/documentation/imperative.jsp" target="_blank" rel="noreferrer">Quranic Arabic Corpus — Imperative and Prohibition (الأمر والنهي), including لَا plus the jussive.</a></li>
+            <li><a href="https://attahawi.com/wp-content/uploads/2020/04/exercises-on-arabic-morphology-vol-1.5.pdf" target="_blank" rel="noreferrer">Exercises on Arabic Morphology, Vol. 1, chapter 3, command and prohibitive forms.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/10">← Lesson 10: Present passive</a><span>Next: application and unseen-form analysis</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Imperative and prohibitive</li><li>Build اُكْتُبْ</li><li>Build لَا تَكْتُبْ</li><li>Six second-person slots</li><li>Dual form overlap</li><li>Pronoun practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Positive command: اُكْتُبْ. Prohibition: لَا تَكْتُبْ. Never put لَا directly before the imperative form.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
   const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
@@ -1851,6 +2028,7 @@ export default function App() {
   if (route === '#/lesson/08') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 08</span></header><LessonEightPage/></div>
   if (route === '#/lesson/09') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 09</span></header><LessonNinePage/></div>
   if (route === '#/lesson/10') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 10</span></header><LessonTenPage/></div>
+  if (route === '#/lesson/11') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 11</span></header><LessonElevenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
