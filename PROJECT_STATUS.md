@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** App deployment confirmed by user; Lesson 1 expanded with multilingual core explanations and source notes; latest production build and device QA pending.  
+**Overall status:** Latest production TypeScript/Vite build and GitHub Pages deployment succeeded (2026-11-05); Lesson 1 expanded with multilingual core explanations and source notes; responsive device QA and expert review pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -24,7 +24,7 @@
 - [x] Add core explanatory copy in English, Persian, and Urdu (full UI translation remains future work).
 - [x] Add claim-to-source notes for the introductory linguistic material.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
-- [ ] Verify production build and GitHub Pages deployment.
+- [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
 
 ## 1. Repository and engineering
@@ -45,7 +45,7 @@
 ### GitHub Pages
 - [x] Add GitHub Actions deployment workflow.
 - [ ] Set Pages source to GitHub Actions in repository settings.
-- [ ] Verify deployment from main.
+- [x] Verify deployment from main (Actions run 42101525058).
 - [ ] Verify direct lesson URL and refresh behaviour.
 - [ ] Document rollback/redeployment.
 
@@ -290,4 +290,4 @@ For every lesson:
 | 2026-11-05 | Initial responsive app scaffold and project documentation committed | Build/deployment not yet verified |
 | 2026-11-05 | GitHub Pages workflow adjusted; two priority issues opened | Awaiting GitHub Actions run and Pages settings verification |
 | 2026-11-05 | Added refresh-safe Lesson 1 route, beginner explanations, word-family examples, interactive check, and teach-back | Code committed; scholarly/source review and audio still pending |
-| 2026-11-05 | Expanded Lesson 1 with English/Persian/Urdu core explanations, six ك ت ب examples, glossary, and claim-to-source notes | GitHub Actions build/deploy queued; responsive device QA and qualified language review pending |
+| 2026-11-05 | Expanded Lesson 1 with English/Persian/Urdu core explanations, six ك ت ب examples, glossary, and claim-to-source notes | TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42101525058; responsive device QA and qualified language review pending |
