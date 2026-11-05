@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42104565190); Lessons 1–6 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
+**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42105111437); Lessons 1–7 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -28,6 +28,7 @@
 - [x] Add Lesson 4 route, mujarrad/mazīd distinction, root/added-letter examples, mnemonic limitations, seven-item classification quiz, and explicit audio-unavailable state.
 - [x] Add Lesson 5 route, Mīzān Ṣarfī concepts, root-to-pattern mapping, six example weights, and scored practice.
 - [x] Add Lesson 6 route, six Abwāb pairs, middle-radical vowel observations, scored practice, and maṣdar/dictionary cautions.
+- [x] Add Lesson 7 route, complete 14-slot past-active table, transliteration, multilingual glosses, and pronoun-identification practice.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
@@ -121,6 +122,7 @@ For every lesson:
 - [x] Introduce فِعْلٌ, its basic forms, and مَصْدَرٌ as a verbal noun.
 - [x] Introduce original and added letters, and the basic distinction between مُجَرَّدٌ and مَزِيدٌ.
 - [x] Introduce the Mīzān Ṣarfī and six common Abwāb of the triliteral mujarrad.
+- [x] Introduce the 14-slot ṣīghah order and the active past conjugation.
 - [ ] Introduce فِعْل and مَصْدَر.
 - [ ] Root letters vs vowels/pattern.
 - [ ] Original vs additional letters.
@@ -296,6 +298,7 @@ For every lesson:
 - [ ] [#5 Review and complete Unit 1, Lesson 4 — original and added letters](https://github.com/mahashemi/SarfMastery/issues/5)
 - [ ] [#6 Review and complete Unit 2, Lesson 5 — the Mīzān Ṣarfī](https://github.com/mahashemi/SarfMastery/issues/6)
 - [ ] [#7 Review and complete Unit 2, Lesson 6 — the six common Abwāb](https://github.com/mahashemi/SarfMastery/issues/7)
+- [ ] [#8 Review and complete Unit 3, Lesson 7 — 14 ṣīghahs of the past active](https://github.com/mahashemi/SarfMastery/issues/8)
 
 ## 13. Session log
 | Date | Change | Verification |
@@ -308,3 +311,4 @@ For every lesson:
 | 2026-11-05 | Added Lesson 3 on verbs and maṣdar with multilingual explanations, verb forms, Form I caution, seven classification questions, and source notes | TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42102939532; teacher/language review and device QA pending |
 | 2026-11-05 | Added Lesson 4 on original/added letters, mujarrad/mazīd, the mnemonic, and seven scored exercises with source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42103516437; automatic Jekyll branch deployment also runs and Pages source should be switched to GitHub Actions |
 | 2026-11-05 | Added Lesson 5 on the Mīzān Ṣarfī and Lesson 6 on the six Abwāb, each with English/Persian/Urdu explanations, interactive practice, audio-unavailable notices, and source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42104565190; expert review, device QA, and Pages source cleanup pending |
+| 2026-11-05 | Added Lesson 7 with the 14-slot past-active ṣīghah table, transliteration, localized glosses, and pronoun practice | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42105111437; expert review and responsive QA pending |
