@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42106277003). Lessons 1–10 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42106827583). Lessons 1–11 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -16,9 +16,10 @@
 9. `docs/LESSON_08_SOURCES.md` — source map and linguistic verification boundaries for Lesson 8.
 10. `docs/LESSON_09_SOURCES.md` — source map and linguistic verification boundaries for Lesson 9.
 11. `docs/LESSON_10_SOURCES.md` — source map and linguistic verification boundaries for Lesson 10.
-12. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-13. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-14. `docs/DECISIONS.md` — decisions and open questions.
+12. `docs/LESSON_11_SOURCES.md` — source map and linguistic verification boundaries for Lesson 11.
+13. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+14. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+15. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
@@ -73,14 +74,15 @@
 - [ ] [#9 Review and complete Unit 3, Lesson 8](https://github.com/mahashemi/SarfMastery/issues/9)
 - [ ] [#10 Review and complete Unit 3, Lesson 9](https://github.com/mahashemi/SarfMastery/issues/10)
 - [ ] [#11 Review and complete Unit 3, Lesson 10](https://github.com/mahashemi/SarfMastery/issues/11)
+- [ ] [#12 Review and complete Unit 3, Lesson 11](https://github.com/mahashemi/SarfMastery/issues/12)
 
 ## Next session
 1. Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; its runs have been cancelled in some pushes, so confirm the source setting to keep one deployment path.
 2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
-4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–10.
-5. Obtain fluent Persian and Urdu review of Lessons 1–10.
-6. Add Lesson 11 on imperative (أَمْرٌ) and prohibitive (نَهْيٌ) forms; remember these use six second-person forms, not 14.
+4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–11.
+5. Obtain fluent Persian and Urdu review of Lessons 1–11.
+6. Add Lesson 12 as an applied exercise in identifying roots, weights, voice, and ṣīghah from verified Qur’anic examples.
 7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
