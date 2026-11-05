@@ -1467,6 +1467,190 @@ function LessonEightPage() {
   </main>
 }
 
+
+const lessonNineCopy = {
+  en: {
+    lead: 'The passive past describes an action without naming its doer. For a sound Form I verb, the basic pattern changes from فَعَلَ to فُعِلَ.',
+    objective: 'Recognise the passive-past pattern, compare active and passive forms, and read the 14-slot conjugation of نُصِرَ.',
+    definition: 'الْمَاضِي الْمَجْهُولُ is the passive past. The doer is not stated; the affected participant is promoted to the grammatical position of nāʾib al-fāʿil (نَائِبُ الْفَاعِلِ).',
+    pattern: 'For a sound Form I triliteral verb, the basic passive-past pattern is فُعِلَ: the first root consonant takes ḍammah and the second takes kasrah. The person/number endings follow the same 14-slot order as the active past.',
+    example: 'Compare نَصَرَ (naṣara, he helped) with نُصِرَ (nuṣira, he was helped). The root remains ن ص ر; the internal vowels signal the passive voice.',
+    quran: 'The Qur’an uses كُتِبَ in 2:183: “Fasting has been prescribed for you.” The Quranic Arabic Corpus identifies كُتِبَ as a third-person masculine singular passive perfect verb from ك ت ب; الصِّيَامُ is nominative and functions as the nāʾib al-fāʿil.',
+    caution: 'Majhūl is the grammatical label for passive voice; it does not mean the statement is uncertain. The agent is simply not expressed in the passive construction.',
+    practicePrompt: 'Choose the pronoun that matches each selected passive-past form.',
+    correct: 'Correct pronoun.',
+    incorrect: 'Check the suffix. The matching pronoun is',
+    score: 'Your score',
+    check: 'Check passive forms',
+    teach: 'Explain the vowel change from نَصَرَ to نُصِرَ. Then identify the passive verb and nāʾib al-fāʿil in كُتِبَ عَلَيْكُمُ الصِّيَامُ.',
+    summary: 'In the sound Form I past passive, change the internal pattern to فُعِلَ. Keep the person/number endings in the same 14-slot order and identify the nāʾib al-fāʿil in the sentence.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'ماضی مجهول کاری را بیان می‌کند بی‌آن‌که انجام‌دهنده را نام ببرد. در فعل ثلاثی مجرد صحیح، وزن پایه از فَعَلَ به فُعِلَ تغییر می‌کند.',
+    objective: 'وزن ماضی مجهول را بشناسید، صورت معلوم و مجهول را مقایسه کنید و جدول ۱۴ جایگاهی نُصِرَ را بخوانید.',
+    definition: 'الْمَاضِي الْمَجْهُولُ یعنی ماضی مجهول. فاعل ذکر نمی‌شود و چیزی که عمل بر آن واقع شده در جایگاه دستوری نائب فاعل (نَائِبُ الْفَاعِلِ) قرار می‌گیرد.',
+    pattern: 'در فعل ثلاثی مجرد صحیح، وزن پایهٔ ماضی مجهول فُعِلَ است: حرف اول ریشه ضمه و حرف دوم کسره می‌گیرد. پایان‌های شخص و شمار همان ترتیب ۱۴ جایگاهی ماضی معلوم را دنبال می‌کنند.',
+    example: 'نَصَرَ (او یاری کرد) را با نُصِرَ (به او یاری شد) مقایسه کنید. ریشه ن ص ر باقی می‌ماند؛ حرکت‌های درونی، مجهول بودن فعل را نشان می‌دهند.',
+    quran: 'در قرآن، كُتِبَ در آیهٔ ۲:۱۸۳ آمده است: «روزه بر شما مقرر شد». پیکرهٔ زبان‌شناختی قرآن، كُتِبَ را فعل ماضی مجهول، غایب مذکر مفرد از ریشهٔ ک ت ب می‌شناسد؛ الصِّيَامُ اسم مرفوع و نائب فاعل است.',
+    caution: 'مجهول اصطلاح دستوری برای ساخت مجهول است؛ به معنای نامطمئن بودن جمله نیست. در این ساخت، انجام‌دهنده بیان نمی‌شود.',
+    practicePrompt: 'ضمیر مناسب هر صورت منتخب ماضی مجهول را انتخاب کنید.',
+    correct: 'ضمیر درست است.',
+    incorrect: 'پسوند را بررسی کنید. ضمیر متناظر:',
+    score: 'امتیاز شما',
+    check: 'بررسی صورت‌های مجهول',
+    teach: 'تغییر حرکت‌ها از نَصَرَ به نُصِرَ را توضیح دهید. سپس فعل مجهول و نائب فاعل را در عبارت كُتِبَ عَلَيْكُمُ الصِّيَامُ مشخص کنید.',
+    summary: 'در ماضی مجهول ثلاثی مجرد صحیح، وزن درونی به فُعِلَ تغییر می‌کند. پایان‌های شخص و شمار در همان ترتیب ۱۴ صیغه باقی می‌مانند و باید نائب فاعل را در جمله پیدا کنید.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'ماضی مجہول ایسے عمل کو بیان کرتا ہے جس میں کام کرنے والے کا نام نہیں بتایا جاتا۔ صحیح ثلاثی مجرد میں بنیادی وزن فَعَلَ سے فُعِلَ ہو جاتا ہے۔',
+    objective: 'ماضی مجہول کا وزن پہچانیں، معلوم اور مجہول صورتوں کا موازنہ کریں، اور نُصِرَ کی چودہ خانوں والی جدول پڑھیں۔',
+    definition: 'الْمَاضِي الْمَجْهُولُ ماضی مجہول ہے۔ فاعل بیان نہیں ہوتا؛ جس پر عمل واقع ہو وہ نحوی طور پر نائب فاعل (نَائِبُ الْفَاعِلِ) کے مقام پر آتا ہے۔',
+    pattern: 'صحیح ثلاثی مجرد فعل کے ماضی مجہول کا بنیادی وزن فُعِلَ ہے: مادّے کے پہلے حرف پر پیش اور دوسرے پر زیر آتی ہے۔ شخص اور تعداد کے لاحقے ماضی معلوم کی طرح اسی چودہ خانوں والی ترتیب پر رہتے ہیں۔',
+    example: 'نَصَرَ (اس نے مدد کی) کا موازنہ نُصِرَ (اس کی مدد کی گئی) سے کریں۔ مادّہ ن ص ر وہی رہتا ہے؛ اندرونی حرکات مجہول آواز ظاہر کرتی ہیں۔',
+    quran: 'قرآن میں كُتِبَ سورۂ بقرہ ۲:۱۸۳ میں آیا ہے: ’’تم پر روزہ فرض کیا گیا‘‘۔ قرآنک عربک کارپس كُتِبَ کو مادّہ ک ت ب سے ماضی مجہول، غائب مذکر واحد قرار دیتا ہے؛ الصِّيَامُ مرفوع اسم اور نائب فاعل ہے۔',
+    caution: 'مجہول نحوی اصطلاح ہے؛ اس کا مطلب بیان کا غیر یقینی ہونا نہیں۔ مجہول ساخت میں کام کرنے والے کا ذکر نہیں ہوتا۔',
+    practicePrompt: 'ہر منتخب ماضی مجہول کے لیے درست ضمیر چنیں۔',
+    correct: 'درست ضمیر۔',
+    incorrect: 'لاحقہ دیکھیں۔ متعلقہ ضمیر ہے:',
+    score: 'آپ کا اسکور',
+    check: 'مجہول صورتیں جانچیں',
+    teach: 'نَصَرَ سے نُصِرَ تک حرکات کی تبدیلی بیان کریں۔ پھر كُتِبَ عَلَيْكُمُ الصِّيَامُ میں فعلِ مجہول اور نائب فاعل کی نشاندہی کریں۔',
+    summary: 'صحیح ثلاثی مجرد کے ماضی مجہول میں اندرونی وزن فُعِلَ ہو جاتا ہے۔ شخص اور تعداد کے لاحقے وہی رہتے ہیں؛ جملے میں نائب فاعل بھی پہچانیں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const pastPassiveForms = [
+  {pronoun:'هُوَ',pronounLatin:'huwa',slot:'3rd · masculine singular',slotFa:'غایب · مذکر مفرد',slotUr:'غائب · مذکر واحد',verb:'نُصِرَ',verbLatin:'nuṣira',gloss:'he was helped',glossFa:'به او یاری شد',glossUr:'اس کی مدد کی گئی',key:'huwa'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · masculine dual',slotFa:'غایب · مذکر مثنّی',slotUr:'غائب · مذکر تثنیہ',verb:'نُصِرَا',verbLatin:'nuṣirā',gloss:'they two (masc.) were helped',glossFa:'به آن دو مرد یاری شد',glossUr:'ان دونوں مردوں کی مدد کی گئی',key:'huma-m'},
+  {pronoun:'هُمْ',pronounLatin:'hum',slot:'3rd · masculine plural',slotFa:'غایب · مذکر جمع',slotUr:'غائب · مذکر جمع',verb:'نُصِرُوا',verbLatin:'nuṣirū',gloss:'they (masc.) were helped',glossFa:'به آن مردان یاری شد',glossUr:'ان مردوں کی مدد کی گئی',key:'hum'},
+  {pronoun:'هِيَ',pronounLatin:'hiya',slot:'3rd · feminine singular',slotFa:'غایب · مؤنث مفرد',slotUr:'غائب · مؤنث واحد',verb:'نُصِرَتْ',verbLatin:'nuṣirat',gloss:'she was helped',glossFa:'به او یاری شد',glossUr:'اس کی مدد کی گئی',key:'hiya'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · feminine dual',slotFa:'غایب · مؤنث مثنّی',slotUr:'غائب · مؤنث تثنیہ',verb:'نُصِرَتَا',verbLatin:'nuṣiratā',gloss:'they two (fem.) were helped',glossFa:'به آن دو زن یاری شد',glossUr:'ان دونوں عورتوں کی مدد کی گئی',key:'huma-f'},
+  {pronoun:'هُنَّ',pronounLatin:'hunna',slot:'3rd · feminine plural',slotFa:'غایب · مؤنث جمع',slotUr:'غائب · مؤنث جمع',verb:'نُصِرْنَ',verbLatin:'nuṣirna',gloss:'they (fem.) were helped',glossFa:'به آن زنان یاری شد',glossUr:'ان عورتوں کی مدد کی گئی',key:'hunna'},
+  {pronoun:'أَنْتَ',pronounLatin:'anta',slot:'2nd · masculine singular',slotFa:'مخاطب · مذکر مفرد',slotUr:'مخاطب · مذکر واحد',verb:'نُصِرْتَ',verbLatin:'nuṣirta',gloss:'you (masc. sg.) were helped',glossFa:'به تو (مذکر) یاری شد',glossUr:'تم (مرد) کی مدد کی گئی',key:'anta'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · masculine dual',slotFa:'مخاطب · مذکر مثنّی',slotUr:'مخاطب · مذکر تثنیہ',verb:'نُصِرْتُمَا',verbLatin:'nuṣirtumā',gloss:'you two (masc.) were helped',glossFa:'به شما دو مرد یاری شد',glossUr:'تم دونوں مردوں کی مدد کی گئی',key:'antuma-m'},
+  {pronoun:'أَنْتُمْ',pronounLatin:'antum',slot:'2nd · masculine plural',slotFa:'مخاطب · مذکر جمع',slotUr:'مخاطب · مذکر جمع',verb:'نُصِرْتُمْ',verbLatin:'nuṣirtum',gloss:'you (masc. pl.) were helped',glossFa:'به شما مردان یاری شد',glossUr:'تم سب مردوں کی مدد کی گئی',key:'antum'},
+  {pronoun:'أَنْتِ',pronounLatin:'anti',slot:'2nd · feminine singular',slotFa:'مخاطب · مؤنث مفرد',slotUr:'مخاطب · مؤنث واحد',verb:'نُصِرْتِ',verbLatin:'nuṣirti',gloss:'you (fem. sg.) were helped',glossFa:'به تو (مؤنث) یاری شد',glossUr:'تم (عورت) کی مدد کی گئی',key:'anti'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · feminine dual',slotFa:'مخاطب · مؤنث مثنّی',slotUr:'مخاطب · مؤنث تثنیہ',verb:'نُصِرْتُمَا',verbLatin:'nuṣirtumā',gloss:'you two (fem.) were helped',glossFa:'به شما دو زن یاری شد',glossUr:'تم دونوں عورتوں کی مدد کی گئی',key:'antuma-f'},
+  {pronoun:'أَنْتُنَّ',pronounLatin:'antunna',slot:'2nd · feminine plural',slotFa:'مخاطب · مؤنث جمع',slotUr:'مخاطب · مؤنث جمع',verb:'نُصِرْتُنَّ',verbLatin:'nuṣirtunna',gloss:'you (fem. pl.) were helped',glossFa:'به شما زنان یاری شد',glossUr:'تم عورتوں کی مدد کی گئی',key:'antunna'},
+  {pronoun:'أَنَا',pronounLatin:'anā',slot:'1st · singular',slotFa:'متکلم · مفرد',slotUr:'متکلم · واحد',verb:'نُصِرْتُ',verbLatin:'nuṣirtu',gloss:'I was helped',glossFa:'به من یاری شد',glossUr:'میری مدد کی گئی',key:'ana'},
+  {pronoun:'نَحْنُ',pronounLatin:'naḥnu',slot:'1st · plural',slotFa:'متکلم · جمع',slotUr:'متکلم · جمع',verb:'نُصِرْنَا',verbLatin:'nuṣirnā',gloss:'we were helped',glossFa:'به ما یاری شد',glossUr:'ہماری مدد کی گئی',key:'nahnu'},
+] as const
+
+const passivePronounPractice = [
+  {verb:'نُصِرُوا',latin:'nuṣirū',answer:'hum'},
+  {verb:'نُصِرْنَ',latin:'nuṣirna',answer:'hunna'},
+  {verb:'نُصِرْتِ',latin:'nuṣirti',answer:'anti'},
+  {verb:'نُصِرْتُنَّ',latin:'nuṣirtunna',answer:'antunna'},
+  {verb:'نُصِرْتُ',latin:'nuṣirtu',answer:'ana'},
+  {verb:'نُصِرْنَا',latin:'nuṣirnā',answer:'nahnu'},
+]
+
+function LessonNinePage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonNineCopy[language]
+  const rtl = language !== 'en'
+  const score = passivePronounPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/08" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 03 · LESSON 09</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
+        <h1>Past passive: <em>14 forms</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْمَاضِي الْمَجْهُولُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-māḍī al-majhūl</div>}
+          <h2>نَصَرَ → نُصِرَ</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FORM I PASSIVE PATTERN</span>
+          <h2 lang="ar" dir="rtl">فُعِلَ</h2>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">fuʿila</div>}
+          <div className="compare-grid">
+            <div><span className="compare-label">ACTIVE · مَعْلُومٌ</span><b className="large-arabic" lang="ar" dir="rtl">نَصَرَ</b><p>naṣara · he helped</p></div>
+            <div><span className="compare-label">PASSIVE · مَجْهُولٌ</span><b className="large-arabic" lang="ar" dir="rtl">نُصِرَ</b><p>nuṣira · he was helped</p></div>
+          </div>
+          <p lang={language}>{copy.pattern}</p>
+          <div className="caution-note" lang={language}>{copy.example}</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">A QUR'ANIC EXAMPLE</span>
+          <h2 lang="ar" dir="rtl">كُتِبَ عَلَيْكُمُ الصِّيَامُ</h2>
+          <div className="lesson-translit" dir="ltr">kutiba ʿalaykumu al-ṣiyāmu</div>
+          <p lang={language}>{copy.quran}</p>
+          <p><a href="https://mahashemi.github.io/QuranMemorizer/#/surah/2/ayah/183" target="_blank" rel="noreferrer">Read Qur’an 2:183 in QuranMemorizer</a> · <a href="https://corpus.quran.com/wordmorphology.jsp?location=%282%3A183%3A4%29" target="_blank" rel="noreferrer">Open the Quranic Arabic Corpus analysis of كُتِبَ</a>.</p>
+          <div className="warning-card"><strong>Grammar note</strong><p>In this verse, كُتِبَ is a 3rd-person masculine singular passive perfect verb. الصِّيَامُ is nominative and functions as the nāʾib al-fāʿil.</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <h2>نُصِرَ · nuṣira · he was helped</h2>
+          <div className="conjugation-grid">
+            <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Past passive form</span><span>Meaning</span></div>
+            {pastPassiveForms.map((item,index)=><div className="conjugation-row" key={index}>
+              <span className="conjugation-index">{index+1}</span>
+              <div className="conjugation-pronoun"><b lang="ar" dir="rtl">{item.pronoun}</b>{showTransliteration&&<small>{item.pronounLatin}</small>}</div>
+              <span className="conjugation-slot">{language==='fa'?item.slotFa:language==='ur'?item.slotUr:item.slot}</span>
+              <div className="conjugation-verb"><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.verbLatin}</small>}</div>
+              <span className="conjugation-gloss">{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</span>
+            </div>)}
+          </div>
+          <div className="caution-note" lang={language}>The person/number endings follow the same 14-slot order as the active past. The main change is the internal passive vowel pattern.</div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE PRONOUN</span>
+          <h2>Read the passive ending</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="pronoun-practice-list">
+            {passivePronounPractice.map((item,index)=><div className="pronoun-practice-row" key={item.verb}>
+              <div><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the pronoun for '+item.verb} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose pronoun…</option>
+                {pastPronounChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{pastPronounChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==passivePronounPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {passivePronounPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://corpus.quran.com/wordmorphology.jsp?location=%282%3A183%3A4%29" target="_blank" rel="noreferrer">Quranic Arabic Corpus, Qur’an 2:183 word 4: كُتِبَ, passive perfect, third-person masculine singular, root ك ت ب.</a></li>
+            <li><a href="https://www.quranic-grammar.com/learn/level-3/09-passive-voice/" target="_blank" rel="noreferrer">Quranic Grammar — Passive Voice (al-Majhūl), including the Form I past pattern فُعِلَ and the role of nāʾib al-fāʿil.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/08">← Lesson 8: Present active 14 forms</a><span>Next: present passive (المضارع المجهول)</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Passive past</li><li>Pattern فُعِلَ</li><li>Active vs. passive</li><li>Qur’anic example</li><li>14-slot conjugation</li><li>Pronoun practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>First identify the passive pattern, then read the ending to identify person, gender, and number.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
   const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
@@ -1485,6 +1669,7 @@ export default function App() {
   if (route === '#/lesson/06') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 06</span></header><LessonSixPage/></div>
   if (route === '#/lesson/07') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 07</span></header><LessonSevenPage/></div>
   if (route === '#/lesson/08') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 08</span></header><LessonEightPage/></div>
+  if (route === '#/lesson/09') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 09</span></header><LessonNinePage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
