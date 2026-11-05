@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42108660443); Lessons 1–13 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
+**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42108687770); Lessons 1–13 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -331,4 +331,4 @@ For every lesson:
 | 2026-11-05 | Added Lesson 10 with the 14-slot passive-muḍāriʿ table, Form I passive pattern, shared-form cautions, and source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106277003; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 11 with six imperative/prohibitive slots, jussive derivation, hamzat al-waṣl, and nūn deletion explanations | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106827583; expert review and responsive QA pending |
 | 2026-11-05 | Corrected curriculum order: Lesson 6 now introduces the 14 ṣīghahs; the six-Abwāb lesson is Lesson 12 in Unit 4. Added a home-page lesson library with direct links to all 12 lessons. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42107792676; expert review and responsive QA pending |
-| 2026-11-05 | Added Lesson 13 on mujarrad/mazīd, the ten common triliteral forms I–X, and quadriliteral patterns; added it to the home lesson library. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42108660443; expert review and responsive QA pending |
+| 2026-11-05 | Added Lesson 13 on mujarrad/mazīd, the ten common triliteral forms I–X, and quadriliteral patterns; added it to the home lesson library. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42108687770; expert review and responsive QA pending |
