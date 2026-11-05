@@ -18,6 +18,9 @@
 - [x] Initial React + TypeScript + Vite scaffold committed.
 - [x] Responsive dashboard shell and course-unit overview committed.
 - [x] Product spec, curriculum, decisions, handoff, and task tracker committed.
+- [x] Add refresh-safe route for Unit 1, Lesson 1.
+- [x] Add first beginner lesson draft, examples, FAQ, interactive check, and teach-back.
+- [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [ ] Verify production build and GitHub Pages deployment.
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
 
@@ -282,3 +285,4 @@ For every lesson:
 |---|---|---|
 | 2026-11-05 | Initial responsive app scaffold and project documentation committed | Build/deployment not yet verified |
 | 2026-11-05 | GitHub Pages workflow adjusted; two priority issues opened | Awaiting GitHub Actions run and Pages settings verification |
+| 2026-11-05 | Added refresh-safe Lesson 1 route, beginner explanations, word-family examples, interactive check, and teach-back | Code committed; scholarly/source review and audio still pending |
