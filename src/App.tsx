@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BookOpen, Headphones, Brain, Search, GraduationCap, Bookmark, ChevronRight, Menu, X, CircleHelp, Sparkles, Volume2 } from 'lucide-react'
 
 const units = [
@@ -16,10 +16,87 @@ const navItems = [
   {label:'Explore',icon:Search},{label:'Revise',icon:Bookmark},{label:'Teach',icon:GraduationCap},
 ]
 
+function LessonPage() {
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answer,setAnswer] = useState('')
+  const [showAnswer,setShowAnswer] = useState(false)
+  return <main className="lesson-page">
+    <header className="lesson-header">
+      <a href="#/" className="back-link">← Back to learning path</a>
+      <span className="lesson-progress-label">UNIT 01 · LESSON 01</span>
+    </header>
+    <div className="lesson-layout">
+      <article className="lesson-article">
+        <div className="eyebrow">THE FIRST STEP · NO PRIOR KNOWLEDGE NEEDED</div>
+        <h1>What is <em>Sarf?</em></h1>
+        <p className="lesson-lead">Before we learn to change Arabic words, let's understand what we are studying, why it matters, and how to look at a word.</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">عِلْمُ الصَّرْفِ</div>
+          {showTransliteration && <div className="lesson-translit">ʿilm al-ṣarf</div>}
+          <h2>The study of word forms</h2>
+          <p><strong>Sarf</strong> is the study of how Arabic words are formed and how a word's form changes to express related meanings. It helps us recognise the family of words built from a shared root.</p>
+          <button className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">TWO COMPLEMENTARY LENSES</span>
+          <h2>Sarf and Nahw: what is the difference?</h2>
+          <div className="compare-grid">
+            <div><span className="compare-label">الصَّرْفُ · SARF</span><h3>The word itself</h3><p>How is the word built? What form is it? How is it related to other words?</p></div>
+            <div><span className="compare-label">النَّحْوُ · NAḤW</span><h3>The word in a sentence</h3><p>What role does the word play? How does its ending relate to the sentence?</p></div>
+          </div>
+          <p className="example-sentence">Think of it this way: Sarf studies the word's shape; Nahw studies the word's job in a sentence.</p>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">YOUR FIRST WORD FAMILY</span>
+          <h2>Look closely at كَتَبَ</h2>
+          <p>These words are related to the idea of writing. Notice that the three root consonants remain recognisable while the word forms differ.</p>
+          <div className="word-family">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><span>kataba</span><small>he wrote</small></div>
+            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><span>yaktubu</span><small>he writes</small></div>
+            <div><b lang="ar" dir="rtl">كَاتِبٌ</b><span>kātibun</span><small>a writer</small></div>
+            <div><b lang="ar" dir="rtl">مَكْتُوبٌ</b><span>maktūbun</span><small>written</small></div>
+          </div>
+          <div className="root-callout"><span>THE ROOT CONSONANTS</span><strong lang="ar" dir="rtl">ك · ت · ب</strong><p>The short vowels are important for pronunciation and word pattern, but they are not counted as root consonant letters here.</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">A QUESTION BEGINNERS OFTEN ASK</span>
+          <h2>Is كِتَابٌ the same as كَتَبَ?</h2>
+          <p>They are related through the root ك ت ب, but they are not the same word. <b lang="ar" dir="rtl">كَتَبَ</b> (kataba) is a verb meaning “he wrote”. <b lang="ar" dir="rtl">كِتَابٌ</b> (kitābun) is a noun meaning “a book”. The pattern helps shape the word and its role.</p>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">CHECK YOUR UNDERSTANDING</span>
+          <h2>Quick practice</h2>
+          <p>In <b lang="ar" dir="rtl">كَتَبَ</b>, which letters are the root consonants?</p>
+          <div className="answer-options">
+            {['كَ · تَ · بَ','ك · ت · ب','كَتَبَ as one root letter'].map((v,i)=><button key={i} className={answer===String(i)?'answer-option chosen':'answer-option'} onClick={()=>{setAnswer(String(i));setShowAnswer(false)}}>{v}</button>)}
+          </div>
+          <button className="primary-button" disabled={!answer} onClick={()=>setShowAnswer(true)}>Check answer</button>
+          {showAnswer&&<p className={answer==='1'?'answer-feedback correct':'answer-feedback'}>{answer==='1'?'Correct. The root consonants are kāf, tāʾ, and bāʾ.':'Not quite. Look for the three consonant letters; the short vowel marks are not separate root letters.'}</p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">SAY IT BACK</span>
+          <h2>Teach-back</h2>
+          <p>Try explaining, in your own words, the difference between Sarf and Nahw. Then explain why كَتَبَ and كِتَابٌ are related but not identical.</p>
+          <div className="audio-unavailable">Pronunciation recordings are not available in this first checkpoint. Verified Arabic audio will be added before audio practice is enabled.</div>
+        </section>
+        <div className="lesson-end"><a href="#/">Return to the learning path</a></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What Sarf studies</li><li>Sarf vs Nahw</li><li>Root letters</li><li>A first word family</li><li>Quick practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Take your time. Read the Arabic aloud, then say the explanation without looking.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
+  const [lessonOpen,setLessonOpen] = useState(window.location.hash === '#/lesson/01')
+  useEffect(()=>{
+    const syncRoute=()=>setLessonOpen(window.location.hash === '#/lesson/01')
+    window.addEventListener('hashchange',syncRoute)
+    return ()=>window.removeEventListener('hashchange',syncRoute)
+  },[])
   const [active,setActive] = useState('Learn')
   const [menu,setMenu] = useState(false)
   const [translit,setTranslit] = useState(true)
+  if (lessonOpen) return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 01</span></header><LessonPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
@@ -39,7 +116,7 @@ export default function App() {
         <section className="course-section" id="course"><div className="section-heading"><div><span className="section-kicker">THE LEARNING PATH</span><h2>Build your understanding, one layer at a time</h2></div><span className="text-action">8 learning units <ChevronRight size={15}/></span></div>
           <div className="unit-grid">{units.map(([num,title,days,detail,status],i)=><article className={`unit-card ${i===0?'unit-featured':''}`} key={num}><div className="unit-top"><span className="unit-number">{num}</span><span className={i===0?'unit-status ready':'unit-status'}>{status}</span></div><h3>{title}</h3><p>{detail}</p><div className="unit-bottom"><span>{days}</span><ChevronRight size={17}/></div></article>)}</div>
         </section>
-        <section className="lesson-preview"><div className="lesson-copy"><span className="section-kicker">A FIRST LOOK · UNIT 01</span><h2>Every word has a story.<br/>Let's find its root.</h2><p>Take the verb <b lang="ar" dir="rtl" className="inline-arabic">كَتَبَ</b>. Before memorising a table, learn to see the three root letters beneath its pattern.</p><span className="primary-button lesson-coming">First lesson is next to be built</span></div>
+        <section className="lesson-preview"><div className="lesson-copy"><span className="section-kicker">A FIRST LOOK · UNIT 01</span><h2>Every word has a story.<br/>Let's find its root.</h2><p>Take the verb <b lang="ar" dir="rtl" className="inline-arabic">كَتَبَ</b>. Before memorising a table, learn to see the three root letters beneath its pattern.</p><a className="primary-button" href="#/lesson/01">Begin lesson one <ChevronRight size={16}/></a></div>
           <div className="word-study"><div className="word-label">A WORD TO EXPLORE</div><div className="arabic-word" lang="ar" dir="rtl">كَتَبَ</div>{translit&&<div className="transliteration">kataba</div>}<div className="word-meaning">He wrote</div><div className="word-divider"/><div className="root-row"><span>ROOT LETTERS</span><strong lang="ar" dir="rtl">ك · ت · ب</strong></div><div className="root-row"><span>ROOT IDEA</span><strong>Writing</strong></div><button className="reveal-button" onClick={()=>setTranslit(!translit)}>{translit?'Hide':'Show'} transliteration</button><div className="audio-note"><Volume2 size={15}/> Verified pronunciation audio will be added with the lesson.</div></div>
         </section>
         <section className="principle-row"><div className="principle-icon"><Brain size={21}/></div><div><strong>Understand first. Memorise with meaning.</strong><p>Each lesson explains the reason behind a rule, answers the questions a beginner is likely to ask, and gives you examples to practise until the pattern becomes familiar.</p></div></section>
