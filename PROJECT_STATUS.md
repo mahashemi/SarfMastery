@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42106277003); Lessons 1–10 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
+**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42106827583); Lessons 1–11 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -32,6 +32,7 @@
 - [x] Add Lesson 8 route, complete 14-slot active-muḍāriʿ table, four-prefix explanation, shared-form cautions, and pronoun practice.
 - [x] Add Lesson 9 route, 14-slot passive-past table, Form I passive pattern, Qur'anic example, and pronoun practice.
 - [x] Add Lesson 10 route, 14-slot passive-muḍāriʿ table, Form I passive pattern, shared-form cautions, and pronoun practice.
+- [x] Add Lesson 11 route, six second-person imperative/prohibitive slots, hamzat al-waṣl derivation, jussive nūn deletion, and practice.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
@@ -306,6 +307,7 @@ For every lesson:
 - [ ] [#9 Review and complete Unit 3, Lesson 8 — 14 ṣīghahs of the active muḍāriʿ](https://github.com/mahashemi/SarfMastery/issues/9)
 - [ ] [#10 Review and complete Unit 3, Lesson 9 — 14 ṣīghahs of the passive past](https://github.com/mahashemi/SarfMastery/issues/10)
 - [ ] [#11 Review and complete Unit 3, Lesson 10 — 14 ṣīghahs of the passive muḍāriʿ](https://github.com/mahashemi/SarfMastery/issues/11)
+- [ ] [#12 Review and complete Unit 3, Lesson 11 — imperative and prohibitive forms](https://github.com/mahashemi/SarfMastery/issues/12)
 
 ## 13. Session log
 | Date | Change | Verification |
@@ -322,3 +324,4 @@ For every lesson:
 | 2026-11-05 | Added Lesson 8 with the 14-slot active-muḍāriʿ table, four prefix letters, shared-form cautions, and pronoun practice | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42105539151; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 9 with the 14-slot passive-past table, Form I passive pattern, Qur'anic morphology example, and source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106277003; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 10 with the 14-slot passive-muḍāriʿ table, Form I passive pattern, shared-form cautions, and source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106277003; expert review and responsive QA pending |
+| 2026-11-05 | Added Lesson 11 with six imperative/prohibitive slots, jussive derivation, hamzat al-waṣl, and nūn deletion explanations | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106827583; expert review and responsive QA pending |
