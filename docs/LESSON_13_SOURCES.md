@@ -42,9 +42,10 @@ Last reviewed: 2026-11-05
 2. The ten-form system is the common foundation, not the full inventory of every classical Arabic verb form. Wright records additional, much rarer forms beyond X.
 3. Form I has several past and present vowel classes. Learn each verb’s māḍī/muḍāriʿ pair together.
 4. Semantic labels such as causative, reciprocal, reflexive, or seeking are tendencies. Never translate an unfamiliar verb from its form number alone.
-5. The table uses examples from different roots to illustrate the pattern shapes. They are not one root conjugated through ten forms.
-6. Quadriliteral roots have four radicals. A triliteral verb with an added prefix remains triliteral.
-7. No textbook page references are assigned to Mīzān uṣ-Ṣarf, Mīzān wa Munshaʿib, or Dānesh-e Ṣarf until exact editions are identified and inspected.
+5. Form VI’s reciprocal reading, illustrated by تَكَاتَبَ, normally involves more than one participant; do not translate it as a simple singular action.
+6. The table uses examples from different roots to illustrate the pattern shapes. They are not one root conjugated through ten forms.
+7. Quadriliteral roots have four radicals. A triliteral verb with an added prefix remains triliteral.
+8. No textbook page references are assigned to Mīzān uṣ-Ṣarf, Mīzān wa Munshaʿib, or Dānesh-e Ṣarf until exact editions are identified and inspected.
 
 ## Remaining review
 
