@@ -22,7 +22,8 @@ See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), and the so
 - [Lesson 8: Present active — 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/08)
 - [Lesson 9: Past passive — 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/09)
 - [Lesson 10: Present passive — 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/10)
-- [Lesson 11: Imperative and prohibitive](https://mahashemi.github.io/SarfMastery/#/lesson/11)\n- [Lesson 12: Six Abwāb](https://mahashemi.github.io/SarfMastery/#/lesson/12)
+- [Lesson 11: Imperative and prohibitive](https://mahashemi.github.io/SarfMastery/#/lesson/11)
+- [Lesson 12: Six Abwāb](https://mahashemi.github.io/SarfMastery/#/lesson/12)
 
 ## Run locally
 
