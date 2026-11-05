@@ -2,16 +2,17 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus deployment succeeded (Actions run 42102939532). Lessons 1–3 have core Persian/Urdu explanations and documented linguistic sources. Device QA and expert review remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42103516437). Lessons 1–4 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
 2. `docs/LESSON_01_SOURCES.md` — source map and linguistic verification boundaries for Lesson 1.
 3. `docs/LESSON_02_SOURCES.md` — source map and linguistic verification boundaries for Lesson 2.
 4. `docs/LESSON_03_SOURCES.md` — source map and linguistic verification boundaries for Lesson 3.
-5. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-6. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-7. `docs/DECISIONS.md` — decisions and open questions.
+5. `docs/LESSON_04_SOURCES.md` — source map and linguistic verification boundaries for Lesson 4.
+6. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+7. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+8. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
@@ -33,12 +34,14 @@
 - [x] Neutral branding; no personal-name footer.
 - [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
 - [x] Run and verify production TypeScript/Vite build.
-- [x] Confirm GitHub Pages deployment (latest Actions run 42102939532).
+- [x] Confirm custom GitHub Pages deployment (latest Actions run 42103516437).
+- [ ] Change repository Settings → Pages → Source to GitHub Actions to stop the competing automatic Jekyll branch deployment. This setting change is not exposed through the available GitHub connector actions.
 - [x] Add refresh-safe hash route for Unit 1, Lesson 1.
 - [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
 - [x] Add core Lesson 1 explanatory paragraphs in English, Persian, and Urdu (remaining UI labels and dashboard are still English).
 - [x] Add Lesson 2 at `#/lesson/02`, with the three word categories, multilingual explanations, six-question scored practice, and explicit audio-unavailable state.
 - [x] Add Lesson 3 at `#/lesson/03`, with fiʿl/maṣdar distinctions, three verb forms, multilingual explanations, seven-question scored practice, and explicit audio-unavailable state.
+- [x] Add Lesson 4 at `#/lesson/04`, with root/added-letter distinctions, mujarrad/mazīd examples, mnemonic limitations, seven-question scored practice, and explicit audio-unavailable state.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
 - [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
 - [ ] Fluent Persian and Urdu review of Lessons 1–3.
@@ -59,8 +62,10 @@
 2. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
 3. Obtain qualified Arabic/Sarf teacher review of Lessons 1–3.
 4. Obtain fluent Persian and Urdu review of Lessons 1–3.
-5. Add Lesson 4 on original and additional root letters after the first three lessons are reviewed.
-6. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
+5. Switch GitHub Pages Source to GitHub Actions in repository Settings to stop the automatic Jekyll build from competing with the React/Vite deployment.
+6. Obtain qualified Arabic/Sarf and fluent Persian/Urdu review of Lessons 1–4.
+7. Add Lesson 5 on the morphological scale (الميزان الصرفي) after the first four lessons are reviewed.
+8. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
