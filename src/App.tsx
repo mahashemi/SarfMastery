@@ -884,9 +884,9 @@ function LessonFivePage() {
           <span className="section-kicker">THE SCALE ALSO DESCRIBES NOUN PATTERNS</span>
           <h2>Derived nouns have weights too</h2>
           <div className="noun-pattern-grid">
-            <div><b lang="ar" dir="rtl">كَاتِبٌ</b><span>فَاعِلٌ</span><small>active participle · writer</small></div>
-            <div><b lang="ar" dir="rtl">مَكْتُوبٌ</b><span>مَفْعُولٌ</span><small>passive participle · written</small></div>
-            <div><b lang="ar" dir="rtl">مَكْتَبٌ</b><span>مَفْعَلٌ</span><small>place noun · office / desk</small></div>
+            <div><b lang="ar" dir="rtl">كَاتِبٌ</b>{showTransliteration&&<small>kātibun</small>}<span>فَاعِلٌ</span>{showTransliteration&&<small>fāʿilun</small>}<small>active participle · writer</small></div>
+            <div><b lang="ar" dir="rtl">مَكْتُوبٌ</b>{showTransliteration&&<small>maktūbun</small>}<span>مَفْعُولٌ</span>{showTransliteration&&<small>mafʿūlun</small>}<small>passive participle · written</small></div>
+            <div><b lang="ar" dir="rtl">مَكْتَبٌ</b>{showTransliteration&&<small>maktabun</small>}<span>مَفْعَلٌ</span>{showTransliteration&&<small>mafʿalun</small>}<small>place noun · office / desk</small></div>
           </div>
           <div className="caution-note" lang={language}>{copy.quadriliteral}</div>
         </section>
@@ -905,7 +905,7 @@ function LessonFivePage() {
               <div className="classification-choices" role="group" aria-label={item.word+' pattern'}>
                 {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
               </div>
-              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b lang="ar" dir="rtl">{item.pattern}</b></p>}
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b lang="ar" dir="rtl">{item.pattern}</b> <span>{language==='fa'?item.analysisFa:language==='ur'?item.analysisUr:item.analysis}</span></p>}
             </div>)}
           </div>
           <button type="button" className="primary-button" disabled={Object.keys(answers).length!==mizanExamples.length} onClick={()=>setChecked(true)}>{copy.check}</button>
