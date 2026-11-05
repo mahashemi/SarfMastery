@@ -178,3 +178,24 @@
 .vowel-observation small{font-size:9px;color:#a17f4a}
 @media(max-width:620px){.abwab-grid{grid-template-columns:1fr}.vowel-observation{grid-template-columns:1fr}}
 @media(max-width:420px){.bāb-card{padding:12px}.bāb-pair b{font-size:22px}.bāb-vowel-row{flex-direction:column}}
+
+.conjugation-grid{display:grid;gap:0;margin:16px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fffefa}
+.conjugation-head,.conjugation-row{display:grid;grid-template-columns:34px minmax(70px,.75fr) minmax(130px,1.35fr) minmax(105px,1fr) minmax(120px,1.2fr);gap:9px;align-items:center;padding:9px 11px}
+.conjugation-head{background:#eef2e9;color:#677665;font-size:9px;font-weight:700;letter-spacing:.03em}
+.conjugation-row{border-top:1px solid #ecece4;min-height:54px}
+.conjugation-row:nth-child(odd){background:#fcfbf7}
+.conjugation-index{font:500 11px Georgia,serif;color:#a18c65;text-align:center}
+.conjugation-pronoun,.conjugation-verb{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}
+.conjugation-pronoun b,.conjugation-verb b{font:700 24px/1.4 Amiri,serif;color:var(--green)}
+.conjugation-pronoun small,.conjugation-verb small{font-size:9px;color:#a17f4a;direction:ltr}
+.conjugation-slot,.conjugation-gloss{font-size:10px;line-height:1.5;color:#69756b}
+.conjugation-verb b{font-size:25px}
+.pronoun-practice-list{display:grid;gap:9px;margin:16px 0}
+.pronoun-practice-row{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:8px 12px;align-items:center;padding:12px;background:#fffefa;border:1px solid var(--line);border-radius:9px}
+.pronoun-practice-row>div{display:flex;flex-direction:column;gap:3px}
+.pronoun-practice-row>div>b{font:700 26px/1.5 Amiri,serif;color:var(--green)}
+.pronoun-practice-row>div>small{font-size:10px;color:#a17f4a}
+.pronoun-practice-row select{width:100%;min-width:0;padding:9px 10px;border:1px solid #dfe4d9;border-radius:7px;background:#fbfcf8;color:#45594a;font:inherit;font-size:11px}
+.pronoun-practice-row .classification-feedback{grid-column:1/-1}
+@media(max-width:720px){.conjugation-head{display:none}.conjugation-row{grid-template-columns:27px 1fr 1fr;grid-template-areas:"idx pron verb" "idx slot gloss";gap:5px 9px;padding:9px}.conjugation-index{grid-area:idx}.conjugation-pronoun{grid-area:pron}.conjugation-slot{grid-area:slot}.conjugation-verb{grid-area:verb}.conjugation-gloss{grid-area:gloss}.conjugation-pronoun b,.conjugation-verb b{font-size:23px}}
+@media(max-width:440px){.pronoun-practice-row{grid-template-columns:1fr}.pronoun-practice-row select{grid-column:1}.conjugation-row{grid-template-columns:23px minmax(0,1fr) minmax(0,1fr);gap:5px}.conjugation-slot,.conjugation-gloss{font-size:9px}}
