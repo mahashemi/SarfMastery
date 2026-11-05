@@ -928,9 +928,179 @@ function LessonFivePage() {
             <li><a href="https://thahabi.org/book/769/read/10" target="_blank" rel="noreferrer">Aḥmad al-Ḥamlāwī, Shadhā al-ʿArf fī Fann al-Ṣarf, section on al-Mīzān al-Ṣarfī.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/04">← Lesson 4: Original and added letters</a><span>Next: the six common Abwāb</span></div>
+        <div className="lesson-end"><a href="#/lesson/04">← Lesson 4: Original and added letters</a><a className="next-lesson-link" href="#/lesson/06">Next: the six common Abwāb →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>The Mīzān Ṣarfī</li><li>ف، ع، ل as model letters</li><li>Root mapping</li><li>Keeping added letters</li><li>Noun patterns</li><li>Pattern practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write the root above the word first. Then replace the root letters with ف، ع، ل and keep every addition in place.</p></div></aside>
+    </div>
+  </main>
+}
+
+
+const lessonSixCopy = {
+  en: {
+    lead: 'The six Abwāb describe the common past-and-present patterns of sound triliteral mujarrad verbs. Learn each verb with its present form; the pattern is not safely guessed from the root alone.',
+    objective: 'Recognise the six traditional pairs, notice the vowel on the middle root letter in the past and present, and identify a verb’s bāb from its attested pair.',
+    definition: 'A bāb (بَابٌ) is a verb pattern class. For the six common Abwāb of the triliteral mujarrad, the key comparison is between the vowel on the second root consonant (ʿayn al-fiʿl) in the māḍī and in the muḍāriʿ.',
+    past: 'Past verb · الْمَاضِي',
+    present: 'Present / imperfect · الْمُضَارِعُ',
+    middle: 'Middle root letter · عَيْنُ الْفِعْلِ',
+    caution: 'These six patterns are largely سماعي (based on established Arabic usage). There is no universal rule that lets a beginner predict every verb’s bāb from its root. Learn the past and present together and verify them in a reliable dictionary.',
+    masdar: 'Do not assume the maṣdar is automatically predictable from the bāb. Learn the accepted maṣdar with the verb as a separate vocabulary item.',
+    scope: 'This lesson introduces the six patterns for sound triliteral mujarrad verbs. Weak, hamzated, and doubled verbs can show additional changes and will be treated separately.',
+    practicePrompt: 'Choose the correct past-and-present weight for each verb pair.',
+    correct: 'Correct bāb.',
+    incorrect: 'Check the middle-radical vowels. The correct weight is',
+    score: 'Your score',
+    check: 'Check the six Abwāb',
+    teach: 'Name all six Abwāb in order. Then explain why you should memorise a verb’s muḍāriʿ with its māḍī rather than guessing.',
+    summary: 'The six Abwāb are patterns of the triliteral mujarrad verb. The vowel of the middle root letter is the key comparison; actual membership is learned from usage and dictionaries.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'شش باب، الگوهای رایج ماضی و مضارعِ فعل ثلاثی مجردِ صحیح را نشان می‌دهند. هر فعل را همراه صورت مضارعش بیاموزید؛ وزن آن را نباید فقط از روی ریشه حدس زد.',
+    objective: 'شش جفت سنتی را بشناسید، حرکت حرف میانی ریشه را در ماضی و مضارع مقایسه کنید و باب فعل را از روی دو صورتِ ثبت‌شده تشخیص دهید.',
+    definition: 'باب (بَابٌ) دسته‌ای از الگوهای فعلی است. در شش باب مشهور ثلاثی مجرد، حرکت حرف دوم ریشه (عَيْنُ الْفِعْلِ) در ماضی و مضارع با یکدیگر مقایسه می‌شود.',
+    past: 'فعل ماضی · الْمَاضِي',
+    present: 'فعل مضارع · الْمُضَارِعُ',
+    middle: 'حرف میانی ریشه · عَيْنُ الْفِعْلِ',
+    caution: 'این شش الگو تا حد زیادی سماعی‌اند؛ یعنی بر پایهٔ کاربرد پذیرفته‌شدهٔ عربی آموخته می‌شوند. قاعده‌ای همگانی وجود ندارد که مبتدی بتواند باب هر فعل را فقط از روی ریشه پیش‌بینی کند. ماضی و مضارع را با هم بیاموزید و در فرهنگ معتبر بررسی کنید.',
+    masdar: 'گمان نکنید مصدر هر فعل به‌طور خودکار از روی باب آن قابل پیش‌بینی است. مصدر پذیرفته‌شده را جداگانه همراه فعل حفظ کنید.',
+    scope: 'این درس شش الگوی فعل ثلاثی مجرد صحیح را معرفی می‌کند. فعل‌های معتل، مهموز و مضاعف ممکن است تغییرات دیگری داشته باشند که جداگانه بررسی می‌شوند.',
+    practicePrompt: 'وزن درستِ ماضی و مضارع هر جفت فعل را انتخاب کنید.',
+    correct: 'باب درست است.',
+    incorrect: 'حرکت حرف میانی را بررسی کنید. وزن درست:',
+    score: 'امتیاز شما',
+    check: 'بررسی شش باب',
+    teach: 'هر شش باب را به ترتیب نام ببرید. سپس توضیح دهید چرا باید مضارع هر فعل را همراه ماضی آن حفظ کرد، نه این‌که آن را حدس زد.',
+    summary: 'شش باب، الگوهای فعل ثلاثی مجردند. حرکت حرف میانی ریشه نکتهٔ اصلیِ مقایسه است؛ اما عضویت هر فعل در یک باب از کاربرد و فرهنگ لغت آموخته می‌شود.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'چھ ابواب صحیح ثلاثی مجرد افعال کے ماضی اور مضارع کے معروف اوزان بیان کرتے ہیں۔ ہر فعل کو اس کے مضارع کے ساتھ یاد کریں؛ صرف مادّے سے باب کا اندازہ نہ لگائیں۔',
+    objective: 'چھ روایتی جوڑوں کو پہچانیں، ماضی اور مضارع میں مادّے کے درمیانی حرف کی حرکت کا موازنہ کریں، اور ثابت شدہ دونوں صورتوں سے باب معلوم کریں۔',
+    definition: 'باب (بَابٌ) افعال کے وزن کی ایک قسم ہے۔ ثلاثی مجرد کے چھ معروف ابواب میں مادّے کے دوسرے حرف (عَيْنُ الْفِعْلِ) کی حرکت کو ماضی اور مضارع میں دیکھا جاتا ہے۔',
+    past: 'فعلِ ماضی · الْمَاضِي',
+    present: 'فعلِ مضارع · الْمُضَارِعُ',
+    middle: 'مادّے کا درمیانی حرف · عَيْنُ الْفِعْلِ',
+    caution: 'یہ چھ اوزان بڑی حد تک سماعی ہیں، یعنی عربی کے مستعمل اور منقول استعمال سے سیکھے جاتے ہیں۔ ایسا کوئی عمومی قاعدہ نہیں جس سے مبتدی صرف مادّے کو دیکھ کر ہر فعل کا باب یقینی طور پر بتا سکے۔ ماضی اور مضارع دونوں ساتھ یاد کریں اور معتبر لغت میں دیکھیں۔',
+    masdar: 'یہ نہ سمجھیں کہ مصدر لازماً باب سے خود بخود معلوم ہو جاتا ہے۔ مستعمل مصدر کو فعل کے ساتھ الگ یاد کریں۔',
+    scope: 'یہ سبق صحیح ثلاثی مجرد افعال کے چھ اوزان کا تعارف ہے۔ معتل، مهموز اور مضاعف افعال میں مزید تبدیلیاں ہو سکتی ہیں جنہیں الگ پڑھیں گے۔',
+    practicePrompt: 'ہر فعل کے ماضی اور مضارع کے لیے درست وزن منتخب کریں۔',
+    correct: 'درست باب۔',
+    incorrect: 'درمیانی حرف کی حرکات دیکھیں۔ درست وزن ہے:',
+    score: 'آپ کا اسکور',
+    check: 'چھ ابواب جانچیں',
+    teach: 'چھوں ابواب ترتیب سے بیان کریں۔ پھر بتائیں کہ فعل کا مضارع ماضی کے ساتھ یاد کرنا کیوں ضروری ہے، اندازہ لگانا کیوں کافی نہیں۔',
+    summary: 'چھ ابواب ثلاثی مجرد فعل کے اوزان ہیں۔ مادّے کے درمیانی حرف کی حرکت بنیادی فرق دکھاتی ہے؛ لیکن ہر فعل کا باب عربی استعمال اور لغت سے معلوم ہوتا ہے۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const sixAbwab = [
+  {name:'Bāb Naṣr',past:'نَصَرَ',present:'يَنْصُرُ',pastLatin:'naṣara',presentLatin:'yanṣuru',gloss:'he helped',glossFa:'او یاری کرد',glossUr:'اس نے مدد کی',pastWeight:'فَعَلَ',presentWeight:'يَفْعُلُ',answer:'1',pastVowel:'fatḥah',presentVowel:'ḍammah'},
+  {name:'Bāb Ḍarb',past:'ضَرَبَ',present:'يَضْرِبُ',pastLatin:'ḍaraba',presentLatin:'yaḍribu',gloss:'he struck',glossFa:'او زد',glossUr:'اس نے مارا',pastWeight:'فَعَلَ',presentWeight:'يَفْعِلُ',answer:'2',pastVowel:'fatḥah',presentVowel:'kasrah'},
+  {name:'Bāb Fatḥ',past:'فَتَحَ',present:'يَفْتَحُ',pastLatin:'fataḥa',presentLatin:'yaftaḥu',gloss:'he opened',glossFa:'او گشود',glossUr:'اس نے کھولا',pastWeight:'فَعَلَ',presentWeight:'يَفْعَلُ',answer:'3',pastVowel:'fatḥah',presentVowel:'fatḥah'},
+  {name:'Bāb Samʿ',past:'سَمِعَ',present:'يَسْمَعُ',pastLatin:'samiʿa',presentLatin:'yasmaʿu',gloss:'he heard',glossFa:'او شنید',glossUr:'اس نے سنا',pastWeight:'فَعِلَ',presentWeight:'يَفْعَلُ',answer:'4',pastVowel:'kasrah',presentVowel:'fatḥah'},
+  {name:'Bāb Karam',past:'كَرُمَ',present:'يَكْرُمُ',pastLatin:'karuma',presentLatin:'yakrumu',gloss:'he was noble',glossFa:'او بزرگوار بود',glossUr:'وہ باوقار تھا',pastWeight:'فَعُلَ',presentWeight:'يَفْعُلُ',answer:'5',pastVowel:'ḍammah',presentVowel:'ḍammah'},
+  {name:'Bāb Ḥasb',past:'حَسِبَ',present:'يَحْسِبُ',pastLatin:'ḥasiba',presentLatin:'yaḥsibu',gloss:'he thought / considered',glossFa:'او پنداشت',glossUr:'اس نے خیال کیا',pastWeight:'فَعِلَ',presentWeight:'يَفْعِلُ',answer:'6',pastVowel:'kasrah',presentVowel:'kasrah'},
+] as const
+
+function LessonSixPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonSixCopy[language]
+  const rtl = language !== 'en'
+  const score = sixAbwab.filter((item,index)=>answers[index]===item.answer).length
+  const choices = [
+    {value:'1',label:'فَعَلَ يَفْعُلُ'},
+    {value:'2',label:'فَعَلَ يَفْعِلُ'},
+    {value:'3',label:'فَعَلَ يَفْعَلُ'},
+    {value:'4',label:'فَعِلَ يَفْعَلُ'},
+    {value:'5',label:'فَعُلَ يَفْعُلُ'},
+    {value:'6',label:'فَعِلَ يَفْعِلُ'},
+  ]
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/05" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 02 · LESSON 06</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 02 · THE MORPHOLOGICAL SCALE</div>
+        <h1>The six <em>Abwāb</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">أَبْوَابُ الْفِعْلِ الثُّلَاثِيِّ الْمُجَرَّدِ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">abwāb al-fiʿl al-thulāthī al-mujarrad</div>}
+          <h2>Six common Form I patterns</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE SIX PAIRS</span>
+          <div className="abwab-grid">
+            {sixAbwab.map((item,index)=><div className="bāb-card" key={item.answer}>
+              <div className="bāb-number">0{index+1}</div>
+              <strong>{item.name}</strong>
+              <div className="bāb-pair"><div><span>{copy.past}</span><b lang="ar" dir="rtl">{item.past}</b>{showTransliteration&&<small>{item.pastLatin}</small>}</div><div><span>{copy.present}</span><b lang="ar" dir="rtl">{item.present}</b>{showTransliteration&&<small>{item.presentLatin}</small>}</div></div>
+              <div className="bāb-weight"><b lang="ar" dir="rtl">{item.pastWeight}</b><span>→</span><b lang="ar" dir="rtl">{item.presentWeight}</b></div>
+              <p>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</p>
+            </div>)}
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">WHAT CHANGES?</span>
+          <h2>Watch the middle root letter</h2>
+          <p lang={language}>{copy.middle}</p>
+          <div className="vowel-observation">
+            <div><span>PAST · الْمَاضِي</span><strong>فَعَلَ / فَعِلَ / فَعُلَ</strong><small>fatḥah · kasrah · ḍammah</small></div>
+            <div><span>PRESENT · الْمُضَارِعُ</span><strong>يَفْعُلُ / يَفْعِلُ / يَفْعَلُ</strong><small>ḍammah · kasrah · fatḥah</small></div>
+          </div>
+          <div className="caution-note" lang={language}>{copy.caution}</div>
+          <div className="warning-card"><strong>And what about the maṣdar?</strong><p lang={language}>{copy.masdar}</p></div>
+          <div className="warning-card"><strong>Scope of this lesson</strong><p lang={language}>{copy.scope}</p></div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE BĀB</span>
+          <h2>Match the past and present</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="classification-list">
+            {sixAbwab.map((item,index)=><div className="classification-row" key={item.answer}>
+              <div className="classification-word"><b lang="ar" dir="rtl">{item.past} · {item.present}</b>{showTransliteration&&<span dir="ltr">{item.pastLatin} · {item.presentLatin}</span>}<small>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</small></div>
+              <div className="classification-choices" role="group" aria-label={item.past+' '+item.present+' bāb'}>
+                {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
+              </div>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{item.pastWeight} · {item.presentWeight}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==sixAbwab.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {sixAbwab.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://attahawi.com/wp-content/uploads/2010/01/treasures-of-arabic-morphology.pdf" target="_blank" rel="noreferrer">Treasures of Arabic Morphology — the six categories (أبواب) of the triliteral mujarrad verb and the سماعي nature of the patterns.</a></li>
+            <li><a href="https://ablibrary.net/book_content/b/11500/80" target="_blank" rel="noreferrer">Sayyid Muḥammad Taqī al-Ḥusaynī al-Jalālī, Nuzhat al-Ṭarf fī ʿIlm al-Ṣarf, p. 80.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/05">← Lesson 5: The Mīzān Ṣarfī</a><span>Next: applying the six Abwāb in conjugation</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Six Abwāb</li><li>Past and present pairs</li><li>Middle radical vowels</li><li>Maṣdar caution</li><li>Classification practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write each verb as a pair: māḍī + muḍāriʿ. Learn the vowel of the middle root letter in both forms.</p></div></aside>
     </div>
   </main>
 }
@@ -950,6 +1120,7 @@ export default function App() {
   if (route === '#/lesson/03') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 03</span></header><LessonThreePage/></div>
   if (route === '#/lesson/04') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 04</span></header><LessonFourPage/></div>
   if (route === '#/lesson/05') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 05</span></header><LessonFivePage/></div>
+  if (route === '#/lesson/06') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 06</span></header><LessonSixPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
