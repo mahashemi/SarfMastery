@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42106827583); Lessons 1–12 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
+**Overall status:** Latest production TypeScript/Vite build and custom deployment succeeded (Actions run 42107792676); Lessons 1–12 have multilingual core explanations and documented sources. Responsive QA, expert review, and Pages source cleanup remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -28,6 +28,7 @@
 - [x] Add Lesson 4 route, mujarrad/mazīd distinction, root/added-letter examples, mnemonic limitations, seven-item classification quiz, and explicit audio-unavailable state.
 - [x] Add Lesson 5 route, Mīzān Ṣarfī concepts, root-to-pattern mapping, six example weights, and scored practice.
 - [x] Add Lesson 6 route, 14-slot pronoun overview, and ghāʾib/mukhāṭab/mutakallim group practice.
+- [x] Add a home-page lesson library with direct links to all 12 lessons and update unit draft counts.
 - [x] Add Lesson 7 route, complete 14-slot past-active table, transliteration, multilingual glosses, and pronoun-identification practice.
 - [x] Add Lesson 8 route, complete 14-slot active-muḍāriʿ table, four-prefix explanation, shared-form cautions, and pronoun practice.
 - [x] Add Lesson 9 route, 14-slot passive-past table, Form I passive pattern, Qur'anic example, and pronoun practice.
@@ -327,4 +328,4 @@ For every lesson:
 | 2026-11-05 | Added Lesson 9 with the 14-slot passive-past table, Form I passive pattern, Qur'anic morphology example, and source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106277003; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 10 with the 14-slot passive-muḍāriʿ table, Form I passive pattern, shared-form cautions, and source notes | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106277003; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 11 with six imperative/prohibitive slots, jussive derivation, hamzat al-waṣl, and nūn deletion explanations | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42106827583; expert review and responsive QA pending |
-| 2026-11-05 | Corrected curriculum order: Lesson 6 now introduces the 14 ṣīghahs; the six-Abwāb lesson is Lesson 12 in Unit 4 | Reordered routes and navigation; production build/deployment verification pending |
+| 2026-11-05 | Corrected curriculum order: Lesson 6 now introduces the 14 ṣīghahs; the six-Abwāb lesson is Lesson 12 in Unit 4. Added a home-page lesson library with direct links to all 12 lessons. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42107792676; expert review and responsive QA pending |
