@@ -1404,7 +1404,7 @@ function LessonEightPage() {
         <section className="lesson-block">
           <span className="section-kicker">THE FOUR PREFIX LETTERS</span>
           <h2 lang="ar" dir="rtl">أَنَيْتُ · أ ن ي ت</h2>
-          {showTransliteration&&<div className="lesson-translit" dir="ltr">an-nūn, al-hamzah, al-yāʾ, al-tāʾ</div>}
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">hamzah · nūn · yāʾ · tāʾ</div>}
           <p lang={language}>{copy.prefixes}</p>
           <div className="prefix-grid"><div><b>أَ</b><span>I · أَنَا</span></div><div><b>نَ</b><span>we · نَحْنُ</span></div><div><b>يَ</b><span>he/they · الغائب</span></div><div><b>تَ</b><span>you/she · المخاطب/الغائبة</span></div></div>
         </section>
