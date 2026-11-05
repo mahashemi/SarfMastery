@@ -7,7 +7,7 @@ The initial app is live on GitHub Pages, and the latest production build/deploym
 
 ## Live app
 
-[Open Sarf Mastery](https://mahashemi.github.io/SarfMastery/) · [Start Lesson 1](https://mahashemi.github.io/SarfMastery/#/lesson/01) · [Lesson 2: Word categories](https://mahashemi.github.io/SarfMastery/#/lesson/02) · [Lesson 3: Verb and maṣdar](https://mahashemi.github.io/SarfMastery/#/lesson/03) · [Lesson 4: Original and added letters](https://mahashemi.github.io/SarfMastery/#/lesson/04) · [Lesson 5: Mīzān Ṣarfī](https://mahashemi.github.io/SarfMastery/#/lesson/05) · [Lesson 6: Six Abwāb](https://mahashemi.github.io/SarfMastery/#/lesson/06) · [Lesson 7: Past active 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/07) · [Lesson 8: Present active 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/08)
+[Open Sarf Mastery](https://mahashemi.github.io/SarfMastery/) · [Start Lesson 1](https://mahashemi.github.io/SarfMastery/#/lesson/01) · [Lesson 2: Word categories](https://mahashemi.github.io/SarfMastery/#/lesson/02) · [Lesson 3: Verb and maṣdar](https://mahashemi.github.io/SarfMastery/#/lesson/03) · [Lesson 4: Original and added letters](https://mahashemi.github.io/SarfMastery/#/lesson/04) · [Lesson 5: Mīzān Ṣarfī](https://mahashemi.github.io/SarfMastery/#/lesson/05) · [Lesson 6: Six Abwāb](https://mahashemi.github.io/SarfMastery/#/lesson/06) · [Lesson 7: Past active 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/07) · [Lesson 8: Present active 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/08) · [Lesson 7: Past active 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/07) · [Lesson 8: Present active 14 forms](https://mahashemi.github.io/SarfMastery/#/lesson/08)
 
 ## Run locally
 ```bash
