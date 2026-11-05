@@ -31,7 +31,9 @@
 - [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
 - [ ] Run and verify production build.
 - [ ] Confirm GitHub Pages deployment.
-- [ ] Implement real lesson route and first complete lesson.
+- [x] Add refresh-safe hash route for Unit 1, Lesson 1.
+- [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
+- [ ] Scholarly review and source verification of Lesson 1; Persian/Urdu support and verified audio remain outstanding.
 - [ ] Verify textbook editions and source mapping.
 - [ ] Build audio/pronunciation pipeline.
 - [ ] Implement exercises, progress persistence, and revision.
@@ -44,7 +46,7 @@
 1. Inspect GitHub Actions run and fix any build issues.
 2. Enable Pages with GitHub Actions if not already enabled.
 3. Review desktop/tablet/mobile screenshots and refine.
-4. Implement Unit 1, Lesson 1 as a complete interactive lesson.
+4. Review and refine Unit 1, Lesson 1 for linguistic accuracy and source citations; add Persian/Urdu support.
 5. Add route-safe lesson URLs and update the tracker.
 
 ## Guardrails
