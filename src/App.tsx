@@ -386,9 +386,196 @@ function LessonTwoPage() {
             <li><a href="https://corpus.quran.com/documentation/tagset.jsp" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — Part-of-speech Tagset.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/01">← Lesson 1: What is Sarf?</a><span>Next: learn more about the اِسْمٌ and its signs</span></div>
+        <div className="lesson-end"><a href="#/lesson/01">← Lesson 1: What is Sarf?</a><a className="next-lesson-link" href="#/lesson/03">Next: verb and maṣdar →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What is a kalimah?</li><li>Ism</li><li>Fiʿl</li><li>Ḥarf</li><li>Word vs sentence</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>For each example, ask: does it name something, show an event linked to time, or connect words?</p></div></aside>
+    </div>
+  </main>
+}
+
+
+const lessonThreeCopy = {
+  en: {
+    lead: 'Now that you can recognise a verb, let’s separate the verb from the name of the action. This distinction is one of the most useful foundations in Sarf.',
+    objective: 'Recognise a fiʿl, identify its basic forms, explain what a maṣdar is, and distinguish a maṣdar from both a verb and an ordinary noun.',
+    definition: 'A fiʿl (فِعْلٌ) expresses an event or state connected with time. The maṣdar (مَصْدَرٌ) names the event itself without specifying when it happened.',
+    verbTitle: 'The verb: an event connected with time',
+    verbText: 'A verb tells us about an action, occurrence, or state and connects it with a grammatical time or form. Begin by recognising these three familiar forms.',
+    masdarTitle: 'The maṣdar: the name of the action',
+    masdarText: 'A maṣdar is a verbal noun. It names the action or event without telling us when it happened. It is an ism (noun), not a conjugated verb.',
+    familyIntro: 'Look at the ك ت ب family. The root connects these words, but each word has its own form and meaning.',
+    caution: 'Do not assume that every Form I verb makes its maṣdar by one predictable pattern. The Form I maṣdar has several patterns; learn the attested maṣdar with the verb and check a reliable dictionary when unsure.',
+    compare: 'كَتَبَ is a verb: “he wrote”. كِتَابَةٌ is a maṣdar: “writing”. كِتَابٌ is another ism: “a book”. They share the root ك ت ب, but they are not interchangeable.',
+    question: 'Is the maṣdar just another verb tense?',
+    answer: 'No. A maṣdar is a noun that names an action or event without tense. It can be definite or indefinite and takes the grammatical behaviour of a noun. A verb, by contrast, is a verb form connected with time or command.',
+    practicePrompt: 'Classify each word as a verb (فِعْلٌ), a maṣdar (مَصْدَرٌ), or another kind of ism (اِسْمٌ).',
+    correct: 'Correct.',
+    incorrect: 'Check the form again. The correct category is',
+    score: 'Your score',
+    check: 'Check answers',
+    teach: 'Explain the difference between كَتَبَ, كِتَابَةٌ, and كِتَابٌ. Then give one example of a verb and its maṣdar from memory.',
+    summary: 'Learn verbs with their maṣdar as a vocabulary family. For Form I, do not invent the maṣdar from a pattern you remember—verify and memorise the accepted form.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'اکنون که می‌توانید فعل را تشخیص دهید، تفاوت خودِ فعل با نامِ آن کار را بررسی می‌کنیم. این تمایز از پایه‌های مهم علم صرف است.',
+    objective: 'فعل را تشخیص دهید، صورت‌های پایهٔ آن را بشناسید، مصدر را توضیح دهید و آن را از فعل و اسم معمولی جدا کنید.',
+    definition: 'فِعْلٌ بر رویداد یا حالتی دلالت می‌کند که با زمان ارتباط دارد. مَصْدَرٌ نامِ خودِ رویداد یا کار است، بدون آن‌که زمان وقوع آن را مشخص کند.',
+    verbTitle: 'فعل: رویدادی مرتبط با زمان',
+    verbText: 'فعل دربارهٔ کار، رخداد یا حالت خبر می‌دهد و آن را به زمان یا صورت دستوری پیوند می‌زند. ابتدا این سه صورت آشنا را بشناسید.',
+    masdarTitle: 'مصدر: نامِ خودِ کار',
+    masdarText: 'مصدر، اسمِ مصدر یا اسمِ رویداد است. خودِ کار یا رخداد را نام می‌برد، بی‌آن‌که بگوید چه زمانی رخ داده است. مصدر اسم است، نه فعلِ صرف‌شده.',
+    familyIntro: 'به خانوادهٔ ریشهٔ ک ت ب نگاه کنید. ریشه این واژه‌ها را به هم مرتبط می‌کند، اما هر واژه صورت و معنای خاص خود را دارد.',
+    caution: 'گمان نکنید که مصدر هر فعل ثلاثی مجرد با یک وزنِ قابل پیش‌بینی ساخته می‌شود. مصدرهای باب اول وزن‌های گوناگونی دارند؛ مصدرِ ثبت‌شده را همراه فعل بیاموزید و هنگام تردید به فرهنگ معتبر مراجعه کنید.',
+    compare: 'كَتَبَ فعل و به معنای «او نوشت» است؛ كِتَابَةٌ مصدر و به معنای «نوشتن» است؛ كِتَابٌ اسم و به معنای «کتاب» است. هر سه ریشهٔ ک ت ب دارند، اما جایگزین یکدیگر نیستند.',
+    question: 'آیا مصدر فقط یک زمانِ دیگرِ فعل است؟',
+    answer: 'خیر. مصدر اسمی است که خودِ کار یا رویداد را بدون زمان نام می‌برد. می‌تواند معرفه یا نکره باشد و رفتار دستوریِ اسم را دارد؛ اما فعل صورتِ فعلیِ مرتبط با زمان یا امر است.',
+    practicePrompt: 'هر واژه را در یکی از این دسته‌ها قرار دهید: فعل (فِعْلٌ)، مصدر (مَصْدَرٌ) یا اسمِ دیگر (اِسْمٌ).',
+    correct: 'درست است.',
+    incorrect: 'صورت واژه را دوباره بررسی کنید. دستهٔ درست:',
+    score: 'امتیاز شما',
+    check: 'بررسی پاسخ‌ها',
+    teach: 'تفاوت كَتَبَ، كِتَابَةٌ و كِتَابٌ را توضیح دهید. سپس از حافظه یک فعل و مصدرِ مرتبط با آن مثال بزنید.',
+    summary: 'فعل را همراه مصدرش به‌صورت یک خانوادهٔ واژگانی بیاموزید. در باب اول، مصدر را از روی یک وزن حدس نزنید؛ صورت پذیرفته‌شده را بررسی و حفظ کنید.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'اب جب آپ فعل کو پہچان سکتے ہیں تو آئیے فعل اور اس کام کے نام میں فرق سمجھیں۔ یہ فرق علمِ صرف کی بنیادی باتوں میں سے ہے۔',
+    objective: 'فعل پہچانیں، اس کی بنیادی صورتیں جانیں، مصدر کی وضاحت کریں، اور اسے فعل اور عام اسم سے الگ کریں۔',
+    definition: 'فِعْلٌ کسی ایسے واقعے یا حالت کو ظاہر کرتا ہے جس کا تعلق زمانے سے ہو۔ مَصْدَرٌ اسی کام یا واقعے کا نام ہے، مگر اس میں وقوع کا زمانہ متعین نہیں ہوتا۔',
+    verbTitle: 'فعل: زمانے سے متعلق واقعہ',
+    verbText: 'فعل کسی کام، واقعے یا حالت کے بارے میں بتاتا ہے اور اسے کسی زمانی یا صرفی صورت سے جوڑتا ہے۔ پہلے ان تین معروف صورتوں کو پہچانیں۔',
+    masdarTitle: 'مصدر: کام کا نام',
+    masdarText: 'مصدر اسمِ فعل یا عمل کا نام ہے۔ یہ کام یا واقعے کو بیان کرتا ہے مگر یہ نہیں بتاتا کہ وہ کب ہوا۔ مصدر اسم ہے، گردان کیا ہوا فعل نہیں۔',
+    familyIntro: 'ک ت ب کے مادّے سے بنے الفاظ دیکھیں۔ مادّہ ان الفاظ کو آپس میں جوڑتا ہے، لیکن ہر لفظ کی اپنی صورت اور معنی ہیں۔',
+    caution: 'یہ نہ سمجھیں کہ ہر ثلاثی مجرد فعل کا مصدر ایک ہی قابلِ پیش گوئی وزن سے بنتا ہے۔ بابِ اول کے مصادر کے کئی اوزان ہیں؛ مصدر کو فعل کے ساتھ یاد کریں اور شک ہو تو معتبر لغت دیکھیں۔',
+    compare: 'كَتَبَ فعل ہے، یعنی ’’اس نے لکھا‘‘؛ كِتَابَةٌ مصدر ہے، یعنی ’’لکھنا‘‘؛ كِتَابٌ ایک اور اسم ہے، یعنی ’’کتاب‘‘۔ تینوں کا مادّہ ک ت ب ہے، مگر یہ ایک دوسرے کی جگہ استعمال نہیں ہوتے۔',
+    question: 'کیا مصدر فعل کا ایک اور زمانہ ہے؟',
+    answer: 'نہیں۔ مصدر ایک اسم ہے جو کام یا واقعے کو زمانے کے بغیر نام دیتا ہے۔ یہ معرفہ یا نکرہ ہو سکتا ہے اور اسم کے قواعد قبول کرتا ہے؛ اس کے برعکس فعل زمانے یا حکم سے متعلق فعلی صورت ہے۔',
+    practicePrompt: 'ہر لفظ کو ان میں سے ایک قسم میں رکھیں: فعل (فِعْلٌ)، مصدر (مَصْدَرٌ)، یا دوسرا اسم (اِسْمٌ)۔',
+    correct: 'درست۔',
+    incorrect: 'اس لفظ کی صورت دوبارہ دیکھیں۔ درست قسم ہے:',
+    score: 'آپ کا اسکور',
+    check: 'جوابات جانچیں',
+    teach: 'كَتَبَ، كِتَابَةٌ اور كِتَابٌ کا فرق بیان کریں۔ پھر یاد سے ایک فعل اور اس کا مصدر بتائیں۔',
+    summary: 'افعال کو ان کے مصدر کے ساتھ ایک لفظی خاندان کے طور پر یاد کریں۔ بابِ اول میں مصدر کو کسی مانوس وزن سے خود نہ بنائیں؛ مستند صورت کی تحقیق اور یادداشت کریں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const verbMasdarExamples = [
+  {arabic:'كَتَبَ',translit:'kataba',gloss:'he wrote',glossFa:'او نوشت',glossUr:'اس نے لکھا',answer:'verb',label:'فِعْلٌ'},
+  {arabic:'كِتَابَةٌ',translit:'kitābatun',gloss:'writing',glossFa:'نوشتن',glossUr:'لکھنا',answer:'masdar',label:'مَصْدَرٌ'},
+  {arabic:'يَكْتُبُ',translit:'yaktubu',gloss:'he writes',glossFa:'او می‌نویسد',glossUr:'وہ لکھتا ہے',answer:'verb',label:'فِعْلٌ'},
+  {arabic:'قِرَاءَةٌ',translit:'qirāʾatun',gloss:'reading',glossFa:'خواندن',glossUr:'پڑھنا',answer:'masdar',label:'مَصْدَرٌ'},
+  {arabic:'كِتَابٌ',translit:'kitābun',gloss:'a book',glossFa:'کتاب',glossUr:'کتاب',answer:'other',label:'اِسْمٌ آخَرُ'},
+  {arabic:'اُكْتُبْ',translit:'uktub',gloss:'write!',glossFa:'بنویس!',glossUr:'لکھو!',answer:'verb',label:'فِعْلُ أَمْرٍ'},
+  {arabic:'فَهْمٌ',translit:'fahmun',gloss:'understanding',glossFa:'فهم',glossUr:'سمجھ',answer:'masdar',label:'مَصْدَرٌ'},
+] as const
+
+function LessonThreePage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonThreeCopy[language]
+  const rtl = language !== 'en'
+  const score = verbMasdarExamples.filter((item,index)=>answers[index]===item.answer).length
+  const choices = [{value:'verb',label:'Verb · فِعْلٌ'},{value:'masdar',label:'Maṣdar · مَصْدَرٌ'},{value:'other',label:'Other ism · اِسْمٌ'}]
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/02" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 01 · LESSON 03</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 01 · FOUNDATIONS</div>
+        <h1>Verb and <em>maṣdar</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْفِعْلُ وَالْمَصْدَرُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-fiʿl wa-l-maṣdar</div>}
+          <h2>Two related but different forms</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">1 · THE VERB</span>
+          <h2>{copy.verbTitle}</h2>
+          <p lang={language}>{copy.verbText}</p>
+          <div className="verb-forms-grid">
+            <div><span>المَاضِي · PAST</span><b lang="ar" dir="rtl">كَتَبَ</b>{showTransliteration&&<small>kataba</small>}<p>he wrote</p></div>
+            <div><span>المُضَارِع · IMPERFECT</span><b lang="ar" dir="rtl">يَكْتُبُ</b>{showTransliteration&&<small>yaktubu</small>}<p>he writes / is writing</p></div>
+            <div><span>الأَمْر · COMMAND</span><b lang="ar" dir="rtl">اُكْتُبْ</b>{showTransliteration&&<small>uktub</small>}<p>write!</p></div>
+          </div>
+          <div className="caution-note">The command form is an imperative form, not simply another past or present tense. We will study the full verb system later.</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">2 · THE MAṢDAR</span>
+          <h2>{copy.masdarTitle}</h2>
+          <p lang={language}>{copy.masdarText}</p>
+          <div className="masdar-highlight"><span>مَصْدَرٌ · VERBAL NOUN</span><b lang="ar" dir="rtl">كِتَابَةٌ</b>{showTransliteration&&<small>kitābatun</small>}<strong>writing</strong></div>
+          <div className="word-family compact-family">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><small>he wrote</small></div>
+            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><small>he writes</small></div>
+            <div><b lang="ar" dir="rtl">كِتَابَةٌ</b><small>writing</small></div>
+          </div>
+          <div className="caution-note" lang={language}>{copy.caution}</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">COMPARE THE WORDS</span>
+          <h2>كَتَبَ · كِتَابَةٌ · كِتَابٌ</h2>
+          <p lang={language}>{copy.compare}</p>
+          <div className="comparison-strip">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><span>Verb · فعل</span></div>
+            <div><b lang="ar" dir="rtl">كِتَابَةٌ</b><span>Maṣdar · مصدر</span></div>
+            <div><b lang="ar" dir="rtl">كِتَابٌ</b><span>Other ism · اسم</span></div>
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">A BEGINNER QUESTION</span>
+          <h2>{copy.question}</h2>
+          <p lang={language}>{copy.answer}</p>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · VERB OR NOUN?</span>
+          <h2>Classify the forms</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="classification-list">
+            {verbMasdarExamples.map((item,index)=><div className="classification-row" key={item.arabic}>
+              <div className="classification-word"><b lang="ar" dir="rtl">{item.arabic}</b>{showTransliteration&&<span dir="ltr">{item.translit}</span>}<small>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</small></div>
+              <div className="classification-choices" role="group" aria-label={item.arabic+' category'}>
+                {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
+              </div>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b lang="ar" dir="rtl">{item.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==verbMasdarExamples.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {verbMasdarExamples.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://www.cambridge.org/core/books/reference-grammar-of-modern-standard-arabic/207FA6CB610D541184C4B8CB10A4084A" target="_blank" rel="noreferrer">Karin C. Ryding, A Reference Grammar of Modern Standard Arabic (Cambridge University Press, 2005), chapter 5, “Arabic noun types,” especially the maṣdar section.</a></li>
+            <li><a href="https://openbooks.lib.msu.edu/elemarabicll/chapter/grammar-5/" target="_blank" rel="noreferrer">Michigan State University, Elementary Arabic II — “Grammar: Masdar and Verb.”</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/02">← Lesson 2: Three kinds of word</a><span>Next: original and additional root letters</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Verb and time</li><li>Māḍī, Muḍāriʿ, Amr</li><li>Maṣdar</li><li>Compare related words</li><li>Classification practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>When you learn a new verb, record its maṣdar beside it. Do not guess the Form I maṣdar.</p></div></aside>
     </div>
   </main>
 }
@@ -405,6 +592,7 @@ export default function App() {
   const [translit,setTranslit] = useState(true)
   if (route === '#/lesson/01') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 01</span></header><LessonPage/></div>
   if (route === '#/lesson/02') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 02</span></header><LessonTwoPage/></div>
+  if (route === '#/lesson/03') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 03</span></header><LessonThreePage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
