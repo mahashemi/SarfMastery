@@ -131,37 +131,37 @@ function LessonPage() {
       <button className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
     </div>
     <div className="lesson-layout">
-      <article className="lesson-article" lang={language} dir={rtl?'rtl':'ltr'}>
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
         <div className="eyebrow">THE FIRST STEP · NO PRIOR KNOWLEDGE NEEDED</div>
         <h1>What is <em>Sarf?</em></h1>
-        <p className="lesson-lead">{copy.lead}</p>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">عِلْمُ الصَّرْفِ</div>
           {showTransliteration && <div className="lesson-translit" dir="ltr">ʿilm al-ṣarf</div>}
           <h2>The study of word forms</h2>
-          <p>{copy.definition}</p>
+          <p lang={language}>{copy.definition}</p>
         <div className="term-glossary" aria-label="Key Sarf vocabulary">
           <div><b lang="ar" dir="rtl">الْجِذْرُ</b><strong>Root</strong><span>ریشه · مادّہ</span><small>al-jidhr</small></div>
           <div><b lang="ar" dir="rtl">الْوَزْنُ</b><strong>Pattern / scale</strong><span>وزن · وزن</span><small>al-wazn</small></div>
           <div><b lang="ar" dir="rtl">الصِّيغَةُ</b><strong>Form</strong><span>صیغه · صیغہ</span><small>aṣ-ṣīghah</small></div>
           <div><b lang="ar" dir="rtl">كَلِمَةٌ</b><strong>Word</strong><span>واژه · لفظ</span><small>kalimah</small></div>
         </div>
-          <div className="objective-panel"><strong>{copy.objectiveTitle}</strong><p>{copy.objective}</p></div>
-          <h3 className="subheading">{copy.whyTitle}</h3><p>{copy.why}</p>
+          <div className="objective-panel"><strong>{copy.objectiveTitle}</strong><p lang={language}>{copy.objective}</p></div>
+          <h3 className="subheading">{copy.whyTitle}</h3><p lang={language}>{copy.why}</p>
         </section>
         <section className="lesson-block">
           <span className="section-kicker">TWO COMPLEMENTARY LENSES</span>
           <h2>Sarf and Nahw: what is the difference?</h2>
           <div className="compare-grid">
-            <div><span className="compare-label">الصَّرْفُ · SARF</span><h3>{copy.sarfTitle}</h3><p>{copy.sarfDesc}</p></div>
-            <div><span className="compare-label">النَّحْوُ · NAḤW</span><h3>{copy.nahwTitle}</h3><p>{copy.nahwDesc}</p></div>
+            <div><span className="compare-label">الصَّرْفُ · SARF</span><h3>{copy.sarfTitle}</h3><p lang={language}>{copy.sarfDesc}</p></div>
+            <div><span className="compare-label">النَّحْوُ · NAḤW</span><h3>{copy.nahwTitle}</h3><p lang={language}>{copy.nahwDesc}</p></div>
           </div>
-          <p className="example-sentence">{copy.compare}</p>
+          <p className="example-sentence" lang={language}>{copy.compare}</p>
         </section>
         <section className="lesson-block">
           <span className="section-kicker">YOUR FIRST WORD FAMILY</span>
           <h2>Look closely at كَتَبَ</h2>
-          <p>{copy.familyIntro}</p>
+          <p lang={language}>{copy.familyIntro}</p>
           <div className="word-family">
             <div><b lang="ar" dir="rtl">كَتَبَ</b>{showTransliteration&&<span dir="ltr">kataba</span>}<small>he wrote</small></div>
             <div><b lang="ar" dir="rtl">يَكْتُبُ</b>{showTransliteration&&<span dir="ltr">yaktubu</span>}<small>he writes</small></div>
@@ -171,18 +171,18 @@ function LessonPage() {
             <div><b lang="ar" dir="rtl">مَكْتَبٌ</b>{showTransliteration&&<span dir="ltr">maktabun</span>}<small>office / desk</small></div>
           </div>
           <div className="root-callout"><span>THE ROOT CONSONANTS · الْحُرُوفُ الْأَصْلِيَّةُ</span><strong lang="ar" dir="rtl">ك · ت · ب</strong><p>{copy.rootNote}</p></div>
-          <div className="caution-note">{copy.patternCaution}</div>
+          <div className="caution-note" lang={language}>{copy.patternCaution}</div>
         </section>
         <section className="lesson-block">
           <span className="section-kicker">A QUESTION BEGINNERS OFTEN ASK</span>
           <h2>{copy.kitābQuestion}</h2>
-          <p>{copy.kitābAnswer}</p>
+          <p lang={language}>{copy.kitābAnswer}</p>
           <div className="mini-example"><b lang="ar" dir="rtl">كَتَبَ</b><span>Verb · فعل</span><b lang="ar" dir="rtl">كِتَابٌ</b><span>Noun · اسم</span></div>
         </section>
         <section className="lesson-block practice-block">
           <span className="section-kicker">CHECK YOUR UNDERSTANDING</span>
           <h2>{copy.practiceTitle}</h2>
-          <p>{copy.practicePrompt}</p>
+          <p lang={language}>{copy.practicePrompt}</p>
           <div className="answer-options">
             {copy.options.map((v,i)=><button key={i} dir={rtl?'rtl':'ltr'} className={answer===String(i)?'answer-option chosen':'answer-option'} onClick={()=>{setAnswer(String(i));setShowAnswer(false)}}>{v}</button>)}
           </div>
@@ -192,17 +192,18 @@ function LessonPage() {
         <section className="lesson-block">
           <span className="section-kicker">SAY IT BACK</span>
           <h2>{copy.teachTitle}</h2>
-          <p>{copy.teach}</p>
+          <p lang={language}>{copy.teach}</p>
           <div className="audio-unavailable"><Volume2 size={16}/>{copy.audio}</div>
         </section>
         <section className="lesson-block source-block">
           <span className="section-kicker">REFERENCES</span>
           <h2>{copy.sourceTitle}</h2>
-          <p>{copy.sourceNote}</p>
+          <p lang={language}>{copy.sourceNote}</p>
           <ul>
             <li><a href="https://academic.oup.com/edited-volume/44744/chapter-abstract/380148608" target="_blank" rel="noreferrer">Ramzi Baalbaki, “Arabic Linguistic Tradition I: Naḥw and ṣarf,” The Oxford Handbook of Arabic Linguistics (2013).</a></li>
             <li><a href="https://academic.oup.com/edited-volume/44744/chapter-abstract/380148475" target="_blank" rel="noreferrer">Robert R. Ratcliffe, “Morphology,” The Oxford Handbook of Arabic Linguistics (2013).</a></li>
-            <li><a href="https://corpus.quran.com/documentation/morphologicalfeatures.jsp" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — morphological features, roots, and lemmas.</a></li>
+            <li><a href="https://corpus.quran.com/qurandictionary.jsp?q=ktb" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — dictionary entry for the root ك ت ب.</a></li>
+            <li><a href="https://corpus.quran.com/documentation/morphologicalfeatures.jsp" target="_blank" rel="noreferrer">The Quranic Arabic Corpus — documentation on roots, lemmas, and morphological features.</a></li>
           </ul>
         </section>
         <div className="lesson-end"><a href="#/">Return to the learning path</a><span>{copy.next}</span></div>
