@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working (user-confirmed); Lesson 1 has been expanded with core Persian/Urdu explanations and documented linguistic sources. Latest deployment/build verification and device QA are pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus deployment succeeded (Actions run 42101525058). Lesson 1 has core Persian/Urdu explanations and documented linguistic sources. Device QA and expert review remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -30,8 +30,8 @@
 - [x] Responsive dashboard shell and eight-unit course overview.
 - [x] Neutral branding; no personal-name footer.
 - [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
-- [ ] Run and verify production build.
-- [ ] Confirm GitHub Pages deployment.
+- [x] Run and verify production TypeScript/Vite build.
+- [x] Confirm GitHub Pages deployment (Actions run 42101525058).
 - [x] Add refresh-safe hash route for Unit 1, Lesson 1.
 - [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
 - [x] Add core Lesson 1 explanatory paragraphs in English, Persian, and Urdu (remaining UI labels and dashboard are still English).
