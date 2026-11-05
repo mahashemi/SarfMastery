@@ -19,8 +19,13 @@ Last reviewed: 2026-11-05
 | جَلَسَ | جُلُوسٌ | I | sitting |
 | فَهِمَ | فَهْمٌ | I | understanding |
 | عَلَّمَ | تَعْلِيمٌ | II | teaching |
+| قَاتَلَ | قِتَالٌ / مُقَاتَلَةٌ | III | fighting / combat |
 | أَكْرَمَ | إِكْرَامٌ | IV | honouring |
 | تَعَلَّمَ | تَعَلُّمٌ | V | learning |
+| تَكَاتَبَ | تَكَاتُبٌ | VI | correspondence |
+| اِنْكَسَرَ | اِنْكِسَارٌ | VII | breaking / fracture |
+| اِجْتَمَعَ | اِجْتِمَاعٌ | VIII | gathering / meeting |
+| اِحْمَرَّ | اِحْمِرَارٌ | IX | reddening |
 | اِسْتَغْفَرَ | اِسْتِغْفَارٌ | X | seeking forgiveness |
 
 ## Common derived maṣdar patterns
