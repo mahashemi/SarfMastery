@@ -222,9 +222,9 @@ const lessonTwoCopy = {
     ism: 'An ism gives a meaning without tying that meaning to a time. It includes much more than people’s names: objects, people, qualities, ideas, pronouns, and many other nominal words.',
     fiil: 'A fiʿl gives a meaning connected with time. A verb may describe an action or a state. Arabic verbs have different forms, including past, present/imperfect, and command.',
     harf: 'A ḥarf in this classification is a particle or function word. Its role becomes clear through its relationship with other words. Examples include “in”, “from”, and “to”.',
-    ismExample: 'كِتَابٌ — a book · بَيْتٌ — a house · مَاءٌ — water',
-    fiilExample: 'كَتَبَ — he wrote · يَكْتُبُ — he writes · اُكْتُبْ — write!',
-    harfExample: 'فِي — in · مِنْ — from · إِلَى — to',
+    ismExample: 'كِتَابٌ — a book · بَيْتٌ — a house · مَاءٌ — water',\n    ismExampleWithTranslit: 'كِتَابٌ (kitābun) — a book · بَيْتٌ (baytun) — a house · مَاءٌ (māʾun) — water',
+    fiilExample: 'كَتَبَ — he wrote · يَكْتُبُ — he writes · اُكْتُبْ — write!',\n    fiilExampleWithTranslit: 'كَتَبَ (kataba) — he wrote · يَكْتُبُ (yaktubu) — he writes · اُكْتُبْ (uktub) — write!',
+    harfExample: 'فِي — in · مِنْ — from · إِلَى — to',\n    harfExampleWithTranslit: 'فِي (fī) — in · مِنْ (min) — from · إِلَى (ilā) — to',
     warningTitle: 'Two common confusions',
     letterWarning: 'Here حَرْفٌ means a grammatical particle, not one of the alphabet letters such as ب or ت. The same Arabic word can be used in different technical senses; context tells you which sense is intended.',
     nameWarning: 'اِسْمٌ does not mean only a person’s proper name. كِتَابٌ (book), بَيْتٌ (house), and جَمِيلٌ (beautiful) are also examples of ism.',
@@ -236,7 +236,7 @@ const lessonTwoCopy = {
     score: 'Your score',
     check: 'Check classifications',
     teach: 'Explain all three categories without looking at the lesson. Then explain why حَرْفٌ in this lesson does not mean an alphabet letter.',
-    summary: 'Remember: ism is not tied to time; fiʿl is connected with time; ḥarf functions through its relationship with other words. These are starting definitions—later lessons will refine them.',
+    summary: 'Remember: ism is not tied to time; fiʿl is connected with time; ḥarf functions through its relationship with other words. These are starting definitions—later lessons will refine them.',\n    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
   },
   fa: {
     lead: 'هر واژهٔ عربی در یکی از دسته‌های دستوری قرار می‌گیرد. پیش از صرف‌کردن فعل‌ها، باید سه نوع اصلی واژه را در دستور سنتی عربی بشناسیم.',
@@ -245,9 +245,9 @@ const lessonTwoCopy = {
     ism: 'اسم معنا را می‌رساند، بی‌آن‌که آن را به زمان پیوند دهد. اسم فقط نام اشخاص نیست؛ اشیا، افراد، ویژگی‌ها، مفاهیم، ضمیرها و بسیاری از واژه‌های اسمی را دربرمی‌گیرد.',
     fiil: 'فعل معنایی مرتبط با زمان می‌رساند. فعل می‌تواند بر انجام کار یا بر حالت دلالت کند. در عربی صورت‌های گوناگونی مانند ماضی، مضارع و امر دارد.',
     harf: 'حرف در این دسته‌بندی، واژه‌ای دستوری و پیونددهنده است که نقش آن در ارتباط با واژه‌های دیگر روشن می‌شود؛ مانند «در»، «از» و «به».',
-    ismExample: 'كِتَابٌ — کتاب · بَيْتٌ — خانه · مَاءٌ — آب',
-    fiilExample: 'كَتَبَ — او نوشت · يَكْتُبُ — او می‌نویسد · اُكْتُبْ — بنویس!',
-    harfExample: 'فِي — در · مِنْ — از · إِلَى — به / سوی',
+    ismExample: 'كِتَابٌ — کتاب · بَيْتٌ — خانه · مَاءٌ — آب',\n    ismExampleWithTranslit: 'كِتَابٌ (kitābun) — کتاب · بَيْتٌ (baytun) — خانه · مَاءٌ (māʾun) — آب',
+    fiilExample: 'كَتَبَ — او نوشت · يَكْتُبُ — او می‌نویسد · اُكْتُبْ — بنویس!',\n    fiilExampleWithTranslit: 'كَتَبَ (kataba) — او نوشت · يَكْتُبُ (yaktubu) — او می‌نویسد · اُكْتُبْ (uktub) — بنویس!',
+    harfExample: 'فِي — در · مِنْ — از · إِلَى — به / سوی',\n    harfExampleWithTranslit: 'فِي (fī) — در · مِنْ (min) — از · إِلَى (ilā) — به / سوی',
     warningTitle: 'دو اشتباه رایج',
     letterWarning: 'در این تقسیم‌بندی، حَرْفٌ به معنای حرفِ الفبا مانند ب یا ت نیست؛ بلکه منظور یک واژهٔ دستوری یا حرفِ معناست. واژهٔ عربی ممکن است در اصطلاحات مختلف معناهای فنی متفاوتی داشته باشد.',
     nameWarning: 'اِسْمٌ فقط به معنای نام خاصِ یک شخص نیست. كِتَابٌ (کتاب)، بَيْتٌ (خانه) و جَمِيلٌ (زیبا) نیز اسم‌اند.',
@@ -259,7 +259,7 @@ const lessonTwoCopy = {
     score: 'امتیاز شما',
     check: 'بررسی دسته‌بندی‌ها',
     teach: 'بدون نگاه‌کردن به درس، هر سه دسته را توضیح دهید. سپس بگویید چرا حَرْفٌ در این درس به معنای حرف الفبا نیست.',
-    summary: 'به یاد بسپارید: اسم به زمان وابسته نیست؛ فعل با زمان ارتباط دارد؛ حرف از راه ارتباط با واژه‌های دیگر نقش خود را نشان می‌دهد. این تعریف‌ها آغاز راه‌اند و در درس‌های بعد دقیق‌تر می‌شوند.',
+    summary: 'به یاد بسپارید: اسم به زمان وابسته نیست؛ فعل با زمان ارتباط دارد؛ حرف از راه ارتباط با واژه‌های دیگر نقش خود را نشان می‌دهد. این تعریف‌ها آغاز راه‌اند و در درس‌های بعد دقیق‌تر می‌شوند.',\n    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
   },
   ur: {
     lead: 'ہر عربی لفظ کسی نہ کسی نحوی قسم سے تعلق رکھتا ہے۔ افعال کی گردان سیکھنے سے پہلے ہمیں عربی قواعد کی تین بنیادی اقسام پہچاننی چاہییں۔',
@@ -268,9 +268,9 @@ const lessonTwoCopy = {
     ism: 'اسم ایسا معنی بتاتا ہے جو کسی زمانے کے ساتھ مخصوص نہیں ہوتا۔ اسم صرف کسی شخص کے نام تک محدود نہیں؛ اشیا، افراد، صفات، تصورات، ضمیر اور بہت سے دوسرے اسمی الفاظ بھی اس میں شامل ہیں۔',
     fiil: 'فعل ایسا معنی بتاتا ہے جو زمانے سے تعلق رکھتا ہے۔ فعل کسی کام یا حالت کو ظاہر کر سکتا ہے۔ عربی میں ماضی، مضارع اور امر سمیت اس کی مختلف صورتیں ہیں۔',
     harf: 'اس تقسیم میں حرف سے مراد نحوی particle یا ایسا لفظ ہے جس کا کردار دوسرے الفاظ کے ساتھ تعلق سے واضح ہوتا ہے؛ جیسے ’’میں‘‘، ’’سے‘‘ اور ’’کی طرف‘‘۔',
-    ismExample: 'كِتَابٌ — کتاب · بَيْتٌ — گھر · مَاءٌ — پانی',
-    fiilExample: 'كَتَبَ — اس نے لکھا · يَكْتُبُ — وہ لکھتا ہے · اُكْتُبْ — لکھو!',
-    harfExample: 'فِي — میں · مِنْ — سے · إِلَى — کی طرف',
+    ismExample: 'كِتَابٌ — کتاب · بَيْتٌ — گھر · مَاءٌ — پانی',\n    ismExampleWithTranslit: 'كِتَابٌ (kitābun) — کتاب · بَيْتٌ (baytun) — گھر · مَاءٌ (māʾun) — پانی',
+    fiilExample: 'كَتَبَ — اس نے لکھا · يَكْتُبُ — وہ لکھتا ہے · اُكْتُبْ — لکھو!',\n    fiilExampleWithTranslit: 'كَتَبَ (kataba) — اس نے لکھا · يَكْتُبُ (yaktubu) — وہ لکھتا ہے · اُكْتُبْ (uktub) — لکھو!',
+    harfExample: 'فِي — میں · مِنْ — سے · إِلَى — کی طرف',\n    harfExampleWithTranslit: 'فِي (fī) — میں · مِنْ (min) — سے · إِلَى (ilā) — کی طرف',
     warningTitle: 'دو عام غلط فہمیاں',
     letterWarning: 'یہاں حَرْفٌ سے مراد ب یا ت جیسے حروفِ تہجی نہیں، بلکہ ایک نحوی particle ہے۔ عربی میں ایک ہی لفظ مختلف علمی اصطلاحات میں مختلف معنی رکھ سکتا ہے؛ سیاق سے مراد واضح ہوتی ہے۔',
     nameWarning: 'اِسْمٌ صرف کسی شخص کے خاص نام کو نہیں کہتے۔ كِتَابٌ (کتاب)، بَيْتٌ (گھر) اور جَمِيلٌ (خوبصورت) بھی اسم ہیں۔',
@@ -329,9 +329,9 @@ function LessonTwoPage() {
         <section className="lesson-block">
           <span className="section-kicker">THE THREE CATEGORIES</span>
           <div className="category-grid">
-            <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small dir={rtl?'rtl':'ltr'}>{copy.ismExample}</small></div>
-            <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small dir={rtl?'rtl':'ltr'}>{copy.fiilExample}</small></div>
-            <div className="category-card"><div className="category-number">03</div><b lang="ar" dir="rtl">حَرْفٌ</b>{showTransliteration&&<span dir="ltr">ḥarf</span>}<h3>Particle</h3><p lang={language}>{copy.harf}</p><small dir={rtl?'rtl':'ltr'}>{copy.harfExample}</small></div>
+            <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.ismExampleWithTranslit:copy.ismExample}</small></div>
+            <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.fiilExampleWithTranslit:copy.fiilExample}</small></div>
+            <div className="category-card"><div className="category-number">03</div><b lang="ar" dir="rtl">حَرْفٌ</b>{showTransliteration&&<span dir="ltr">ḥarf</span>}<h3>Particle</h3><p lang={language}>{copy.harf}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.harfExampleWithTranslit:copy.harfExample}</small></div>
           </div>
         </section>
         <section className="lesson-block">
@@ -362,7 +362,7 @@ function LessonTwoPage() {
           <span className="section-kicker">RECALL AND TEACH</span>
           <h2>Say it back</h2>
           <p lang={language}>{copy.teach}</p>
-          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>\n          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
         </section>
         <section className="lesson-block source-block">
           <span className="section-kicker">REFERENCES</span>
