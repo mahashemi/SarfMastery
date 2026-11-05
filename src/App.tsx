@@ -1005,7 +1005,176 @@ const sixAbwab = [
   {name:'Bāb Ḥasb',past:'حَسِبَ',present:'يَحْسِبُ',pastLatin:'ḥasiba',presentLatin:'yaḥsibu',gloss:'he thought / considered',glossFa:'او پنداشت',glossUr:'اس نے خیال کیا',pastWeight:'فَعِلَ',presentWeight:'يَفْعِلُ',answer:'6',pastVowel:'kasrah',presentVowel:'kasrah'},
 ] as const
 
+
+const lessonSixIntroCopy = {
+  en: {
+    lead: 'A ṣīghah is one conjugated form of a verb. Traditional Sarf study organises the verb into 14 teaching slots so you can see who is acting: third person, second person, or first person.',
+    objective: 'Memorise the 14-slot order, distinguish ghāʾib, mukhāṭab, and mutakallim, and understand why some pronoun slots share the same written form.',
+    definition: 'The traditional table has six ghāʾib (third-person) slots, six mukhāṭab (second-person) slots, and two mutakallim (first-person) slots. Each slot combines person, number, and gender.',
+    order: 'Read the sequence from top to bottom: six absent/third-person forms, six addressed/second-person forms, and two speaker/first-person forms.',
+    dual: 'The third-person dual has separate masculine and feminine verb forms. The second-person dual pronoun أَنْتُمَا is the same for both genders, so it appears in two teaching slots with the same pronoun spelling.',
+    caution: 'The “14 forms” are 14 traditional teaching slots, not 14 unique pronoun spellings. Keep the two dual-gender slots distinct when studying the table.',
+    practice: 'Identify whether each pronoun belongs to ghāʾib (third person), mukhāṭab (second person), or mutakallim (first person).',
+    correct: 'Correct group.',
+    incorrect: 'The correct group is',
+    score: 'Your score',
+    check: 'Check groups',
+    teach: 'Recite the 14 pronouns in order. Then explain the difference between ghāʾib, mukhāṭab, and mutakallim.',
+    summary: 'The 14-slot order is six ghāʾib, six mukhāṭab, and two mutakallim. Learn the slots before memorising the verb endings in the next lessons.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'صیغه یکی از صورت‌های صرف‌شدهٔ فعل است. در آموزش سنتی صرف، فعل در ۱۴ جایگاه قرار می‌گیرد تا روشن شود چه کسی انجام‌دهنده است: غایب، مخاطب یا متکلم.',
+    objective: 'ترتیب ۱۴ جایگاه را حفظ کنید، غایب و مخاطب و متکلم را از هم تشخیص دهید و بدانید چرا برخی جایگاه‌ها صورت نوشتاری یکسان دارند.',
+    definition: 'جدول سنتی شش جایگاه غایب، شش جایگاه مخاطب و دو جایگاه متکلم دارد. هر جایگاه شخص، شمار و جنس را نشان می‌دهد.',
+    order: 'ترتیب را از بالا به پایین بخوانید: شش صورت غایب، شش صورت مخاطب و دو صورت متکلم.',
+    dual: 'در غایب، صورت مثنای مذکر و مؤنث در فعل متفاوت است. ضمیر مثنای مخاطب أَنْتُمَا برای هر دو جنس یکسان است؛ بنابراین در دو جایگاه آموزشی با نوشتار یکسان می‌آید.',
+    caution: '«۱۴ صیغه» به معنای ۱۴ نوشتارِ ضمیرِ متفاوت نیست؛ بلکه ۱۴ جایگاه سنتی آموزشی است. هنگام مطالعه، دو جایگاه مثنای جنسیتی را جدا نگه دارید.',
+    practice: 'مشخص کنید هر ضمیر به غایب، مخاطب یا متکلم تعلق دارد.',
+    correct: 'گروه درست است.',
+    incorrect: 'گروه درست:',
+    score: 'امتیاز شما',
+    check: 'بررسی گروه‌ها',
+    teach: 'چهارده ضمیر را به ترتیب بخوانید. سپس تفاوت غایب، مخاطب و متکلم را توضیح دهید.',
+    summary: 'ترتیب ۱۴ جایگاه شامل شش غایب، شش مخاطب و دو متکلم است. پیش از حفظ پایان‌های فعل، این جایگاه‌ها را بیاموزید.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'صیغہ فعل کی ایک گردانی ہوئی صورت ہے۔ علمِ صرف کی روایتی تعلیم میں فعل کو چودہ خانوں میں رکھا جاتا ہے تاکہ معلوم ہو کہ کام کرنے والا غائب، مخاطب یا متکلم ہے۔',
+    objective: 'چودہ خانوں کی ترتیب یاد کریں، غائب، مخاطب اور متکلم میں فرق کریں، اور سمجھیں کہ بعض خانوں کے ضمیر ایک جیسے کیوں لکھے جاتے ہیں۔',
+    definition: 'روایتی جدول میں چھ غائب، چھ مخاطب اور دو متکلم کے خانے ہوتے ہیں۔ ہر خانہ شخص، تعداد اور جنس کو ظاہر کرتا ہے۔',
+    order: 'ترتیب اوپر سے نیچے پڑھیں: پہلے چھ غائب، پھر چھ مخاطب، اور آخر میں دو متکلم کے صیغے۔',
+    dual: 'غائب تثنیہ میں مذکر اور مؤنث کے فعل کی صورتیں مختلف ہیں۔ مخاطب تثنیہ کا ضمیر أَنْتُمَا دونوں جنسوں کے لیے ایک جیسا ہے، اس لیے دو تعلیمی خانوں میں ایک ہی طرح لکھا جاتا ہے۔',
+    caution: '’’چودہ صیغے‘‘ کا مطلب چودہ الگ الگ ضمیری املا نہیں، بلکہ صرف کی تعلیم کے چودہ روایتی خانے ہیں۔ تثنیہ کے دونوں صنفی خانوں کو الگ یاد رکھیں۔',
+    practice: 'بتائیں کہ ہر ضمیر غائب، مخاطب یا متکلم میں سے کس گروہ سے تعلق رکھتا ہے۔',
+    correct: 'درست گروہ۔',
+    incorrect: 'درست گروہ ہے:',
+    score: 'آپ کا اسکور',
+    check: 'گروہ جانچیں',
+    teach: 'چودہ ضمیروں کو ترتیب سے پڑھیں۔ پھر غائب، مخاطب اور متکلم کا فرق بیان کریں۔',
+    summary: 'چودہ خانوں کی ترتیب میں چھ غائب، چھ مخاطب اور دو متکلم ہیں۔ فعل کے لاحقے یاد کرنے سے پہلے ان خانوں کو اچھی طرح سیکھیں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const pronounSlots = [
+  {pronoun:'هُوَ',latin:'huwa',role:'3rd · masculine singular',roleFa:'غایب · مذکر مفرد',roleUr:'غائب · مذکر واحد',group:'ghaib'},
+  {pronoun:'هُمَا',latin:'humā',role:'3rd · masculine dual',roleFa:'غایب · مذکر مثنّی',roleUr:'غائب · مذکر تثنیہ',group:'ghaib'},
+  {pronoun:'هُمْ',latin:'hum',role:'3rd · masculine plural',roleFa:'غایب · مذکر جمع',roleUr:'غائب · مذکر جمع',group:'ghaib'},
+  {pronoun:'هِيَ',latin:'hiya',role:'3rd · feminine singular',roleFa:'غایب · مؤنث مفرد',roleUr:'غائب · مؤنث واحد',group:'ghaib'},
+  {pronoun:'هُمَا',latin:'humā',role:'3rd · feminine dual',roleFa:'غایب · مؤنث مثنّی',roleUr:'غائب · مؤنث تثنیہ',group:'ghaib'},
+  {pronoun:'هُنَّ',latin:'hunna',role:'3rd · feminine plural',roleFa:'غایب · مؤنث جمع',roleUr:'غائب · مؤنث جمع',group:'ghaib'},
+  {pronoun:'أَنْتَ',latin:'anta',role:'2nd · masculine singular',roleFa:'مخاطب · مذکر مفرد',roleUr:'مخاطب · مذکر واحد',group:'mukhatab'},
+  {pronoun:'أَنْتُمَا',latin:'antumā',role:'2nd · masculine dual',roleFa:'مخاطب · مذکر مثنّی',roleUr:'مخاطب · مذکر تثنیہ',group:'mukhatab'},
+  {pronoun:'أَنْتُمْ',latin:'antum',role:'2nd · masculine plural',roleFa:'مخاطب · مذکر جمع',roleUr:'مخاطب · مذکر جمع',group:'mukhatab'},
+  {pronoun:'أَنْتِ',latin:'anti',role:'2nd · feminine singular',roleFa:'مخاطب · مؤنث مفرد',roleUr:'مخاطب · مؤنث واحد',group:'mukhatab'},
+  {pronoun:'أَنْتُمَا',latin:'antumā',role:'2nd · feminine dual',roleFa:'مخاطب · مؤنث مثنّی',roleUr:'مخاطب · مؤنث تثنیہ',group:'mukhatab'},
+  {pronoun:'أَنْتُنَّ',latin:'antunna',role:'2nd · feminine plural',roleFa:'مخاطب · مؤنث جمع',roleUr:'مخاطب · مؤنث جمع',group:'mukhatab'},
+  {pronoun:'أَنَا',latin:'anā',role:'1st · singular',roleFa:'متکلم · مفرد',roleUr:'متکلم · واحد',group:'mutakallim'},
+  {pronoun:'نَحْنُ',latin:'naḥnu',role:'1st · plural',roleFa:'متکلم · جمع',roleUr:'متکلم · جمع',group:'mutakallim'},
+]
+const pronounGroupPractice = [
+  {pronoun:'هُنَّ',latin:'hunna',answer:'ghaib'},
+  {pronoun:'أَنْتُمْ',latin:'antum',answer:'mukhatab'},
+  {pronoun:'نَحْنُ',latin:'naḥnu',answer:'mutakallim'},
+  {pronoun:'هُوَ',latin:'huwa',answer:'ghaib'},
+]
+const pronounGroupChoices = [
+  {value:'ghaib',label:'غَائِبٌ · third person'},
+  {value:'mukhatab',label:'مُخَاطَبٌ · second person'},
+  {value:'mutakallim',label:'مُتَكَلِّمٌ · first person'},
+]
+
 function LessonSixPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonSixIntroCopy[language]
+  const rtl = language !== 'en'
+  const score = pronounGroupPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/05" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 03 · LESSON 06</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
+        <h1>The <em>14 Ṣīghahs</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الصِّيَغُ الْأَرْبَعَ عَشْرَةَ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-ṣīghāt al-arbaʿ ʿashrah</div>}
+          <h2>Three groups of pronouns</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE 14-SLOT ORDER</span>
+          <div className="pronoun-group-cards"><div><b lang="ar" dir="rtl">غَائِبٌ</b><strong>6</strong><span>Ghāʾib · third person</span></div><div><b lang="ar" dir="rtl">مُخَاطَبٌ</b><strong>6</strong><span>Mukhāṭab · second person</span></div><div><b lang="ar" dir="rtl">مُتَكَلِّمٌ</b><strong>2</strong><span>Mutakallim · first person</span></div></div>
+          <p lang={language}>{copy.order}</p>
+          <div className="pronoun-slots-grid">
+            <div className="pronoun-slots-head"><span>#</span><span>Pronoun</span><span>Person · number · gender</span><span>Group</span></div>
+            {pronounSlots.map((item,index)=><div className="pronoun-slots-row" key={index}>
+              <span className="conjugation-index">{index+1}</span>
+              <div className="conjugation-pronoun"><b lang="ar" dir="rtl">{item.pronoun}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <span className="conjugation-slot">{language==='fa'?item.roleFa:language==='ur'?item.roleUr:item.role}</span>
+              <span className="pronoun-group-label">{item.group==='ghaib'?'غَائِبٌ':item.group==='mukhatab'?'مُخَاطَبٌ':'مُتَكَلِّمٌ'}</span>
+            </div>)}
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">AN IMPORTANT DISTINCTION</span>
+          <h2>Fourteen slots, not fourteen unique spellings</h2>
+          <div className="warning-card"><strong>Dual forms</strong><p lang={language}>{copy.dual}</p></div>
+          <div className="caution-note" lang={language}>{copy.caution}</div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · CLASSIFY THE PRONOUN</span>
+          <h2>Which group does it belong to?</h2>
+          <p lang={language}>{copy.practice}</p>
+          <div className="pronoun-practice-list">
+            {pronounGroupPractice.map((item,index)=><div className="pronoun-practice-row" key={item.pronoun+index}>
+              <div><b lang="ar" dir="rtl">{item.pronoun}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the group for '+item.pronoun} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose group…</option>
+                {pronounGroupChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{pronounGroupChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==pronounGroupPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {pronounGroupPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://www.ghazali.org/books/haywood-65.pdf" target="_blank" rel="noreferrer">Haywood and Nahmad, A New Arabic Grammar, section on personal pronouns.</a></li>
+            <li><a href="https://www.fivesuper.com/support/downloads/Arabic-Grammar-in-Context_Mohammad-T.-Alhawary-%282016%29.pdf" target="_blank" rel="noreferrer">Mohammad T. Alhawary, Arabic Grammar in Context (2016), section on verb conjugation and person/number/gender.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/05">← Lesson 5: Mīzān Ṣarfī</a><a className="next-lesson-link" href="#/lesson/07">Next: past active →</a></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What is a ṣīghah?</li><li>Three pronoun groups</li><li>14-slot order</li><li>Gender and dual slots</li><li>Shared spellings</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Memorise the groups first: 6 ghāʾib, 6 mukhāṭab, 2 mutakallim. Then learn each verb table in this order.</p></div></aside>
+    </div>
+  </main>
+}
+
+function LessonTwelvePage() {
   const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
@@ -1022,7 +1191,7 @@ function LessonSixPage() {
     {value:'6',label:'فَعِلَ يَفْعِلُ'},
   ]
   return <main className="lesson-page">
-    <header className="lesson-header"><a href="#/lesson/05" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 02 · LESSON 06</span></header>
+    <header className="lesson-header"><a href="#/lesson/11" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 04 · LESSON 12</span></header>
     <div className="lesson-toolbar">
       <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
         <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
@@ -2005,7 +2174,7 @@ function LessonElevenPage() {
             <li><a href="https://attahawi.com/wp-content/uploads/2020/04/exercises-on-arabic-morphology-vol-1.5.pdf" target="_blank" rel="noreferrer">Exercises on Arabic Morphology, Vol. 1, chapter 3, command and prohibitive forms.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/10">← Lesson 10: Present passive</a><span>Next: application and unseen-form analysis</span></div>
+        <div className="lesson-end"><a href="#/lesson/10">← Lesson 10: Present passive</a><a className="next-lesson-link" href="#/lesson/12">Next: the six Abwāb →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Imperative and prohibitive</li><li>Build اُكْتُبْ</li><li>Build لَا تَكْتُبْ</li><li>Six second-person slots</li><li>Dual form overlap</li><li>Pronoun practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Positive command: اُكْتُبْ. Prohibition: لَا تَكْتُبْ. Never put لَا directly before the imperative form.</p></div></aside>
     </div>
@@ -2027,12 +2196,13 @@ export default function App() {
   if (route === '#/lesson/03') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 03</span></header><LessonThreePage/></div>
   if (route === '#/lesson/04') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 04</span></header><LessonFourPage/></div>
   if (route === '#/lesson/05') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 05</span></header><LessonFivePage/></div>
-  if (route === '#/lesson/06') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 06</span></header><LessonSixPage/></div>
+  if (route === '#/lesson/06') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 06</span></header><LessonSixPage/></div>
   if (route === '#/lesson/07') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 07</span></header><LessonSevenPage/></div>
   if (route === '#/lesson/08') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 08</span></header><LessonEightPage/></div>
   if (route === '#/lesson/09') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 09</span></header><LessonNinePage/></div>
   if (route === '#/lesson/10') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 10</span></header><LessonTenPage/></div>
   if (route === '#/lesson/11') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 11</span></header><LessonElevenPage/></div>
+  if (route === '#/lesson/12') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 04 · LESSON 12</span></header><LessonTwelvePage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
