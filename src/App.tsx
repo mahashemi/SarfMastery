@@ -736,9 +736,200 @@ function LessonFourPage() {
             <li><a href="https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D8%A7%D8%B3%D8%AA%D9%83%D8%AA%D8%A8" target="_blank" rel="noreferrer">Cairo Arabic Language Academy — dictionary entry for اِسْتَكْتَبَ, root ك ت ب.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/03">← Lesson 3: Verb and maṣdar</a><span>Next: the morphological scale (الميزان الصرفي)</span></div>
+        <div className="lesson-end"><a href="#/lesson/03">← Lesson 3: Verb and maṣdar</a><a className="next-lesson-link" href="#/lesson/05">Next: the Mīzān Ṣarfī →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Original and added letters</li><li>Mujarrad and Mazīd</li><li>One root, three patterns</li><li>سَأَلْتُمُونِيهَا</li><li>Mnemonic limitations</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Do not strip letters mechanically. Find the pattern and verify the root.</p></div></aside>
+    </div>
+  </main>
+}
+
+
+const lessonFiveCopy = {
+  en: {
+    lead: 'The Mīzān Ṣarfī is a measuring tool for word forms. It lets you describe a word’s pattern by comparing its root letters with the model letters ف، ع، ل.',
+    objective: 'Identify the three model letters, map them to a triliteral root, and recognise the weights of familiar verbs and derived nouns.',
+    definition: 'For a three-letter root, the standard scale uses فَعَلَ as its basic model. The first root consonant matches ف, the second matches ع, and the third matches ل. The word being analysed is the mawzūn; its pattern is the wazn.',
+    first: 'The first original root consonant.',
+    second: 'The second original root consonant.',
+    third: 'The third original root consonant.',
+    mapping: 'For كَتَبَ, kāf maps to ف, tāʾ maps to ع, and bāʾ maps to ل. This is why كَتَبَ weighs فَعَلَ.',
+    added: 'When a word has added letters, keep those letters in the scale in the same position. The root consonants are replaced by ف، ع، ل; the additions remain visible.',
+    vowel: 'The vowels matter too. فَعَلَ is only one model pattern. Other verbs may follow patterns such as فَعِلَ or فَعُلَ; the six common Abwāb will be studied next.',
+    caution: 'The scale describes a word’s structure, not its translation. Do not assume every triliteral word weighs فَعَلَ. Match all root letters, added letters, and vowel marks.',
+    quadriliteral: 'This lesson focuses on three-letter roots. Four-letter roots use a different basic model, commonly فَعْلَلَ; we will study them later.',
+    practicePrompt: 'Choose the correct wazn (pattern) for each Arabic word.',
+    correct: 'Correct pattern.',
+    incorrect: 'Check the root and added letters. The correct pattern is',
+    score: 'Your score',
+    check: 'Check patterns',
+    teach: 'Explain what ف، ع، and ل represent. Then weigh كَاتَبَ and اِسْتَكْتَبَ without looking at the examples.',
+    summary: 'Find the root first. Replace the first, second, and third root consonants with ف، ع، ل, keep any additions in place, and match the vowel marks.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'میزان صرفی ابزاری برای سنجش صورت واژه‌هاست. با مقایسهٔ حروف ریشه با حروف الگوی ف، ع، ل می‌توان وزن یک واژه را بیان کرد.',
+    objective: 'سه حرفِ معیار را بشناسید، آن‌ها را با ریشهٔ سه‌حرفی تطبیق دهید و وزن فعل‌ها و اسم‌های مشتقِ آشنا را تشخیص دهید.',
+    definition: 'برای ریشهٔ سه‌حرفی، معیار پایه فَعَلَ است. حرف اصلی اول با ف، حرف دوم با ع و حرف سوم با ل سنجیده می‌شود. واژه‌ای که می‌سنجیم موزون و قالب آن وزن نام دارد.',
+    first: 'نخستین حرف اصلی ریشه.',
+    second: 'دومین حرف اصلی ریشه.',
+    third: 'سومین حرف اصلی ریشه.',
+    mapping: 'در كَتَبَ، کاف با ف، تاء با ع و باء با ل برابر است؛ بنابراین وزن كَتَبَ، فَعَلَ است.',
+    added: 'اگر واژه حروف افزوده داشته باشد، آن حروف در همان جایگاه در وزن باقی می‌مانند. حروف اصلی با ف، ع و ل جایگزین می‌شوند و حروف افزوده دیده می‌شوند.',
+    vowel: 'حرکت‌ها نیز مهم‌اند. فَعَلَ تنها یکی از وزن‌های ممکن است. فعل‌های دیگر ممکن است بر وزن‌هایی مانند فَعِلَ یا فَعُلَ باشند؛ شش باب معروف را در درس بعد می‌آموزیم.',
+    caution: 'وزن ساختار واژه را نشان می‌دهد، نه ترجمهٔ آن را. گمان نکنید هر واژهٔ سه‌حرفی بر وزن فَعَلَ است؛ حروف اصلی، افزوده و حرکت‌ها را با هم بررسی کنید.',
+    quadriliteral: 'این درس بر ریشه‌های سه‌حرفی تمرکز دارد. ریشه‌های چهارحرفی معیار پایهٔ دیگری دارند که معمولاً فَعْلَلَ است؛ آن را بعداً می‌آموزیم.',
+    practicePrompt: 'وزن درست هر واژهٔ عربی را انتخاب کنید.',
+    correct: 'وزن درست است.',
+    incorrect: 'ریشه و حروف افزوده را بررسی کنید. وزن درست:',
+    score: 'امتیاز شما',
+    check: 'بررسی وزن‌ها',
+    teach: 'توضیح دهید ف، ع و ل نمایندهٔ چه چیزی هستند. سپس بدون نگاه‌کردن به نمونه‌ها وزن كَاتَبَ و اِسْتَكْتَبَ را به‌دست آورید.',
+    summary: 'ابتدا ریشه را بیابید؛ سپس حرف اول، دوم و سوم ریشه را با ف، ع و ل جایگزین کنید، حروف افزوده را در جای خود نگه دارید و حرکت‌ها را نیز تطبیق دهید.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'میزانِ صرفی الفاظ کی ساخت ناپنے کا ایک طریقہ ہے۔ اس میں مادّے کے حروف کا موازنہ ف، ع، ل کے نمونوں سے کیا جاتا ہے۔',
+    objective: 'تین معیاری حروف پہچانیں، انہیں سہ حرفی مادّے سے ملائیں، اور مانوس افعال اور مشتق اسماء کے اوزان معلوم کریں۔',
+    definition: 'تین حرفی مادّے کے لیے بنیادی معیار فَعَلَ ہے۔ مادّے کا پہلا اصلی حرف ف، دوسرا ع اور تیسرا ل کے مقابل آتا ہے۔ جس لفظ کو تولا جائے وہ موزون اور اس کا قالب وزن کہلاتا ہے۔',
+    first: 'مادّے کا پہلا اصلی حرف۔',
+    second: 'مادّے کا دوسرا اصلی حرف۔',
+    third: 'مادّے کا تیسرا اصلی حرف۔',
+    mapping: 'كَتَبَ میں کاف ف کے، تاء ع کے، اور باء ل کے مقابل ہے؛ اسی لیے كَتَبَ کا وزن فَعَلَ ہے۔',
+    added: 'اگر لفظ میں زائد حروف ہوں تو وہ وزن میں اپنی اسی جگہ پر باقی رہتے ہیں۔ اصلی حروف کو ف، ع اور ل سے بدلا جاتا ہے، جبکہ زائد حروف واضح رہتے ہیں۔',
+    vowel: 'حرکات بھی اہم ہیں۔ فَعَلَ صرف ایک ممکنہ وزن ہے۔ دوسرے افعال فَعِلَ یا فَعُلَ جیسے اوزان پر بھی ہو سکتے ہیں؛ چھ ابواب اگلے سبق میں پڑھیں گے۔',
+    caution: 'وزن لفظ کی ساخت بتاتا ہے، ترجمہ نہیں۔ یہ نہ سمجھیں کہ ہر سہ حرفی لفظ کا وزن فَعَلَ ہے؛ اصلی حروف، زائد حروف اور حرکات سب دیکھیں۔',
+    quadriliteral: 'یہ سبق سہ حرفی مادّوں پر ہے۔ چار حرفی مادّوں کا بنیادی وزن مختلف ہوتا ہے، عموماً فَعْلَلَ؛ اسے بعد میں پڑھیں گے۔',
+    practicePrompt: 'ہر عربی لفظ کے لیے درست وزن منتخب کریں۔',
+    correct: 'درست وزن۔',
+    incorrect: 'مادّہ اور زائد حروف دیکھیں۔ درست وزن ہے:',
+    score: 'آپ کا اسکور',
+    check: 'اوزان جانچیں',
+    teach: 'بتائیں کہ ف، ع اور ل کن حروف کی نمائندگی کرتے ہیں۔ پھر مثال دیکھے بغیر كَاتَبَ اور اِسْتَكْتَبَ کا وزن معلوم کریں۔',
+    summary: 'پہلے مادّہ معلوم کریں؛ پھر پہلے، دوسرے اور تیسرے اصلی حرف کو ف، ع اور ل سے بدلیں، زائد حروف اپنی جگہ رہنے دیں، اور حرکات بھی ملائیں۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const mizanExamples = [
+  {word:'كَتَبَ',translit:'kataba',gloss:'he wrote',glossFa:'او نوشت',glossUr:'اس نے لکھا',pattern:'فَعَلَ',patternTranslit:'faʿala',answer:'faala',analysis:'Root ك ت ب maps to ف ع ل; no added letter.',analysisFa:'ریشه ک ت ب با ف ع ل تطبیق می‌یابد؛ حرف افزوده ندارد.',analysisUr:'مادّہ ک ت ب ف ع ل کے مقابل ہے؛ کوئی زائد حرف نہیں۔'},
+  {word:'كَاتَبَ',translit:'kātaba',gloss:'he corresponded',glossFa:'مکاتبه کرد',glossUr:'اس نے خط و کتابت کی',pattern:'فَاعَلَ',patternTranslit:'fāʿala',answer:'faaala',analysis:'The root is ك ت ب; the added alif remains in the pattern فَاعَلَ.',analysisFa:'ریشه ک ت ب است؛ الف افزوده در وزن فَاعَلَ باقی می‌ماند.',analysisUr:'مادّہ ک ت ب ہے؛ زائد الف وزن فَاعَلَ میں باقی رہتا ہے۔'},
+  {word:'اِسْتَكْتَبَ',translit:'istaktaba',gloss:'he asked someone to write',glossFa:'از کسی خواست بنویسد',glossUr:'اس نے کسی سے لکھنے کو کہا',pattern:'اِسْتَفْعَلَ',patternTranslit:'istafʿala',answer:'istafala',analysis:'The root is ك ت ب; the added sequence ا س ت remains in اِسْتَفْعَلَ.',analysisFa:'ریشه ک ت ب است؛ حروف افزودهٔ ا س ت در وزن اِسْتَفْعَلَ باقی می‌مانند.',analysisUr:'مادّہ ک ت ب ہے؛ زائد حروف ا س ت وزن اِسْتَفْعَلَ میں باقی رہتے ہیں۔'},
+  {word:'كَاتِبٌ',translit:'kātibun',gloss:'a writer',glossFa:'نویسنده',glossUr:'لکھنے والا',pattern:'فَاعِلٌ',patternTranslit:'fāʿilun',answer:'faail',analysis:'The root is ك ت ب; the alif remains in the active-participle pattern فَاعِلٌ.',analysisFa:'ریشه ک ت ب است؛ الف در وزن اسم فاعل، فَاعِلٌ، باقی می‌ماند.',analysisUr:'مادّہ ک ت ب ہے؛ الف وزن اسمِ فاعل فَاعِلٌ میں باقی رہتا ہے۔'},
+  {word:'مَكْتُوبٌ',translit:'maktūbun',gloss:'written',glossFa:'نوشته‌شده',glossUr:'لکھا ہوا',pattern:'مَفْعُولٌ',patternTranslit:'mafʿūlun',answer:'mafool',analysis:'The root is ك ت ب; the added mīm and wāw remain in مَفْعُولٌ.',analysisFa:'ریشه ک ت ب است؛ میم و واو افزوده در وزن مَفْعُولٌ باقی می‌مانند.',analysisUr:'مادّہ ک ت ب ہے؛ زائد میم اور واو وزن مَفْعُولٌ میں باقی رہتے ہیں۔'},
+  {word:'مَكْتَبٌ',translit:'maktabun',gloss:'an office / desk',glossFa:'دفتر / میزتحریر',glossUr:'دفتر / میز',pattern:'مَفْعَلٌ',patternTranslit:'mafʿalun',answer:'mafal',analysis:'The root is ك ت ب; the added mīm remains in مَفْعَلٌ.',analysisFa:'ریشه ک ت ب است؛ میم افزوده در وزن مَفْعَلٌ باقی می‌ماند.',analysisUr:'مادّہ ک ت ب ہے؛ زائد میم وزن مَفْعَلٌ میں باقی رہتا ہے۔'},
+] as const
+
+function LessonFivePage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonFiveCopy[language]
+  const rtl = language !== 'en'
+  const score = mizanExamples.filter((item,index)=>answers[index]===item.answer).length
+  const choices = [
+    {value:'faala',label:'فَعَلَ'},
+    {value:'faaala',label:'فَاعَلَ'},
+    {value:'istafala',label:'اِسْتَفْعَلَ'},
+    {value:'faail',label:'فَاعِلٌ'},
+    {value:'mafool',label:'مَفْعُولٌ'},
+    {value:'mafal',label:'مَفْعَلٌ'},
+  ]
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/04" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 02 · LESSON 05</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 02 · THE MORPHOLOGICAL SCALE</div>
+        <h1>The <em>Mīzān Ṣarfī</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْمِيزَانُ الصَّرْفِيُّ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-mīzān al-ṣarfī</div>}
+          <h2>What is the morphological scale?</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE THREE MODEL LETTERS</span>
+          <h2>ف · ع · ل</h2>
+          <div className="mizan-model-grid">
+            <div><b lang="ar" dir="rtl">فَاءُ الْفِعْلِ</b><strong>ف</strong><span>Fāʾ al-fiʿl</span><p lang={language}>{copy.first}</p></div>
+            <div><b lang="ar" dir="rtl">عَيْنُ الْفِعْلِ</b><strong>ع</strong><span>ʿAyn al-fiʿl</span><p lang={language}>{copy.second}</p></div>
+            <div><b lang="ar" dir="rtl">لَامُ الْفِعْلِ</b><strong>ل</strong><span>Lām al-fiʿl</span><p lang={language}>{copy.third}</p></div>
+          </div>
+          <div className="root-map-strip"><div><b lang="ar" dir="rtl">ك</b><span>→</span><strong lang="ar" dir="rtl">ف</strong></div><div><b lang="ar" dir="rtl">ت</b><span>→</span><strong lang="ar" dir="rtl">ع</strong></div><div><b lang="ar" dir="rtl">ب</b><span>→</span><strong lang="ar" dir="rtl">ل</strong></div></div>
+          <p lang={language}>{copy.mapping}</p>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">KEEP THE ADDITIONS</span>
+          <h2>Root letters change; additions stay</h2>
+          <p lang={language}>{copy.added}</p>
+          <div className="mizan-example-table">
+            <div><span>WORD · الْمَوْزُونُ</span><b lang="ar" dir="rtl">كَاتَبَ</b>{showTransliteration&&<small>kātaba</small>}</div>
+            <div><span>WEIGHT · الْوَزْنُ</span><b lang="ar" dir="rtl">فَاعَلَ</b>{showTransliteration&&<small>fāʿala</small>}</div>
+            <div><span>WORD · الْمَوْزُونُ</span><b lang="ar" dir="rtl">اِسْتَكْتَبَ</b>{showTransliteration&&<small>istaktaba</small>}</div>
+            <div><span>WEIGHT · الْوَزْنُ</span><b lang="ar" dir="rtl">اِسْتَفْعَلَ</b>{showTransliteration&&<small>istafʿala</small>}</div>
+          </div>
+          <div className="caution-note" lang={language}>{copy.vowel}</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE SCALE ALSO DESCRIBES NOUN PATTERNS</span>
+          <h2>Derived nouns have weights too</h2>
+          <div className="noun-pattern-grid">
+            <div><b lang="ar" dir="rtl">كَاتِبٌ</b><span>فَاعِلٌ</span><small>active participle · writer</small></div>
+            <div><b lang="ar" dir="rtl">مَكْتُوبٌ</b><span>مَفْعُولٌ</span><small>passive participle · written</small></div>
+            <div><b lang="ar" dir="rtl">مَكْتَبٌ</b><span>مَفْعَلٌ</span><small>place noun · office / desk</small></div>
+          </div>
+          <div className="caution-note" lang={language}>{copy.quadriliteral}</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">A COMMON BEGINNER QUESTION</span>
+          <h2>Does every three-letter word weigh فَعَلَ?</h2>
+          <p lang={language}>{copy.caution}</p>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · FIND THE WAZN</span>
+          <h2>Weigh each word</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="classification-list">
+            {mizanExamples.map((item,index)=><div className="classification-row" key={item.word}>
+              <div className="classification-word"><b lang="ar" dir="rtl">{item.word}</b>{showTransliteration&&<span dir="ltr">{item.translit}</span>}<small>{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</small></div>
+              <div className="classification-choices" role="group" aria-label={item.word+' pattern'}>
+                {choices.map(choice=><button type="button" key={choice.value} className={answers[index]===choice.value?'chosen':''} aria-pressed={answers[index]===choice.value} onClick={()=>{setAnswers({...answers,[index]:choice.value});setChecked(false)}}>{choice.label}</button>)}
+              </div>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b lang="ar" dir="rtl">{item.pattern}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==mizanExamples.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {mizanExamples.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://asjp.cerist.dz/en/downArticlepdf/163/5/1/130194" target="_blank" rel="noreferrer">Zoubir Dendane, “An Overview of Verb Morphology in Arabic,” on root-and-pattern morphology and derived forms.</a></li>
+            <li><a href="https://arabicwithoutwalls.ucdavis.edu/chapter14/grammar_note14.html" target="_blank" rel="noreferrer">University of California, Davis — Arabic Without Walls, Grammar Note 14: Verb Forms.</a></li>
+            <li><a href="https://www.cambridge.org/core/books/reference-grammar-of-modern-standard-arabic/207FA6CB610D541184C4B8CB10A4084A" target="_blank" rel="noreferrer">Karin C. Ryding, A Reference Grammar of Modern Standard Arabic (Cambridge University Press, 2005).</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/04">← Lesson 4: Original and added letters</a><span>Next: the six common Abwāb</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>The Mīzān Ṣarfī</li><li>ف، ع، ل as model letters</li><li>Root mapping</li><li>Keeping added letters</li><li>Noun patterns</li><li>Pattern practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write the root above the word first. Then replace the root letters with ف، ع، ل and keep every addition in place.</p></div></aside>
     </div>
   </main>
 }
@@ -757,6 +948,7 @@ export default function App() {
   if (route === '#/lesson/02') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 02</span></header><LessonTwoPage/></div>
   if (route === '#/lesson/03') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 03</span></header><LessonThreePage/></div>
   if (route === '#/lesson/04') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 04</span></header><LessonFourPage/></div>
+  if (route === '#/lesson/05') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 05</span></header><LessonFivePage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
