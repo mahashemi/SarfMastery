@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42106827583). Lessons 1–11 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42106827583). Lessons 1–12 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -17,6 +17,7 @@
 10. `docs/LESSON_09_SOURCES.md` — source map and linguistic verification boundaries for Lesson 9.
 11. `docs/LESSON_10_SOURCES.md` — source map and linguistic verification boundaries for Lesson 10.
 12. `docs/LESSON_11_SOURCES.md` — source map and linguistic verification boundaries for Lesson 11.
+13. `docs/LESSON_12_SOURCES.md` — source map and linguistic verification boundaries for Lesson 12.
 13. `docs/PRODUCT_SPEC.md` — product and UX requirements.
 14. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
 15. `docs/DECISIONS.md` — decisions and open questions.
@@ -50,7 +51,7 @@
 - [x] Add Lesson 3 at `#/lesson/03`, with fiʿl/maṣdar distinctions, three verb forms, multilingual explanations, seven-question scored practice, and explicit audio-unavailable state.
 - [x] Add Lesson 4 at `#/lesson/04`, with root/added-letter distinctions, mujarrad/mazīd examples, mnemonic limitations, seven-question scored practice, and explicit audio-unavailable state.
 - [x] Add Lesson 5 at `#/lesson/05`, with Mīzān Ṣarfī, ف ع ل mapping, six verb/noun patterns, and scored practice.
-- [x] Add Lesson 6 at `#/lesson/06`, with six Abwāb, māḍī/muḍāriʿ pairs, middle-radical vowel comparisons, and scored practice.
+- [x] Add Lesson 6 at `#/lesson/06`, with the 14-slot pronoun overview and ghāʾib/mukhāṭab/mutakallim groups.
 - [x] Add Lesson 7 at `#/lesson/07`, with the 14-slot active-past table, transliteration, English/Persian/Urdu glosses, and pronoun practice.
 - [x] Add Lesson 8 at `#/lesson/08`, with the 14-slot active-muḍāriʿ table, four prefixes, shared-form cautions, transliteration, and pronoun practice.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
@@ -69,12 +70,13 @@
 - [ ] [#4 Review and complete Unit 1, Lesson 3](https://github.com/mahashemi/SarfMastery/issues/4)
 - [ ] [#5 Review and complete Unit 1, Lesson 4](https://github.com/mahashemi/SarfMastery/issues/5)
 - [ ] [#6 Review and complete Unit 2, Lesson 5](https://github.com/mahashemi/SarfMastery/issues/6)
-- [ ] [#7 Review and complete Unit 2, Lesson 6](https://github.com/mahashemi/SarfMastery/issues/7)
+- [ ] [#7 Review and complete Unit 4, Lesson 12](https://github.com/mahashemi/SarfMastery/issues/7)
 - [ ] [#8 Review and complete Unit 3, Lesson 7](https://github.com/mahashemi/SarfMastery/issues/8)
 - [ ] [#9 Review and complete Unit 3, Lesson 8](https://github.com/mahashemi/SarfMastery/issues/9)
 - [ ] [#10 Review and complete Unit 3, Lesson 9](https://github.com/mahashemi/SarfMastery/issues/10)
 - [ ] [#11 Review and complete Unit 3, Lesson 10](https://github.com/mahashemi/SarfMastery/issues/11)
 - [ ] [#12 Review and complete Unit 3, Lesson 11](https://github.com/mahashemi/SarfMastery/issues/12)
+- [ ] [#13 Review and complete Unit 3, Lesson 6](https://github.com/mahashemi/SarfMastery/issues/13)
 
 ## Next session
 1. Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; its runs have been cancelled in some pushes, so confirm the source setting to keep one deployment path.
@@ -82,7 +84,7 @@
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
 4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–11.
 5. Obtain fluent Persian and Urdu review of Lessons 1–11.
-6. Add Lesson 12 as an applied exercise in identifying roots, weights, voice, and ṣīghah from verified Qur’anic examples.
+6. Add Lesson 13 on mujarrad and mazīd patterns (Unit 5), following the agreed curriculum sequence.
 7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
