@@ -928,7 +928,7 @@ function LessonFivePage() {
             <li><a href="https://thahabi.org/book/769/read/10" target="_blank" rel="noreferrer">Aḥmad al-Ḥamlāwī, Shadhā al-ʿArf fī Fann al-Ṣarf, section on al-Mīzān al-Ṣarfī.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/04">← Lesson 4: Original and added letters</a><a className="next-lesson-link" href="#/lesson/06">Next: the six common Abwāb →</a></div>
+        <div className="lesson-end"><a href="#/lesson/04">← Lesson 4: Original and added letters</a><a className="next-lesson-link" href="#/lesson/06">Next: the 14 ṣīghahs →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>The Mīzān Ṣarfī</li><li>ف، ع، ل as model letters</li><li>Root mapping</li><li>Keeping added letters</li><li>Noun patterns</li><li>Pattern practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write the root above the word first. Then replace the root letters with ف، ع، ل and keep every addition in place.</p></div></aside>
     </div>
@@ -1202,7 +1202,7 @@ function LessonTwelvePage() {
     </div>
     <div className="lesson-layout">
       <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
-        <div className="eyebrow">UNIT 02 · THE MORPHOLOGICAL SCALE</div>
+        <div className="eyebrow">UNIT 04 · THE SIX COMMON ABWĀB</div>
         <h1>The six <em>Abwāb</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
         <section className="lesson-block">
@@ -1268,7 +1268,7 @@ function LessonTwelvePage() {
             <li><a href="https://ablibrary.net/book_content/b/11500/80" target="_blank" rel="noreferrer">Sayyid Muḥammad Taqī al-Ḥusaynī al-Jalālī, Nuzhat al-Ṭarf fī ʿIlm al-Ṣarf, p. 80.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/05">← Lesson 5: The Mīzān Ṣarfī</a><a className="next-lesson-link" href="#/lesson/07">Next: the 14 ṣīghahs →</a></div>
+        <div className="lesson-end"><a href="#/lesson/11">← Lesson 11: Imperative and prohibitive</a><span>Next: mujarrad and mazīd</span></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Six Abwāb</li><li>Past and present pairs</li><li>Middle radical vowels</li><li>Maṣdar caution</li><li>Classification practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write each verb as a pair: māḍī + muḍāriʿ. Learn the vowel of the middle root letter in both forms.</p></div></aside>
     </div>
@@ -1629,7 +1629,7 @@ function LessonEightPage() {
             <li><a href="https://nabataea.net/media/04shop/PDFS/Arabic%20-%20Modern%20Grammar.pdf" target="_blank" rel="noreferrer">Karin C. Ryding, A Reference Grammar of Modern Standard Arabic, section 1.2.3 on al-muḍāriʿ.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/07">← Lesson 7: Past active 14 forms</a><span>Next: passive voice (المبني للمجهول)</span></div>
+        <div className="lesson-end"><a href="#/lesson/07">← Lesson 7: Past active 14 forms</a><span>Next: past passive</span></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Active muḍāriʿ</li><li>Four prefix letters</li><li>14-slot table</li><li>Shared surface forms</li><li>Indicative default</li><li>Pronoun practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Look at the prefix first: أ، ن، ي، ت. Then check the ending for dual and plural forms.</p></div></aside>
     </div>
