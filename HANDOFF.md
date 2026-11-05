@@ -17,7 +17,7 @@
 - Product name: Sarf Mastery — صَرْف.
 - No personal name or signature in the app.
 - Responsive desktop/tablet/mobile web app.
-- English primary; Persian and Urdu support planned.
+- English primary; core explanations in Lessons 1–3 are available in Persian and Urdu; full UI translation and fluent review remain pending.
 - Absolute beginner start, traditional Hawza sequence.
 - Arabic with full tashkīl, transliteration, and pronunciation support.
 - Lots of examples, anticipated beginner questions, exercises, revision, teach-back.
@@ -40,22 +40,27 @@
 - [x] Add Lesson 2 at `#/lesson/02`, with the three word categories, multilingual explanations, six-question scored practice, and explicit audio-unavailable state.
 - [x] Add Lesson 3 at `#/lesson/03`, with fiʿl/maṣdar distinctions, three verb forms, multilingual explanations, seven-question scored practice, and explicit audio-unavailable state.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
-- [ ] Qualified Arabic/Sarf and fluent Persian/Urdu review of Lesson 1.
-- [ ] Verified human audio remains outstanding.
-- [ ] Verify textbook editions and source mapping.
+- [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
+- [ ] Fluent Persian and Urdu review of Lessons 1–3.
+- [ ] Verified human audio remains outstanding for all lessons.
+- [ ] Verify textbook editions and source mapping for the full curriculum.
 - [ ] Build audio/pronunciation pipeline.
-- [ ] Implement exercises, progress persistence, and revision.
+- [x] Add interactive scored classification practice in Lessons 2 and 3.
+- [ ] Expand practice types, progress persistence, and revision.
 
 ## GitHub issues
 - [ ] [#1 Verify first GitHub Pages build and responsive UI checkpoint](https://github.com/mahashemi/SarfMastery/issues/1)
-- [ ] [#2 Implement Unit 1, Lesson 1 as a complete beginner lesson](https://github.com/mahashemi/SarfMastery/issues/2)
+- [ ] [#2 Review and complete Unit 1, Lesson 1](https://github.com/mahashemi/SarfMastery/issues/2)
+- [ ] [#3 Review and complete Unit 1, Lesson 2](https://github.com/mahashemi/SarfMastery/issues/3)
+- [ ] [#4 Review and complete Unit 1, Lesson 3](https://github.com/mahashemi/SarfMastery/issues/4)
 
 ## Next session
-1. Confirm the latest GitHub Actions build and Pages deployment after the Lesson 1 changes.
-2. Run desktop/tablet/mobile QA, including narrow mobile widths and RTL text.
-3. Obtain qualified Arabic/Sarf and fluent Persian/Urdu review of Lesson 1.
-4. Add the next lesson: word categories (كَلِمَة، اِسْم، فِعْل، حَرْف).
-5. Add tests and accessible progress persistence after the lesson structure stabilises.
+1. Confirm the latest GitHub Actions build and Pages deployment after the documentation updates.
+2. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
+3. Obtain qualified Arabic/Sarf teacher review of Lessons 1–3.
+4. Obtain fluent Persian and Urdu review of Lessons 1–3.
+5. Add Lesson 4 on original and additional root letters after the first three lessons are reviewed.
+6. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
