@@ -754,7 +754,7 @@ const lessonFiveCopy = {
     third: 'The third original root consonant.',
     mapping: 'For كَتَبَ, kāf maps to ف, tāʾ maps to ع, and bāʾ maps to ل. This is why كَتَبَ weighs فَعَلَ.',
     added: 'When a word has added letters, keep those letters in the scale in the same position. The root consonants are replaced by ف، ع، ل; the additions remain visible.',
-    vowel: 'The vowels matter too. فَعَلَ is only one model pattern. Other verbs may follow patterns such as فَعِلَ or فَعُلَ; the six common Abwāb will be studied next.',
+    vowel: 'The vowel marks and sukūn matter too. فَعَلَ is only one model pattern. Other verbs may follow patterns such as فَعِلَ or فَعُلَ; the six common Abwāb will be studied next.',
     caution: 'The scale describes a word’s structure, not its translation. Do not assume every triliteral word weighs فَعَلَ. Match all root letters, added letters, and vowel marks.',
     quadriliteral: 'This lesson focuses on three-letter roots. Four-letter roots use a different basic model, commonly فَعْلَلَ; we will study them later.',
     practicePrompt: 'Choose the correct wazn (pattern) for each Arabic word.',
@@ -775,7 +775,7 @@ const lessonFiveCopy = {
     third: 'سومین حرف اصلی ریشه.',
     mapping: 'در كَتَبَ، کاف با ف، تاء با ع و باء با ل برابر است؛ بنابراین وزن كَتَبَ، فَعَلَ است.',
     added: 'اگر واژه حروف افزوده داشته باشد، آن حروف در همان جایگاه در وزن باقی می‌مانند. حروف اصلی با ف، ع و ل جایگزین می‌شوند و حروف افزوده دیده می‌شوند.',
-    vowel: 'حرکت‌ها نیز مهم‌اند. فَعَلَ تنها یکی از وزن‌های ممکن است. فعل‌های دیگر ممکن است بر وزن‌هایی مانند فَعِلَ یا فَعُلَ باشند؛ شش باب معروف را در درس بعد می‌آموزیم.',
+    vowel: 'حرکت‌ها و سکون نیز مهم‌اند. فَعَلَ تنها یکی از وزن‌های ممکن است. فعل‌های دیگر ممکن است بر وزن‌هایی مانند فَعِلَ یا فَعُلَ باشند؛ شش باب معروف را در درس بعد می‌آموزیم.',
     caution: 'وزن ساختار واژه را نشان می‌دهد، نه ترجمهٔ آن را. گمان نکنید هر واژهٔ سه‌حرفی بر وزن فَعَلَ است؛ حروف اصلی، افزوده و حرکت‌ها را با هم بررسی کنید.',
     quadriliteral: 'این درس بر ریشه‌های سه‌حرفی تمرکز دارد. ریشه‌های چهارحرفی معیار پایهٔ دیگری دارند که معمولاً فَعْلَلَ است؛ آن را بعداً می‌آموزیم.',
     practicePrompt: 'وزن درست هر واژهٔ عربی را انتخاب کنید.',
@@ -796,7 +796,7 @@ const lessonFiveCopy = {
     third: 'مادّے کا تیسرا اصلی حرف۔',
     mapping: 'كَتَبَ میں کاف ف کے، تاء ع کے، اور باء ل کے مقابل ہے؛ اسی لیے كَتَبَ کا وزن فَعَلَ ہے۔',
     added: 'اگر لفظ میں زائد حروف ہوں تو وہ وزن میں اپنی اسی جگہ پر باقی رہتے ہیں۔ اصلی حروف کو ف، ع اور ل سے بدلا جاتا ہے، جبکہ زائد حروف واضح رہتے ہیں۔',
-    vowel: 'حرکات بھی اہم ہیں۔ فَعَلَ صرف ایک ممکنہ وزن ہے۔ دوسرے افعال فَعِلَ یا فَعُلَ جیسے اوزان پر بھی ہو سکتے ہیں؛ چھ ابواب اگلے سبق میں پڑھیں گے۔',
+    vowel: 'حرکات اور سکون بھی اہم ہیں۔ فَعَلَ صرف ایک ممکنہ وزن ہے۔ دوسرے افعال فَعِلَ یا فَعُلَ جیسے اوزان پر بھی ہو سکتے ہیں؛ چھ ابواب اگلے سبق میں پڑھیں گے۔',
     caution: 'وزن لفظ کی ساخت بتاتا ہے، ترجمہ نہیں۔ یہ نہ سمجھیں کہ ہر سہ حرفی لفظ کا وزن فَعَلَ ہے؛ اصلی حروف، زائد حروف اور حرکات سب دیکھیں۔',
     quadriliteral: 'یہ سبق سہ حرفی مادّوں پر ہے۔ چار حرفی مادّوں کا بنیادی وزن مختلف ہوتا ہے، عموماً فَعْلَلَ؛ اسے بعد میں پڑھیں گے۔',
     practicePrompt: 'ہر عربی لفظ کے لیے درست وزن منتخب کریں۔',
@@ -925,6 +925,7 @@ function LessonFivePage() {
             <li><a href="https://asjp.cerist.dz/en/downArticlepdf/163/5/1/130194" target="_blank" rel="noreferrer">Zoubir Dendane, “An Overview of Verb Morphology in Arabic,” on root-and-pattern morphology and derived forms.</a></li>
             <li><a href="https://arabicwithoutwalls.ucdavis.edu/chapter14/grammar_note14.html" target="_blank" rel="noreferrer">University of California, Davis — Arabic Without Walls, Grammar Note 14: Verb Forms.</a></li>
             <li><a href="https://www.cambridge.org/core/books/reference-grammar-of-modern-standard-arabic/207FA6CB610D541184C4B8CB10A4084A" target="_blank" rel="noreferrer">Karin C. Ryding, A Reference Grammar of Modern Standard Arabic (Cambridge University Press, 2005).</a></li>
+            <li><a href="https://thahabi.org/book/769/read/10" target="_blank" rel="noreferrer">Aḥmad al-Ḥamlāwī, Shadhā al-ʿArf fī Fann al-Ṣarf, section on al-Mīzān al-Ṣarfī.</a></li>
           </ul>
         </section>
         <div className="lesson-end"><a href="#/lesson/04">← Lesson 4: Original and added letters</a><span>Next: the six common Abwāb</span></div>
