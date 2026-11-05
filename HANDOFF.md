@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42106827583). Lessons 1–12 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42107792676). Lessons 1–12 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -42,8 +42,8 @@
 - [x] Neutral branding; no personal-name footer.
 - [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
 - [x] Run and verify production TypeScript/Vite build.
-- [x] Confirm custom GitHub Pages deployment (latest code Actions run 42105539151).
-- [ ] Change repository Settings → Pages → Source to GitHub Actions to stop the competing automatic Jekyll branch deployment. This setting change is not exposed through the available GitHub connector actions.
+- [x] Confirm custom GitHub Pages deployment (latest code Actions run 42107792676).
+- [ ] Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; some runs have been cancelled during pushes, so confirm the source setting to keep one deployment path. This setting change is not exposed through the available GitHub connector actions.
 - [x] Add refresh-safe hash route for Unit 1, Lesson 1.
 - [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
 - [x] Add core Lesson 1 explanatory paragraphs in English, Persian, and Urdu (remaining UI labels and dashboard are still English).
@@ -54,6 +54,11 @@
 - [x] Add Lesson 6 at `#/lesson/06`, with the 14-slot pronoun overview and ghāʾib/mukhāṭab/mutakallim groups.
 - [x] Add Lesson 7 at `#/lesson/07`, with the 14-slot active-past table, transliteration, English/Persian/Urdu glosses, and pronoun practice.
 - [x] Add Lesson 8 at `#/lesson/08`, with the 14-slot active-muḍāriʿ table, four prefixes, shared-form cautions, transliteration, and pronoun practice.
+- [x] Add Lesson 9 at `#/lesson/09`, with the passive-past table, Form I pattern, and Qur’anic morphology example.
+- [x] Add Lesson 10 at `#/lesson/10`, with the passive-muḍāriʿ table and shared-form cautions.
+- [x] Add Lesson 11 at `#/lesson/11`, with six second-person imperative/prohibitive slots, hamzat al-waṣl, and jussive nūn deletion.
+- [x] Move the six Abwāb to Lesson 12 (`#/lesson/12`) in Unit 4, after the 14 ṣīghahs.
+- [x] Add a direct lesson library on the dashboard with stable links to all 12 lessons.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
 - [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
 - [ ] Fluent Persian and Urdu review of Lessons 1–3.
@@ -82,8 +87,8 @@
 1. Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; its runs have been cancelled in some pushes, so confirm the source setting to keep one deployment path.
 2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
-4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–11.
-5. Obtain fluent Persian and Urdu review of Lessons 1–11.
+4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–12.
+5. Obtain fluent Persian and Urdu review of Lessons 1–12.
 6. Add Lesson 13 on mujarrad and mazīd patterns (Unit 5), following the agreed curriculum sequence.
 7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
