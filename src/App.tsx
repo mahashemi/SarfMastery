@@ -1268,7 +1268,7 @@ function LessonTwelvePage() {
             <li><a href="https://ablibrary.net/book_content/b/11500/80" target="_blank" rel="noreferrer">Sayyid Muḥammad Taqī al-Ḥusaynī al-Jalālī, Nuzhat al-Ṭarf fī ʿIlm al-Ṣarf, p. 80.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/11">← Lesson 11: Imperative and prohibitive</a><span>Next: mujarrad and mazīd</span></div>
+        <div className="lesson-end"><a href="#/lesson/11">← Lesson 11: Imperative and prohibitive</a><a className="next-lesson-link" href="#/lesson/13">Next: mujarrad and mazīd →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Six Abwāb</li><li>Past and present pairs</li><li>Middle radical vowels</li><li>Maṣdar caution</li><li>Classification practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write each verb as a pair: māḍī + muḍāriʿ. Learn the vowel of the middle root letter in both forms.</p></div></aside>
     </div>
@@ -2181,6 +2181,193 @@ function LessonElevenPage() {
   </main>
 }
 
+
+const lessonThirteenCopy = {
+  en: {
+    lead:'A root gives a word family its core idea; a pattern shapes a verb around that root. Form I is the basic triliteral form, while Forms II–X are common augmented patterns.',
+    objective:'Distinguish mujarrad from mazīd, recognise the ten common triliteral forms, and identify the four standard quadriliteral patterns.',
+    definition:'الْمُجَرَّدُ is an unaugmented stem: its root radicals appear without added pattern consonants. الْمَزِيدُ has one or more additions, such as a prefix, an infixed letter, a long vowel, or a doubled radical.',
+    distinction:'For a triliteral root, the three radicals map to ف، ع، ل. A pattern can add letters before, between, or after them, and may double a radical. The root letters remain identifiable.',
+    caution:'Pattern meanings are tendencies, not guaranteed translations. A form can have several meanings, and individual verbs may be lexicalised. Learn each verb with its dictionary meaning and context.',
+    formOne:'Form I has several past/present vowel classes (for example فَعَلَ، فَعِلَ، فَعُلَ). Do not assume one Form I verb predicts another verb’s muḍāriʿ vowel; learn the pair together.',
+    quadriliteral:'A quadriliteral root has four radicals. Its basic pattern is فَعْلَلَ, as in دَحْرَجَ (to roll). A common augmented pattern is تَفَعْلَلَ, as in تَدَحْرَجَ (to tumble). A prefix does not turn a triliteral root into a quadriliteral root.',
+    practice:'Identify the pattern used by each example. Choose the form number or quadriliteral category.',
+    correct:'Correct pattern.', incorrect:'The correct pattern is', score:'Your score', check:'Check patterns',
+    teach:'Explain the difference between mujarrad and mazīd. Give one common tendency of Form II, Form V, and Form X, and explain why tendencies are not fixed translation rules.',
+    summary:'Keep root and pattern separate. The root carries the lexical family; the pattern contributes a structure and often a semantic modification. Verify the actual meaning in context.',
+    audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead:'ریشه معنای اصلی واژه را می‌رساند و وزن، فعل را در قالبی پیرامون آن ریشه می‌سازد. باب اول صورت پایهٔ ثلاثی است و باب‌های دوم تا دهم از وزن‌های رایج مزید هستند.',
+    objective:'مجرد و مزید را تشخیص دهید، ده وزن رایج ثلاثی را بشناسید و چهار وزن معیار رباعی را معرفی کنید.',
+    definition:'الْمُجَرَّدُ فعلی است که حروف اصلی ریشه بدون حروف افزودهٔ وزنی در آن آمده‌اند. الْمَزِيدُ دارای یک یا چند افزوده است؛ مانند پیشوند، حرف میانجی، کشش واکه یا تشدید یکی از حروف ریشه.',
+    distinction:'در ریشهٔ ثلاثی، سه حرف اصلی با ف، ع، ل نشان داده می‌شوند. وزن می‌تواند پیش از ریشه، میان حروف یا پس از آن حرفی بیفزاید و نیز یک حرف ریشه را مشدد کند.',
+    caution:'معناهای رایج هر باب گرایش‌اند، نه ترجمه‌های قطعی. یک وزن می‌تواند چند معنا داشته باشد و برخی افعال معنای واژگانی خاص پیدا می‌کنند. معنای هر فعل را همراه فرهنگ و بافت بیاموزید.',
+    formOne:'باب اول چند دستهٔ حرکتی در ماضی و مضارع دارد؛ مانند فَعَلَ، فَعِلَ و فَعُلَ. از حرکت مضارع یک فعل نمی‌توان حرکت مضارع فعل دیگر را حدس زد؛ هر جفت را با هم حفظ کنید.',
+    quadriliteral:'ریشهٔ رباعی چهار حرف اصلی دارد. وزن پایهٔ آن فَعْلَلَ است؛ مانند دَحْرَجَ (غلتاندن). وزن مزید رایج آن تَفَعْلَلَ است؛ مانند تَدَحْرَجَ (غلتیدن). افزودن پیشوند، ریشهٔ ثلاثی را رباعی نمی‌کند.',
+    practice:'وزن هر نمونه را تشخیص دهید و شمارهٔ باب یا گروه رباعی را انتخاب کنید.',
+    correct:'وزن درست است.', incorrect:'وزن درست:', score:'امتیاز شما', check:'بررسی وزن‌ها',
+    teach:'تفاوت مجرد و مزید را توضیح دهید. سپس یک گرایش معنایی از باب دوم، پنجم و دهم بیان کنید و توضیح دهید چرا این گرایش‌ها قانون ترجمهٔ قطعی نیستند.',
+    summary:'ریشه و وزن را جدا نگه دارید. ریشه خانوادهٔ معنایی را می‌رساند و وزن ساختار و غالباً تغییری معنایی ایجاد می‌کند. معنای واقعی را در بافت بررسی کنید.',
+    audio:'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead:'مادّہ بنیادی لغوی معنی دیتا ہے اور وزن اس مادّے کے گرد فعل کی ساخت بناتا ہے۔ باب اول ثلاثی کی بنیادی صورت ہے، جبکہ باب دوم تا دہم عام مزید اوزان ہیں۔',
+    objective:'مجرد اور مزید میں فرق کریں، ثلاثی کے دس عام اوزان پہچانیں، اور رباعی کے چار معیاری اوزان سے واقف ہوں۔',
+    definition:'الْمُجَرَّدُ وہ فعل ہے جس میں مادّے کے اصلی حروف کے علاوہ کوئی زائد حرفِ وزنی نہ ہو۔ الْمَزِيدُ میں ایک یا زیادہ اضافے ہوتے ہیں، مثلاً سابقہ، درمیان میں آنے والا حرف، لمبی آواز، یا کسی اصلی حرف کی تشدید۔',
+    distinction:'ثلاثی مادّے کے تین اصلی حروف کو ف، ع، ل سے ظاہر کرتے ہیں۔ وزن مادّے سے پہلے، درمیان یا بعد میں حروف بڑھا سکتا ہے اور کسی اصلی حرف کو مشدد بھی کر سکتا ہے۔',
+    caution:'ہر باب کے معنی عمومی رجحانات ہیں، قطعی ترجمے نہیں۔ ایک وزن کے کئی معنی ہو سکتے ہیں اور بعض افعال کا خاص لغوی معنی ہوتا ہے۔ ہر فعل کا اصل معنی لغت اور سیاق کے ساتھ سیکھیں۔',
+    formOne:'باب اول کے ماضی اور مضارع میں کئی حرکاتی اقسام ہیں، مثلاً فَعَلَ، فَعِلَ اور فَعُلَ۔ ایک فعل کے مضارع کی حرکت سے دوسرے فعل کی حرکت اخذ نہ کریں؛ ہر جوڑا ساتھ یاد کریں۔',
+    quadriliteral:'رباعی مادّے کے چار اصلی حروف ہوتے ہیں۔ اس کا بنیادی وزن فَعْلَلَ ہے، جیسے دَحْرَجَ (لڑھکانا)۔ ایک عام مزید وزن تَفَعْلَلَ ہے، جیسے تَدَحْرَجَ (لڑھکنا)۔ سابقہ لگانے سے ثلاثی مادّہ رباعی نہیں بن جاتا۔',
+    practice:'ہر مثال کا وزن پہچانیں اور درست باب یا رباعی کی قسم منتخب کریں۔',
+    correct:'درست وزن۔', incorrect:'درست وزن ہے:', score:'آپ کا اسکور', check:'اوزان جانچیں',
+    teach:'مجرد اور مزید کا فرق بیان کریں۔ باب دوم، پنجم اور دہم کے ایک ایک عمومی رجحان کی وضاحت کریں، اور بتائیں کہ یہ قطعی ترجمے کے اصول کیوں نہیں ہیں۔',
+    summary:'مادّہ اور وزن کو الگ رکھیں۔ مادّہ لغوی خاندان دیتا ہے اور وزن ساختی اور اکثر معنوی تبدیلی پیدا کرتا ہے۔ اصل معنی سیاق سے معلوم کریں۔',
+    audio:'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const triliteralForms = [
+  {form:'I',pattern:'فَعَلَ',example:'كَتَبَ',latin:'kataba',root:'ك ت ب',meaning:'to write',fa:'نوشتن',ur:'لکھنا',tendency:'Basic lexical meaning',tendencyFa:'معنای پایه',tendencyUr:'بنیادی معنی'},
+  {form:'II',pattern:'فَعَّلَ',example:'عَلَّمَ',latin:'ʿallama',root:'ع ل م',meaning:'to teach',fa:'آموزش دادن',ur:'تعلیم دینا',tendency:'Often causative or intensive',tendencyFa:'اغلب سببی یا شدت‌بخش',tendencyUr:'اکثر سببی یا شدت والا'},
+  {form:'III',pattern:'فَاعَلَ',example:'قَاتَلَ',latin:'qātala',root:'ق ت ل',meaning:'to fight',fa:'جنگیدن',ur:'جنگ کرنا',tendency:'Often interaction or directed engagement',tendencyFa:'اغلب کنش متقابل',tendencyUr:'اکثر باہمی عمل'},
+  {form:'IV',pattern:'أَفْعَلَ',example:'أَكْرَمَ',latin:'akrama',root:'ك ر م',meaning:'to honour',fa:'گرامی داشتن',ur:'عزت دینا',tendency:'Often causative or transformative',tendencyFa:'اغلب سببی یا دگرگون‌کننده',tendencyUr:'اکثر سببی یا تبدیلی'},
+  {form:'V',pattern:'تَفَعَّلَ',example:'تَعَلَّمَ',latin:'taʿallama',root:'ع ل م',meaning:'to learn',fa:'آموختن',ur:'سیکھنا',tendency:'Often middle/reflexive counterpart of II',tendencyFa:'اغلب صورت بازتابی باب دوم',tendencyUr:'اکثر باب دوم کی بازتابی صورت'},
+  {form:'VI',pattern:'تَفَاعَلَ',example:'تَكَاتَبَ',latin:'takātaba',root:'ك ت ب',meaning:'to correspond with one another',fa:'با یکدیگر مکاتبه کردن',ur:'ایک دوسرے سے خط و کتابت کرنا',tendency:'Often reciprocal or shared action',tendencyFa:'اغلب کنش متقابل',tendencyUr:'اکثر باہمی عمل'},
+  {form:'VII',pattern:'اِنْفَعَلَ',example:'اِنْكَسَرَ',latin:'inkasara',root:'ك س ر',meaning:'to break / become broken',fa:'شکستن / شکسته شدن',ur:'ٹوٹنا',tendency:'Often middle or passive-like',tendencyFa:'اغلب میانه یا شبیه مجهول',tendencyUr:'اکثر درمیانی یا مجہول نما'},
+  {form:'VIII',pattern:'اِفْتَعَلَ',example:'اِجْتَمَعَ',latin:'ijtamaʿa',root:'ج م ع',meaning:'to gather / meet',fa:'گرد آمدن',ur:'جمع ہونا',tendency:'Often middle, reflexive, or effortful',tendencyFa:'اغلب میانه یا بازتابی',tendencyUr:'اکثر درمیانی یا بازتابی'},
+  {form:'IX',pattern:'اِفْعَلَّ',example:'اِحْمَرَّ',latin:'iḥmarra',root:'ح م ر',meaning:'to become red',fa:'سرخ شدن',ur:'سرخ ہو جانا',tendency:'Often colours and physical qualities',tendencyFa:'اغلب رنگ‌ها و ویژگی‌های جسمانی',tendencyUr:'اکثر رنگ اور جسمانی کیفیت'},
+  {form:'X',pattern:'اِسْتَفْعَلَ',example:'اِسْتَغْفَرَ',latin:'istaghfara',root:'غ ف ر',meaning:'to seek forgiveness',fa:'آمرزش خواستن',ur:'مغفرت طلب کرنا',tendency:'Often seeking or requesting',tendencyFa:'اغلب طلب یا درخواست',tendencyUr:'اکثر طلب یا درخواست'},
+] as const
+
+const quadriliteralPatterns = [
+  {form:'I',pattern:'فَعْلَلَ',example:'دَحْرَجَ',latin:'daḥraja',meaning:'to roll'},
+  {form:'II',pattern:'تَفَعْلَلَ',example:'تَدَحْرَجَ',latin:'tadaḥraja',meaning:'to tumble / roll'},
+  {form:'III',pattern:'اِفْعَنْلَلَ',example:'—',latin:'—',meaning:'rare'},
+  {form:'IV',pattern:'اِفْعَلَلَّ',example:'—',latin:'—',meaning:'rare'},
+]
+const formPractice = [
+  {example:'عَلَّمَ',latin:'ʿallama',answer:'II'},
+  {example:'أَكْرَمَ',latin:'akrama',answer:'IV'},
+  {example:'تَعَلَّمَ',latin:'taʿallama',answer:'V'},
+  {example:'اِنْكَسَرَ',latin:'inkasara',answer:'VII'},
+  {example:'اِسْتَغْفَرَ',latin:'istaghfara',answer:'X'},
+  {example:'دَحْرَجَ',latin:'daḥraja',answer:'Q-I'},
+]
+const formChoices = [
+  {value:'I',label:'Form I · فَعَلَ'},{value:'II',label:'Form II · فَعَّلَ'},{value:'III',label:'Form III · فَاعَلَ'},
+  {value:'IV',label:'Form IV · أَفْعَلَ'},{value:'V',label:'Form V · تَفَعَّلَ'},{value:'VI',label:'Form VI · تَفَاعَلَ'},
+  {value:'VII',label:'Form VII · اِنْفَعَلَ'},{value:'VIII',label:'Form VIII · اِفْتَعَلَ'},{value:'IX',label:'Form IX · اِفْعَلَّ'},
+  {value:'X',label:'Form X · اِسْتَفْعَلَ'},{value:'Q-I',label:'Quadriliteral I · فَعْلَلَ'},
+]
+
+function LessonThirteenPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonThirteenCopy[language]
+  const rtl = language !== 'en'
+  const score = formPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/12" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 05 · LESSON 13</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 05 · MUJARRAD AND MAZĪD</div>
+        <h1>Triliteral verb <em>forms I–X</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْمُجَرَّدُ وَالْمَزِيدُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-mujarrad wa-l-mazīd</div>}
+          <h2>Root + pattern = verb form</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">HOW THE PATTERN WORKS</span>
+          <h2 lang="ar" dir="rtl">ف · ع · ل</h2>
+          <p lang={language}>{copy.distinction}</p>
+          <div className="pattern-cue-grid">
+            <div><b>II</b><strong>Shadda</strong><span>Double the second radical</span></div>
+            <div><b>III</b><strong>Long alif</strong><span>Alif after the first radical</span></div>
+            <div><b>IV</b><strong>Hamza</strong><span>Hamza prefix</span></div>
+            <div><b>V–VI</b><strong>Ta prefix</strong><span>Often built on II or III</span></div>
+            <div><b>VII–IX</b><strong>Infix / doubling</strong><span>Pattern letters and doubled radical</span></div>
+            <div><b>X</b><strong>Ist- prefix</strong><span>اِسْتَـ at the beginning</span></div>
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE TEN COMMON TRILITERAL FORMS</span>
+          <h2>Forms I–X</h2>
+          <div className="form-table">
+            <div className="form-table-head"><span>Form</span><span>Pattern</span><span>Example · root</span><span>Meaning</span><span>Common tendency</span></div>
+            {triliteralForms.map(item=><div className="form-table-row" key={item.form}>
+              <strong>{item.form}</strong>
+              <b className="form-pattern" lang="ar" dir="rtl">{item.pattern}</b>
+              <div className="form-example"><b lang="ar" dir="rtl">{item.example}</b>{showTransliteration&&<small>{item.latin}</small>}<small className="form-root" lang="ar" dir="rtl">{item.root}</small></div>
+              <span>{language==='fa'?item.fa:language==='ur'?item.ur:item.meaning}</span>
+              <small>{language==='fa'?item.tendencyFa:language==='ur'?item.tendencyUr:item.tendency}</small>
+            </div>)}
+          </div>
+          <div className="warning-card"><strong>Form I has several vowel classes</strong><p lang={language}>{copy.formOne}</p></div>
+          <div className="caution-note" lang={language}>{copy.caution}</div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">QUADRILITERAL ROOTS · رُبَاعِيٌّ</span>
+          <h2>Four root letters</h2>
+          <p lang={language}>{copy.quadriliteral}</p>
+          <div className="quadriliteral-table">
+            {quadriliteralPatterns.map(item=><div key={item.form}><strong>Form {item.form}</strong><b lang="ar" dir="rtl">{item.pattern}</b><span lang="ar" dir="rtl">{item.example}</span><small>{item.latin} · {item.meaning}</small></div>)}
+          </div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE PATTERN</span>
+          <h2>Which form is it?</h2>
+          <p lang={language}>{copy.practice}</p>
+          <div className="pronoun-practice-list">
+            {formPractice.map((item,index)=><div className="pronoun-practice-row" key={item.example}>
+              <div><b lang="ar" dir="rtl">{item.example}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the pattern for '+item.example} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose form…</option>
+                {formChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{formChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==formPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {formPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://corpus.quran.com/documentation/verbforms.jsp" target="_blank" rel="noreferrer">Quranic Arabic Corpus — Verb Forms, including triliteral I–X and quadriliteral I–IV.</a></li>
+            <li><a href="https://www.wilbourhall.org/pdfs/wrightarabicgrammarvolume_i.pdf" target="_blank" rel="noreferrer">Wright, A Grammar of the Arabic Language, Volume I, section 33 on triliteral and quadriliteral verb forms.</a></li>
+            <li><a href="https://www.ziyaraat.net/books/arabicanessentialgrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar, section 18.15 on the ten derived verb forms and their semantic tendencies.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/12">← Lesson 12: Six Abwāb</a><span>Next: derived nouns and participles</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Mujarrad and mazīd</li><li>Root and pattern</li><li>Forms I–X</li><li>Semantic tendencies</li><li>Form I vowel classes</li><li>Quadriliteral roots</li><li>Pattern practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>First find the root radicals. Then identify any prefix, infix, long vowel, or doubled radical that signals the pattern.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
   const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
@@ -2203,6 +2390,7 @@ export default function App() {
   if (route === '#/lesson/10') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 10</span></header><LessonTenPage/></div>
   if (route === '#/lesson/11') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 11</span></header><LessonElevenPage/></div>
   if (route === '#/lesson/12') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 04 · LESSON 12</span></header><LessonTwelvePage/></div>
+  if (route === '#/lesson/13') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 05 · LESSON 13</span></header><LessonThirteenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
