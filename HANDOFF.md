@@ -56,16 +56,16 @@
 - [ ] [#2 Review and complete Unit 1, Lesson 1](https://github.com/mahashemi/SarfMastery/issues/2)
 - [ ] [#3 Review and complete Unit 1, Lesson 2](https://github.com/mahashemi/SarfMastery/issues/3)
 - [ ] [#4 Review and complete Unit 1, Lesson 3](https://github.com/mahashemi/SarfMastery/issues/4)
+- [ ] [#5 Review and complete Unit 1, Lesson 4](https://github.com/mahashemi/SarfMastery/issues/5)
 
 ## Next session
-1. Confirm the latest GitHub Actions build and Pages deployment after the documentation updates.
-2. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
-3. Obtain qualified Arabic/Sarf teacher review of Lessons 1–3.
-4. Obtain fluent Persian and Urdu review of Lessons 1–3.
-5. Switch GitHub Pages Source to GitHub Actions in repository Settings to stop the automatic Jekyll build from competing with the React/Vite deployment.
-6. Obtain qualified Arabic/Sarf and fluent Persian/Urdu review of Lessons 1–4.
-7. Add Lesson 5 on the morphological scale (الميزان الصرفي) after the first four lessons are reviewed.
-8. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
+1. Switch repository Settings → Pages → Source to GitHub Actions so the generated Jekyll branch deployment no longer competes with the React/Vite workflow.
+2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
+3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
+4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–4.
+5. Obtain fluent Persian and Urdu review of Lessons 1–4.
+6. Add Lesson 5 on the morphological scale (الميزان الصرفي) after the first four lessons are reviewed.
+7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
