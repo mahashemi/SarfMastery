@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Latest production TypeScript/Vite build and GitHub Pages deployment succeeded (2026-11-05); Lesson 1 expanded with multilingual core explanations and source notes; responsive device QA and expert review pending.  
+**Overall status:** Latest production TypeScript/Vite build and GitHub Pages deployment succeeded (Actions run 42102480699); Lessons 1–2 have multilingual core explanations and documented sources; responsive device QA and expert review pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -22,7 +22,8 @@
 - [x] Add first beginner lesson draft, examples, FAQ, interactive check, and teach-back.
 - [x] Expand Lesson 1 with objectives, a six-word ك ت ب family, a key-term glossary, and clearer root/pattern caveats.
 - [x] Add core explanatory copy in English, Persian, and Urdu (full UI translation remains future work).
-- [x] Add claim-to-source notes for the introductory linguistic material.
+- [x] Add claim-to-source notes for Lesson 1 and Lesson 2 linguistic material.
+- [x] Add Lesson 2 route, three-category explanations, multilingual examples, classification quiz, and explicit audio-unavailable state.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
@@ -112,7 +113,7 @@ For every lesson:
 ## 5. 60-day curriculum
 ### Unit 1 — Foundations (Days 1–6)
 - [ ] Define علم الصرف and its purpose.
-- [ ] Explain كَلِمَة and word categories.
+- [x] Explain كَلِمَة and the three traditional word categories.
 - [ ] Introduce فِعْل and مَصْدَر.
 - [ ] Root letters vs vowels/pattern.
 - [ ] Original vs additional letters.
@@ -283,6 +284,7 @@ For every lesson:
 ## 12. GitHub issues
 - [ ] [#1 Verify first GitHub Pages build and responsive UI checkpoint](https://github.com/mahashemi/SarfMastery/issues/1)
 - [ ] [#2 Implement Unit 1, Lesson 1 as a complete beginner lesson](https://github.com/mahashemi/SarfMastery/issues/2)
+- [ ] [#3 Review and complete Unit 1, Lesson 2 — the three kinds of Arabic word](https://github.com/mahashemi/SarfMastery/issues/3)
 
 ## 13. Session log
 | Date | Change | Verification |
@@ -290,4 +292,4 @@ For every lesson:
 | 2026-11-05 | Initial responsive app scaffold and project documentation committed | Build/deployment not yet verified |
 | 2026-11-05 | GitHub Pages workflow adjusted; two priority issues opened | Awaiting GitHub Actions run and Pages settings verification |
 | 2026-11-05 | Added refresh-safe Lesson 1 route, beginner explanations, word-family examples, interactive check, and teach-back | Code committed; scholarly/source review and audio still pending |
-| 2026-11-05 | Expanded Lesson 1 with English/Persian/Urdu core explanations, six ك ت ب examples, glossary, and claim-to-source notes | TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42101525058; responsive device QA and qualified language review pending |
+| 2026-11-05 | Expanded Lesson 1 with English/Persian/Urdu core explanations, six ك ت ب examples, glossary, and claim-to-source notes | TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42101525058; responsive device QA and qualified language review pending |\n| 2026-11-05 | Added Lesson 2 on اِسْمٌ، فِعْلٌ، حَرْفٌ with multilingual explanations, six classification questions, audio-unavailable state, and source notes | TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42102480699; teacher/language review and device QA pending |
