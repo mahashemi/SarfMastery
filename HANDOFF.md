@@ -68,17 +68,17 @@
 - [ ] [#6 Review and complete Unit 2, Lesson 5](https://github.com/mahashemi/SarfMastery/issues/6)
 - [ ] [#7 Review and complete Unit 2, Lesson 6](https://github.com/mahashemi/SarfMastery/issues/7)
 - [ ] [#8 Review and complete Unit 3, Lesson 7](https://github.com/mahashemi/SarfMastery/issues/8)
+- [ ] [#9 Review and complete Unit 3, Lesson 8](https://github.com/mahashemi/SarfMastery/issues/9)
 
 ## Next session
 1. Switch repository Settings → Pages → Source to GitHub Actions so the generated Jekyll branch deployment no longer competes with the React/Vite workflow.
 2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
-4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–4.
-5. Obtain fluent Persian and Urdu review of Lessons 1–4.
-6. Obtain qualified Arabic/Sarf and fluent Persian/Urdu review of Lessons 1–6.
-7. Add Lesson 9 on the 14-form passive māḍī table, after Lesson 8 review.
-8. Add the passive muḍāriʿ table and imperative/negative imperative in subsequent lessons.
-9. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
+4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–8.
+5. Obtain fluent Persian and Urdu review of Lessons 1–8.
+6. Add Lesson 9 on the 14-form passive māḍī table, after the active tables are reviewed.
+7. Add the passive muḍāriʿ table and imperative/negative imperative in subsequent lessons.
+8. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
