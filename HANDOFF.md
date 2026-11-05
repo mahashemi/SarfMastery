@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42105539151). Lessons 1–8 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42106277003). Lessons 1–10 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -14,15 +14,17 @@
 7. `docs/LESSON_06_SOURCES.md` — source map and linguistic verification boundaries for Lesson 6.
 8. `docs/LESSON_07_SOURCES.md` — source map and linguistic verification boundaries for Lesson 7.
 9. `docs/LESSON_08_SOURCES.md` — source map and linguistic verification boundaries for Lesson 8.
-10. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-11. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-12. `docs/DECISIONS.md` — decisions and open questions.
+10. `docs/LESSON_09_SOURCES.md` — source map and linguistic verification boundaries for Lesson 9.
+11. `docs/LESSON_10_SOURCES.md` — source map and linguistic verification boundaries for Lesson 10.
+12. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+13. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+14. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
 - No personal name or signature in the app.
 - Responsive desktop/tablet/mobile web app.
-- English primary; core explanations in Lessons 1–3 are available in Persian and Urdu; full UI translation and fluent review remain pending.
+- English primary; core explanations in Lessons 1–10 are available in Persian and Urdu; full UI translation and fluent review remain pending.
 - Absolute beginner start, traditional Hawza sequence.
 - Arabic with full tashkīl, transliteration, and pronunciation support.
 - Lots of examples, anticipated beginner questions, exercises, revision, teach-back.
@@ -69,16 +71,17 @@
 - [ ] [#7 Review and complete Unit 2, Lesson 6](https://github.com/mahashemi/SarfMastery/issues/7)
 - [ ] [#8 Review and complete Unit 3, Lesson 7](https://github.com/mahashemi/SarfMastery/issues/8)
 - [ ] [#9 Review and complete Unit 3, Lesson 8](https://github.com/mahashemi/SarfMastery/issues/9)
+- [ ] [#10 Review and complete Unit 3, Lesson 9](https://github.com/mahashemi/SarfMastery/issues/10)
+- [ ] [#11 Review and complete Unit 3, Lesson 10](https://github.com/mahashemi/SarfMastery/issues/11)
 
 ## Next session
 1. Switch repository Settings → Pages → Source to GitHub Actions so the generated Jekyll branch deployment no longer competes with the React/Vite workflow.
 2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
-4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–8.
-5. Obtain fluent Persian and Urdu review of Lessons 1–8.
-6. Add Lesson 9 on the 14-form passive māḍī table, after the active tables are reviewed.
-7. Add the passive muḍāriʿ table and imperative/negative imperative in subsequent lessons.
-8. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
+4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–10.
+5. Obtain fluent Persian and Urdu review of Lessons 1–10.
+6. Add Lesson 11 on imperative (أَمْرٌ) and prohibitive (نَهْيٌ) forms; remember these use six second-person forms, not 14.
+7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
