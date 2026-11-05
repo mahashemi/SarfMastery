@@ -1588,6 +1588,7 @@ function LessonNinePage() {
           </div>
           <p lang={language}>{copy.pattern}</p>
           <div className="caution-note" lang={language}>{copy.example}</div>
+          <div className="warning-card"><strong>Meaning of majhūl</strong><p lang={language}>{copy.caution}</p></div>
         </section>
         <section className="lesson-block">
           <span className="section-kicker">A QUR'ANIC EXAMPLE</span>
