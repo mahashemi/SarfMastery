@@ -573,7 +573,7 @@ function LessonThreePage() {
             <li><a href="https://openbooks.lib.msu.edu/elemarabicll/chapter/grammar-5/" target="_blank" rel="noreferrer">Michigan State University, Elementary Arabic II — “Grammar: Masdar and Verb.”</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/02">← Lesson 2: Three kinds of word</a><span>Next: original and additional root letters</span></div>
+        <div className="lesson-end"><a href="#/lesson/03">← Lesson 3: Verb and maṣdar</a><a className="next-lesson-link" href="#/lesson/04">Next: original and added letters →</a></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Verb and time</li><li>Māḍī, Muḍāriʿ, Amr</li><li>Maṣdar</li><li>Compare related words</li><li>Classification practice</li><li>Teach-back</li><li>Sources</li></ol><div className="aside-note"><strong>Study tip</strong><p>When you learn a new verb, record its maṣdar beside it. Do not guess the Form I maṣdar.</p></div></aside>
     </div>
