@@ -1290,6 +1290,183 @@ function LessonSevenPage() {
   </main>
 }
 
+
+const lessonEightCopy = {
+  en: {
+    lead: 'The muḍāriʿ is the active imperfect form. It can describe present, ongoing, or future action depending on context. Here we learn its 14-slot traditional table with يَكْتُبُ as the model.',
+    objective: 'Recognise the four muḍāriʿ prefixes, read the 14-slot table in order, and identify the subject from prefixes and endings.',
+    definition: 'الْمُضَارِعُ الْمَعْرُوفُ is the active imperfect. It is built with a prefix from أ، ن، ي، ت and, for some persons, a suffix. The table below shows the default indicative (marfūʿ) forms.',
+    orderNote: 'The table follows the same 14-slot Sarf order as the past: six ghāʾib, six mukhāṭab, then two mutakallim. Some surface forms are shared by more than one slot.',
+    prefixes: 'The four prefix letters are أ (I), ن (we), ي (third-person masculine), and ت (second person and third-person feminine). They are called ḥurūf al-muḍāraʿah.',
+    overlap: 'Some forms are identical without context. تَكْتُبُ can mean “she writes” (هِيَ) or “you write” (أَنْتَ). تَكْتُبَانِ can appear for feminine third-person dual and both second-person dual slots. The pronoun or sentence context resolves the meaning.',
+    scope: 'This table shows the default indicative (marfūʿ) forms. Later lessons will explain how particles such as لَنْ and لَمْ affect the muḍāriʿ, and how the passive form differs.',
+    practicePrompt: 'Choose the pronoun that matches each selected muḍāriʿ form. The practice uses forms that are distinguishable without extra sentence context.',
+    correct: 'Correct pronoun.',
+    incorrect: 'Check the prefix and ending. The matching pronoun is',
+    score: 'Your score',
+    check: 'Check pronouns',
+    teach: 'Name the four prefix letters. Then explain why تَكْتُبُ can mean either “she writes” or “you (masculine) write.”',
+    summary: 'Read the prefix first, then the suffix. Remember that the muḍāriʿ can refer to present or future action, and context determines the translation.',
+    audio: 'Verified human pronunciation recordings are not available yet. Browser-generated speech will not be presented as authoritative Arabic pronunciation.',
+  },
+  fa: {
+    lead: 'مضارع معلوم صورت فعلیِ ناقص است و با توجه به بافت می‌تواند بر زمان حال، استمرار یا آینده دلالت کند. در این درس جدول سنتی ۱۴ جایگاهی را با نمونهٔ يَكْتُبُ می‌آموزیم.',
+    objective: 'چهار پیشوند مضارع را بشناسید، جدول ۱۴ جایگاهی را به ترتیب بخوانید و از روی پیشوند و پسوند فاعل را تشخیص دهید.',
+    definition: 'الْمُضَارِعُ الْمَعْرُوفُ یعنی مضارع معلوم. این فعل با یکی از پیشوندهای أ، ن، ي، ت ساخته می‌شود و در برخی صیغه‌ها پسوند نیز دارد. جدول زیر صورت‌های پیش‌فرض مرفوع را نشان می‌دهد.',
+    orderNote: 'جدول همان ترتیب ۱۴ صیغهٔ صرفیِ ماضی را دارد: شش غایب، شش مخاطب و سپس دو متکلم. برخی صورت‌های ظاهری در بیش از یک جایگاه مشترک‌اند.',
+    prefixes: 'چهار حرف مضارعه عبارت‌اند از أ برای من، ن برای ما، ي برای غایب مذکر و ت برای مخاطب و غایب مؤنث. به آن‌ها حُرُوفُ الْمُضَارَعَةِ می‌گویند.',
+    overlap: 'برخی صورت‌ها بدون بافت یکسان‌اند. تَكْتُبُ می‌تواند به معنای «او (زن) می‌نویسد» برای هِيَ یا «تو (مذکر) می‌نویسی» برای أَنْتَ باشد. تَكْتُبَانِ نیز در مثنای غایب مؤنث و هر دو جایگاه مثنای مخاطب می‌آید. ضمیر یا بافت جمله معنا را روشن می‌کند.',
+    scope: 'این جدول صورت‌های پیش‌فرض مرفوع را نشان می‌دهد. در درس‌های بعد می‌آموزیم حروفی مانند لَنْ و لَمْ چگونه بر مضارع اثر می‌گذارند و صورت مجهول چه تفاوتی دارد.',
+    practicePrompt: 'ضمیر مناسب هر صورت مضارع را انتخاب کنید. در تمرین از صورت‌هایی استفاده شده که بدون بافت اضافی قابل تشخیص‌اند.',
+    correct: 'ضمیر درست است.',
+    incorrect: 'پیشوند و پسوند را بررسی کنید. ضمیر متناظر:',
+    score: 'امتیاز شما',
+    check: 'بررسی ضمیرها',
+    teach: 'چهار حرف مضارعه را نام ببرید. سپس توضیح دهید چرا تَكْتُبُ می‌تواند هم به معنای «او (زن) می‌نویسد» و هم «تو (مذکر) می‌نویسی» باشد.',
+    summary: 'ابتدا پیشوند و سپس پسوند را بخوانید. مضارع می‌تواند به حال یا آینده اشاره کند و بافت، ترجمهٔ دقیق را مشخص می‌کند.',
+    audio: 'هنوز فایل‌های ضبط‌شده و تأییدشدهٔ تلفظ در دسترس نیست. صدای ماشینی مرورگر را به‌عنوان تلفظ معتبر عربی معرفی نمی‌کنیم.',
+  },
+  ur: {
+    lead: 'مضارع معروف فعل کی وہ صورت ہے جو جاری یا نامکمل عمل کو ظاہر کرتی ہے۔ سیاق کے لحاظ سے اس کا مطلب حال یا مستقبل ہو سکتا ہے۔ اس سبق میں يَكْتُبُ کی مدد سے روایتی چودہ خانوں والی جدول سیکھیں گے۔',
+    objective: 'مضارع کے چار ابتدائی حروف پہچانیں، چودہ صیغوں کی جدول ترتیب سے پڑھیں، اور سابقے اور لاحقے سے فاعل معلوم کریں۔',
+    definition: 'الْمُضَارِعُ الْمَعْرُوفُ مضارع معروف ہے۔ یہ أ، ن، ي، ت میں سے کسی ایک سابقے سے بنتا ہے اور بعض صیغوں میں لاحقہ بھی آتا ہے۔ نیچے عام حالتِ رفع (مرفوع) کی صورتیں ہیں۔',
+    orderNote: 'جدول ماضی کی طرح صرف کی چودہ صیغوں والی ترتیب پر ہے: پہلے چھ غائب، پھر چھ مخاطب، اور آخر میں دو متکلم۔ بعض ظاہری صورتیں ایک سے زیادہ خانوں میں مشترک ہیں۔',
+    prefixes: 'مضارع کے چار ابتدائی حروف أ (میں)، ن (ہم)، ي (غائب مذکر)، اور ت (مخاطب اور غائب مؤنث) ہیں۔ انہیں حُرُوفُ الْمُضَارَعَةِ کہتے ہیں۔',
+    overlap: 'کچھ صورتیں سیاق کے بغیر ایک جیسی ہوتی ہیں۔ تَكْتُبُ کا مطلب هِيَ کے لیے ’’وہ (عورت) لکھتی ہے‘‘ یا أَنْتَ کے لیے ’’تم (مرد) لکھتے ہو‘‘ ہو سکتا ہے۔ تَكْتُبَانِ غائب مؤنث تثنیہ اور مخاطب تثنیہ کے دونوں خانوں میں آتا ہے۔ ضمیر یا جملے کا سیاق معنی واضح کرتا ہے۔',
+    scope: 'یہ جدول عام حالتِ رفع کی صورتیں دکھاتی ہے۔ اگلے اسباق میں لَنْ اور لَمْ جیسے حروف کے اثرات اور مضارع مجہول کا فرق پڑھیں گے۔',
+    practicePrompt: 'ہر منتخب مضارع کے لیے درست ضمیر چنیں۔ مشق میں ایسی صورتیں ہیں جو اضافی سیاق کے بغیر پہچانی جا سکتی ہیں۔',
+    correct: 'درست ضمیر۔',
+    incorrect: 'سابقہ اور لاحقہ دیکھیں۔ متعلقہ ضمیر ہے:',
+    score: 'آپ کا اسکور',
+    check: 'ضمائر جانچیں',
+    teach: 'مضارع کے چار ابتدائی حروف بتائیں۔ پھر وضاحت کریں کہ تَكْتُبُ کا مطلب ’’وہ (عورت) لکھتی ہے‘‘ بھی اور ’’تم (مرد) لکھتے ہو‘‘ بھی کیوں ہو سکتا ہے۔',
+    summary: 'پہلے سابقہ اور پھر لاحقہ پڑھیں۔ مضارع حال یا مستقبل دونوں کے لیے آ سکتا ہے؛ درست ترجمہ سیاق سے معلوم ہوتا ہے۔',
+    audio: 'اس سبق کے لیے مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ کے طور پر پیش نہیں کریں گے.',
+  },
+} as const
+
+const presentActiveForms = [
+  {pronoun:'هُوَ',pronounLatin:'huwa',slot:'3rd · masculine singular',slotFa:'غایب · مذکر مفرد',slotUr:'غائب · مذکر واحد',verb:'يَكْتُبُ',verbLatin:'yaktubu',gloss:'he writes',glossFa:'او می‌نویسد',glossUr:'وہ لکھتا ہے',key:'huwa'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · masculine dual',slotFa:'غایب · مذکر مثنّی',slotUr:'غائب · مذکر تثنیہ',verb:'يَكْتُبَانِ',verbLatin:'yaktubāni',gloss:'they two (masc.) write',glossFa:'آن دو مرد می‌نویسند',glossUr:'وہ دونوں مرد لکھتے ہیں',key:'huma-m'},
+  {pronoun:'هُمْ',pronounLatin:'hum',slot:'3rd · masculine plural',slotFa:'غایب · مذکر جمع',slotUr:'غائب · مذکر جمع',verb:'يَكْتُبُونَ',verbLatin:'yaktubūna',gloss:'they (masc.) write',glossFa:'آن مردان می‌نویسند',glossUr:'وہ مرد لکھتے ہیں',key:'hum'},
+  {pronoun:'هِيَ',pronounLatin:'hiya',slot:'3rd · feminine singular',slotFa:'غایب · مؤنث مفرد',slotUr:'غائب · مؤنث واحد',verb:'تَكْتُبُ',verbLatin:'taktubu',gloss:'she writes',glossFa:'او می‌نویسد',glossUr:'وہ لکھتی ہے',key:'hiya'},
+  {pronoun:'هُمَا',pronounLatin:'humā',slot:'3rd · feminine dual',slotFa:'غایب · مؤنث مثنّی',slotUr:'غائب · مؤنث تثنیہ',verb:'تَكْتُبَانِ',verbLatin:'taktubāni',gloss:'they two (fem.) write',glossFa:'آن دو زن می‌نویسند',glossUr:'وہ دونوں عورتیں لکھتی ہیں',key:'huma-f'},
+  {pronoun:'هُنَّ',pronounLatin:'hunna',slot:'3rd · feminine plural',slotFa:'غایب · مؤنث جمع',slotUr:'غائب · مؤنث جمع',verb:'يَكْتُبْنَ',verbLatin:'yaktubna',gloss:'they (fem.) write',glossFa:'آن زنان می‌نویسند',glossUr:'وہ عورتیں لکھتی ہیں',key:'hunna'},
+  {pronoun:'أَنْتَ',pronounLatin:'anta',slot:'2nd · masculine singular',slotFa:'مخاطب · مذکر مفرد',slotUr:'مخاطب · مذکر واحد',verb:'تَكْتُبُ',verbLatin:'taktubu',gloss:'you (masc. sg.) write',glossFa:'تو (مذکر) می‌نویسی',glossUr:'تم (مرد) لکھتے ہو',key:'anta'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · masculine dual',slotFa:'مخاطب · مذکر مثنّی',slotUr:'مخاطب · مذکر تثنیہ',verb:'تَكْتُبَانِ',verbLatin:'taktubāni',gloss:'you two (masc.) write',glossFa:'شما دو مرد می‌نویسید',glossUr:'تم دونوں مرد لکھتے ہو',key:'antuma-m'},
+  {pronoun:'أَنْتُمْ',pronounLatin:'antum',slot:'2nd · masculine plural',slotFa:'مخاطب · مذکر جمع',slotUr:'مخاطب · مذکر جمع',verb:'تَكْتُبُونَ',verbLatin:'taktubūna',gloss:'you (masc. pl.) write',glossFa:'شما مردان می‌نویسید',glossUr:'تم سب مرد لکھتے ہو',key:'antum'},
+  {pronoun:'أَنْتِ',pronounLatin:'anti',slot:'2nd · feminine singular',slotFa:'مخاطب · مؤنث مفرد',slotUr:'مخاطب · مؤنث واحد',verb:'تَكْتُبِينَ',verbLatin:'taktubīna',gloss:'you (fem. sg.) write',glossFa:'تو (مؤنث) می‌نویسی',glossUr:'تم (عورت) لکھتی ہو',key:'anti'},
+  {pronoun:'أَنْتُمَا',pronounLatin:'antumā',slot:'2nd · feminine dual',slotFa:'مخاطب · مؤنث مثنّی',slotUr:'مخاطب · مؤنث تثنیہ',verb:'تَكْتُبَانِ',verbLatin:'taktubāni',gloss:'you two (fem.) write',glossFa:'شما دو زن می‌نویسید',glossUr:'تم دونوں عورتیں لکھتی ہو',key:'antuma-f'},
+  {pronoun:'أَنْتُنَّ',pronounLatin:'antunna',slot:'2nd · feminine plural',slotFa:'مخاطب · مؤنث جمع',slotUr:'مخاطب · مؤنث جمع',verb:'تَكْتُبْنَ',verbLatin:'taktubna',gloss:'you (fem. pl.) write',glossFa:'شما زنان می‌نویسید',glossUr:'تم عورتیں لکھتی ہو',key:'antunna'},
+  {pronoun:'أَنَا',pronounLatin:'anā',slot:'1st · singular',slotFa:'متکلم · مفرد',slotUr:'متکلم · واحد',verb:'أَكْتُبُ',verbLatin:'aktubu',gloss:'I write',glossFa:'من می‌نویسم',glossUr:'میں لکھتا/لکھتی ہوں',key:'ana'},
+  {pronoun:'نَحْنُ',pronounLatin:'naḥnu',slot:'1st · plural',slotFa:'متکلم · جمع',slotUr:'متکلم · جمع',verb:'نَكْتُبُ',verbLatin:'naktubu',gloss:'we write',glossFa:'ما می‌نویسیم',glossUr:'ہم لکھتے ہیں',key:'nahnu'},
+] as const
+
+const presentPronounPractice = [
+  {verb:'يَكْتُبُونَ',latin:'yaktubūna',answer:'hum'},
+  {verb:'يَكْتُبْنَ',latin:'yaktubna',answer:'hunna'},
+  {verb:'تَكْتُبِينَ',latin:'taktubīna',answer:'anti'},
+  {verb:'تَكْتُبُونَ',latin:'taktubūna',answer:'antum'},
+  {verb:'أَكْتُبُ',latin:'aktubu',answer:'ana'},
+  {verb:'نَكْتُبُ',latin:'naktubu',answer:'nahnu'},
+]
+
+function LessonEightPage() {
+  const [language,setLanguage] = useState<'en'|'fa'|'ur'>('en')
+  const [showTransliteration,setShowTransliteration] = useState(true)
+  const [answers,setAnswers] = useState<Record<number,string>>({})
+  const [checked,setChecked] = useState(false)
+  const copy = lessonEightCopy[language]
+  const rtl = language !== 'en'
+  const score = presentPronounPractice.filter((item,index)=>answers[index]===item.answer).length
+  return <main className="lesson-page">
+    <header className="lesson-header"><a href="#/lesson/07" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 03 · LESSON 08</span></header>
+    <div className="lesson-toolbar">
+      <div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+        <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+        <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+        <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+      </div>
+      <button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button>
+    </div>
+    <div className="lesson-layout">
+      <article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+        <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
+        <h1>Present active: <em>14 forms</em></h1>
+        <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block">
+          <div className="lesson-term" lang="ar" dir="rtl">الْمُضَارِعُ الْمَعْرُوفُ</div>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">al-muḍāriʿ al-maʿrūf</div>}
+          <h2>يَكْتُبُ · yaktubu · he writes</h2>
+          <p lang={language}>{copy.definition}</p>
+          <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FOUR PREFIX LETTERS</span>
+          <h2 lang="ar" dir="rtl">أَنَيْتُ · أ ن ي ت</h2>
+          {showTransliteration&&<div className="lesson-translit" dir="ltr">an-nūn, al-hamzah, al-yāʾ, al-tāʾ</div>}
+          <p lang={language}>{copy.prefixes}</p>
+          <div className="prefix-grid"><div><b>أَ</b><span>I · أَنَا</span></div><div><b>نَ</b><span>we · نَحْنُ</span></div><div><b>يَ</b><span>he/they · الغائب</span></div><div><b>تَ</b><span>you/she · المخاطب/الغائبة</span></div></div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <p lang={language}>{copy.orderNote}</p>
+          <div className="conjugation-grid">
+            <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Present active form</span><span>Meaning</span></div>
+            {presentActiveForms.map((item,index)=><div className="conjugation-row" key={index}>
+              <span className="conjugation-index">{index+1}</span>
+              <div className="conjugation-pronoun"><b lang="ar" dir="rtl">{item.pronoun}</b>{showTransliteration&&<small>{item.pronounLatin}</small>}</div>
+              <span className="conjugation-slot">{language==='fa'?item.slotFa:language==='ur'?item.slotUr:item.slot}</span>
+              <div className="conjugation-verb"><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.verbLatin}</small>}</div>
+              <span className="conjugation-gloss">{language==='fa'?item.glossFa:language==='ur'?item.glossUr:item.gloss}</span>
+            </div>)}
+          </div>
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">SAME FORM, DIFFERENT SUBJECT</span>
+          <h2>Context can matter</h2>
+          <div className="warning-card"><strong>Some slots share the same surface form</strong><p lang={language}>{copy.overlap}</p></div>
+          <div className="warning-card"><strong>Default indicative form</strong><p lang={language}>{copy.scope}</p></div>
+        </section>
+        <section className="lesson-block practice-block">
+          <span className="section-kicker">PRACTISE · IDENTIFY THE PRONOUN</span>
+          <h2>Read the prefix and ending</h2>
+          <p lang={language}>{copy.practicePrompt}</p>
+          <div className="pronoun-practice-list">
+            {presentPronounPractice.map((item,index)=><div className="pronoun-practice-row" key={item.verb}>
+              <div><b lang="ar" dir="rtl">{item.verb}</b>{showTransliteration&&<small>{item.latin}</small>}</div>
+              <select aria-label={'Choose the pronoun for '+item.verb} value={answers[index]||''} onChange={event=>{setAnswers({...answers,[index]:event.target.value});setChecked(false)}}>
+                <option value="">Choose pronoun…</option>
+                {pastPronounChoices.map(choice=><option value={choice.value} key={choice.value}>{choice.label}</option>)}
+              </select>
+              {checked&&<p className={answers[index]===item.answer?'classification-feedback correct':'classification-feedback'}>{answers[index]===item.answer?copy.correct:copy.incorrect} <b>{pastPronounChoices.find(choice=>choice.value===item.answer)?.label}</b></p>}
+            </div>)}
+          </div>
+          <button type="button" className="primary-button" disabled={Object.keys(answers).length!==presentPronounPractice.length} onClick={()=>setChecked(true)}>{copy.check}</button>
+          {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {presentPronounPractice.length}</strong></p>}
+        </section>
+        <section className="lesson-block">
+          <span className="section-kicker">RECALL AND TEACH</span>
+          <h2>Say it back</h2>
+          <p lang={language}>{copy.teach}</p>
+          <div className="example-sentence" lang={language}>{copy.summary}</div>
+          <div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div>
+        </section>
+        <section className="lesson-block source-block">
+          <span className="section-kicker">REFERENCES</span>
+          <h2>Sources and further reading</h2>
+          <ul>
+            <li><a href="https://www.fivesuper.com/support/downloads/Arabic-Grammar-in-Context_Mohammad-T.-Alhawary-%282016%29.pdf" target="_blank" rel="noreferrer">Mohammad T. Alhawary, Arabic Grammar in Context (2016), chapter 3, “Present and Future Tenses.”</a></li>
+            <li><a href="https://nabataea.net/media/04shop/PDFS/Arabic%20-%20Modern%20Grammar.pdf" target="_blank" rel="noreferrer">Karin C. Ryding, A Reference Grammar of Modern Standard Arabic, section 1.2.3 on al-muḍāriʿ.</a></li>
+          </ul>
+        </section>
+        <div className="lesson-end"><a href="#/lesson/07">← Lesson 7: Past active 14 forms</a><span>Next: passive voice (المبني للمجهول)</span></div>
+      </article>
+      <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Active muḍāriʿ</li><li>Four prefix letters</li><li>14-slot table</li><li>Shared surface forms</li><li>Indicative default</li><li>Pronoun practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Look at the prefix first: أ، ن، ي، ت. Then check the ending for dual and plural forms.</p></div></aside>
+    </div>
+  </main>
+}
+
 export default function App() {
   const [route,setRoute] = useState(window.location.hash)
   useEffect(()=>{
@@ -1307,6 +1484,7 @@ export default function App() {
   if (route === '#/lesson/05') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 05</span></header><LessonFivePage/></div>
   if (route === '#/lesson/06') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 02 · LESSON 06</span></header><LessonSixPage/></div>
   if (route === '#/lesson/07') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 07</span></header><LessonSevenPage/></div>
+  if (route === '#/lesson/08') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 03 · LESSON 08</span></header><LessonEightPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
