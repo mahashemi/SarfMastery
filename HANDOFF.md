@@ -2,10 +2,11 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** First responsive interface checkpoint committed; build/deployment verification pending.
+**Current phase:** GitHub Pages is working (user-confirmed); Lesson 1 has been expanded with core Persian/Urdu explanations and documented linguistic sources. Latest deployment/build verification and device QA are pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
+2. `docs/LESSON_01_SOURCES.md` — source map and linguistic verification boundaries for Lesson 1.
 2. `docs/PRODUCT_SPEC.md` — product and UX requirements.
 3. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
 4. `docs/DECISIONS.md` — decisions and open questions.
@@ -33,7 +34,10 @@
 - [ ] Confirm GitHub Pages deployment.
 - [x] Add refresh-safe hash route for Unit 1, Lesson 1.
 - [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
-- [ ] Scholarly review and source verification of Lesson 1; Persian/Urdu support and verified audio remain outstanding.
+- [x] Add core Lesson 1 explanatory paragraphs in English, Persian, and Urdu (remaining UI labels and dashboard are still English).
+- [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
+- [ ] Qualified Arabic/Sarf and fluent Persian/Urdu review of Lesson 1.
+- [ ] Verified human audio remains outstanding.
 - [ ] Verify textbook editions and source mapping.
 - [ ] Build audio/pronunciation pipeline.
 - [ ] Implement exercises, progress persistence, and revision.
@@ -43,11 +47,11 @@
 - [ ] [#2 Implement Unit 1, Lesson 1 as a complete beginner lesson](https://github.com/mahashemi/SarfMastery/issues/2)
 
 ## Next session
-1. Inspect GitHub Actions run and fix any build issues.
-2. Enable Pages with GitHub Actions if not already enabled.
-3. Review desktop/tablet/mobile screenshots and refine.
-4. Review and refine Unit 1, Lesson 1 for linguistic accuracy and source citations; add Persian/Urdu support.
-5. Add route-safe lesson URLs and update the tracker.
+1. Confirm the latest GitHub Actions build and Pages deployment after the Lesson 1 changes.
+2. Run desktop/tablet/mobile QA, including narrow mobile widths and RTL text.
+3. Obtain qualified Arabic/Sarf and fluent Persian/Urdu review of Lesson 1.
+4. Add the next lesson: word categories (كَلِمَة، اِسْم، فِعْل، حَرْف).
+5. Add tests and accessible progress persistence after the lesson structure stabilises.
 
 ## Guardrails
 Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
