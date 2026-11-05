@@ -50,7 +50,7 @@ jobs:
             for (const deployment of stale) {
               const { data: statuses } = await github.rest.repos.listDeploymentStatuses({ owner, repo, deployment_id: deployment.id, per_page: 1 });
               core.info(`Latest status for deployment ${deployment.id}: ${statuses[0]?.state ?? 'none'}`);
-              if (statuses[0]?.state !== 'inactive' && statuses[0]?.state !== 'success') {
+              if (statuses[0]?.state !== 'inactive') {
                 await github.rest.repos.createDeploymentStatus({ owner, repo, deployment_id: deployment.id, state: 'inactive', description: 'Superseded after an interrupted Pages publish.' });
                 core.info(`Marked interrupted Pages deployment ${deployment.id} inactive.`);
               }
