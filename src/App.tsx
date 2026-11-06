@@ -2543,11 +2543,127 @@ function LessonFourteenPage() {
             <li><a href="https://elon.io/grammar/arabic-modern-standard/verbal-nouns-participles/derived-masdars" target="_blank" rel="noreferrer">Elon.io — Maṣdars of Forms II–X and attested examples.</a></li>
           </ul>
         </section>
-        <div className="lesson-end"><a href="#/lesson/13">← Lesson 13: Forms I–X</a><span>Next: active and passive participles</span></div>
+        <div className="lesson-end"><a href="#/lesson/13">← Lesson 13: Forms I–X</a><span><a className="next-lesson-link" href="#/lesson/15">Next: active and passive participles →</a></span></div>
       </article>
       <aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What is a maṣdar?</li><li>Action vs. doer vs. object</li><li>Form I maṣdars</li><li>Derived-form patterns</li><li>Category practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Memorise the Form I maṣdar with its verb. Do not try to predict it from the past-tense vowel alone.</p></div></aside>
     </div>
   </main>
+}
+
+
+const participleCopy = {
+  en:{
+    lead:'Arabic participles are derived nouns. The active participle identifies the one who performs an action; the passive participle identifies the person or thing affected by it.',
+    objective:'Recognise ism fāʿil and ism mafʿūl, form them from a sound Form I verb, recognise the common patterns for derived forms, and avoid confusing a participle with a finite verb.',
+    faʿil:'اِسْمُ الْفَاعِلِ names the doer or agent. From a sound Form I triliteral verb, its common pattern is فَاعِلٌ: كَتَبَ → كَاتِبٌ (writer).',
+    mafʿul:'اِسْمُ الْمَفْعُولِ names the person or thing upon which the action is done. From a sound Form I triliteral verb, its common pattern is مَفْعُولٌ: كَتَبَ → مَكْتُوبٌ (written).',
+    contrast:'Compare the three nouns: كِتَابَةٌ is the action of writing; كَاتِبٌ is the writer; مَكْتُوبٌ is something written. None of these is a finite verb with a person and tense ending.',
+    derived:'For many derived forms, both participles are built from the muḍāriʿ stem. The active participle generally has مُـ with kasrah before the final root consonant; the passive participle generally has مُـ with fatḥah there. Learn the exact pattern with examples and check weak or irregular verbs.',
+    caution:'These patterns are introductory. Weak roots, hamzated roots, doubled roots, and spelling/phonological changes require separate rules. A passive participle is normally formed only where the verb can take a direct object in the relevant sense.',
+    exercise:'Choose whether each highlighted word is an active participle, passive participle, or maṣdar.',
+    teach:'Explain how كَاتِبٌ differs from مَكْتُوبٌ and كِتَابَةٌ. Then form the active and passive participles of عَلَّمَ.',
+    summary:'Maṣdar = action. Ism fāʿil = doer. Ism mafʿūl = affected person or thing. For sound Form I triliteral verbs, learn فَاعِلٌ and مَفْعُولٌ.',
+    check:'Check answers',score:'Your score',correct:'Correct.',incorrect:'Correct answer:',
+    audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech is not presented as authoritative Arabic pronunciation.'
+  },
+  fa:{
+    lead:'اسم‌های فاعل و مفعول از فعل ساخته می‌شوند. اسم فاعل انجام‌دهندهٔ عمل و اسم مفعول شخص یا چیزی را نشان می‌دهد که عمل بر آن واقع شده است.',
+    objective:'اسم فاعل و اسم مفعول را تشخیص دهید، آن‌ها را از فعل ثلاثی مجرد صحیح بسازید، وزن‌های رایج ابواب مزید را بشناسید و آن‌ها را با فعل صرف‌شده اشتباه نگیرید.',
+    faʿil:'اِسْمُ الْفَاعِلِ انجام‌دهندهٔ عمل را نشان می‌دهد. وزن رایج آن در فعل ثلاثی مجرد صحیح فَاعِلٌ است: كَتَبَ ← كَاتِبٌ (نویسنده).',
+    mafʿul:'اِسْمُ الْمَفْعُولِ شخص یا چیزی را نشان می‌دهد که عمل بر آن واقع شده است. وزن رایج آن در فعل ثلاثی مجرد صحیح مَفْعُولٌ است: كَتَبَ ← مَكْتُوبٌ (نوشته‌شده).',
+    contrast:'سه اسم را مقایسه کنید: كِتَابَةٌ خودِ عمل نوشتن است؛ كَاتِبٌ نویسنده است؛ مَكْتُوبٌ چیزی است که نوشته شده است. هیچ‌یک فعل صرف‌شده با شخص و زمان معین نیست.',
+    derived:'در بسیاری از باب‌های مزید، هر دو اسم از بن مضارع ساخته می‌شوند. اسم فاعل معمولاً با مُـ و کسره پیش از حرف ریشه‌ای پایانی، و اسم مفعول با مُـ و فتحه در همان جایگاه ساخته می‌شود. وزن دقیق را با مثال بیاموزید و در افعال معتل یا استثنایی بررسی کنید.',
+    caution:'این وزن‌ها مقدماتی‌اند. ریشه‌های معتل، مهموز و مضاعف و تغییرات املایی و آوایی قواعد جداگانه دارند. اسم مفعول معمولاً از فعلی ساخته می‌شود که در معنای مورد نظر مفعول مستقیم بگیرد.',
+    exercise:'مشخص کنید هر واژهٔ برجسته اسم فاعل، اسم مفعول یا مصدر است.',
+    teach:'تفاوت كَاتِبٌ با مَكْتُوبٌ و كِتَابَةٌ را توضیح دهید. سپس اسم فاعل و مفعول عَلَّمَ را بسازید.',
+    summary:'مصدر = خودِ عمل؛ اسم فاعل = انجام‌دهنده؛ اسم مفعول = شخص یا چیز متأثر از عمل. در فعل ثلاثی مجرد صحیح، وزن‌های فَاعِلٌ و مَفْعُولٌ را بیاموزید.',
+    check:'بررسی پاسخ‌ها',score:'امتیاز شما',correct:'درست است.',incorrect:'پاسخ درست:',
+    audio:'هنوز فایل ضبط‌شده و تأییدشدهٔ تلفظ انسانی در دسترس نیست. صدای ماشینی مرورگر را تلفظ معتبر عربی معرفی نمی‌کنیم.'
+  },
+  ur:{
+    lead:'اسمِ فاعل اور اسمِ مفعول فعل سے بننے والے اسم ہیں۔ اسمِ فاعل کام کرنے والے کو اور اسمِ مفعول اس شخص یا چیز کو بتاتا ہے جس پر کام ہوا۔',
+    objective:'اسمِ فاعل اور اسمِ مفعول پہچانیں، صحیح ثلاثی مجرد فعل سے بنائیں، مزید ابواب کے عام اوزان سمجھیں، اور انہیں زمانے والے فعل سے الگ رکھیں۔',
+    faʿil:'اِسْمُ الْفَاعِلِ کام کرنے والے کو بتاتا ہے۔ صحیح ثلاثی مجرد فعل میں اس کا عام وزن فَاعِلٌ ہے: كَتَبَ → كَاتِبٌ (لکھنے والا)۔',
+    mafʿul:'اِسْمُ الْمَفْعُولِ اس شخص یا چیز کو بتاتا ہے جس پر کام ہوا۔ صحیح ثلاثی مجرد فعل میں اس کا عام وزن مَفْعُولٌ ہے: كَتَبَ → مَكْتُوبٌ (لکھی ہوئی چیز)۔',
+    contrast:'تین اسموں کا فرق دیکھیں: كِتَابَةٌ لکھنے کا عمل ہے؛ كَاتِبٌ لکھنے والا ہے؛ مَكْتُوبٌ وہ چیز ہے جو لکھی گئی۔ ان میں سے کوئی بھی شخص اور زمانے کے ساتھ فعلِ صرفی نہیں۔',
+    derived:'بہت سے مزید ابواب میں دونوں اسم مضارع کے مادّے سے بنتے ہیں۔ اسمِ فاعل عموماً مُـ اور آخری اصلی حرف سے پہلے زیر کے ساتھ، اور اسمِ مفعول مُـ اور اسی مقام پر زبر کے ساتھ آتا ہے۔ کمزور یا غیر معمولی افعال میں لغت اور خاص قواعد دیکھیں۔',
+    caution:'یہ ابتدائی اوزان ہیں۔ معتل، مهموز اور مضاعف مادّوں اور املائی/آوازی تبدیلیوں کے الگ قواعد ہیں۔ اسمِ مفعول عموماً اسی فعل سے بنتا ہے جو متعلقہ معنی میں براہِ راست مفعول لے سکتا ہو۔',
+    exercise:'ہر لفظ کو اسمِ فاعل، اسمِ مفعول یا مصدر میں سے ایک قرار دیں۔',
+    teach:'كَاتِبٌ، مَكْتُوبٌ اور كِتَابَةٌ کا فرق بیان کریں۔ پھر عَلَّمَ سے اسمِ فاعل اور اسمِ مفعول بنائیں۔',
+    summary:'مصدر = عمل؛ اسمِ فاعل = کام کرنے والا؛ اسمِ مفعول = جس پر کام ہوا۔ صحیح ثلاثی مجرد کے لیے فَاعِلٌ اور مَفْعُولٌ یاد رکھیں۔',
+    check:'جواب جانچیں',score:'آپ کا اسکور',correct:'درست۔',incorrect:'درست جواب:',
+    audio:'مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ نہیں کہا جائے گا۔'
+  }
+} as const
+const participleRows=[
+ {verb:'كَتَبَ',active:'كَاتِبٌ',passive:'مَكْتُوبٌ',gloss:'writing / writer / written',fa:'نوشتن / نویسنده / نوشته‌شده',ur:'لکھنا / لکھنے والا / لکھی ہوئی چیز',type:'I'},
+ {verb:'نَصَرَ',active:'نَاصِرٌ',passive:'مَنْصُورٌ',gloss:'helping / helper / helped',fa:'یاری / یاری‌رسان / یاری‌شده',ur:'مدد / مددگار / مدد کیا گیا',type:'I'},
+ {verb:'فَتَحَ',active:'فَاتِحٌ',passive:'مَفْتُوحٌ',gloss:'opening / opener / opened',fa:'گشودن / گشاینده / گشوده',ur:'کھولنا / کھولنے والا / کھلا ہوا',type:'I'},
+ {verb:'عَلَّمَ',active:'مُعَلِّمٌ',passive:'مُعَلَّمٌ',gloss:'teaching / teacher / taught',fa:'آموزش / آموزگار / آموزش‌داده‌شده',ur:'تعلیم / استاد / پڑھایا گیا',type:'II'},
+ {verb:'أَكْرَمَ',active:'مُكْرِمٌ',passive:'مُكْرَمٌ',gloss:'honouring / one who honours / honoured',fa:'گرامی‌داشتن / گرامی‌دارنده / گرامی‌داشته‌شده',ur:'عزت دینا / عزت دینے والا / معزز',type:'IV'}
+] as const
+const participleQuiz=[
+ {word:'كَاتِبٌ',latin:'kātib',answer:'active'},
+ {word:'مَكْتُوبٌ',latin:'maktūb',answer:'passive'},
+ {word:'كِتَابَةٌ',latin:'kitābah',answer:'masdar'},
+ {word:'مُعَلِّمٌ',latin:'muʿallim',answer:'active'},
+ {word:'مُعَلَّمٌ',latin:'muʿallam',answer:'passive'},
+ {word:'إِكْرَامٌ',latin:'ikrām',answer:'masdar'}
+]
+const participleChoices=[
+ {value:'active',label:'اِسْمُ الْفَاعِلِ · active participle'},
+ {value:'passive',label:'اِسْمُ الْمَفْعُولِ · passive participle'},
+ {value:'masdar',label:'مَصْدَرٌ · verbal noun'}
+]
+function LessonFifteenPage(){
+ const [language,setLanguage]=useState<'en'|'fa'|'ur'>('en')
+ const [showTransliteration,setShowTransliteration]=useState(true)
+ const [answers,setAnswers]=useState<Record<number,string>>({})
+ const [checked,setChecked]=useState(false)
+ const copy=participleCopy[language]
+ const rtl=language!=='en'
+ const score=participleQuiz.filter((q,i)=>answers[i]===q.answer).length
+ return <main className="lesson-page">
+  <header className="lesson-header"><a href="#/lesson/14" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 06 · LESSON 15</span></header>
+  <div className="lesson-toolbar"><div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+   <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+   <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+   <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+  </div><button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button></div>
+  <div className="lesson-layout"><article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+   <div className="eyebrow">UNIT 06 · DERIVED NOUNS</div><h1>Active and passive participles</h1><p className="lesson-lead" lang={language}>{copy.lead}</p>
+   <section className="lesson-block"><div className="lesson-term" lang="ar" dir="rtl">اِسْمُ الْفَاعِلِ · اِسْمُ الْمَفْعُولِ</div>{showTransliteration&&<div className="lesson-translit" dir="ltr">ism al-fāʿil · ism al-mafʿūl</div>}
+    <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">FORM I · الثُّلَاثِيُّ الْمُجَرَّدُ</span><h2>Two patterns to recognise</h2>
+    <div className="noun-triad"><div><span>ACTIVE · DOER</span><b lang="ar" dir="rtl">فَاعِلٌ</b><small>fāʿil · doer</small></div><div><span>PASSIVE · AFFECTED</span><b lang="ar" dir="rtl">مَفْعُولٌ</b><small>mafʿūl · affected</small></div></div>
+    <p lang={language}>{copy.faʿil}</p><p lang={language}>{copy.mafʿul}</p>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">COMPARE THE NOUNS</span><h2>Action · doer · affected object</h2>
+    <div className="noun-triad"><div><span>MAṢDAR</span><b lang="ar" dir="rtl">كِتَابَةٌ</b><small>kitābah · writing</small></div><div><span>ACTIVE</span><b lang="ar" dir="rtl">كَاتِبٌ</b><small>kātib · writer</small></div><div><span>PASSIVE</span><b lang="ar" dir="rtl">مَكْتُوبٌ</b><small>maktūb · written</small></div></div>
+    <p lang={language}>{copy.contrast}</p>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">MORE EXAMPLES</span><h2>See the patterns in words</h2>
+    <div className="masdar-example-table"><div className="masdar-example-head"><span>Verb</span><span>Active</span><span>Passive</span><span>Form</span></div>
+     {participleRows.map(row=><div className="masdar-example-row" key={row.verb}><div><b lang="ar" dir="rtl">{row.verb}</b></div><div><b lang="ar" dir="rtl">{row.active}</b></div><div><b lang="ar" dir="rtl">{row.passive}</b></div><small>{row.type}</small><span>{language==='fa'?row.fa:language==='ur'?row.ur:row.gloss}</span></div>)}
+    </div>
+    <p lang={language}>{copy.derived}</p><div className="warning-card"><strong>Important limitation</strong><p lang={language}>{copy.caution}</p></div>
+   </section>
+   <section className="lesson-block practice-block"><span className="section-kicker">PRACTISE · CLASSIFY</span><h2>Which noun type is it?</h2><p lang={language}>{copy.exercise}</p>
+    <div className="pronoun-practice-list">{participleQuiz.map((q,i)=><div className="pronoun-practice-row" key={q.word+i}><div><b lang="ar" dir="rtl">{q.word}</b>{showTransliteration&&<small>{q.latin}</small>}</div>
+     <select aria-label={'Choose category for '+q.word} value={answers[i]||''} onChange={event=>{setAnswers({...answers,[i]:event.target.value});setChecked(false)}}><option value="">Choose type…</option>{participleChoices.map(c=><option value={c.value} key={c.value}>{c.label}</option>)}</select>
+     {checked&&<p className={answers[i]===q.answer?'classification-feedback correct':'classification-feedback'}>{answers[i]===q.answer?copy.correct:copy.incorrect} <b>{participleChoices.find(c=>c.value===q.answer)?.label}</b></p>}
+    </div>)}</div>
+    <button type="button" className="primary-button" disabled={Object.keys(answers).length!==participleQuiz.length} onClick={()=>setChecked(true)}>{copy.check}</button>{checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {participleQuiz.length}</strong></p>}
+   </section>
+   <section className="lesson-block"><span className="section-kicker">RECALL AND TEACH</span><h2>Say it back</h2><p lang={language}>{copy.teach}</p><div className="example-sentence" lang={language}>{copy.summary}</div><div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div></section>
+   <section className="lesson-block source-block"><span className="section-kicker">REFERENCES</span><h2>Sources and further reading</h2><ul>
+    <li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — participles and derived nouns.</a></li>
+    <li><a href="https://elon.io/grammar/arabic-modern-standard/verbal-nouns-participles/derived-masdars" target="_blank" rel="noreferrer">Elon.io — Arabic verbal nouns and participles of derived forms.</a></li>
+   </ul></section>
+   <div className="lesson-end"><a href="#/lesson/14">← Lesson 14: The maṣdar</a><span>Next: nouns of time, place, and instrument</span></div>
+  </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Active participle</li><li>Passive participle</li><li>Compare the three noun types</li><li>Derived-form examples</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Ask two questions: “Who does it?” for the active participle, and “What is affected?” for the passive participle.</p></div></aside></div>
+ </main>
 }
 
 export default function App() {
@@ -2574,6 +2690,7 @@ export default function App() {
   if (route === '#/lesson/12') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 04 · LESSON 12</span></header><LessonTwelvePage/></div>
   if (route === '#/lesson/13') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 05 · LESSON 13</span></header><LessonThirteenPage/></div>
   if (route === '#/lesson/14') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 14</span></header><LessonFourteenPage/></div>
+  if (route === '#/lesson/15') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 15</span></header><LessonFifteenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
@@ -2620,6 +2737,7 @@ export default function App() {
               </div></div>
               <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 6 · Derived Nouns</strong><span>Days 39–45</span></div><div className="lesson-library-list">
                 <a className="lesson-library-link" href="#/lesson/14"><span>14</span><div><strong>The maṣdar</strong><small>Action nouns and verbal noun patterns</small></div><ChevronRight size={16}/></a>
+                <a className="lesson-library-link" href="#/lesson/15"><span>15</span><div><strong>Active and passive participles</strong><small>Ism fāʿil and ism mafʿūl</small></div><ChevronRight size={16}/></a>
               </div></div>
             </div>
           </div>
