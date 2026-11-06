@@ -101,7 +101,7 @@
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
 4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–12.
 5. Obtain fluent Persian and Urdu review of Lessons 1–12.
-6. Add Lesson 19 on iʿlāl and idghām transformations, following the agreed curriculum sequence.
+6. Add Lesson 19 on iʿlāl and idghām transformations, following the agreed curriculum sequence. Current course draft coverage is 18/60 lessons (30%); overall product readiness is approximately 30% pending expert review, audio, learner features, accessibility, and device QA.
 7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
