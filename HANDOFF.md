@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42108687770). Lessons 1–17 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42108687770). Lessons 1–18 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -23,9 +23,10 @@
 16. `docs/LESSON_15_SOURCES.md` — source map and linguistic verification boundaries for Lesson 15.
 17. `docs/LESSON_16_SOURCES.md` — source map and linguistic verification boundaries for Lesson 16.
 18. `docs/LESSON_17_SOURCES.md` — source map and linguistic verification boundaries for Lesson 17.
-19. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-20. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-21. `docs/DECISIONS.md` — decisions and open questions.
+19. `docs/LESSON_18_SOURCES.md` — source map and linguistic verification boundaries for Lesson 18.
+20. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+21. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+22. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
@@ -69,6 +70,7 @@
 - [x] Add Lesson 15 at `#/lesson/15`, introducing active and passive participles.
 - [x] Add Lesson 16 at `#/lesson/16`, introducing nouns of time, place, and instrument.
 - [x] Add Lesson 17 at `#/lesson/17`, introducing the weak-root classes Mithāl, Ajwaf, Nāqiṣ, and Lafīf.
+- [x] Add Lesson 18 at `#/lesson/18`, introducing hamzated and doubled roots.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
 - [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
 - [ ] Fluent Persian and Urdu review of Lessons 1–3.
@@ -99,7 +101,7 @@
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
 4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–12.
 5. Obtain fluent Persian and Urdu review of Lessons 1–12.
-6. Add Lesson 18 on hamzated and doubled roots, following the agreed curriculum sequence.
+6. Add Lesson 19 on iʿlāl and idghām transformations, following the agreed curriculum sequence.
 7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
