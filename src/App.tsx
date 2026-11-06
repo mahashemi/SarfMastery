@@ -2596,11 +2596,11 @@ const participleCopy = {
   }
 } as const
 const participleRows=[
- {verb:'كَتَبَ',active:'كَاتِبٌ',passive:'مَكْتُوبٌ',gloss:'writing / writer / written',fa:'نوشتن / نویسنده / نوشته‌شده',ur:'لکھنا / لکھنے والا / لکھی ہوئی چیز',type:'I'},
- {verb:'نَصَرَ',active:'نَاصِرٌ',passive:'مَنْصُورٌ',gloss:'helping / helper / helped',fa:'یاری / یاری‌رسان / یاری‌شده',ur:'مدد / مددگار / مدد کیا گیا',type:'I'},
- {verb:'فَتَحَ',active:'فَاتِحٌ',passive:'مَفْتُوحٌ',gloss:'opening / opener / opened',fa:'گشودن / گشاینده / گشوده',ur:'کھولنا / کھولنے والا / کھلا ہوا',type:'I'},
- {verb:'عَلَّمَ',active:'مُعَلِّمٌ',passive:'مُعَلَّمٌ',gloss:'teaching / teacher / taught',fa:'آموزش / آموزگار / آموزش‌داده‌شده',ur:'تعلیم / استاد / پڑھایا گیا',type:'II'},
- {verb:'أَكْرَمَ',active:'مُكْرِمٌ',passive:'مُكْرَمٌ',gloss:'honouring / one who honours / honoured',fa:'گرامی‌داشتن / گرامی‌دارنده / گرامی‌داشته‌شده',ur:'عزت دینا / عزت دینے والا / معزز',type:'IV'}
+ {verb:'كَتَبَ',verbLatin:'kataba',active:'كَاتِبٌ',activeLatin:'kātib',passive:'مَكْتُوبٌ',passiveLatin:'maktūb',gloss:'writing / writer / written',fa:'نوشتن / نویسنده / نوشته‌شده',ur:'لکھنا / لکھنے والا / لکھی ہوئی چیز',type:'I'},
+ {verb:'نَصَرَ',verbLatin:'naṣara',active:'نَاصِرٌ',activeLatin:'nāṣir',passive:'مَنْصُورٌ',passiveLatin:'manṣūr',gloss:'helping / helper / helped',fa:'یاری / یاری‌رسان / یاری‌شده',ur:'مدد / مددگار / مدد کیا گیا',type:'I'},
+ {verb:'فَتَحَ',verbLatin:'fataḥa',active:'فَاتِحٌ',activeLatin:'fātiḥ',passive:'مَفْتُوحٌ',passiveLatin:'maftūḥ',gloss:'opening / opener / opened',fa:'گشودن / گشاینده / گشوده',ur:'کھولنا / کھولنے والا / کھلا ہوا',type:'I'},
+ {verb:'عَلَّمَ',verbLatin:'ʿallama',active:'مُعَلِّمٌ',activeLatin:'muʿallim',passive:'مُعَلَّمٌ',passiveLatin:'muʿallam',gloss:'teaching / teacher / taught',fa:'آموزش / آموزگار / آموزش‌داده‌شده',ur:'تعلیم / استاد / پڑھایا گیا',type:'II'},
+ {verb:'أَكْرَمَ',verbLatin:'akrama',active:'مُكْرِمٌ',activeLatin:'mukrim',passive:'مُكْرَمٌ',passiveLatin:'mukram',gloss:'honouring / one who honours / honoured',fa:'گرامی‌داشتن / گرامی‌دارنده / گرامی‌داشته‌شده',ur:'عزت دینا / عزت دینے والا / معزز',type:'IV'}
 ] as const
 const participleQuiz=[
  {word:'كَاتِبٌ',latin:'kātib',answer:'active'},
@@ -2644,8 +2644,8 @@ function LessonFifteenPage(){
     <p lang={language}>{copy.contrast}</p>
    </section>
    <section className="lesson-block"><span className="section-kicker">MORE EXAMPLES</span><h2>See the patterns in words</h2>
-    <div className="masdar-example-table"><div className="masdar-example-head"><span>Verb</span><span>Active</span><span>Passive</span><span>Form</span></div>
-     {participleRows.map(row=><div className="masdar-example-row" key={row.verb}><div><b lang="ar" dir="rtl">{row.verb}</b></div><div><b lang="ar" dir="rtl">{row.active}</b></div><div><b lang="ar" dir="rtl">{row.passive}</b></div><small>{row.type}</small><span>{language==='fa'?row.fa:language==='ur'?row.ur:row.gloss}</span></div>)}
+    <div className="masdar-example-table participle-example-table"><div className="masdar-example-head"><span>Verb</span><span>Active</span><span>Passive</span><span>Form</span></div>
+     {participleRows.map(row=><div className="masdar-example-row" key={row.verb}><div><b lang="ar" dir="rtl">{row.verb}</b>{showTransliteration&&<small>{row.verbLatin}</small>}</div><div><b lang="ar" dir="rtl">{row.active}</b>{showTransliteration&&<small>{row.activeLatin}</small>}</div><div><b lang="ar" dir="rtl">{row.passive}</b>{showTransliteration&&<small>{row.passiveLatin}</small>}</div><small>{row.type}</small><span>{language==='fa'?row.fa:language==='ur'?row.ur:row.gloss}</span></div>)}
     </div>
     <p lang={language}>{copy.derived}</p><div className="warning-card"><strong>Important limitation</strong><p lang={language}>{copy.caution}</p></div>
    </section>
