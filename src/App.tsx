@@ -2661,8 +2661,114 @@ function LessonFifteenPage(){
     <li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — participles and derived nouns.</a></li>
     <li><a href="https://elon.io/grammar/arabic-modern-standard/verbal-nouns-participles/derived-masdars" target="_blank" rel="noreferrer">Elon.io — Arabic verbal nouns and participles of derived forms.</a></li>
    </ul></section>
-   <div className="lesson-end"><a href="#/lesson/14">← Lesson 14: The maṣdar</a><span>Next: nouns of time, place, and instrument</span></div>
+   <div className="lesson-end"><a href="#/lesson/14">← Lesson 14: The maṣdar</a><span><a className="next-lesson-link" href="#/lesson/16">Next: time, place, and instrument nouns →</a></span></div>
   </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Active participle</li><li>Passive participle</li><li>Compare the three noun types</li><li>Derived-form examples</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Ask two questions: “Who does it?” for the active participle, and “What is affected?” for the passive participle.</p></div></aside></div>
+ </main>
+}
+
+
+const timePlaceInstrumentCopy={
+ en:{
+ lead:'Arabic can turn a verb into a noun that names the time or place of an action, or the tool used to perform it.',
+ objective:'Distinguish ism zamān, ism makān, and ism ālah; recognise common Form I patterns; understand the more regular derived-form approach and its limits.',
+ time:'اِسْمُ الزَّمَانِ names when an action occurs. For example, مَوْعِدٌ is an appointed time or appointment, from وَعَدَ (to promise).',
+ place:'اِسْمُ الْمَكَانِ names where an action occurs. مَجْلِسٌ is a sitting place or gathering/council, from جَلَسَ (to sit).',
+ tool:'اِسْمُ الْآلَةِ names an instrument used to perform an action. مِفْتَاحٌ is a key, from فَتَحَ (to open).',
+ patterns:'For many sound Form I verbs, nouns of time and place commonly use مَفْعَلٌ or مَفْعِلٌ. The choice depends on the verb class and established usage; it is not safe to guess without checking. Common instrument patterns include مِفْعَلٌ, مِفْعَلَةٌ, and مِفْعَالٌ.',
+ derived:'For many derived (non-Form-I) verbs, the time/place noun commonly follows the pattern of the passive participle. This is a useful rule of thumb, not an excuse to generate unattested words. Learn real examples with their meanings.',
+ caution:'A single pattern can have different meanings in context. Some forms are lexicalised, and some roots have irregular or competing forms. Use a reliable dictionary and the exact textbook convention.',
+ exercise:'Classify each word as a noun of time, place, or instrument.',
+ teach:'Explain the difference between مَوْعِدٌ, مَجْلِسٌ, and مِفْتَاحٌ. Give one example of an instrument noun and explain which action it helps perform.',
+ summary:'Ism zamān = when; ism makān = where; ism ālah = with what tool. Recognise common patterns, but verify each attested word.',
+ check:'Check answers',score:'Your score',correct:'Correct.',incorrect:'Correct answer:',
+ audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech is not presented as authoritative Arabic pronunciation.'
+ },
+ fa:{
+ lead:'در عربی می‌توان از فعل اسمی ساخت که زمان یا مکان وقوع عمل، یا ابزار انجام آن را نشان دهد.',
+ objective:'اسم زمان، اسم مکان و اسم آلت را از هم تشخیص دهید، وزن‌های رایج باب اول را بشناسید و محدودیت قواعد ساخت را درک کنید.',
+ time:'اِسْمُ الزَّمَانِ زمان وقوع عمل را نشان می‌دهد. مَوْعِدٌ به معنای وقت تعیین‌شده یا قرار است و از وَعَدَ (وعده دادن) می‌آید.',
+ place:'اِسْمُ الْمَكَانِ مکان وقوع عمل را نشان می‌دهد. مَجْلِسٌ محل نشستن یا مجلس است و از جَلَسَ (نشستن) می‌آید.',
+ tool:'اِسْمُ الْآلَةِ ابزار انجام عمل را نشان می‌دهد. مِفْتَاحٌ کلید است و از فَتَحَ (گشودن) می‌آید.',
+ patterns:'در بسیاری از افعال ثلاثی مجرد صحیح، اسم زمان و مکان بر وزن مَفْعَلٌ یا مَفْعِلٌ می‌آید. انتخاب وزن به نوع فعل و کاربرد تثبیت‌شده بستگی دارد؛ بدون مراجعه نمی‌توان حدس زد. وزن‌های رایج اسم آلت مِفْعَلٌ، مِفْعَلَةٌ و مِفْعَالٌ هستند.',
+ derived:'در بسیاری از افعال مزید، اسم زمان و مکان غالباً بر وزن اسم مفعول می‌آید. این قاعده راهنمای کلی است، نه مجوز ساخت واژهٔ تأییدنشده. مثال‌های واقعی را همراه معنی حفظ کنید.',
+ caution:'یک وزن در بافت‌های مختلف ممکن است معناهای متفاوت داشته باشد. برخی صورت‌ها واژگانی‌شده‌اند و بعضی ریشه‌ها صورت‌های نامنظم یا رقیب دارند. به فرهنگ معتبر و اصطلاح کتاب درسی مراجعه کنید.',
+ exercise:'هر واژه را اسم زمان، اسم مکان یا اسم آلت دسته‌بندی کنید.',
+ teach:'تفاوت مَوْعِدٌ، مَجْلِسٌ و مِفْتَاحٌ را توضیح دهید. یک اسم آلت مثال بزنید و بگویید برای انجام چه عملی به کار می‌رود.',
+ summary:'اسم زمان = چه هنگام؛ اسم مکان = کجا؛ اسم آلت = با چه ابزاری. وزن‌های رایج را بشناسید، اما هر واژه را بررسی کنید.',
+ check:'بررسی پاسخ‌ها',score:'امتیاز شما',correct:'درست است.',incorrect:'پاسخ درست:',
+ audio:'هنوز فایل ضبط‌شده و تأییدشدهٔ تلفظ انسانی در دسترس نیست. صدای ماشینی مرورگر را تلفظ معتبر عربی معرفی نمی‌کنیم.'
+ },
+ ur:{
+ lead:'عربی میں فعل سے ایسا اسم بھی بنتا ہے جو عمل کا وقت، جگہ یا عمل کے لیے استعمال ہونے والا آلہ بتاتا ہے۔',
+ objective:'اسمِ زمان، اسمِ مکان اور اسمِ آلہ میں فرق کریں، باب اول کے عام اوزان پہچانیں، اور قواعد کی حدود سمجھیں۔',
+ time:'اِسْمُ الزَّمَانِ عمل کے وقت کو بتاتا ہے۔ مَوْعِدٌ مقررہ وقت یا ملاقات ہے، جو وَعَدَ (وعدہ کرنا) سے ہے۔',
+ place:'اِسْمُ الْمَكَانِ عمل کی جگہ بتاتا ہے۔ مَجْلِسٌ بیٹھنے کی جگہ یا مجلس ہے، جو جَلَسَ (بیٹھنا) سے ہے۔',
+ tool:'اِسْمُ الْآلَةِ عمل کے آلے کو بتاتا ہے۔ مِفْتَاحٌ چابی ہے، جو فَتَحَ (کھولنا) سے ہے۔',
+ patterns:'بہت سے صحیح ثلاثی مجرد افعال میں اسمِ زمان اور اسمِ مکان مَفْعَلٌ یا مَفْعِلٌ کے وزن پر آتے ہیں۔ انتخاب فعل کی قسم اور معروف استعمال پر منحصر ہے؛ لغت دیکھے بغیر اندازہ نہ لگائیں۔ اسمِ آلہ کے عام اوزان مِفْعَلٌ، مِفْعَلَةٌ اور مِفْعَالٌ ہیں۔',
+ derived:'بہت سے مزید افعال میں اسمِ زمان و مکان عموماً اسمِ مفعول کے وزن پر آتے ہیں۔ یہ عمومی رہنمائی ہے، غیر مستند لفظ بنانے کی اجازت نہیں۔ مستعمل مثالیں معنی کے ساتھ یاد کریں۔',
+ caution:'ایک ہی وزن سیاق کے لحاظ سے مختلف معنی دے سکتا ہے۔ کچھ الفاظ لغوی طور پر مستقل ہو چکے ہیں اور بعض مادّوں کی صورتیں غیر معمولی یا متبادل ہوتی ہیں۔ معتبر لغت اور درسی کتاب کی اصطلاح دیکھیں۔',
+ exercise:'ہر لفظ کو اسمِ زمان، اسمِ مکان یا اسمِ آلہ میں رکھیں۔',
+ teach:'مَوْعِدٌ، مَجْلِسٌ اور مِفْتَاحٌ کا فرق بیان کریں۔ اسمِ آلہ کی ایک مثال دیں اور بتائیں کہ یہ کس کام میں مدد دیتا ہے۔',
+ summary:'اسمِ زمان = کب؛ اسمِ مکان = کہاں؛ اسمِ آلہ = کس آلے سے۔ عام اوزان پہچانیں، مگر ہر مستعمل لفظ کی تصدیق کریں۔',
+ check:'جواب جانچیں',score:'آپ کا اسکور',correct:'درست۔',incorrect:'درست جواب:',
+ audio:'مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ نہیں کہا جائے گا۔'
+ }
+} as const
+const timePlaceInstrumentWords=[
+ {word:'مَوْعِدٌ',latin:'mawʿid',kind:'time',gloss:'appointed time / appointment'},
+ {word:'مَجْلِسٌ',latin:'majlis',kind:'place',gloss:'sitting place / gathering'},
+ {word:'مَطْلَعٌ',latin:'maṭlaʿ',kind:'place',gloss:'place/time of rising'},
+ {word:'مِفْتَاحٌ',latin:'miftāḥ',kind:'tool',gloss:'key'},
+ {word:'مِكْنَسَةٌ',latin:'miknasah',kind:'tool',gloss:'broom'},
+ {word:'مِنْشَارٌ',latin:'minshār',kind:'tool',gloss:'saw'}
+]
+const timePlaceChoices=[
+ {value:'time',label:'اِسْمُ الزَّمَانِ · time'},
+ {value:'place',label:'اِسْمُ الْمَكَانِ · place'},
+ {value:'tool',label:'اِسْمُ الْآلَةِ · instrument'}
+]
+function LessonSixteenPage(){
+ const [language,setLanguage]=useState<'en'|'fa'|'ur'>('en')
+ const [showTransliteration,setShowTransliteration]=useState(true)
+ const [answers,setAnswers]=useState<Record<number,string>>({})
+ const [checked,setChecked]=useState(false)
+ const copy=timePlaceInstrumentCopy[language]
+ const rtl=language!=='en'
+ const score=timePlaceInstrumentWords.filter((q,i)=>answers[i]===q.kind).length
+ return <main className="lesson-page">
+  <header className="lesson-header"><a href="#/lesson/15" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 06 · LESSON 16</span></header>
+  <div className="lesson-toolbar"><div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+   <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+   <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+   <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+  </div><button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button></div>
+  <div className="lesson-layout"><article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+   <div className="eyebrow">UNIT 06 · DERIVED NOUNS</div><h1>Nouns of time, place, and instrument</h1><p className="lesson-lead" lang={language}>{copy.lead}</p>
+   <section className="lesson-block"><div className="lesson-term" lang="ar" dir="rtl">اِسْمُ الزَّمَانِ · اِسْمُ الْمَكَانِ · اِسْمُ الْآلَةِ</div>{showTransliteration&&<div className="lesson-translit" dir="ltr">ism al-zamān · ism al-makān · ism al-ālah</div>}<div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div></section>
+   <section className="lesson-block"><span className="section-kicker">THREE MEANINGS</span><h2>When · where · with what?</h2>
+    <div className="noun-triad"><div><span>TIME · زَمَان</span><b lang="ar" dir="rtl">مَوْعِدٌ</b><small>mawʿid · appointment</small></div><div><span>PLACE · مَكَان</span><b lang="ar" dir="rtl">مَجْلِسٌ</b><small>majlis · gathering</small></div><div><span>TOOL · آلَة</span><b lang="ar" dir="rtl">مِفْتَاحٌ</b><small>miftāḥ · key</small></div></div>
+    <h3>Ism zamān</h3><p lang={language}>{copy.time}</p><h3>Ism makān</h3><p lang={language}>{copy.place}</p><h3>Ism ālah</h3><p lang={language}>{copy.tool}</p>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">COMMON PATTERNS</span><h2>Recognise the shape, verify the word</h2>
+    <div className="noun-triad"><div><span>TIME / PLACE</span><b lang="ar" dir="rtl">مَفْعَلٌ</b><small>mafʿal</small></div><div><span>TIME / PLACE</span><b lang="ar" dir="rtl">مَفْعِلٌ</b><small>mafʿil</small></div><div><span>INSTRUMENT</span><b lang="ar" dir="rtl">مِفْعَالٌ</b><small>mifʿāl</small></div></div>
+    <p lang={language}>{copy.patterns}</p><p lang={language}>{copy.derived}</p><div className="warning-card"><strong>Do not generate blindly</strong><p lang={language}>{copy.caution}</p></div>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">EXAMPLES</span><h2>Learn words with their meanings</h2>
+    <div className="masdar-example-table"><div className="masdar-example-head"><span>Arabic</span><span>Transliteration</span><span>Category</span><span>Meaning</span></div>
+     {timePlaceInstrumentWords.map(w=><div className="masdar-example-row" key={w.word}><div><b lang="ar" dir="rtl">{w.word}</b></div><span>{showTransliteration?w.latin:''}</span><small>{w.kind}</small><span>{w.gloss}</span></div>)}
+    </div>
+   </section>
+   <section className="lesson-block practice-block"><span className="section-kicker">PRACTISE · CLASSIFY</span><h2>When, where, or with what?</h2><p lang={language}>{copy.exercise}</p>
+    <div className="pronoun-practice-list">{timePlaceInstrumentWords.map((q,i)=><div className="pronoun-practice-row" key={q.word}><div><b lang="ar" dir="rtl">{q.word}</b>{showTransliteration&&<small>{q.latin}</small>}</div><select aria-label={'Choose noun category for '+q.word} value={answers[i]||''} onChange={event=>{setAnswers({...answers,[i]:event.target.value});setChecked(false)}}><option value="">Choose type…</option>{timePlaceChoices.map(c=><option value={c.value} key={c.value}>{c.label}</option>)}</select>{checked&&<p className={answers[i]===q.kind?'classification-feedback correct':'classification-feedback'}>{answers[i]===q.kind?copy.correct:copy.incorrect} <b>{timePlaceChoices.find(c=>c.value===q.kind)?.label}</b></p>}</div>)}</div>
+    <button type="button" className="primary-button" disabled={Object.keys(answers).length!==timePlaceInstrumentWords.length} onClick={()=>setChecked(true)}>{copy.check}</button>{checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {timePlaceInstrumentWords.length}</strong></p>}
+   </section>
+   <section className="lesson-block"><span className="section-kicker">RECALL AND TEACH</span><h2>Say it back</h2><p lang={language}>{copy.teach}</p><div className="example-sentence" lang={language}>{copy.summary}</div><div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div></section>
+   <section className="lesson-block source-block"><span className="section-kicker">REFERENCES</span><h2>Sources and further reading</h2><ul>
+    <li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — derived nouns and patterns.</a></li>
+    <li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — nouns derived from verbs.</a></li>
+   </ul></section>
+   <div className="lesson-end"><a href="#/lesson/15">← Lesson 15: Participles</a><span>Next: weak verbs and irregular patterns</span></div>
+  </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Time nouns</li><li>Place nouns</li><li>Instrument nouns</li><li>Common patterns</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Ask the question: when, where, or with which tool? Then verify the word's actual dictionary form.</p></div></aside></div>
  </main>
 }
 
@@ -2691,6 +2797,7 @@ export default function App() {
   if (route === '#/lesson/13') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 05 · LESSON 13</span></header><LessonThirteenPage/></div>
   if (route === '#/lesson/14') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 14</span></header><LessonFourteenPage/></div>
   if (route === '#/lesson/15') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 15</span></header><LessonFifteenPage/></div>
+  if (route === '#/lesson/16') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 16</span></header><LessonSixteenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
@@ -2738,6 +2845,7 @@ export default function App() {
               <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 6 · Derived Nouns</strong><span>Days 39–45</span></div><div className="lesson-library-list">
                 <a className="lesson-library-link" href="#/lesson/14"><span>14</span><div><strong>The maṣdar</strong><small>Action nouns and verbal noun patterns</small></div><ChevronRight size={16}/></a>
                 <a className="lesson-library-link" href="#/lesson/15"><span>15</span><div><strong>Active and passive participles</strong><small>Ism fāʿil and ism mafʿūl</small></div><ChevronRight size={16}/></a>
+                <a className="lesson-library-link" href="#/lesson/16"><span>16</span><div><strong>Time, place, and instrument nouns</strong><small>Ism zamān, ism makān, ism ālah</small></div><ChevronRight size={16}/></a>
               </div></div>
             </div>
           </div>
