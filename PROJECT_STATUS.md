@@ -1,7 +1,7 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Lessons 1–15 have implementation drafts and multilingual core explanations; latest custom Pages deployment succeeded in Actions run 42152308775. GitHub Pages still has a duplicate legacy Pages workflow to resolve; expert review and real-device responsive QA remain pending.  
+**Overall status:** Lessons 1–16 have implementation drafts and multilingual core explanations. Lesson 15 built successfully in Actions run 42152308775. GitHub Pages is still running a duplicate legacy Pages workflow; repository Settings → Pages must be switched to GitHub Actions. Expert review and real-device responsive QA remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
@@ -38,6 +38,7 @@
 - [x] Add Lesson 13 in Unit 5 covering mujarrad/mazīd, triliteral forms I–X, and quadriliteral patterns.
 - [x] Add Lesson 14 in Unit 6 covering the maṣdar, Form I maṣdar variation, derived maṣdar patterns, and noun-category practice.
 - [x] Add Lesson 15 in Unit 6 covering active/passive participles, Form I patterns, derived-form examples, and interactive noun classification.
+- [x] Add Lesson 16 in Unit 6 covering nouns of time, place, and instrument with pattern caveats and interactive classification.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
@@ -317,6 +318,7 @@ For every lesson:
 - [ ] [#14 Review and complete Unit 5, Lesson 13 — mujarrad, mazīd, and verb forms I–X](https://github.com/mahashemi/SarfMastery/issues/14)
 - [ ] [#15 Review and complete Unit 6, Lesson 14 — the maṣdar and verbal nouns](https://github.com/mahashemi/SarfMastery/issues/15)
 - [ ] [#16 Review and complete Unit 6, Lesson 15 — active and passive participles](https://github.com/mahashemi/SarfMastery/issues/16)
+- [ ] [#17 Review and complete Unit 6, Lesson 16 — nouns of time, place, and instrument](https://github.com/mahashemi/SarfMastery/issues/17)
 
 ## 13. Session log
 | Date | Change | Verification |
@@ -337,4 +339,5 @@ For every lesson:
 | 2026-11-05 | Corrected curriculum order: Lesson 6 now introduces the 14 ṣīghahs; the six-Abwāb lesson is Lesson 12 in Unit 4. Added a home-page lesson library with direct links to all 12 lessons. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42107792676; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 13 on mujarrad/mazīd, the ten common triliteral forms I–X, and quadriliteral patterns; added it to the home lesson library. | TypeScript/Vite build and custom Pages deployment succeeded in Actions run 42108687770; expert review and responsive QA pending |
 | 2026-11-05 | Added Lesson 14 on the maṣdar, including Form I variation, derived maṣdar patterns, and noun-category practice. | Build succeeded; Pages deployment lock discovered and is being repaired |
-| 2026-11-06 | Added Lesson 15 on active/passive participles with multilingual explanations, transliteration, examples, interactive classification, and source notes. | Custom deployment succeeded in run 42152308775; duplicate legacy Pages workflow still being disabled |
+| 2026-11-06 | Added Lesson 15 on active/passive participles with multilingual explanations, transliteration, examples, interactive classification, and source notes. | TypeScript/Vite build and custom deployment succeeded in run 42152308775 |
+| 2026-11-06 | Added Lesson 16 on nouns of time, place, and instrument with multilingual explanations, pattern cautions, examples, and practice. | Build/deployment pending; legacy Pages source still needs manual switch to GitHub Actions |
