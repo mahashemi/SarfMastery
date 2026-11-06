@@ -36,23 +36,24 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-      - name: Clear the interrupted Pages deployment
+      - name: Cancel the stuck Pages deployment
         uses: actions/github-script@v7
         with:
           script: |
             const staleSha = 'c8785da9366a282861fba115cfc8ba5b216c6991';
             const { owner, repo } = context.repo;
-            const { data: deployments } = await github.rest.repos.listDeployments({ owner, repo, per_page: 100 });
-            core.info(`Found ${deployments.length} deployment records.`);
-            for (const deployment of deployments) core.info(`Deployment ${deployment.id}: ${deployment.sha} (${deployment.environment})`);
-            const stale = deployments.filter((deployment) => deployment.sha === staleSha);
-            core.info(`Found ${stale.length} deployment record(s) for interrupted SHA ${staleSha}.`);
-            for (const deployment of stale) {
-              const { data: statuses } = await github.rest.repos.listDeploymentStatuses({ owner, repo, deployment_id: deployment.id, per_page: 1 });
-              core.info(`Latest status for deployment ${deployment.id}: ${statuses[0]?.state ?? 'none'}`);
-              if (statuses[0]?.state !== 'inactive') {
-                await github.rest.repos.createDeploymentStatus({ owner, repo, deployment_id: deployment.id, state: 'inactive', description: 'Superseded after an interrupted Pages publish.' });
-                core.info(`Marked interrupted Pages deployment ${deployment.id} inactive.`);
+            try {
+              await github.request('POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel', {
+                owner,
+                repo,
+                pages_deployment_id: staleSha,
+              });
+              core.info(`Cancelled stuck Pages deployment for ${staleSha}.`);
+            } catch (error) {
+              if (error.status === 404) {
+                core.info('The stuck Pages deployment is already cleared.');
+              } else {
+                throw error;
               }
             }
       - name: Deploy
