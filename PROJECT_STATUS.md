@@ -1,14 +1,14 @@
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-05  
-**Overall status:** Lessons 1–18 have implementation drafts and multilingual core explanations. Latest production TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42152936778. Course content draft progress: 18/60 lessons (30%). Overall product readiness is estimated at about 30%; this is a planning estimate, not a measured QA score. Responsive layouts are implemented for desktop/tablet/mobile, but real-device QA and accessibility checks remain pending.  
+**Overall status:** Lessons 1–19 have implementation drafts and multilingual core explanations. Latest production TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42152936778. Course content draft progress: 18/60 lessons (30%). Overall product readiness is estimated at about 30%; this is a planning estimate, not a measured QA score. Responsive layouts are implemented for desktop/tablet/mobile, but real-device QA and accessibility checks remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
 > Check a task only after implementation and verification. Planning, mockups, and placeholders do not count as completion.
 
 ## 0. Current checkpoint
 
-**Progress snapshot (2026-11-06):** 18 of 60 planned lesson drafts are implemented (30%). The core web app shell, lesson routing, multilingual lesson content, and interactive practice foundations exist. The remaining ~70% of course content plus expert review, verified audio, learner progress/revision features, search/glossary, accessibility, and real-device QA are not complete.
+**Progress snapshot (2026-11-06):** 19 of 60 planned lesson drafts are implemented (31.7%). The core web app shell, lesson routing, multilingual lesson content, and interactive practice foundations exist. The remaining ~70% of course content plus expert review, verified audio, learner progress/revision features, search/glossary, accessibility, and real-device QA are not complete.
 - [x] Product direction and audience agreed.
 - [x] Product name: Sarf Mastery — صَرْف.
 - [x] Personal name removed from branding and footer.
@@ -43,6 +43,7 @@
 - [x] Add Lesson 16 in Unit 6 covering nouns of time, place, and instrument with pattern caveats and interactive classification.
 - [x] Add Lesson 17 in Unit 7 covering Mithāl, Ajwaf, Nāqiṣ, and Lafīf weak-root classes.
 - [x] Add Lesson 18 in Unit 7 covering hamzated roots and doubled roots, including shadda and root analysis.
+- [x] Add Lesson 19 in Unit 7 covering introductory iʿlāl and idghām with selected weak/doubled verb paradigms.
 - [x] Mark unfinished navigation destinations as coming soon rather than presenting fake pages.
 - [x] Verify production TypeScript/Vite build and GitHub Pages deployment (Actions run 42101525058).
 - [ ] Approve first UI checkpoint across desktop/tablet/mobile.
@@ -325,6 +326,7 @@ For every lesson:
 - [ ] [#17 Review and complete Unit 6, Lesson 16 — nouns of time, place, and instrument](https://github.com/mahashemi/SarfMastery/issues/17)
 - [ ] [#18 Review and complete Unit 7, Lesson 17 — weak verb root classes](https://github.com/mahashemi/SarfMastery/issues/18)
 - [ ] [#19 Review and complete Unit 7, Lesson 18 — hamzated and doubled roots](https://github.com/mahashemi/SarfMastery/issues/19)
+- [ ] [#20 Review and complete Unit 7, Lesson 19 — iʿlāl and idghām](https://github.com/mahashemi/SarfMastery/issues/20)
 
 ## 13. Session log
 | Date | Change | Verification |
@@ -348,4 +350,5 @@ For every lesson:
 | 2026-11-06 | Added Lesson 15 on active/passive participles with multilingual explanations, transliteration, examples, interactive classification, and source notes. | TypeScript/Vite build and custom deployment succeeded in run 42152308775 |
 | 2026-11-06 | Added Lesson 16 on nouns of time, place, and instrument with multilingual explanations, pattern cautions, examples, and practice. | Build/deployment pending; legacy Pages source still needs manual switch to GitHub Actions |
 | 2026-11-06 | Added Lesson 17 on weak-root classes (Mithāl, Ajwaf, Nāqiṣ, Lafīf) with multilingual explanation and classification practice. | TypeScript/Vite build succeeded in run 42152754203; latest production deployment of main succeeded in run 42152936778 |
-| 2026-11-06 | Added Lesson 18 on hamzated and doubled roots, root positions, and shadda, with multilingual explanation and practice. | Build/deployment pending |
+| 2026-11-06 | Added Lesson 18 on hamzated and doubled roots, root positions, and shadda, with multilingual explanation and practice. | Build/deployment succeeded in run 42152936778 |
+| 2026-11-06 | Added Lesson 19 on iʿlāl and idghām, with selected paradigms and multilingual practice. | Build/deployment pending |
