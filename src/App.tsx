@@ -2966,7 +2966,7 @@ const iʿlalCopy={
  en:{
  lead:'Iʿlāl is a set of changes that affect weak root letters in certain forms. Idghām combines two identical or closely related consonants in pronunciation and writing.',
  objective:'Understand the purpose of iʿlāl and idghām, observe common weak-letter changes in a few familiar paradigms, and recognise when a doubled root is separated by a suffix.',
- ial:'إِعْلَالٌ refers to changes involving و or ي, such as changing a weak letter into a long vowel (قَوَلَ → قَالَ in the underlying pattern explanation), changing one weak letter into another, or deleting it in a particular form. These changes follow specific morphological and phonological conditions.',
+ ial:'إِعْلَالٌ refers to changes involving و or ي, such as the weak middle radical of ق و ل appearing as a long vowel in قَالَ, changing one weak letter into another, or deleting it in a particular form. These changes follow specific morphological and phonological conditions.',
  mithal:'In the Mithāl verb وَعَدَ يَعِدُ, the initial و is absent in the common muḍāriʿ form يَعِدُ. This is a familiar example of deletion in a weak-initial verb; do not generalise it to every initial-wāw verb.',
  ajwaf:'Compare قَالَ يَقُولُ قُلْ (root ق و ل) and بَاعَ يَبِيعُ بِعْ (root ب ي ع). The weak middle radical appears differently across past, present, and imperative forms. Learn the whole paradigm rather than applying one spelling rule mechanically.',
  naqis:'Compare دَعَا يَدْعُو لَمْ يَدْعُ and رَمَى يَرْمِي لَمْ يَرْمِ. The final weak radical changes or is deleted in particular grammatical environments. The exact ending depends on the verb and form.',
@@ -2981,7 +2981,7 @@ const iʿlalCopy={
  fa:{
  lead:'اعلال مجموعه‌ای از تغییرات حروف علت در برخی صورت‌های صرفی است. ادغام دو حرف یکسان یا نزدیک به هم را در تلفظ و نوشتار یکی می‌کند.',
  objective:'هدف اعلال و ادغام را بفهمید، تغییرات رایج حروف علت را در چند مثال آشنا ببینید و بدانید چه زمانی دو حرف ریشهٔ مضاعف با پسوند از هم جدا می‌شوند.',
- ial:'إِعْلَالٌ به تغییراتی گفته می‌شود که واو یا یاء را دربر می‌گیرد؛ مانند تبدیل حرف علت به واکهٔ بلند، تبدیل یک حرف علت به حرف دیگر، یا حذف آن در صورتی معین. این تغییرات شرایط صرفی و آوایی مشخصی دارند.',
+ ial:'إِعْلَالٌ به تغییراتی گفته می‌شود که واو یا یاء را دربر می‌گیرد؛ مانند نمایان شدن حرف علت میانی ریشهٔ ق و ل به صورت واکهٔ بلند در قَالَ، تبدیل یک حرف علت به حرف دیگر، یا حذف آن در صورتی معین. این تغییرات شرایط صرفی و آوایی مشخصی دارند.',
  mithal:'در فعل مثال وَعَدَ يَعِدُ، واو آغازین در مضارع رایج يَعِدُ دیده نمی‌شود. این نمونه‌ای شناخته‌شده از حذف در فعل معتل‌الفاء است؛ آن را به همهٔ افعال آغازشده با واو تعمیم ندهید.',
  ajwaf:'قَالَ يَقُولُ قُلْ (ریشهٔ ق و ل) و بَاعَ يَبِيعُ بِعْ (ریشهٔ ب ي ع) را مقایسه کنید. حرف علت میانی در ماضی، مضارع و امر صورت‌های متفاوتی دارد. کل جدول صرف را بیاموزید و یک قاعدهٔ املایی را مکانیکی تعمیم ندهید.',
  naqis:'دَعَا يَدْعُو لَمْ يَدْعُ و رَمَى يَرْمِي لَمْ يَرْمِ را مقایسه کنید. حرف علت پایانی در برخی محیط‌های دستوری تغییر می‌کند یا حذف می‌شود. پایان دقیق به فعل و صیغه بستگی دارد.',
@@ -2996,7 +2996,7 @@ const iʿlalCopy={
  ur:{
  lead:'اِعلال وہ تبدیلیاں ہیں جو بعض تصریفی صورتوں میں حروفِ علت پر آتی ہیں۔ ادغام دو یکساں یا قریب آوازوں کو تلفظ اور لکھائی میں ملا دیتا ہے۔',
  objective:'اعلال اور ادغام کا مقصد سمجھیں، چند معروف مثالوں میں حروفِ علت کی تبدیلی دیکھیں، اور جانیں کہ لاحقہ لگنے پر مضاعف مادّے کے دونوں حروف کب الگ ہو جاتے ہیں۔',
- ial:'إِعْلَالٌ سے مراد و یا ی میں تبدیلی ہے، مثلاً حرفِ علت کا لمبی آواز میں بدلنا، ایک حرفِ علت کا دوسرے میں بدلنا، یا کسی خاص صورت میں حذف ہونا۔ ان تبدیلیوں کے صرفی اور صوتی شرائط ہوتے ہیں۔',
+ ial:'إِعْلَالٌ سے مراد و یا ی میں تبدیلی ہے، مثلاً مادّے ق و ل کا درمیانی حرفِ علت قَالَ میں لمبی آواز کی صورت میں ظاہر ہونا، ایک حرفِ علت کا دوسرے میں بدلنا، یا کسی خاص صورت میں حذف ہونا۔ ان تبدیلیوں کے صرفی اور صوتی شرائط ہوتے ہیں۔',
  mithal:'فعلِ مثال وَعَدَ يَعِدُ میں مضارع کی معروف صورت يَعِدُ میں ابتدائی و نہیں آتا۔ یہ معتل الفاء فعل میں حذف کی عام مثال ہے؛ اسے ہر ابتدائی و والے فعل پر لاگو نہ کریں۔',
  ajwaf:'قَالَ يَقُولُ قُلْ (مادّہ ق و ل) اور بَاعَ يَبِيعُ بِعْ (مادّہ ب ي ع) کا موازنہ کریں۔ درمیانی حرفِ علت ماضی، مضارع اور امر میں مختلف صورت دکھاتا ہے۔ پورا صیغہ وار جدول یاد کریں، ایک املا کا قاعدہ ہر جگہ نہ لگائیں۔',
  naqis:'دَعَا يَدْعُو لَمْ يَدْعُ اور رَمَى يَرْمِي لَمْ يَرْمِ کا موازنہ کریں۔ آخری حرفِ علت بعض نحوی ماحول میں بدلتا یا حذف ہوتا ہے۔ درست آخری صورت فعل اور صیغے پر منحصر ہے۔',
