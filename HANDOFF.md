@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-05  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42108687770). Lessons 1–15 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42108687770). Lessons 1–16 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -21,9 +21,10 @@
 14. `docs/LESSON_13_SOURCES.md` — source map and linguistic verification boundaries for Lesson 13.
 15. `docs/LESSON_14_SOURCES.md` — source map and linguistic verification boundaries for Lesson 14.
 16. `docs/LESSON_15_SOURCES.md` — source map and linguistic verification boundaries for Lesson 15.
-17. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-18. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-19. `docs/DECISIONS.md` — decisions and open questions.
+17. `docs/LESSON_16_SOURCES.md` — source map and linguistic verification boundaries for Lesson 16.
+18. `docs/PRODUCT_SPEC.md` — product and UX requirements.
+19. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
+20. `docs/DECISIONS.md` — decisions and open questions.
 
 ## Agreed requirements
 - Product name: Sarf Mastery — صَرْف.
@@ -65,6 +66,7 @@
 - [x] Add Lesson 13 at `#/lesson/13`, introducing mujarrad/mazīd, forms I–X, and quadriliteral patterns.
 - [x] Add Lesson 14 at `#/lesson/14`, introducing the maṣdar and common derived maṣdar patterns.
 - [x] Add Lesson 15 at `#/lesson/15`, introducing active and passive participles.
+- [x] Add Lesson 16 at `#/lesson/16`, introducing nouns of time, place, and instrument.
 - [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
 - [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
 - [ ] Fluent Persian and Urdu review of Lessons 1–3.
@@ -95,7 +97,7 @@
 3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
 4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–12.
 5. Obtain fluent Persian and Urdu review of Lessons 1–12.
-6. Add Lesson 16 on nouns of time, place, and instrument (ism zamān, ism makān, ism ālah), following the agreed curriculum sequence.
+6. Add Lesson 17 on weak verb classes (mithāl, ajwaf, nāqiṣ, lafīf), following the agreed curriculum sequence.
 7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
 
 ## Guardrails
