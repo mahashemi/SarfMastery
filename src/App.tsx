@@ -2767,8 +2767,115 @@ function LessonSixteenPage(){
     <li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — derived nouns and patterns.</a></li>
     <li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — nouns derived from verbs.</a></li>
    </ul></section>
-   <div className="lesson-end"><a href="#/lesson/15">← Lesson 15: Participles</a><span>Next: weak verbs and irregular patterns</span></div>
+   <div className="lesson-end"><a href="#/lesson/15">← Lesson 15: Participles</a><span><a className="next-lesson-link" href="#/lesson/17">Next: weak verbs →</a></span></div>
   </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Time nouns</li><li>Place nouns</li><li>Instrument nouns</li><li>Common patterns</li><li>Classification practice</li><li>Teach-back</li></ol><div className="aside-note"><strong>Study tip</strong><p>Ask the question: when, where, or with which tool? Then verify the word's actual dictionary form.</p></div></aside></div>
+ </main>
+}
+
+
+const weakVerbCopy={
+ en:{
+ lead:'A weak verb contains و or ي as one of its root letters. Its position in the root determines its traditional class and helps explain the changes seen during conjugation.',
+ objective:'Recognise the four main weak-verb classes, identify the weak root letter by position, distinguish the two Lafīf subtypes, and avoid treating every surface alif as a root letter.',
+ intro:'In traditional Sarf, a weak root letter is called حَرْفُ الْعِلَّةِ. The three letters involved are و، ا، ي in their written/phonological forms, but the underlying root is often و or ي. Look at the root and its position, not just the surface spelling.',
+ mithal:'الْمِثَالُ has a weak first root letter: وَعَدَ (و ع د), to promise. Its present form is يَعِدُ. The initial weak letter may disappear in some conjugated forms; learn each verb family with its attested forms.',
+ ajwaf:'الْأَجْوَفُ has a weak middle (second) root letter: قَالَ (ق و ل), to say; and بَاعَ (ب ي ع), to sell. The weak middle radical often appears as a long vowel in the past form.',
+ naqis:'النَّاقِصُ has a weak final (third) root letter: دَعَا (د ع و), to call/invoke; and رَمَى (ر م ي), to throw. Its final weak letter changes or drops in some forms and endings.',
+ lafiif:'اللَّفِيفُ has two weak root letters. لَفِيفٌ مَفْرُوقٌ has them separated, as in وَقَى (و ق ي). لَفِيفٌ مَقْرُونٌ has them adjacent, as in طَوَى (ط و ي).',
+ caution:'This lesson classifies roots; it does not yet teach the full rules of إِعْلَالٌ (weak-letter change), حذف (deletion), or spelling. A written ا in a verb such as قَالَ is often the surface result of a weak root letter, not itself the underlying third radical.',
+ exercise:'Classify each verb by the position of its weak root letters.',
+ teach:'Explain why قَالَ is Ajwaf but دَعَا is Nāqiṣ. Then distinguish Lafīf mafrūq from Lafīf maqrūn using one example of each.',
+ summary:'Mithāl = weak first radical; Ajwaf = weak middle radical; Nāqiṣ = weak final radical; Lafīf = two weak radicals (separated or adjacent).',
+ check:'Check classifications',score:'Your score',correct:'Correct.',incorrect:'Correct class:',
+ audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech is not presented as authoritative Arabic pronunciation.'
+ },
+ fa:{
+ lead:'فعل معتل یکی از حروف ریشه‌اش واو یا یاء است. جایگاه این حرف در ریشه، نوع فعل را مشخص می‌کند و در فهم تغییرات صرفی کمک می‌کند.',
+ objective:'چهار دستهٔ اصلی فعل معتل را بشناسید، حرف علت را بر اساس جایگاه ریشه تشخیص دهید، دو نوع لفيف را جدا کنید و الف ظاهری را با حرف اصلی ریشه اشتباه نگیرید.',
+ intro:'در صرف سنتی به این حروف حَرْفُ الْعِلَّةِ می‌گویند. سه صورت نوشتاری و آوایی واو، الف و یاء مطرح‌اند؛ اما ریشهٔ اصلی در بسیاری از موارد واو یا یاء است. جایگاه حرف در ریشه را بررسی کنید، نه فقط شکل ظاهری واژه را.',
+ mithal:'الْمِثَالُ فعلی است که حرف اول ریشه‌اش حرف علت باشد: وَعَدَ (و ع د)، وعده داد. مضارع آن يَعِدُ است. حرف علت آغازین در بعضی صورت‌های صرفی حذف می‌شود؛ صورت‌های هر فعل را با کاربرد ثبت‌شده‌اش بیاموزید.',
+ ajwaf:'الْأَجْوَفُ فعلی است که حرف دوم ریشه‌اش حرف علت باشد: قَالَ (ق و ل)، گفت؛ و بَاعَ (ب ي ع)، فروخت. حرف میانی در ماضی غالباً به صورت واکهٔ بلند دیده می‌شود.',
+ naqis:'النَّاقِصُ فعلی است که حرف سوم ریشه‌اش حرف علت باشد: دَعَا (د ع و)، خواند/دعوت کرد؛ و رَمَى (ر م ي)، انداخت. حرف پایانی در برخی صورت‌ها و پایان‌های صرفی تغییر می‌کند یا حذف می‌شود.',
+ lafiif:'اللَّفِيفُ دو حرف علت در ریشه دارد. لَفِيفٌ مَفْرُوقٌ دو حرف علت جدا از هم دارد، مانند وَقَى (و ق ي). لَفِيفٌ مَقْرُونٌ دو حرف علت کنار هم دارد، مانند طَوَى (ط و ي).',
+ caution:'این درس فقط دسته‌بندی ریشه‌ها را آموزش می‌دهد و هنوز قواعد کامل إِعْلَالٌ، حذف و املا را بیان نمی‌کند. الف در قَالَ غالباً نتیجهٔ ظاهری یک حرف علت ریشه است، نه حرف سوم مستقل.',
+ exercise:'هر فعل را بر اساس جایگاه حروف علت ریشه دسته‌بندی کنید.',
+ teach:'توضیح دهید چرا قَالَ اجوف و دَعَا ناقص است. سپس لفيف مفروق و مقرون را با یک مثال از هر کدام جدا کنید.',
+ summary:'مثال = حرف علت اول؛ اجوف = حرف علت وسط؛ ناقص = حرف علت آخر؛ لفيف = دو حرف علت (جدا یا کنار هم).',
+ check:'بررسی دسته‌بندی',score:'امتیاز شما',correct:'درست است.',incorrect:'دستهٔ درست:',
+ audio:'هنوز فایل ضبط‌شده و تأییدشدهٔ تلفظ انسانی در دسترس نیست. صدای ماشینی مرورگر را تلفظ معتبر عربی معرفی نمی‌کنیم.'
+ },
+ ur:{
+ lead:'فعلِ معتل کے مادّے کے حروف میں و یا ی میں سے کوئی حرف ہوتا ہے۔ مادّے میں اس حرف کی جگہ سے فعل کی قسم پہچانی جاتی ہے اور تصریف کی تبدیلیاں سمجھنے میں مدد ملتی ہے۔',
+ objective:'فعلِ معتل کی چار بنیادی قسمیں پہچانیں، حرفِ علت کی جگہ معلوم کریں، لفيف کی دونوں قسموں میں فرق کریں، اور ظاہری الف کو ہمیشہ اصلی حرف نہ سمجھیں۔',
+ intro:'علمِ صرف میں ان حروف کو حَرْفُ الْعِلَّةِ کہا جاتا ہے۔ و، ا، ی کی ظاہری صورتیں سامنے آتی ہیں، مگر اصل مادّے میں اکثر و یا ی ہوتا ہے۔ لفظ کی ظاہری شکل کے بجائے مادّے اور اس میں حرف کی جگہ دیکھیں۔',
+ mithal:'الْمِثَالُ وہ فعل ہے جس کے مادّے کا پہلا حرف علت ہو: وَعَدَ (و ع د)، وعدہ کرنا۔ مضارع يَعِدُ ہے۔ بعض تصریفی صورتوں میں ابتدائی حرفِ علت گر جاتا ہے؛ ہر فعل کی مستعمل صورتیں ساتھ یاد کریں۔',
+ ajwaf:'الْأَجْوَفُ وہ فعل ہے جس کے مادّے کا درمیانی، یعنی دوسرا حرف علت ہو: قَالَ (ق و ل)، کہنا؛ اور بَاعَ (ب ي ع)، بیچنا۔ ماضی میں درمیانی حرف اکثر لمبی آواز کی صورت میں ظاہر ہوتا ہے۔',
+ naqis:'النَّاقِصُ وہ فعل ہے جس کے مادّے کا آخری، یعنی تیسرا حرف علت ہو: دَعَا (د ع و)، پکارنا/دعا کرنا؛ اور رَمَى (ر م ي)، پھینکنا۔ بعض تصریفی صورتوں اور لاحقوں میں آخری حرف بدلتا یا حذف ہوتا ہے۔',
+ lafiif:'اللَّفِيفُ کے مادّے میں دو حروفِ علت ہوتے ہیں۔ لَفِيفٌ مَفْرُوقٌ میں دونوں الگ ہوتے ہیں، جیسے وَقَى (و ق ي)؛ لَفِيفٌ مَقْرُونٌ میں دونوں ساتھ ہوتے ہیں، جیسے طَوَى (ط و ي)۔',
+ caution:'یہ سبق صرف مادّوں کی قسم بندی سکھاتا ہے؛ إِعْلَالٌ، حذف اور املا کے مکمل قواعد بعد میں آئیں گے۔ قَالَ میں لکھا ہوا الف اکثر مادّے کے کمزور حرف کا ظاہری نتیجہ ہے، الگ اصلی حرف نہیں۔',
+ exercise:'ہر فعل کو اس کے مادّے میں حروفِ علت کی جگہ کے مطابق درجہ دیں۔',
+ teach:'بتائیں کہ قَالَ اجوف اور دَعَا ناقص کیوں ہے۔ پھر لفيف مفروق اور مقرون کی ایک ایک مثال دیں۔',
+ summary:'مثال = پہلا حرفِ علت؛ اجوف = درمیانی حرفِ علت؛ ناقص = آخری حرفِ علت؛ لفيف = دو حروفِ علت (الگ یا ساتھ)۔',
+ check:'قسمیں جانچیں',score:'آپ کا اسکور',correct:'درست۔',incorrect:'درست قسم:',
+ audio:'مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ نہیں کہا جائے گا۔'
+ }
+} as const
+const weakVerbWords=[
+ {verb:'وَعَدَ',latin:'waʿada',root:'و ع د',kind:'mithal'},
+ {verb:'قَالَ',latin:'qāla',root:'ق و ل',kind:'ajwaf'},
+ {verb:'بَاعَ',latin:'bāʿa',root:'ب ي ع',kind:'ajwaf'},
+ {verb:'دَعَا',latin:'daʿā',root:'د ع و',kind:'naqis'},
+ {verb:'رَمَى',latin:'ramā',root:'ر م ي',kind:'naqis'},
+ {verb:'وَقَى',latin:'waqā',root:'و ق ي',kind:'lafiif-mafruq'},
+ {verb:'طَوَى',latin:'ṭawā',root:'ط و ي',kind:'lafiif-maqrun'}
+]
+const weakVerbChoices=[
+ {value:'mithal',label:'مِثَالٌ · Mithāl (weak first radical)'},
+ {value:'ajwaf',label:'أَجْوَفُ · Ajwaf (weak middle radical)'},
+ {value:'naqis',label:'نَاقِصٌ · Nāqiṣ (weak final radical)'},
+ {value:'lafiif-mafruq',label:'لَفِيفٌ مَفْرُوقٌ · Lafīf mafrūq'},
+ {value:'lafiif-maqrun',label:'لَفِيفٌ مَقْرُونٌ · Lafīf maqrūn'}
+]
+function LessonSeventeenPage(){
+ const [language,setLanguage]=useState<'en'|'fa'|'ur'>('en')
+ const [showTransliteration,setShowTransliteration]=useState(true)
+ const [answers,setAnswers]=useState<Record<number,string>>({})
+ const [checked,setChecked]=useState(false)
+ const copy=weakVerbCopy[language]
+ const rtl=language!=='en'
+ const score=weakVerbWords.filter((q,i)=>answers[i]===q.kind).length
+ return <main className="lesson-page">
+  <header className="lesson-header"><a href="#/lesson/16" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 07 · LESSON 17</span></header>
+  <div className="lesson-toolbar"><div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+   <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+   <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+   <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+  </div><button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button></div>
+  <div className="lesson-layout"><article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+   <div className="eyebrow">UNIT 07 · SOUND AND WEAK ROOTS</div><h1>Weak verbs: four root classes</h1><p className="lesson-lead" lang={language}>{copy.lead}</p>
+   <section className="lesson-block"><div className="lesson-term" lang="ar" dir="rtl">الْفِعْلُ الْمُعْتَلُّ</div>{showTransliteration&&<div className="lesson-translit" dir="ltr">al-fiʿl al-muʿtall</div>}<div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div><p lang={language}>{copy.intro}</p></section>
+   <section className="lesson-block"><span className="section-kicker">FOUR ROOT CLASSES</span><h2>Where is the weak radical?</h2>
+    <div className="noun-triad"><div><span>FIRST RADICAL</span><b lang="ar" dir="rtl">مِثَالٌ</b><small>Mithāl · وَعَدَ</small></div><div><span>MIDDLE RADICAL</span><b lang="ar" dir="rtl">أَجْوَفُ</b><small>Ajwaf · قَالَ</small></div><div><span>FINAL RADICAL</span><b lang="ar" dir="rtl">نَاقِصٌ</b><small>Nāqiṣ · دَعَا</small></div></div>
+    <h3>Mithāl · مِثَالٌ</h3><p lang={language}>{copy.mithal}</p><h3>Ajwaf · أَجْوَفُ</h3><p lang={language}>{copy.ajwaf}</p><h3>Nāqiṣ · نَاقِصٌ</h3><p lang={language}>{copy.naqis}</p>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">TWO WEAK RADICALS</span><h2>Lafīf · لَفِيفٌ</h2><div className="noun-triad"><div><span>SEPARATED</span><b lang="ar" dir="rtl">مَفْرُوقٌ</b><small>mafrūq · وَقَى</small></div><div><span>ADJACENT</span><b lang="ar" dir="rtl">مَقْرُونٌ</b><small>maqrūn · طَوَى</small></div></div><p lang={language}>{copy.lafiif}</p>
+   </section>
+   <section className="lesson-block"><span className="section-kicker">EXAMPLE ROOTS</span><h2>Identify the root and its weak letters</h2>
+    <div className="masdar-example-table"><div className="masdar-example-head"><span>Verb</span><span>Transliteration</span><span>Root</span><span>Class</span></div>
+     {weakVerbWords.map(w=><div className="masdar-example-row" key={w.verb}><div><b lang="ar" dir="rtl">{w.verb}</b></div><span>{showTransliteration?w.latin:''}</span><b lang="ar" dir="rtl">{w.root}</b><small>{w.kind.replace('lafiif-','lafīf ')}</small></div>)}
+    </div><div className="warning-card"><strong>Root, not just spelling</strong><p lang={language}>{copy.caution}</p></div>
+   </section>
+   <section className="lesson-block practice-block"><span className="section-kicker">PRACTISE · CLASSIFY</span><h2>Find the weak-root class</h2><p lang={language}>{copy.exercise}</p>
+    <div className="pronoun-practice-list">{weakVerbWords.map((q,i)=><div className="pronoun-practice-row" key={q.verb}><div><b lang="ar" dir="rtl">{q.verb}</b>{showTransliteration&&<small>{q.latin} · {q.root}</small>}</div><select aria-label={'Choose weak verb class for '+q.verb} value={answers[i]||''} onChange={event=>{setAnswers({...answers,[i]:event.target.value});setChecked(false)}}><option value="">Choose class…</option>{weakVerbChoices.map(c=><option value={c.value} key={c.value}>{c.label}</option>)}</select>{checked&&<p className={answers[i]===q.kind?'classification-feedback correct':'classification-feedback'}>{answers[i]===q.kind?copy.correct:copy.incorrect} <b>{weakVerbChoices.find(c=>c.value===q.kind)?.label}</b></p>}</div>)}</div>
+    <button type="button" className="primary-button" disabled={Object.keys(answers).length!==weakVerbWords.length} onClick={()=>setChecked(true)}>{copy.check}</button>{checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {weakVerbWords.length}</strong></p>}
+   </section>
+   <section className="lesson-block"><span className="section-kicker">RECALL AND TEACH</span><h2>Say it back</h2><p lang={language}>{copy.teach}</p><div className="example-sentence" lang={language}>{copy.summary}</div><div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div></section>
+   <section className="lesson-block source-block"><span className="section-kicker">REFERENCES</span><h2>Sources and further reading</h2><ul>
+    <li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — weak verbs and root classes.</a></li>
+    <li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — weak verb paradigms.</a></li>
+   </ul></section>
+   <div className="lesson-end"><a href="#/lesson/16">← Lesson 16: Time, place, and instrument</a><span>Next: hamzated and doubled roots</span></div>
+  </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What makes a verb weak?</li><li>Mithāl</li><li>Ajwaf</li><li>Nāqiṣ</li><li>Lafīf subtypes</li><li>Classification practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write the three root letters first. Then mark which root positions contain و or ي.</p></div></aside></div>
  </main>
 }
 
@@ -2798,6 +2905,7 @@ export default function App() {
   if (route === '#/lesson/14') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 14</span></header><LessonFourteenPage/></div>
   if (route === '#/lesson/15') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 15</span></header><LessonFifteenPage/></div>
   if (route === '#/lesson/16') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 16</span></header><LessonSixteenPage/></div>
+  if (route === '#/lesson/17') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 17</span></header><LessonSeventeenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
@@ -2846,6 +2954,9 @@ export default function App() {
                 <a className="lesson-library-link" href="#/lesson/14"><span>14</span><div><strong>The maṣdar</strong><small>Action nouns and verbal noun patterns</small></div><ChevronRight size={16}/></a>
                 <a className="lesson-library-link" href="#/lesson/15"><span>15</span><div><strong>Active and passive participles</strong><small>Ism fāʿil and ism mafʿūl</small></div><ChevronRight size={16}/></a>
                 <a className="lesson-library-link" href="#/lesson/16"><span>16</span><div><strong>Time, place, and instrument nouns</strong><small>Ism zamān, ism makān, ism ālah</small></div><ChevronRight size={16}/></a>
+              </div></div>
+              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 7 · Sound and Weak Roots</strong><span>Days 46–53</span></div><div className="lesson-library-list">
+                <a className="lesson-library-link" href="#/lesson/17"><span>17</span><div><strong>Weak verbs: four root classes</strong><small>Mithāl, Ajwaf, Nāqiṣ, and Lafīf</small></div><ChevronRight size={16}/></a>
               </div></div>
             </div>
           </div>
