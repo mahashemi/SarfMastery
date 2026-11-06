@@ -2956,8 +2956,98 @@ function LessonEighteenPage(){
    <section className="lesson-block practice-block"><span className="section-kicker">PRACTISE · CLASSIFY</span><h2>Where is the hamza, or is it doubled?</h2><p lang={language}>{copy.exercise}</p><div className="pronoun-practice-list">{hamzaDoubledWords.map((q,i)=><div className="pronoun-practice-row" key={q.verb}><div><b lang="ar" dir="rtl">{q.verb}</b>{showTransliteration&&<small>{q.latin} · {q.root}</small>}</div><select aria-label={'Choose root class for '+q.verb} value={answers[i]||''} onChange={event=>{setAnswers({...answers,[i]:event.target.value});setChecked(false)}}><option value="">Choose class…</option>{hamzaDoubledChoices.map(c=><option value={c.value} key={c.value}>{c.label}</option>)}</select>{checked&&<p className={answers[i]===q.kind?'classification-feedback correct':'classification-feedback'}>{answers[i]===q.kind?copy.correct:copy.incorrect} <b>{hamzaDoubledChoices.find(c=>c.value===q.kind)?.label}</b></p>}</div>)}</div><button type="button" className="primary-button" disabled={Object.keys(answers).length!==hamzaDoubledWords.length} onClick={()=>setChecked(true)}>{copy.check}</button>{checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {hamzaDoubledWords.length}</strong></p>}</section>
    <section className="lesson-block"><span className="section-kicker">RECALL AND TEACH</span><h2>Say it back</h2><p lang={language}>{copy.teach}</p><div className="example-sentence" lang={language}>{copy.summary}</div><div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div></section>
    <section className="lesson-block source-block"><span className="section-kicker">REFERENCES</span><h2>Sources and further reading</h2><ul><li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — hamzated and doubled roots.</a></li><li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — hamza and geminate verbs.</a></li></ul></section>
-   <div className="lesson-end"><a href="#/lesson/17">← Lesson 17: Weak verbs</a><span>Next: iʿlāl and idghām transformations</span></div>
+   <div className="lesson-end"><a href="#/lesson/17">← Lesson 17: Weak verbs</a><span><a className="next-lesson-link" href="#/lesson/19">Next: iʿlāl and idghām →</a></span></div>
   </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Hamza as a radical</li><li>Initial hamza</li><li>Medial hamza</li><li>Final hamza</li><li>Doubled roots</li><li>Classification practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>Expand a shadda into two identical root letters before classifying the verb.</p></div></aside></div>
+ </main>
+}
+
+
+const iʿlalCopy={
+ en:{
+ lead:'Iʿlāl is a set of changes that affect weak root letters in certain forms. Idghām combines two identical or closely related consonants in pronunciation and writing.',
+ objective:'Understand the purpose of iʿlāl and idghām, observe common weak-letter changes in a few familiar paradigms, and recognise when a doubled root is separated by a suffix.',
+ ial:'إِعْلَالٌ refers to changes involving و or ي, such as changing a weak letter into a long vowel (قَوَلَ → قَالَ in the underlying pattern explanation), changing one weak letter into another, or deleting it in a particular form. These changes follow specific morphological and phonological conditions.',
+ mithal:'In the Mithāl verb وَعَدَ يَعِدُ, the initial و is absent in the common muḍāriʿ form يَعِدُ. This is a familiar example of deletion in a weak-initial verb; do not generalise it to every initial-wāw verb.',
+ ajwaf:'Compare قَالَ يَقُولُ قُلْ (root ق و ل) and بَاعَ يَبِيعُ بِعْ (root ب ي ع). The weak middle radical appears differently across past, present, and imperative forms. Learn the whole paradigm rather than applying one spelling rule mechanically.',
+ naqis:'Compare دَعَا يَدْعُو لَمْ يَدْعُ and رَمَى يَرْمِي لَمْ يَرْمِ. The final weak radical changes or is deleted in particular grammatical environments. The exact ending depends on the verb and form.',
+ idgham:'إِدْغَامٌ is assimilation/gemination. In a doubled root such as م د د, the adjacent identical consonants appear with shadda in مَدَّ and يَمُدُّ. When a suffix separates the two radicals, the form can show them separately: مَدَدْتُ (I extended).',
+ caution:'These are selected illustrations, not the full rule set. Iʿlāl has detailed conditions involving root class, pattern, vowel, and endings. Do not derive a form from one example alone; verify a complete paradigm in a trusted Sarf reference.',
+ exercise:'Match each form to the change it illustrates: weak-letter deletion, weak-middle alternation, final-weak deletion, or doubled-root assimilation.',
+ teach:'Explain the contrast قَالَ / يَقُولُ / قُلْ and مَدَّ / مَدَدْتُ. What happens to the weak middle radical in the first set, and why does the second set sometimes show the two د letters separately?',
+ summary:'Iʿlāl changes weak radicals under defined conditions. Idghām combines adjacent consonants. Learn each root through its full paradigm and do not overgeneralise from one form.',
+ check:'Check answers',score:'Your score',correct:'Correct.',incorrect:'Correct answer:',
+ audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech is not presented as authoritative Arabic pronunciation.'
+ },
+ fa:{
+ lead:'اعلال مجموعه‌ای از تغییرات حروف علت در برخی صورت‌های صرفی است. ادغام دو حرف یکسان یا نزدیک به هم را در تلفظ و نوشتار یکی می‌کند.',
+ objective:'هدف اعلال و ادغام را بفهمید، تغییرات رایج حروف علت را در چند مثال آشنا ببینید و بدانید چه زمانی دو حرف ریشهٔ مضاعف با پسوند از هم جدا می‌شوند.',
+ ial:'إِعْلَالٌ به تغییراتی گفته می‌شود که واو یا یاء را دربر می‌گیرد؛ مانند تبدیل حرف علت به واکهٔ بلند، تبدیل یک حرف علت به حرف دیگر، یا حذف آن در صورتی معین. این تغییرات شرایط صرفی و آوایی مشخصی دارند.',
+ mithal:'در فعل مثال وَعَدَ يَعِدُ، واو آغازین در مضارع رایج يَعِدُ دیده نمی‌شود. این نمونه‌ای شناخته‌شده از حذف در فعل معتل‌الفاء است؛ آن را به همهٔ افعال آغازشده با واو تعمیم ندهید.',
+ ajwaf:'قَالَ يَقُولُ قُلْ (ریشهٔ ق و ل) و بَاعَ يَبِيعُ بِعْ (ریشهٔ ب ي ع) را مقایسه کنید. حرف علت میانی در ماضی، مضارع و امر صورت‌های متفاوتی دارد. کل جدول صرف را بیاموزید و یک قاعدهٔ املایی را مکانیکی تعمیم ندهید.',
+ naqis:'دَعَا يَدْعُو لَمْ يَدْعُ و رَمَى يَرْمِي لَمْ يَرْمِ را مقایسه کنید. حرف علت پایانی در برخی محیط‌های دستوری تغییر می‌کند یا حذف می‌شود. پایان دقیق به فعل و صیغه بستگی دارد.',
+ idgham:'إِدْغَامٌ ادغام یا تشدید دو حرف است. در ریشهٔ مضاعف م د د، دو دال کنار هم در مَدَّ و يَمُدُّ با تشدید دیده می‌شوند. هنگامی که پسوند دو حرف اصلی را از هم جدا کند، هر دو جدا نوشته می‌شوند: مَدَدْتُ (من کشیدم).',
+ caution:'این‌ها نمونه‌های منتخب‌اند، نه تمام قواعد. اعلال شرایط دقیقی دربارهٔ نوع ریشه، وزن، حرکت و پایان صیغه دارد. صورت را فقط از یک مثال نسازید؛ جدول کامل فعل را در منبع معتبر بررسی کنید.',
+ exercise:'هر صورت را با تغییری که نشان می‌دهد تطبیق دهید: حذف حرف علت آغازین، تغییر حرف علت میانی، حذف حرف علت پایانی یا ادغام ریشهٔ مضاعف.',
+ teach:'تفاوت قَالَ / يَقُولُ / قُلْ و مَدَّ / مَدَدْتُ را توضیح دهید. در مجموعهٔ اول حرف علت میانی چه تغییری می‌کند و چرا در مجموعهٔ دوم گاهی دو دال جدا دیده می‌شوند؟',
+ summary:'اعلال حروف علت را با شرایط معین تغییر می‌دهد. ادغام حروف کنار هم را یکی می‌کند. هر ریشه را با جدول کاملش بیاموزید و از یک مثال قاعدهٔ کلی نسازید.',
+ check:'بررسی پاسخ‌ها',score:'امتیاز شما',correct:'درست است.',incorrect:'پاسخ درست:',
+ audio:'هنوز فایل ضبط‌شده و تأییدشدهٔ تلفظ انسانی در دسترس نیست. صدای ماشینی مرورگر را تلفظ معتبر عربی معرفی نمی‌کنیم.'
+ },
+ ur:{
+ lead:'اِعلال وہ تبدیلیاں ہیں جو بعض تصریفی صورتوں میں حروفِ علت پر آتی ہیں۔ ادغام دو یکساں یا قریب آوازوں کو تلفظ اور لکھائی میں ملا دیتا ہے۔',
+ objective:'اعلال اور ادغام کا مقصد سمجھیں، چند معروف مثالوں میں حروفِ علت کی تبدیلی دیکھیں، اور جانیں کہ لاحقہ لگنے پر مضاعف مادّے کے دونوں حروف کب الگ ہو جاتے ہیں۔',
+ ial:'إِعْلَالٌ سے مراد و یا ی میں تبدیلی ہے، مثلاً حرفِ علت کا لمبی آواز میں بدلنا، ایک حرفِ علت کا دوسرے میں بدلنا، یا کسی خاص صورت میں حذف ہونا۔ ان تبدیلیوں کے صرفی اور صوتی شرائط ہوتے ہیں۔',
+ mithal:'فعلِ مثال وَعَدَ يَعِدُ میں مضارع کی معروف صورت يَعِدُ میں ابتدائی و نہیں آتا۔ یہ معتل الفاء فعل میں حذف کی عام مثال ہے؛ اسے ہر ابتدائی و والے فعل پر لاگو نہ کریں۔',
+ ajwaf:'قَالَ يَقُولُ قُلْ (مادّہ ق و ل) اور بَاعَ يَبِيعُ بِعْ (مادّہ ب ي ع) کا موازنہ کریں۔ درمیانی حرفِ علت ماضی، مضارع اور امر میں مختلف صورت دکھاتا ہے۔ پورا صیغہ وار جدول یاد کریں، ایک املا کا قاعدہ ہر جگہ نہ لگائیں۔',
+ naqis:'دَعَا يَدْعُو لَمْ يَدْعُ اور رَمَى يَرْمِي لَمْ يَرْمِ کا موازنہ کریں۔ آخری حرفِ علت بعض نحوی ماحول میں بدلتا یا حذف ہوتا ہے۔ درست آخری صورت فعل اور صیغے پر منحصر ہے۔',
+ idgham:'إِدْغَامٌ دو حروف کو ملا کر مشدد کرتا ہے۔ مضاعف مادّہ م د د میں ساتھ آنے والے دو دال مَدَّ اور يَمُدُّ میں تشدید کے ساتھ آتے ہیں۔ جب لاحقہ دونوں اصلی حروف کو الگ کر دے تو وہ الگ لکھے جا سکتے ہیں: مَدَدْتُ (میں نے بڑھایا)۔',
+ caution:'یہ منتخب مثالیں ہیں، مکمل قواعد نہیں۔ اعلال کے لیے مادّے کی قسم، وزن، حرکت اور صیغے کے آخر کی تفصیلی شرائط ہوتی ہیں۔ صرف ایک مثال سے قاعدہ نہ بنائیں؛ معتبر صرفی کتاب میں پورا جدول دیکھیں۔',
+ exercise:'ہر صورت کو اس تبدیلی سے ملائیں جس کی یہ مثال ہے: ابتدائی حرفِ علت کا حذف، درمیانی حرفِ علت کی تبدیلی، آخری حرفِ علت کا حذف، یا مضاعف مادّے کا ادغام۔',
+ teach:'قَالَ / يَقُولُ / قُلْ اور مَدَّ / مَدَدْتُ کا فرق بیان کریں۔ پہلے مجموعے میں درمیانی حرفِ علت کیا بدلتا ہے، اور دوسرے میں دونوں دال الگ کیوں دکھائی دیتے ہیں؟',
+ summary:'اعلال حروفِ علت کو مقررہ شرائط کے تحت بدلتا ہے۔ ادغام ساتھ آنے والے حروف کو ملا دیتا ہے۔ ہر مادّہ مکمل تصریفی جدول کے ساتھ یاد کریں۔',
+ check:'جواب جانچیں',score:'آپ کا اسکور',correct:'درست۔',incorrect:'درست جواب:',
+ audio:'مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ نہیں کہا جائے گا۔'
+ }
+} as const
+const iʿlalQuiz=[
+ {form:'يَعِدُ',latin:'yaʿidu',answer:'weak-deletion'},
+ {form:'قَالَ → يَقُولُ',latin:'qāla → yaqūlu',answer:'middle-alternation'},
+ {form:'لَمْ يَدْعُ',latin:'lam yadʿu',answer:'final-deletion'},
+ {form:'مَدَّ',latin:'madda',answer:'idgham'},
+ {form:'مَدَدْتُ',latin:'madadtu',answer:'separated-radicals'}
+]
+const iʿlalChoices=[
+ {value:'weak-deletion',label:'حَذْفُ الْوَاوِ · initial weak-letter deletion'},
+ {value:'middle-alternation',label:'تَغَيُّرُ الْأَجْوَفِ · middle weak-letter alternation'},
+ {value:'final-deletion',label:'حَذْفُ الْحَرْفِ النَّاقِصِ · final weak-letter deletion'},
+ {value:'idgham',label:'إِدْغَامٌ · assimilation / gemination'},
+ {value:'separated-radicals',label:'ظُهُورُ الْحَرْفَيْنِ · radicals separated by a suffix'}
+]
+function LessonNineteenPage(){
+ const [language,setLanguage]=useState<'en'|'fa'|'ur'>('en')
+ const [showTransliteration,setShowTransliteration]=useState(true)
+ const [answers,setAnswers]=useState<Record<number,string>>({})
+ const [checked,setChecked]=useState(false)
+ const copy=iʿlalCopy[language]
+ const rtl=language!=='en'
+ const score=iʿlalQuiz.filter((q,i)=>answers[i]===q.answer).length
+ return <main className="lesson-page">
+  <header className="lesson-header"><a href="#/lesson/18" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 07 · LESSON 19</span></header>
+  <div className="lesson-toolbar"><div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+   <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+   <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+   <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+  </div><button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button></div>
+  <div className="lesson-layout"><article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+   <div className="eyebrow">UNIT 07 · SOUND AND WEAK ROOTS</div><h1>Iʿlāl and idghām: why forms change</h1><p className="lesson-lead" lang={language}>{copy.lead}</p>
+   <section className="lesson-block"><div className="lesson-term" lang="ar" dir="rtl">إِعْلَالٌ · إِدْغَامٌ</div>{showTransliteration&&<div className="lesson-translit" dir="ltr">iʿlāl · idghām</div>}<div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div></section>
+   <section className="lesson-block"><span className="section-kicker">IʿLĀL · إِعْلَالٌ</span><h2>Weak letters change in a paradigm</h2><p lang={language}>{copy.ial}</p><h3>Mithāl · وَعَدَ يَعِدُ</h3><p lang={language}>{copy.mithal}</p><h3>Ajwaf · قَالَ يَقُولُ قُلْ</h3><p lang={language}>{copy.ajwaf}</p><h3>Nāqiṣ · دَعَا يَدْعُو لَمْ يَدْعُ</h3><p lang={language}>{copy.naqis}</p></section>
+   <section className="lesson-block"><span className="section-kicker">IDGHĀM · إِدْغَامٌ</span><h2>When two consonants merge</h2><div className="noun-triad"><div><span>ROOT</span><b lang="ar" dir="rtl">م د د</b><small>mīm · dāl · dāl</small></div><div><span>UNSUFFIXED</span><b lang="ar" dir="rtl">مَدَّ</b><small>madda</small></div><div><span>WITH SUFFIX</span><b lang="ar" dir="rtl">مَدَدْتُ</b><small>madadtu</small></div></div><p lang={language}>{copy.idgham}</p><div className="warning-card"><strong>Do not memorise only one surface form</strong><p lang={language}>{copy.caution}</p></div></section>
+   <section className="lesson-block practice-block"><span className="section-kicker">PRACTISE · IDENTIFY THE CHANGE</span><h2>What is happening in this form?</h2><p lang={language}>{copy.exercise}</p><div className="pronoun-practice-list">{iʿlalQuiz.map((q,i)=><div className="pronoun-practice-row" key={q.form}><div><b lang="ar" dir="rtl">{q.form}</b>{showTransliteration&&<small>{q.latin}</small>}</div><select aria-label={'Choose change for '+q.form} value={answers[i]||''} onChange={event=>{setAnswers({...answers,[i]:event.target.value});setChecked(false)}}><option value="">Choose change…</option>{iʿlalChoices.map(c=><option value={c.value} key={c.value}>{c.label}</option>)}</select>{checked&&<p className={answers[i]===q.answer?'classification-feedback correct':'classification-feedback'}>{answers[i]===q.answer?copy.correct:copy.incorrect} <b>{iʿlalChoices.find(c=>c.value===q.answer)?.label}</b></p>}</div>)}</div><button type="button" className="primary-button" disabled={Object.keys(answers).length!==iʿlalQuiz.length} onClick={()=>setChecked(true)}>{copy.check}</button>{checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {iʿlalQuiz.length}</strong></p>}</section>
+   <section className="lesson-block"><span className="section-kicker">RECALL AND TEACH</span><h2>Say it back</h2><p lang={language}>{copy.teach}</p><div className="example-sentence" lang={language}>{copy.summary}</div><div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div></section>
+   <section className="lesson-block source-block"><span className="section-kicker">REFERENCES</span><h2>Sources and further reading</h2><ul><li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — weak verbs, assimilation, and geminate verbs.</a></li><li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — weak verb paradigms and doubled verbs.</a></li></ul></section>
+   <div className="lesson-end"><a href="#/lesson/18">← Lesson 18: Hamzated and doubled roots</a><span>Next: Qur'an and Hadith morphology practice</span></div>
+  </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What is iʿlāl?</li><li>Mithāl deletion</li><li>Ajwaf alternation</li><li>Nāqiṣ deletion</li><li>Idghām and shadda</li><li>Classification practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>Always compare multiple forms of the same root. One word rarely tells the whole story.</p></div></aside></div>
  </main>
 }
 
@@ -2989,6 +3079,7 @@ export default function App() {
   if (route === '#/lesson/16') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 16</span></header><LessonSixteenPage/></div>
   if (route === '#/lesson/17') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 17</span></header><LessonSeventeenPage/></div>
   if (route === '#/lesson/18') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 18</span></header><LessonEighteenPage/></div>
+  if (route === '#/lesson/19') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 19</span></header><LessonNineteenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
@@ -3041,6 +3132,7 @@ export default function App() {
               <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 7 · Sound and Weak Roots</strong><span>Days 46–53</span></div><div className="lesson-library-list">
                 <a className="lesson-library-link" href="#/lesson/17"><span>17</span><div><strong>Weak verbs: four root classes</strong><small>Mithāl, Ajwaf, Nāqiṣ, and Lafīf</small></div><ChevronRight size={16}/></a>
                 <a className="lesson-library-link" href="#/lesson/18"><span>18</span><div><strong>Hamzated and doubled roots</strong><small>Mahmūz and Muḍāʿaf</small></div><ChevronRight size={16}/></a>
+                <a className="lesson-library-link" href="#/lesson/19"><span>19</span><div><strong>Iʿlāl and idghām</strong><small>Weak-letter changes and assimilation</small></div><ChevronRight size={16}/></a>
               </div></div>
             </div>
           </div>
