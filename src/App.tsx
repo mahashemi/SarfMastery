@@ -2874,8 +2874,90 @@ function LessonSeventeenPage(){
     <li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — weak verbs and root classes.</a></li>
     <li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — weak verb paradigms.</a></li>
    </ul></section>
-   <div className="lesson-end"><a href="#/lesson/16">← Lesson 16: Time, place, and instrument</a><span>Next: hamzated and doubled roots</span></div>
+   <div className="lesson-end"><a href="#/lesson/16">← Lesson 16: Time, place, and instrument</a><span><a className="next-lesson-link" href="#/lesson/18">Next: hamzated and doubled roots →</a></span></div>
   </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>What makes a verb weak?</li><li>Mithāl</li><li>Ajwaf</li><li>Nāqiṣ</li><li>Lafīf subtypes</li><li>Classification practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>Write the three root letters first. Then mark which root positions contain و or ي.</p></div></aside></div>
+ </main>
+}
+
+
+const hamzaDoubledCopy={
+ en:{
+ lead:'Some sound roots contain hamza as an original radical; others contain the same consonant twice in the second and third positions. These are called hamzated and doubled roots.',
+ objective:'Identify hamza as a root letter, distinguish its three possible positions, recognise doubled roots, and understand what the shadda represents.',
+ hamza:'الْمَهْمُوزُ is a root containing ء as one of its three radicals. It may be the first radical (أَكَلَ, أ ك ل), the middle radical (سَأَلَ, س ء ل), or the final radical (قَرَأَ, ق ر ء). The hamza is part of the root; do not confuse it with hamzat al-waṣl added for pronunciation.',
+ doubled:'الْمُضَاعَفُ (in the basic triliteral category) has identical second and third root letters. For example, مَدَّ has the root م د د, رَدَّ has ر د د, and شَدَّ has ش د د. The shadda (ّ) marks the two identical consonants merged in pronunciation/writing.',
+ caution:'A shadda can have other grammatical or phonological explanations in other contexts. Here it is the sign of a doubled root in the examples shown. Hamza spelling rules are more detailed than this introductory root-class lesson.',
+ exercise:'Classify each verb as hamzated (first, middle, or final hamza) or doubled.',
+ teach:'Identify the hamza position in أَكَلَ, سَأَلَ, and قَرَأَ. Then write the three root letters represented by the shadda in مَدَّ.',
+ summary:'Mahmūz = a root radical is hamza. Muḍāʿaf = the second and third root radicals are identical, represented by shadda.',
+ check:'Check classifications',score:'Your score',correct:'Correct.',incorrect:'Correct class:',
+ audio:'Verified human pronunciation recordings are not available yet. Browser-generated speech is not presented as authoritative Arabic pronunciation.'
+ },
+ fa:{
+ lead:'برخی ریشه‌های صحیح همزه را به‌عنوان یکی از حروف اصلی دارند؛ در برخی دیگر حرف دوم و سوم ریشه یکسان است. این دو دسته مهموز و مضاعف نام دارند.',
+ objective:'همزهٔ اصلی را تشخیص دهید، جایگاه سه‌گانهٔ آن را بشناسید، ریشهٔ مضاعف را شناسایی کنید و معنای تشدید را در این ساختار بفهمید.',
+ hamza:'الْمَهْمُوزُ ریشه‌ای است که یکی از سه حرف اصلی آن ء باشد. همزه می‌تواند حرف اول باشد (أَكَلَ، أ ك ل)، حرف وسط باشد (سَأَلَ، س ء ل) یا حرف آخر باشد (قَرَأَ، ق ر ء). همزه جزو ریشه است؛ آن را با همزهٔ وصل افزوده برای تلفظ اشتباه نگیرید.',
+ doubled:'الْمُضَاعَفُ در ثلاثی مجرد ریشه‌ای دارد که حرف دوم و سوم آن یکسان‌اند. برای مثال مَدَّ ریشهٔ م د د، رَدَّ ریشهٔ ر د د و شَدَّ ریشهٔ ش د د دارد. تشدید (ّ) نشان‌دهندهٔ ادغام دو حرف یکسان در تلفظ و نوشتار است.',
+ caution:'تشدید در بافت‌های دیگر ممکن است علت‌های صرفی یا آوایی دیگری داشته باشد. در این مثال‌ها نشانهٔ ریشهٔ مضاعف است. قواعد املایی همزه مفصل‌تر از این درس مقدماتی‌اند.',
+ exercise:'هر فعل را مهموز (همزهٔ اول، وسط یا آخر) یا مضاعف دسته‌بندی کنید.',
+ teach:'جایگاه همزه را در أَكَلَ، سَأَلَ و قَرَأَ مشخص کنید. سپس سه حرف اصلی ریشهٔ مَدَّ را بنویسید.',
+ summary:'مهموز = یکی از حروف اصلی ریشه همزه است. مضاعف = حرف دوم و سوم ریشه یکسان‌اند و با تشدید نشان داده می‌شوند.',
+ check:'بررسی دسته‌بندی',score:'امتیاز شما',correct:'درست است.',incorrect:'دستهٔ درست:',
+ audio:'هنوز فایل ضبط‌شده و تأییدشدهٔ تلفظ انسانی در دسترس نیست. صدای ماشینی مرورگر را تلفظ معتبر عربی معرفی نمی‌کنیم.'
+ },
+ ur:{
+ lead:'کچھ صحیح مادّوں میں ہمزہ اصلی حرف ہوتا ہے؛ بعض مادّوں میں دوسرا اور تیسرا اصلی حرف ایک ہی ہوتا ہے۔ انہیں مهموز اور مضاعف کہتے ہیں۔',
+ objective:'اصلی ہمزہ پہچانیں، اس کی تین ممکنہ جگہیں سمجھیں، مضاعف مادّہ شناخت کریں، اور تشدید کا مطلب جانیں۔',
+ hamza:'الْمَهْمُوزُ وہ مادّہ ہے جس کے تین اصلی حروف میں سے ایک ء ہو۔ ہمزہ پہلا حرف ہو سکتا ہے (أَكَلَ، أ ك ل)، درمیانی ہو سکتا ہے (سَأَلَ، س ء ل)، یا آخری ہو سکتا ہے (قَرَأَ، ق ر ء)۔ ہمزہ مادّے کا حصہ ہے؛ اسے تلفظ کے لیے آنے والے ہمزۂ وصل سے نہ ملائیں۔',
+ doubled:'الْمُضَاعَفُ بنیادی ثلاثی مجرد میں ایسا مادّہ ہے جس کا دوسرا اور تیسرا حرف ایک جیسا ہو۔ مثلاً مَدَّ کا مادّہ م د د، رَدَّ کا ر د د، اور شَدَّ کا ش د د ہے۔ تشدید (ّ) دو یکساں حروف کے ادغام کو ظاہر کرتی ہے۔',
+ caution:'دوسرے سیاق میں تشدید کی دوسری صرفی یا صوتی وجوہ بھی ہو سکتی ہیں۔ یہاں دی گئی مثالوں میں یہ مضاعف مادّے کی علامت ہے۔ ہمزہ کے املا کے قواعد اس ابتدائی سبق سے زیادہ تفصیلی ہیں۔',
+ exercise:'ہر فعل کو مهموز (پہلا، درمیانی یا آخری ہمزہ) یا مضاعف قرار دیں۔',
+ teach:'أَكَلَ، سَأَلَ اور قَرَأَ میں ہمزہ کی جگہ بتائیں۔ پھر مَدَّ کے تین اصلی حروف لکھیں۔',
+ summary:'مهموز = مادّے کا ایک اصلی حرف ہمزہ؛ مضاعف = مادّے کے دوسرے اور تیسرے حروف ایک جیسے، جنہیں تشدید ظاہر کرتی ہے۔',
+ check:'قسمیں جانچیں',score:'آپ کا اسکور',correct:'درست۔',incorrect:'درست قسم:',
+ audio:'مستند انسانی تلفظ کی ریکارڈنگ ابھی دستیاب نہیں۔ براؤزر کی مصنوعی آواز کو مستند عربی تلفظ نہیں کہا جائے گا۔'
+ }
+} as const
+const hamzaDoubledWords=[
+ {verb:'أَكَلَ',latin:'ʾakala',root:'ء ك ل',kind:'hamza-first'},
+ {verb:'سَأَلَ',latin:'saʾala',root:'س ء ل',kind:'hamza-middle'},
+ {verb:'قَرَأَ',latin:'qaraʾa',root:'ق ر ء',kind:'hamza-final'},
+ {verb:'مَدَّ',latin:'madda',root:'م د د',kind:'doubled'},
+ {verb:'رَدَّ',latin:'radda',root:'ر د د',kind:'doubled'},
+ {verb:'شَدَّ',latin:'shadda',root:'ش د د',kind:'doubled'}
+]
+const hamzaDoubledChoices=[
+ {value:'hamza-first',label:'مَهْمُوزُ الْفَاءِ · hamza first radical'},
+ {value:'hamza-middle',label:'مَهْمُوزُ الْعَيْنِ · hamza middle radical'},
+ {value:'hamza-final',label:'مَهْمُوزُ اللَّامِ · hamza final radical'},
+ {value:'doubled',label:'مُضَاعَفٌ · doubled root'}
+]
+function LessonEighteenPage(){
+ const [language,setLanguage]=useState<'en'|'fa'|'ur'>('en')
+ const [showTransliteration,setShowTransliteration]=useState(true)
+ const [answers,setAnswers]=useState<Record<number,string>>({})
+ const [checked,setChecked]=useState(false)
+ const copy=hamzaDoubledCopy[language]
+ const rtl=language!=='en'
+ const score=hamzaDoubledWords.filter((q,i)=>answers[i]===q.kind).length
+ return <main className="lesson-page">
+  <header className="lesson-header"><a href="#/lesson/17" className="back-link">← Previous lesson</a><span className="lesson-progress-label">UNIT 07 · LESSON 18</span></header>
+  <div className="lesson-toolbar"><div className="language-control" aria-label="Lesson explanation language"><Languages size={15}/><span>Explanation</span>
+   <button type="button" aria-pressed={language==='en'} className={language==='en'?'selected':''} onClick={()=>setLanguage('en')}>English</button>
+   <button type="button" aria-pressed={language==='fa'} className={language==='fa'?'selected':''} onClick={()=>setLanguage('fa')}>فارسی</button>
+   <button type="button" aria-pressed={language==='ur'} className={language==='ur'?'selected':''} onClick={()=>setLanguage('ur')}>اردو</button>
+  </div><button type="button" className="quiet-button" onClick={()=>setShowTransliteration(!showTransliteration)}>{showTransliteration?'Hide':'Show'} transliteration</button></div>
+  <div className="lesson-layout"><article className="lesson-article" dir={rtl?'rtl':'ltr'}>
+   <div className="eyebrow">UNIT 07 · SOUND AND WEAK ROOTS</div><h1>Hamzated and doubled roots</h1><p className="lesson-lead" lang={language}>{copy.lead}</p>
+   <section className="lesson-block"><div className="lesson-term" lang="ar" dir="rtl">الْمَهْمُوزُ · الْمُضَاعَفُ</div>{showTransliteration&&<div className="lesson-translit" dir="ltr">al-mahmūz · al-muḍāʿaf</div>}<div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div></section>
+   <section className="lesson-block"><span className="section-kicker">HAMZA AS A ROOT LETTER</span><h2>Three possible positions</h2><div className="noun-triad"><div><span>FIRST RADICAL</span><b lang="ar" dir="rtl">أَكَلَ</b><small>ʾakala · ء ك ل</small></div><div><span>MIDDLE RADICAL</span><b lang="ar" dir="rtl">سَأَلَ</b><small>saʾala · س ء ل</small></div><div><span>FINAL RADICAL</span><b lang="ar" dir="rtl">قَرَأَ</b><small>qaraʾa · ق ر ء</small></div></div><p lang={language}>{copy.hamza}</p></section>
+   <section className="lesson-block"><span className="section-kicker">IDENTICAL SECOND AND THIRD RADICALS</span><h2>Doubled root · مُضَاعَفٌ</h2><div className="noun-triad"><div><span>ROOT</span><b lang="ar" dir="rtl">م د د</b><small>three radicals</small></div><div><span>WRITTEN VERB</span><b lang="ar" dir="rtl">مَدَّ</b><small>madda · to extend</small></div><div><span>SHADDA</span><b lang="ar" dir="rtl">دّ</b><small>two identical letters</small></div></div><p lang={language}>{copy.doubled}</p><div className="warning-card"><strong>Do not confuse the signs</strong><p lang={language}>{copy.caution}</p></div></section>
+   <section className="lesson-block"><span className="section-kicker">EXAMPLE ROOTS</span><h2>Write the three radicals</h2><div className="masdar-example-table"><div className="masdar-example-head"><span>Verb</span><span>Transliteration</span><span>Root</span><span>Class</span></div>{hamzaDoubledWords.map(w=><div className="masdar-example-row" key={w.verb}><div><b lang="ar" dir="rtl">{w.verb}</b></div><span>{showTransliteration?w.latin:''}</span><b lang="ar" dir="rtl">{w.root}</b><small>{w.kind.replace('hamza-','hamza ')}</small></div>)}</div></section>
+   <section className="lesson-block practice-block"><span className="section-kicker">PRACTISE · CLASSIFY</span><h2>Where is the hamza, or is it doubled?</h2><p lang={language}>{copy.exercise}</p><div className="pronoun-practice-list">{hamzaDoubledWords.map((q,i)=><div className="pronoun-practice-row" key={q.verb}><div><b lang="ar" dir="rtl">{q.verb}</b>{showTransliteration&&<small>{q.latin} · {q.root}</small>}</div><select aria-label={'Choose root class for '+q.verb} value={answers[i]||''} onChange={event=>{setAnswers({...answers,[i]:event.target.value});setChecked(false)}}><option value="">Choose class…</option>{hamzaDoubledChoices.map(c=><option value={c.value} key={c.value}>{c.label}</option>)}</select>{checked&&<p className={answers[i]===q.kind?'classification-feedback correct':'classification-feedback'}>{answers[i]===q.kind?copy.correct:copy.incorrect} <b>{hamzaDoubledChoices.find(c=>c.value===q.kind)?.label}</b></p>}</div>)}</div><button type="button" className="primary-button" disabled={Object.keys(answers).length!==hamzaDoubledWords.length} onClick={()=>setChecked(true)}>{copy.check}</button>{checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {hamzaDoubledWords.length}</strong></p>}</section>
+   <section className="lesson-block"><span className="section-kicker">RECALL AND TEACH</span><h2>Say it back</h2><p lang={language}>{copy.teach}</p><div className="example-sentence" lang={language}>{copy.summary}</div><div className="audio-unavailable"><Volume2 size={16}/><span lang={language}>{copy.audio}</span></div></section>
+   <section className="lesson-block source-block"><span className="section-kicker">REFERENCES</span><h2>Sources and further reading</h2><ul><li><a href="https://www.ziyaraat.net/books/ArabicAnEssentialGrammar.pdf" target="_blank" rel="noreferrer">Arabic: An Essential Grammar — hamzated and doubled roots.</a></li><li><a href="https://download.fimsschools.com/ebooks/Basic%20Arabic%20A%20Grammar%20and%20Workbook%20%28Waheed%20Samy%2C%20Leila%20Samy%29.pdf" target="_blank" rel="noreferrer">Basic Arabic: A Grammar and Workbook — hamza and geminate verbs.</a></li></ul></section>
+   <div className="lesson-end"><a href="#/lesson/17">← Lesson 17: Weak verbs</a><span>Next: iʿlāl and idghām transformations</span></div>
+  </article><aside className="lesson-aside"><span className="section-kicker">IN THIS LESSON</span><ol><li>Hamza as a radical</li><li>Initial hamza</li><li>Medial hamza</li><li>Final hamza</li><li>Doubled roots</li><li>Classification practice</li></ol><div className="aside-note"><strong>Study tip</strong><p>Expand a shadda into two identical root letters before classifying the verb.</p></div></aside></div>
  </main>
 }
 
@@ -2906,6 +2988,7 @@ export default function App() {
   if (route === '#/lesson/15') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 15</span></header><LessonFifteenPage/></div>
   if (route === '#/lesson/16') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 06 · LESSON 16</span></header><LessonSixteenPage/></div>
   if (route === '#/lesson/17') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 17</span></header><LessonSeventeenPage/></div>
+  if (route === '#/lesson/18') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 18</span></header><LessonEighteenPage/></div>
   return <div className="app-shell">
     <header className="topbar">
       <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
@@ -2957,6 +3040,7 @@ export default function App() {
               </div></div>
               <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 7 · Sound and Weak Roots</strong><span>Days 46–53</span></div><div className="lesson-library-list">
                 <a className="lesson-library-link" href="#/lesson/17"><span>17</span><div><strong>Weak verbs: four root classes</strong><small>Mithāl, Ajwaf, Nāqiṣ, and Lafīf</small></div><ChevronRight size={16}/></a>
+                <a className="lesson-library-link" href="#/lesson/18"><span>18</span><div><strong>Hamzated and doubled roots</strong><small>Mahmūz and Muḍāʿaf</small></div><ChevronRight size={16}/></a>
               </div></div>
             </div>
           </div>
