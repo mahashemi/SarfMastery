@@ -4,9 +4,9 @@ A responsive, beginner-first learning environment for Arabic morphology (علم 
 
 ## Status
 
-The app is live on GitHub Pages, and the latest production build/deployment succeeded. Lessons 1–17 are early drafts with core English, Persian, and Urdu explanations; qualified language review, responsive QA, and a GitHub Pages source-setting check remain outstanding.
+The app is live on GitHub Pages, and the latest production build/deployment succeeded. Lessons 1–18 are early drafts with core English, Persian, and Urdu explanations; qualified language review, responsive QA, and a GitHub Pages source-setting check remain outstanding.
 
-See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), and the source notes for [Lesson 1](docs/LESSON_01_SOURCES.md), [Lesson 2](docs/LESSON_02_SOURCES.md), [Lesson 3](docs/LESSON_03_SOURCES.md), [Lesson 4](docs/LESSON_04_SOURCES.md), [Lesson 5](docs/LESSON_05_SOURCES.md), [Lesson 6](docs/LESSON_06_SOURCES.md), [Lesson 7](docs/LESSON_07_SOURCES.md), [Lesson 8](docs/LESSON_08_SOURCES.md), [Lesson 9](docs/LESSON_09_SOURCES.md), [Lesson 10](docs/LESSON_10_SOURCES.md), [Lesson 11](docs/LESSON_11_SOURCES.md), and [Lesson 12](docs/LESSON_12_SOURCES.md), and [Lesson 13](docs/LESSON_13_SOURCES.md), and [Lesson 14](docs/LESSON_14_SOURCES.md), and [Lesson 15](docs/LESSON_15_SOURCES.md), and [Lesson 16](docs/LESSON_16_SOURCES.md), and [Lesson 17](docs/LESSON_17_SOURCES.md).
+See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), and the source notes for [Lesson 1](docs/LESSON_01_SOURCES.md), [Lesson 2](docs/LESSON_02_SOURCES.md), [Lesson 3](docs/LESSON_03_SOURCES.md), [Lesson 4](docs/LESSON_04_SOURCES.md), [Lesson 5](docs/LESSON_05_SOURCES.md), [Lesson 6](docs/LESSON_06_SOURCES.md), [Lesson 7](docs/LESSON_07_SOURCES.md), [Lesson 8](docs/LESSON_08_SOURCES.md), [Lesson 9](docs/LESSON_09_SOURCES.md), [Lesson 10](docs/LESSON_10_SOURCES.md), [Lesson 11](docs/LESSON_11_SOURCES.md), and [Lesson 12](docs/LESSON_12_SOURCES.md), and [Lesson 13](docs/LESSON_13_SOURCES.md), and [Lesson 14](docs/LESSON_14_SOURCES.md), and [Lesson 15](docs/LESSON_15_SOURCES.md), and [Lesson 16](docs/LESSON_16_SOURCES.md), and [Lesson 17](docs/LESSON_17_SOURCES.md), and [Lesson 18](docs/LESSON_18_SOURCES.md).
 
 ## Live app
 
@@ -29,6 +29,7 @@ See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), and the so
 - [Lesson 15: Active and passive participles](https://mahashemi.github.io/SarfMastery/#/lesson/15)
 - [Lesson 16: Time, place, and instrument nouns](https://mahashemi.github.io/SarfMastery/#/lesson/16)
 - [Lesson 17: Weak verb root classes](https://mahashemi.github.io/SarfMastery/#/lesson/17)
+- [Lesson 18: Hamzated and doubled roots](https://mahashemi.github.io/SarfMastery/#/lesson/18)
 
 ## Run locally
 
@@ -52,7 +53,7 @@ The repository is configured to deploy through GitHub Actions. In Settings → P
 - Absolute beginner entry point; no assumed Sarf knowledge.
 - Traditional Hawza progression, modern accessible explanations.
 - Fully vowelled Arabic examples, transliteration, and pronunciation support.
-- English primary; core explanations in Lessons 1–17 include Persian and Urdu. Full UI translation and fluent review remain pending.
+- English primary; core explanations in Lessons 1–18 include Persian and Urdu. Full UI translation and fluent review remain pending.
 - Qur’an and hadith citations must be verified. Morphology is not tafsīr.
 - No personal-name branding in the app.
 - Original explanations and exercises; do not reproduce copyrighted textbook chapters.
