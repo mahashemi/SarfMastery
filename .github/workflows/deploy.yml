@@ -32,6 +32,17 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Set GitHub Pages source to Actions
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.request('PUT /repos/{owner}/{repo}/pages', {
+              owner,
+              repo,
+              build_type: 'workflow',
+            });
+            core.info('GitHub Pages is configured to publish from GitHub Actions.');
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
