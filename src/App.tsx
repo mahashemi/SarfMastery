@@ -137,50 +137,8 @@ function LessonPage() {
         <div className="eyebrow">THE FIRST STEP · NO PRIOR KNOWLEDGE NEEDED</div>
         <h1>What is <em>Sarf?</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
-        <section className="lesson-block discovery-block">
-          <span className="section-kicker">STEP 1 · NOTICE THE DIFFERENCE</span>
-          <h2>Is “writing” the same kind of word as “he wrote”?</h2>
-          <p>Compare these three forms. Read their meanings first; you do not need to memorise any rule yet.</p>
-          <div className="discovery-word-grid three">
-            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
-            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div>
-            <div><b lang="ar" dir="rtl">كِتَابَةٌ</b><strong>kitābatun</strong><span>writing</span></div>
-          </div>
-          <div className="discovery-question">
-            <strong>What is the most useful difference to notice?</strong>
-            <p>The first two tell us about an event in a verb form. The third names the action itself, without saying who did it or when.</p>
-            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the names'}</button>
-            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have found the distinction.</strong><p>كَتَبَ and يَكْتُبُ are verbs (فِعْلٌ): their forms connect the event with grammatical time/aspect. كِتَابَةٌ is the maṣdar (مَصْدَرٌ): a verbal noun that names the action. It is an اِسْمٌ, not another tense.</p></div>}
-          </div>
-        </section>
-        <section className="lesson-block bridge-block">
-          <span className="section-kicker">STEP 2 · CONNECT INTUITION TO TERMINOLOGY</span>
-          <h2>From the idea to the technical term</h2>
-          <div className="bridge-pair"><div><span>EVENT WITH A VERB FORM</span><strong lang="ar" dir="rtl">كَتَبَ</strong><p>“He wrote” — an event presented as a verb.</p></div><div><span>THE NAME OF THE ACTION</span><strong lang="ar" dir="rtl">كِتَابَةٌ</strong><p>“Writing” — the action named as a noun.</p></div></div>
-          <p>Now we can study the formal definitions, the place of the maṣdar among nouns, and why Form I maṣdars must often be learned from reliable lexical usage rather than guessed by one universal rule.</p>
-        </section>
-        <section className="lesson-block discovery-block">
-          <span className="section-kicker">STEP 1 · MEET THE WORDS FIRST</span>
-          <h2>Three words. Three different jobs.</h2>
-          <p>Look at each word and its meaning. Before learning the Arabic labels, ask what kind of job each word is doing.</p>
-          <div className="discovery-word-grid three">
-            <div><b lang="ar" dir="rtl">كِتَابٌ</b><strong>kitābun</strong><span>a book</span></div>
-            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
-            <div><b lang="ar" dir="rtl">فِي</b><strong>fī</strong><span>in</span></div>
-          </div>
-          <div className="discovery-question">
-            <strong>Which description best fits each word?</strong>
-            <p>One names something, one tells us about an event connected with time, and one helps connect a meaning to other words.</p>
-            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the three jobs'}</button>
-            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have just discovered the traditional three-way classification.</strong><p>كِتَابٌ names a thing. كَتَبَ tells us about an event in the past. فِي means “in” and needs other words to show the relationship. Traditional grammar gives these groups the names اِسْمٌ, فِعْلٌ, and حَرْفٌ.</p></div>}
-          </div>
-        </section>
-        <section className="lesson-block bridge-block">
-          <span className="section-kicker">STEP 2 · NAME THE PATTERN</span>
-          <h2>Now learn the traditional terms</h2>
-          <div className="bridge-pair"><div><span>WHAT IT DOES</span><strong>Names something</strong><p>For example: كِتَابٌ — a book.</p></div><div><span>THE TERM</span><strong lang="ar" dir="rtl">اِسْمٌ</strong><p><b>Ism</b> — the broad noun/nominal category.</p></div></div>
-          <p>We will now examine all three categories carefully. These are not simply the same as English noun, verb, and preposition labels; Arabic grammar has its own definitions.</p>
-        </section>
+        
+        
         <section className="lesson-block discovery-block">
           <span className="section-kicker">STEP 1 · DISCOVER BEFORE NAMING</span>
           <h2>Can you spot what these words share?</h2>
@@ -425,6 +383,28 @@ function LessonTwoPage() {
         <div className="eyebrow">UNIT 01 · FOUNDATIONS</div>
         <h1>Three kinds of <em>word</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+<section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · MEET THE WORDS FIRST</span>
+          <h2>Three words. Three different jobs.</h2>
+          <p>Look at each word and its meaning. Before learning the Arabic labels, ask what kind of job each word is doing.</p>
+          <div className="discovery-word-grid three">
+            <div><b lang="ar" dir="rtl">كِتَابٌ</b><strong>kitābun</strong><span>a book</span></div>
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">فِي</b><strong>fī</strong><span>in</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>Which description best fits each word?</strong>
+            <p>One names something, one tells us about an event connected with time, and one helps connect a meaning to other words.</p>
+            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the three jobs'}</button>
+            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have just discovered the traditional three-way classification.</strong><p>كِتَابٌ names a thing. كَتَبَ tells us about an event in the past. فِي means “in” and needs other words to show the relationship. Traditional grammar gives these groups the names اِسْمٌ, فِعْلٌ, and حَرْفٌ.</p></div>}
+          </div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · NAME THE PATTERN</span>
+          <h2>Now learn the traditional terms</h2>
+          <div className="bridge-pair"><div><span>WHAT IT DOES</span><strong>Names something</strong><p>For example: كِتَابٌ — a book.</p></div><div><span>THE TERM</span><strong lang="ar" dir="rtl">اِسْمٌ</strong><p><b>Ism</b> — the broad noun/nominal category.</p></div></div>
+          <p>We will now examine all three categories carefully. These are not simply the same as English noun, verb, and preposition labels; Arabic grammar has its own definitions.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">أَقْسَامُ الْكَلِمَةِ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">aqsām al-kalimah · the categories of a word</div>}
@@ -592,6 +572,28 @@ function LessonThreePage() {
         <div className="eyebrow">UNIT 01 · FOUNDATIONS</div>
         <h1>Verb and <em>maṣdar</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+<section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · NOTICE THE DIFFERENCE</span>
+          <h2>Is “writing” the same kind of word as “he wrote”?</h2>
+          <p>Compare these three forms. Read their meanings first; you do not need to memorise any rule yet.</p>
+          <div className="discovery-word-grid three">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div>
+            <div><b lang="ar" dir="rtl">كِتَابَةٌ</b><strong>kitābatun</strong><span>writing</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>What is the most useful difference to notice?</strong>
+            <p>The first two tell us about an event in a verb form. The third names the action itself, without saying who did it or when.</p>
+            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the names'}</button>
+            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have found the distinction.</strong><p>كَتَبَ and يَكْتُبُ are verbs (فِعْلٌ): their forms connect the event with grammatical time/aspect. كِتَابَةٌ is the maṣdar (مَصْدَرٌ): a verbal noun that names the action. It is an اِسْمٌ, not another tense.</p></div>}
+          </div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT INTUITION TO TERMINOLOGY</span>
+          <h2>From the idea to the technical term</h2>
+          <div className="bridge-pair"><div><span>EVENT WITH A VERB FORM</span><strong lang="ar" dir="rtl">كَتَبَ</strong><p>“He wrote” — an event presented as a verb.</p></div><div><span>THE NAME OF THE ACTION</span><strong lang="ar" dir="rtl">كِتَابَةٌ</strong><p>“Writing” — the action named as a noun.</p></div></div>
+          <p>Now we can study the formal definitions, the place of the maṣdar among nouns, and why Form I maṣdars must often be learned from reliable lexical usage rather than guessed by one universal rule.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الْفِعْلُ وَالْمَصْدَرُ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-fiʿl wa-l-maṣdar</div>}
