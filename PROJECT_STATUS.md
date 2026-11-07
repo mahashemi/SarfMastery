@@ -330,6 +330,8 @@ For every lesson:
 
 | 2026-11-07 | Merged PR #21: introduced discovery-first hybrid learning in Lessons 1–3; added root/pattern mapping, category discovery, verb/maṣdar contrast, responsive styling, and updated hybrid plan/handoff | PR merged as 2409a797079d2adb6a8d37ba8229ae88e7c0e8d0. GitHub connector did not return workflow runs or commit statuses; deployment and build are therefore not yet independently verified. Manual responsive and scholarly review pending |
 
+| 2026-11-07 | Merged PR #22: extended discovery-first teaching to Lesson 4 (mujarrad/mazīd) and Lesson 5 (Mīzān Ṣarfī); updated hybrid plan | Merge commit bf0d75295f21aa0b0858f75c60e0ff3656a300b8. Automated build/deployment and manual device QA still not independently verified |
+
 ## 13. Session log
 | Date | Change | Verification |
 |---|---|---|
