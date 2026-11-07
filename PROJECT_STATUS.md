@@ -328,6 +328,8 @@ For every lesson:
 - [ ] [#19 Review and complete Unit 7, Lesson 18 — hamzated and doubled roots](https://github.com/mahashemi/SarfMastery/issues/19)
 - [ ] [#20 Review and complete Unit 7, Lesson 19 — iʿlāl and idghām](https://github.com/mahashemi/SarfMastery/issues/20)
 
+| 2026-11-07 | Merged PR #21: introduced discovery-first hybrid learning in Lessons 1–3; added root/pattern mapping, category discovery, verb/maṣdar contrast, responsive styling, and updated hybrid plan/handoff | PR merged as 2409a797079d2adb6a8d37ba8229ae88e7c0e8d0. GitHub connector did not return workflow runs or commit statuses; deployment and build are therefore not yet independently verified. Manual responsive and scholarly review pending |
+
 ## 13. Session log
 | Date | Change | Verification |
 |---|---|---|
