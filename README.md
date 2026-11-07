@@ -2,11 +2,17 @@
 
 A responsive, beginner-first learning environment for Arabic morphology (علم الصرف), following a traditional Hawza sequence with clear English explanations.
 
+## Learning approach
+
+The course is being redesigned around a **hybrid learning method**: first encounter meaningful Arabic, listen and observe examples, notice patterns, make predictions, and use the language; then connect those discoveries to conventional Sarf terminology, rules, conjugation paradigms, and systematic practice. The aim is intuition **and** formal mastery—not memorisation without understanding, and not discovery without rigorous instruction.
+
+Read the detailed [Hybrid Learning & Course Rebuild Plan](docs/HYBRID_LEARNING_PLAN.md) for the teaching philosophy, lesson architecture, 60-day syllabus, mastery criteria, content standards, responsive requirements, and release phases.
+
 ## Status
 
-The app is live on GitHub Pages, and the latest production build/deployment succeeded. Lessons 1–19 are early drafts with core English, Persian, and Urdu explanations; qualified language review, responsive QA, and a GitHub Pages source-setting check remain outstanding.
+The application has a responsive React/TypeScript foundation, GitHub Pages deployment, and 19 lesson drafts. These drafts are not yet 19 complete self-study lessons. The hybrid redesign, expanded practice, verified audio, qualified language/content review, progress/revision features, accessibility checks, and real-device QA remain in progress.
 
-See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), and the source notes for [Lesson 1](docs/LESSON_01_SOURCES.md), [Lesson 2](docs/LESSON_02_SOURCES.md), [Lesson 3](docs/LESSON_03_SOURCES.md), [Lesson 4](docs/LESSON_04_SOURCES.md), [Lesson 5](docs/LESSON_05_SOURCES.md), [Lesson 6](docs/LESSON_06_SOURCES.md), [Lesson 7](docs/LESSON_07_SOURCES.md), [Lesson 8](docs/LESSON_08_SOURCES.md), [Lesson 9](docs/LESSON_09_SOURCES.md), [Lesson 10](docs/LESSON_10_SOURCES.md), [Lesson 11](docs/LESSON_11_SOURCES.md), and [Lesson 12](docs/LESSON_12_SOURCES.md), and [Lesson 13](docs/LESSON_13_SOURCES.md), and [Lesson 14](docs/LESSON_14_SOURCES.md), and [Lesson 15](docs/LESSON_15_SOURCES.md), and [Lesson 16](docs/LESSON_16_SOURCES.md), and [Lesson 17](docs/LESSON_17_SOURCES.md), and [Lesson 18](docs/LESSON_18_SOURCES.md), and [Lesson 19](docs/LESSON_19_SOURCES.md).
+See [PROJECT_STATUS.md](PROJECT_STATUS.md), [HANDOFF.md](HANDOFF.md), the [Hybrid Learning Plan](docs/HYBRID_LEARNING_PLAN.md), and source notes for [Lessons 1–19](docs/).
 
 ## Live app
 
@@ -52,6 +58,7 @@ The repository is configured to deploy through GitHub Actions. In Settings → P
 ## Product principles
 
 - Absolute beginner entry point; no assumed Sarf knowledge.
+- Hybrid pedagogy: natural discovery and meaningful exposure, explicitly bridged to conventional Sarf instruction.
 - Traditional Hawza progression, modern accessible explanations.
 - Fully vowelled Arabic examples, transliteration, and pronunciation support.
 - English primary; core explanations in Lessons 1–19 include Persian and Urdu. Full UI translation and fluent review remain pending.
