@@ -1209,6 +1209,7 @@ function LessonSixPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonSixIntroCopy[language]
   const rtl = language !== 'en'
   const score = pronounGroupPractice.filter((item,index)=>answers[index]===item.answer).length
@@ -1227,6 +1228,18 @@ function LessonSixPage() {
         <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
         <h1>The <em>14 Ṣīghahs</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · NOTICE THE HUMAN MEANING</span>
+          <h2>Who is speaking, and who is being spoken to?</h2>
+          <p>Before seeing a 14-row table, notice that Arabic distinguishes the person being spoken about, the person being addressed, and the speaker.</p>
+          <div className="discovery-word-grid three"><div><b lang="ar" dir="rtl">هُوَ</b><strong>huwa</strong><span>he</span></div><div><b lang="ar" dir="rtl">أَنْتَ</b><strong>anta</strong><span>you (masculine singular)</span></div><div><b lang="ar" dir="rtl">أَنَا</b><strong>anā</strong><span>I</span></div></div>
+          <div className="discovery-question"><strong>What is different between these examples?</strong><p>Take a moment to say the difference aloud before revealing the explanation.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the pattern'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>Three perspectives organise the pronouns.</strong><p>هُوَ belongs to غَائِبٌ (the absent / third-person group), أَنْتَ to مُخَاطَبٌ (the person addressed), and أَنَا to مُتَكَلِّمٌ (the speaker). The traditional learning order groups 6 absent forms, 6 addressed forms, and 2 speaker forms: 14 slots in all.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · WHY THE FORMAL TABLE EXISTS</span>
+          <h2>The traditional 14-slot map</h2>
+          <p>The table is not fourteen unrelated items to memorise. It is a map of person, number, and gender, arranged in three familiar groups. We will learn the order and practise recognising the groups.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الصِّيَغُ الْأَرْبَعَ عَشْرَةَ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-ṣīghāt al-arbaʿ ʿashrah</div>}
@@ -1235,7 +1248,7 @@ function LessonSixPage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE 14-SLOT ORDER</span>
+          <span className="section-kicker">STEP 3 · THE 14-SLOT ORDER</span>
           <div className="pronoun-group-cards"><div><b lang="ar" dir="rtl">غَائِبٌ</b><strong>6</strong><span>Ghāʾib · third person</span></div><div><b lang="ar" dir="rtl">مُخَاطَبٌ</b><strong>6</strong><span>Mukhāṭab · second person</span></div><div><b lang="ar" dir="rtl">مُتَكَلِّمٌ</b><strong>2</strong><span>Mutakallim · first person</span></div></div>
           <p lang={language}>{copy.order}</p>
           <div className="pronoun-slots-grid">
@@ -1255,7 +1268,7 @@ function LessonSixPage() {
           <div className="caution-note" lang={language}>{copy.caution}</div>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">PRACTISE · CLASSIFY THE PRONOUN</span>
+          <span className="section-kicker">STEP 4 · PRACTISE RECOGNISING THE GROUPS</span>
           <h2>Which group does it belong to?</h2>
           <p lang={language}>{copy.practice}</p>
           <div className="pronoun-practice-list">
@@ -1493,6 +1506,7 @@ function LessonSevenPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonSevenCopy[language]
   const rtl = language !== 'en'
   const score = pastPronounPractice.filter((item,index)=>answers[index]===item.answer).length
@@ -1511,6 +1525,18 @@ function LessonSevenPage() {
         <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
         <h1>Past active: <em>14 forms</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · NOTICE THE HUMAN MEANING</span>
+          <h2>Listen to how the subject changes the verb</h2>
+          <p>Compare a few forms of the same past-tense verb. The root and basic event remain related, but the ending helps identify who performed the action.</p>
+          <div className="discovery-word-grid three"><div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div><div><b lang="ar" dir="rtl">كَتَبَا</b><strong>katabā</strong><span>the two men wrote</span></div><div><b lang="ar" dir="rtl">كَتَبُوا</b><strong>katabū</strong><span>the men wrote</span></div></div>
+          <div className="discovery-question"><strong>What is different between these examples?</strong><p>Take a moment to say the difference aloud before revealing the explanation.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the pattern'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>The verb form gives clues about its subject.</strong><p>In these examples, the past verb changes at the end to agree with different subjects: one masculine person, two masculine people, or a masculine plural group. This is why the traditional table is useful—but first understand what its rows are telling you. Later rows include feminine and first-person forms too.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · WHY THE FORMAL TABLE EXISTS</span>
+          <h2>From meaningful examples to a conjugation paradigm</h2>
+          <p>A conjugation table organises these changes systematically. We will use it to compare all 14 slots, while repeatedly returning to the meaning of each subject and form.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الصِّيَغُ الْأَرْبَعَ عَشْرَةَ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-ṣīghāt al-arbaʿ ʿashrah</div>}
@@ -1519,7 +1545,7 @@ function LessonSevenPage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <span className="section-kicker">STEP 3 · THE FULL 14-SLOT TABLE</span>
           <h2>كَتَبَ · kataba · he wrote</h2>
           <p lang={language}>{copy.orderNote}</p>
           <div className="conjugation-grid">
@@ -1540,7 +1566,7 @@ function LessonSevenPage() {
           <div className="warning-card"><strong>Masculine and feminine plural</strong><p lang={language}>{copy.confusion}</p></div>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">PRACTISE · IDENTIFY THE PRONOUN</span>
+          <span className="section-kicker">STEP 4 · APPLY THE TABLE TO NEW FORMS</span>
           <h2>Read the ending</h2>
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="pronoun-practice-list">

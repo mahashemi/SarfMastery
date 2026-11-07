@@ -298,10 +298,12 @@ Implemented in this checkpoint:
 - Lesson 3 begins by contrasting كَتَبَ، يَكْتُبُ، كِتَابَةٌ before formally naming verb and maṣdar.
 - Lesson 4 begins by comparing كَتَبَ، كَاتَبَ، اِسْتَكْتَبَ to discover the difference between an unaugmented root pattern and augmented forms.
 - Lesson 5 begins by comparing كَتَبَ and نَصَرَ to discover how فَعَلَ works as a model scale, before formalising فَاءُ الْفِعْلِ، عَيْنُ الْفِعْلِ، لَامُ الْفِعْلِ.
+- Lesson 6 begins with the lived perspectives هُوَ، أَنْتَ، أَنَا, then connects them to غَائِبٌ، مُخَاطَبٌ، مُتَكَلِّمٌ and the 6+6+2 organisation of the 14 slots.
+- Lesson 7 begins with كَتَبَ، كَتَبَا، كَتَبُوا so learners notice how the past verb form signals a different subject before studying the complete conjugation table.
 - Responsive discovery cards, bridge panels, and pattern comparison panels have been added.
 - Dashboard lesson draft count corrected to 19.
 
-This is an initial teaching-pattern prototype across the first five lessons, not a claim that the full 60-day course is complete. It still needs automated build confirmation, careful Arabic/Sarf review, and hands-on desktop/tablet/mobile testing. Lessons 4–5 are early implementations of the same hybrid architecture and should receive the same review as Lessons 1–3.
+This is an initial teaching-pattern prototype across the first seven lessons, not a claim that the full 60-day course is complete. It still needs automated build confirmation, careful Arabic/Sarf review, and hands-on desktop/tablet/mobile testing. Lessons 4–5 are early implementations of the same hybrid architecture and should receive the same review as Lessons 1–3.
 
 ## 13. Honest status and immediate priorities
 
