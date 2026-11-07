@@ -334,6 +334,8 @@ For every lesson:
 
 | 2026-11-07 | Merged PR #24: added discovery-first activities to present active, passive past/present, and imperative/prohibitive lessons; hybrid plan extended through Lesson 11 | Merge commit 57a07e0aaf5e886b7a24e59f19b20011c88f0468. Automated build/deployment and manual device QA still not independently verified |
 
+| 2026-11-07 | Merged PR #23: discovery-first pronoun and past conjugation lessons; PR #24: discovery-first present/passive/command lessons; PR #25: corrected Lesson 2/3 discovery placement | PR #25 merge commit 082cf9506afc200778fe3aee2ad1140765c50443. Source structure check confirms one discovery and one bridge panel in each Lesson 1–11. Build/deployment and manual visual QA remain unverified |
+
 ## 13. Session log
 | Date | Change | Verification |
 |---|---|---|
