@@ -296,10 +296,12 @@ Implemented in this checkpoint:
 - The lesson distinguishes root consonants from vowels and pattern material, and cautions that the present-tense vowel is not guessed from the root.
 - Lesson 2 begins with كِتَابٌ، كَتَبَ، فِي and asks learners to notice their different jobs before introducing اِسْمٌ، فِعْلٌ، حَرْفٌ.
 - Lesson 3 begins by contrasting كَتَبَ، يَكْتُبُ، كِتَابَةٌ before formally naming verb and maṣdar.
+- Lesson 4 begins by comparing كَتَبَ، كَاتَبَ، اِسْتَكْتَبَ to discover the difference between an unaugmented root pattern and augmented forms.
+- Lesson 5 begins by comparing كَتَبَ and نَصَرَ to discover how فَعَلَ works as a model scale, before formalising فَاءُ الْفِعْلِ، عَيْنُ الْفِعْلِ، لَامُ الْفِعْلِ.
 - Responsive discovery cards, bridge panels, and pattern comparison panels have been added.
 - Dashboard lesson draft count corrected to 19.
 
-This is a first teaching-pattern prototype, not a claim that the full 60-day course is complete. It still needs automated build confirmation, careful Arabic/Sarf review, and hands-on desktop/tablet/mobile testing. The same hybrid architecture should be reused for Lessons 4–5 only after the first three lessons are reviewed.
+This is an initial teaching-pattern prototype across the first five lessons, not a claim that the full 60-day course is complete. It still needs automated build confirmation, careful Arabic/Sarf review, and hands-on desktop/tablet/mobile testing. Lessons 4–5 are early implementations of the same hybrid architecture and should receive the same review as Lessons 1–3.
 
 ## 13. Honest status and immediate priorities
 

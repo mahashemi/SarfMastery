@@ -748,6 +748,7 @@ function LessonFourPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonFourCopy[language]
   const rtl = language !== 'en'
   const score = rootAdditionExamples.filter((item,index)=>answers[index]===item.answer).length
@@ -767,6 +768,17 @@ function LessonFourPage() {
         <div className="eyebrow">UNIT 01 · FOUNDATIONS</div>
         <h1>Original and <em>added</em> letters</h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · OBSERVE THE EXAMPLES</span>
+          <h2>Original and added letters</h2>
+          <p>Look at three words from the same root family. Their shared core is visible, but some forms contain extra letters.</p>
+          <div className="discovery-word-grid three"><div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div><div><b lang="ar" dir="rtl">كَاتَبَ</b><strong>kātaba</strong><span>he corresponded / engaged in writing with another</span></div><div><b lang="ar" dir="rtl">اِسْتَكْتَبَ</b><strong>istaktaba</strong><span>he asked someone to write</span></div></div><div className="discovery-question"><strong>What stays recognisable, and what has been added?</strong><p>Notice ك، ت، ب in all three. The second has an alif in its pattern; the third has the sequence ا س ت before the root.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the Sarf distinction'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>Same root, different structures.</strong><p>The basic root consonants are still ك، ت، ب. كَتَبَ is Form I (mujarrad); كَاتَبَ and اِسْتَكْتَبَ are augmented (mazīd) forms. Added material belongs to the pattern and may affect the word's meaning; the exact meaning is learned from Arabic usage.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · NAME THE STRUCTURE</span>
+          <h2>From shared root to mujarrad and mazīd</h2>
+          <p>You have noticed that a family of words can keep its root while its pattern changes. Traditional Sarf distinguishes the unaugmented base from forms with additional letters.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الْحُرُوفُ الْأَصْلِيَّةُ وَالزَّائِدَةُ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-ḥurūf al-aṣliyyah wa-l-zāʾidah</div>}
@@ -775,7 +787,7 @@ function LessonFourPage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">TWO IMPORTANT TERMS</span>
+          <span className="section-kicker">STEP 3 · THE FORMAL TERMS</span>
           <div className="compare-grid">
             <div><span className="compare-label">مُجَرَّدٌ · MUJARRAD</span><h3>Unaugmented verb</h3><p lang={language}>{copy.mujarrad}</p></div>
             <div><span className="compare-label">مَزِيدٌ · MAZĪD</span><h3>Augmented verb</h3><p lang={language}>{copy.mazid}</p></div>
@@ -919,6 +931,7 @@ function LessonFivePage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonFiveCopy[language]
   const rtl = language !== 'en'
   const score = mizanExamples.filter((item,index)=>answers[index]===item.answer).length
@@ -945,6 +958,17 @@ function LessonFivePage() {
         <div className="eyebrow">UNIT 02 · THE MORPHOLOGICAL SCALE</div>
         <h1>The <em>Mīzān Ṣarfī</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · OBSERVE THE EXAMPLES</span>
+          <h2>The Mīzān Ṣarfī</h2>
+          <p>Compare two words you already know. The core consonants differ, but the shape of the two words is alike.</p>
+          <div className="discovery-word-grid three"><div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div><div><b lang="ar" dir="rtl">نَصَرَ</b><strong>naṣara</strong><span>he helped</span></div><div><b lang="ar" dir="rtl">فَعَلَ</b><strong>faʿala</strong><span>the model pattern</span></div></div><div className="discovery-question"><strong>What does فَعَلَ help us compare?</strong><p>It gives us a model shape: the first root consonant maps to ف, the second to ع, and the third to ل.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the scale'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>That model is the Mīzān Ṣarfī.</strong><p>كَتَبَ maps ك→ف، ت→ع، ب→ل. نَصَرَ maps ن→ف، ص→ع، ر→ل. The model letters are placeholders, not letters that get inserted into the word.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · NAME THE STRUCTURE</span>
+          <h2>From a repeated shape to a morphological scale</h2>
+          <p>You have noticed that words with different roots can share the same structural pattern. Sarf uses a standard scale to describe that structure precisely.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الْمِيزَانُ الصَّرْفِيُّ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-mīzān al-ṣarfī</div>}
@@ -953,7 +977,7 @@ function LessonFivePage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE THREE MODEL LETTERS</span>
+          <span className="section-kicker">STEP 3 · THE THREE MODEL LETTERS</span>
           <h2>ف · ع · ل</h2>
           <div className="mizan-model-grid">
             <div><b lang="ar" dir="rtl">فَاءُ الْفِعْلِ</b><strong>ف</strong><span>Fāʾ al-fiʿl</span><p lang={language}>{copy.first}</p></div>
