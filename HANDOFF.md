@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-06  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** Hybrid beginner-learning redesign PRs #21–#24 have been merged to main (latest merge commit `57a07e0aaf5e886b7a24e59f19b20011c88f0468`). Lessons 1–11 now begin with meaning-first discovery activities bridged to conventional Sarf instruction. Build/deployment status is not independently confirmed; expert review and responsive device QA remain pending.
+**Current phase:** Hybrid beginner-learning redesign PRs #21–#24 have been merged to main (latest merge commit `57a07e0aaf5e886b7a24e59f19b20011c88f0468`). Lessons 1–11 now begin with meaning-first discovery activities bridged to conventional Sarf instruction. PR #25 also corrected the placement of the Lesson 2 and Lesson 3 activities; each of Lessons 1–11 now has one discovery panel and one bridge panel. Build/deployment status is not independently confirmed; expert review and responsive device QA remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
