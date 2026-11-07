@@ -138,6 +138,28 @@ function LessonPage() {
         <h1>What is <em>Sarf?</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
         <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · NOTICE THE DIFFERENCE</span>
+          <h2>Is “writing” the same kind of word as “he wrote”?</h2>
+          <p>Compare these three forms. Read their meanings first; you do not need to memorise any rule yet.</p>
+          <div className="discovery-word-grid three">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div>
+            <div><b lang="ar" dir="rtl">كِتَابَةٌ</b><strong>kitābatun</strong><span>writing</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>What is the most useful difference to notice?</strong>
+            <p>The first two tell us about an event in a verb form. The third names the action itself, without saying who did it or when.</p>
+            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the names'}</button>
+            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have found the distinction.</strong><p>كَتَبَ and يَكْتُبُ are verbs (فِعْلٌ): their forms connect the event with grammatical time/aspect. كِتَابَةٌ is the maṣdar (مَصْدَرٌ): a verbal noun that names the action. It is an اِسْمٌ, not another tense.</p></div>}
+          </div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT INTUITION TO TERMINOLOGY</span>
+          <h2>From the idea to the technical term</h2>
+          <div className="bridge-pair"><div><span>EVENT WITH A VERB FORM</span><strong lang="ar" dir="rtl">كَتَبَ</strong><p>“He wrote” — an event presented as a verb.</p></div><div><span>THE NAME OF THE ACTION</span><strong lang="ar" dir="rtl">كِتَابَةٌ</strong><p>“Writing” — the action named as a noun.</p></div></div>
+          <p>Now we can study the formal definitions, the place of the maṣdar among nouns, and why Form I maṣdars must often be learned from reliable lexical usage rather than guessed by one universal rule.</p>
+        </section>
+        <section className="lesson-block discovery-block">
           <span className="section-kicker">STEP 1 · MEET THE WORDS FIRST</span>
           <h2>Three words. Three different jobs.</h2>
           <p>Look at each word and its meaning. Before learning the Arabic labels, ask what kind of job each word is doing.</p>
@@ -550,6 +572,7 @@ function LessonThreePage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonThreeCopy[language]
   const rtl = language !== 'en'
   const score = verbMasdarExamples.filter((item,index)=>answers[index]===item.answer).length
@@ -577,7 +600,7 @@ function LessonThreePage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">1 · THE VERB</span>
+          <span className="section-kicker">STEP 3 · FORMAL STUDY: THE VERB</span>
           <h2>{copy.verbTitle}</h2>
           <p lang={language}>{copy.verbText}</p>
           <div className="verb-forms-grid">
@@ -588,7 +611,7 @@ function LessonThreePage() {
           <div className="caution-note">The command form is an imperative form, not simply another past or present tense. We will study the full verb system later.</div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">2 · THE MAṢDAR</span>
+          <span className="section-kicker">STEP 4 · FORMAL STUDY: THE MAṢDAR</span>
           <h2>{copy.masdarTitle}</h2>
           <p lang={language}>{copy.masdarText}</p>
           <div className="masdar-highlight"><span>مَصْدَرٌ · VERBAL NOUN</span><b lang="ar" dir="rtl">كِتَابَةٌ</b>{showTransliteration&&<small>kitābatun</small>}<strong>writing</strong></div>
@@ -600,7 +623,7 @@ function LessonThreePage() {
           <div className="caution-note" lang={language}>{copy.caution}</div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">COMPARE THE WORDS</span>
+          <span className="section-kicker">STEP 5 · COMPARE AND APPLY</span>
           <h2>كَتَبَ · كِتَابَةٌ · كِتَابٌ</h2>
           <p lang={language}>{copy.compare}</p>
           <div className="comparison-strip">
@@ -615,7 +638,7 @@ function LessonThreePage() {
           <p lang={language}>{copy.answer}</p>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">PRACTISE · VERB OR NOUN?</span>
+          <span className="section-kicker">STEP 6 · PRACTISE WITHOUT THE EXPLANATION</span>
           <h2>Classify the forms</h2>
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="classification-list">
