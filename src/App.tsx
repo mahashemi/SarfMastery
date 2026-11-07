@@ -1690,6 +1690,7 @@ function LessonEightPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonEightCopy[language]
   const rtl = language !== 'en'
   const score = presentPronounPractice.filter((item,index)=>answers[index]===item.answer).length
@@ -1708,6 +1709,18 @@ function LessonEightPage() {
         <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
         <h1>Present active: <em>14 forms</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · UNDERSTAND THE MESSAGE</span>
+          <h2>Listen for the changing beginning</h2>
+          <p>Compare these present-tense forms. They share the root ك ت ب, but the beginning changes as the subject changes.</p>
+          <div className="discovery-word-grid "><div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div><div><b lang="ar" dir="rtl">تَكْتُبُ</b><strong>taktubu</strong><span>she writes / you write</span></div><div><b lang="ar" dir="rtl">أَكْتُبُ</b><strong>aktubu</strong><span>I write</span></div><div><b lang="ar" dir="rtl">نَكْتُبُ</b><strong>naktubu</strong><span>we write</span></div></div>
+          <div className="discovery-question"><strong>What changes in the form, and what stays related?</strong><p>Compare the Arabic forms before reading the explanation.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the pattern'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>Here is the grammatical clue.</strong><p>The present/imperfect verb uses one of four prefixes: أ، ن، ي، ت. The prefix is a clue to person and, in some contexts, gender. It does not tell the whole story by itself; endings and context matter too.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT MEANING TO THE RULE</span>
+          <h2>Why the formal paradigm matters</h2>
+          <p>The prefix is a meaningful clue, not a decoration. The full paradigm combines prefixes, endings, and the pronoun system.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الْمُضَارِعُ الْمَعْرُوفُ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-muḍāriʿ al-maʿrūf</div>}
@@ -1723,7 +1736,7 @@ function LessonEightPage() {
           <div className="prefix-grid"><div><b>أَ</b><span>I · أَنَا</span></div><div><b>نَ</b><span>we · نَحْنُ</span></div><div><b>يَ</b><span>he/they · الغائب</span></div><div><b>تَ</b><span>you/she · المخاطب/الغائبة</span></div></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <span className="section-kicker">STEP 3 · THE FORMAL MUḌĀRIʿ PATTERN</span>
           <p lang={language}>{copy.orderNote}</p>
           <div className="conjugation-grid">
             <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Present active form</span><span>Meaning</span></div>
@@ -1867,6 +1880,7 @@ function LessonNinePage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonNineCopy[language]
   const rtl = language !== 'en'
   const score = passivePronounPractice.filter((item,index)=>answers[index]===item.answer).length
@@ -1885,6 +1899,18 @@ function LessonNinePage() {
         <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
         <h1>Past passive: <em>14 forms</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · UNDERSTAND THE MESSAGE</span>
+          <h2>Who did the action, and what received it?</h2>
+          <p>In one form, the subject performs the writing. In the other, the sentence focuses on what was written.</p>
+          <div className="discovery-word-grid "><div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div><div><b lang="ar" dir="rtl">كُتِبَ</b><strong>kutiba</strong><span>it was written</span></div><div><b lang="ar" dir="rtl">كَتَبَ الطَّالِبُ</b><strong>kataba al-ṭālibu</strong><span>the student wrote</span></div><div><b lang="ar" dir="rtl">كُتِبَ الدَّرْسُ</b><strong>kutiba al-darsu</strong><span>the lesson was written</span></div></div>
+          <div className="discovery-question"><strong>What changes in the form, and what stays related?</strong><p>Compare the Arabic forms before reading the explanation.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the pattern'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>Here is the grammatical clue.</strong><p>كَتَبَ is active: the subject performs the action. كُتِبَ is passive: the form presents the action without naming the performer as the grammatical subject. Notice the internal vowel pattern changes. The passive does not mean the root has changed.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT MEANING TO THE RULE</span>
+          <h2>Why the formal paradigm matters</h2>
+          <p>The active/passive contrast is a change in voice. The root remains ك ت ب, while the vocalic pattern changes the grammatical perspective.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الْمَاضِي الْمَجْهُولُ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-māḍī al-majhūl</div>}
@@ -1913,7 +1939,7 @@ function LessonNinePage() {
           <div className="warning-card"><strong>Grammar note</strong><p>In this verse, كُتِبَ is a 3rd-person masculine singular passive perfect verb. الصِّيَامُ is nominative and functions as the nāʾib al-fāʿil.</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <span className="section-kicker">STEP 3 · THE FORMAL PASSIVE PAST</span>
           <h2>نُصِرَ · nuṣira · he was helped</h2>
           <div className="conjugation-grid">
             <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Past passive form</span><span>Meaning</span></div>
@@ -2052,6 +2078,7 @@ function LessonTenPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonTenCopy[language]
   const rtl = language !== 'en'
   const score = passivePresentPractice.filter((item,index)=>answers[index]===item.answer).length
@@ -2070,6 +2097,18 @@ function LessonTenPage() {
         <div className="eyebrow">UNIT 03 · THE FOURTEEN ṢĪGHAHS</div>
         <h1>Present passive: <em>14 forms</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · UNDERSTAND THE MESSAGE</span>
+          <h2>Compare the active and passive present forms</h2>
+          <p>The same contrast appears in the present/imperfect: one form says someone writes; the other says something is written.</p>
+          <div className="discovery-word-grid "><div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div><div><b lang="ar" dir="rtl">يُكْتَبُ</b><strong>yuktabu</strong><span>it is written</span></div><div><b lang="ar" dir="rtl">تَكْتُبُ</b><strong>taktubu</strong><span>she writes / you write</span></div><div><b lang="ar" dir="rtl">تُكْتَبُ</b><strong>tuktabu</strong><span>she is written / it is written (context-dependent)</span></div></div>
+          <div className="discovery-question"><strong>What changes in the form, and what stays related?</strong><p>Compare the Arabic forms before reading the explanation.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the pattern'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>Here is the grammatical clue.</strong><p>In this Form I example, compare يَكْتُبُ (yaktubu) with يُكْتَبُ (yuktabu): the internal vowels change from active to passive. The full paradigm also changes prefixes and endings according to the subject. Do not assume every verb uses identical surface details without checking its pattern.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT MEANING TO THE RULE</span>
+          <h2>Why the formal paradigm matters</h2>
+          <p>The passive form changes how the event is presented. Keep the root, tense/aspect, and voice as separate questions when analysing a form.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">الْمُضَارِعُ الْمَجْهُولُ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">al-muḍāriʿ al-majhūl</div>}
@@ -2093,7 +2132,7 @@ function LessonTenPage() {
           <div className="warning-card"><strong>Default indicative form</strong><p lang={language}>{copy.scope}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE FULL 14-SLOT TABLE</span>
+          <span className="section-kicker">STEP 3 · THE FORMAL PASSIVE MUḌĀRIʿ</span>
           <h2>نُصِرَ → يُنْصَرُ</h2>
           <div className="conjugation-grid">
             <div className="conjugation-head"><span>#</span><span>Pronoun</span><span>Person / number / gender</span><span>Present passive form</span><span>Meaning</span></div>
@@ -2233,6 +2272,7 @@ function LessonElevenPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonElevenCopy[language]
   const rtl = language !== 'en'
   const score = commandPractice.filter((item,index)=>answers[index]===item.answer).length
@@ -2251,6 +2291,18 @@ function LessonElevenPage() {
         <div className="eyebrow">UNIT 03 · DIRECT COMMANDS</div>
         <h1>Imperative and <em>prohibitive</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · UNDERSTAND THE MESSAGE</span>
+          <h2>A command and a prohibition are not the same form</h2>
+          <p>Imagine speaking to one person. You can tell them to write, or tell them not to write. The two expressions are related, but the second uses a negative particle.</p>
+          <div className="discovery-word-grid "><div><b lang="ar" dir="rtl">اُكْتُبْ</b><strong>uktub</strong><span>write!</span></div><div><b lang="ar" dir="rtl">لَا تَكْتُبْ</b><strong>lā taktub</strong><span>do not write!</span></div><div><b lang="ar" dir="rtl">اِقْرَأْ</b><strong>iqraʾ</strong><span>read!</span></div><div><b lang="ar" dir="rtl">لَا تَقْرَأْ</b><strong>lā taqraʾ</strong><span>do not read!</span></div></div>
+          <div className="discovery-question"><strong>What changes in the form, and what stays related?</strong><p>Compare the Arabic forms before reading the explanation.</p><button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the pattern'}</button>{discoveryRevealed&&<div className="discovery-feedback correct"><strong>Here is the grammatical clue.</strong><p>The imperative (أَمْرٌ) gives a command. The prohibitive (نَهْيٌ) uses لَا النَّاهِيَةُ with a jussive imperfect verb to express a prohibition. It is not simply a negative imperative word copied from English.</p></div>}</div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT MEANING TO THE RULE</span>
+          <h2>Why the formal paradigm matters</h2>
+          <p>Meaning first: one directs an action; the other asks the addressee not to perform it. Then learn the formal derivation and the relevant jussive changes.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">فِعْلُ الْأَمْرِ وَفِعْلُ النَّهْيِ</div>
           {showTransliteration&&<div className="lesson-translit" dir="ltr">fiʿl al-amr wa-fiʿl al-nahy</div>}
