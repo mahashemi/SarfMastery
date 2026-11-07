@@ -287,7 +287,7 @@ A lesson is not complete merely because a route renders or a paragraph exists. M
 
 ## 12. First implementation checkpoint (7 November 2026)
 
-The first hybrid-learning implementation has been merged through PRs #21 and #22.
+The first hybrid-learning implementation has been merged through PRs #21–#24.
 
 Implemented in this checkpoint:
 - Lesson 1 now begins with four related words and a learner prediction activity before introducing the word root as a technical term.
