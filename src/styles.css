@@ -322,3 +322,7 @@
  .pattern-comparison{grid-template-columns:1fr}
  .pattern-comparison>div:last-child{grid-column:auto}
 }
+
+.discovery-word-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:650px){.discovery-word-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:390px){.discovery-word-grid.three{grid-template-columns:1fr}.discovery-word-grid.three>div{display:grid;grid-template-columns:auto 1fr;column-gap:12px;justify-items:start}.discovery-word-grid.three>div>b{grid-row:span 2}.discovery-word-grid.three>div>strong,.discovery-word-grid.three>div>span{align-self:center}}
