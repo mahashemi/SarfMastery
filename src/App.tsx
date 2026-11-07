@@ -138,6 +138,28 @@ function LessonPage() {
         <h1>What is <em>Sarf?</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
         <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · MEET THE WORDS FIRST</span>
+          <h2>Three words. Three different jobs.</h2>
+          <p>Look at each word and its meaning. Before learning the Arabic labels, ask what kind of job each word is doing.</p>
+          <div className="discovery-word-grid three">
+            <div><b lang="ar" dir="rtl">كِتَابٌ</b><strong>kitābun</strong><span>a book</span></div>
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">فِي</b><strong>fī</strong><span>in</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>Which description best fits each word?</strong>
+            <p>One names something, one tells us about an event connected with time, and one helps connect a meaning to other words.</p>
+            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the three jobs'}</button>
+            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have just discovered the traditional three-way classification.</strong><p>كِتَابٌ names a thing. كَتَبَ tells us about an event in the past. فِي means “in” and needs other words to show the relationship. Traditional grammar gives these groups the names اِسْمٌ, فِعْلٌ, and حَرْفٌ.</p></div>}
+          </div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · NAME THE PATTERN</span>
+          <h2>Now learn the traditional terms</h2>
+          <div className="bridge-pair"><div><span>WHAT IT DOES</span><strong>Names something</strong><p>For example: كِتَابٌ — a book.</p></div><div><span>THE TERM</span><strong lang="ar" dir="rtl">اِسْمٌ</strong><p><b>Ism</b> — the broad noun/nominal category.</p></div></div>
+          <p>We will now examine all three categories carefully. These are not simply the same as English noun, verb, and preposition labels; Arabic grammar has its own definitions.</p>
+        </section>
+        <section className="lesson-block discovery-block">
           <span className="section-kicker">STEP 1 · DISCOVER BEFORE NAMING</span>
           <h2>Can you spot what these words share?</h2>
           <p>Look at these words first. You do not need to know any grammar terms yet. Read the meanings and notice the Arabic letters.</p>
@@ -361,6 +383,7 @@ function LessonTwoPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonTwoCopy[language]
   const rtl = language !== 'en'
   const score = classificationExamples.filter((item,index)=>answers[index]===item.answer).length
@@ -388,7 +411,7 @@ function LessonTwoPage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE THREE CATEGORIES</span>
+          <span className="section-kicker">STEP 3 · THE CONVENTIONAL CLASSIFICATION</span>
           <div className="category-grid">
             <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.ismExampleWithTranslit:copy.ismExample}</small></div>
             <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.fiilExampleWithTranslit:copy.fiilExample}</small></div>
@@ -404,7 +427,7 @@ function LessonTwoPage() {
           <h3 className="subheading">Word or sentence?</h3><p lang={language}>{copy.wordSentence}</p>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">PRACTISE · CLASSIFY THE WORD</span>
+          <span className="section-kicker">STEP 4 · PRACTISE RECOGNISING THE CATEGORIES</span>
           <h2>Can you recognise the category?</h2>
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="classification-list">
@@ -420,7 +443,7 @@ function LessonTwoPage() {
           {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {classificationExamples.length}</strong></p>}
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">RECALL AND TEACH</span>
+          <span className="section-kicker">STEP 5 · RECALL AND TEACH</span>
           <h2>Say it back</h2>
           <p lang={language}>{copy.teach}</p>
           <div className="example-sentence" lang={language}>{copy.summary}</div>
