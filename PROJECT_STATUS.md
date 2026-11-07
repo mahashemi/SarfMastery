@@ -332,6 +332,8 @@ For every lesson:
 
 | 2026-11-07 | Merged PR #22: extended discovery-first teaching to Lesson 4 (mujarrad/mazīd) and Lesson 5 (Mīzān Ṣarfī); updated hybrid plan | Merge commit bf0d75295f21aa0b0858f75c60e0ff3656a300b8. Automated build/deployment and manual device QA still not independently verified |
 
+| 2026-11-07 | Merged PR #24: added discovery-first activities to present active, passive past/present, and imperative/prohibitive lessons; hybrid plan extended through Lesson 11 | Merge commit 57a07e0aaf5e886b7a24e59f19b20011c88f0468. Automated build/deployment and manual device QA still not independently verified |
+
 ## 13. Session log
 | Date | Change | Verification |
 |---|---|---|
