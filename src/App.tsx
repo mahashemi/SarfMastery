@@ -115,6 +115,8 @@ function LessonPage() {
   const [answer,setAnswer] = useState('')
   const [showAnswer,setShowAnswer] = useState(false)
   const [language,setLanguage] = useState<Language>('en')
+  const [discoveryChoice,setDiscoveryChoice] = useState('')
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonCopy[language]
   const rtl = language !== 'en'
   return <main className="lesson-page">
@@ -135,6 +137,81 @@ function LessonPage() {
         <div className="eyebrow">THE FIRST STEP · NO PRIOR KNOWLEDGE NEEDED</div>
         <h1>What is <em>Sarf?</em></h1>
         <p className="lesson-lead" lang={language}>{copy.lead}</p>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · NOTICE THE DIFFERENCE</span>
+          <h2>Is “writing” the same kind of word as “he wrote”?</h2>
+          <p>Compare these three forms. Read their meanings first; you do not need to memorise any rule yet.</p>
+          <div className="discovery-word-grid three">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div>
+            <div><b lang="ar" dir="rtl">كِتَابَةٌ</b><strong>kitābatun</strong><span>writing</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>What is the most useful difference to notice?</strong>
+            <p>The first two tell us about an event in a verb form. The third names the action itself, without saying who did it or when.</p>
+            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the names'}</button>
+            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have found the distinction.</strong><p>كَتَبَ and يَكْتُبُ are verbs (فِعْلٌ): their forms connect the event with grammatical time/aspect. كِتَابَةٌ is the maṣdar (مَصْدَرٌ): a verbal noun that names the action. It is an اِسْمٌ, not another tense.</p></div>}
+          </div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT INTUITION TO TERMINOLOGY</span>
+          <h2>From the idea to the technical term</h2>
+          <div className="bridge-pair"><div><span>EVENT WITH A VERB FORM</span><strong lang="ar" dir="rtl">كَتَبَ</strong><p>“He wrote” — an event presented as a verb.</p></div><div><span>THE NAME OF THE ACTION</span><strong lang="ar" dir="rtl">كِتَابَةٌ</strong><p>“Writing” — the action named as a noun.</p></div></div>
+          <p>Now we can study the formal definitions, the place of the maṣdar among nouns, and why Form I maṣdars must often be learned from reliable lexical usage rather than guessed by one universal rule.</p>
+        </section>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · MEET THE WORDS FIRST</span>
+          <h2>Three words. Three different jobs.</h2>
+          <p>Look at each word and its meaning. Before learning the Arabic labels, ask what kind of job each word is doing.</p>
+          <div className="discovery-word-grid three">
+            <div><b lang="ar" dir="rtl">كِتَابٌ</b><strong>kitābun</strong><span>a book</span></div>
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">فِي</b><strong>fī</strong><span>in</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>Which description best fits each word?</strong>
+            <p>One names something, one tells us about an event connected with time, and one helps connect a meaning to other words.</p>
+            <button type="button" className="primary-button" onClick={()=>setDiscoveryRevealed(!discoveryRevealed)}>{discoveryRevealed?'Hide the explanation':'Reveal the three jobs'}</button>
+            {discoveryRevealed&&<div className="discovery-feedback correct"><strong>You have just discovered the traditional three-way classification.</strong><p>كِتَابٌ names a thing. كَتَبَ tells us about an event in the past. فِي means “in” and needs other words to show the relationship. Traditional grammar gives these groups the names اِسْمٌ, فِعْلٌ, and حَرْفٌ.</p></div>}
+          </div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · NAME THE PATTERN</span>
+          <h2>Now learn the traditional terms</h2>
+          <div className="bridge-pair"><div><span>WHAT IT DOES</span><strong>Names something</strong><p>For example: كِتَابٌ — a book.</p></div><div><span>THE TERM</span><strong lang="ar" dir="rtl">اِسْمٌ</strong><p><b>Ism</b> — the broad noun/nominal category.</p></div></div>
+          <p>We will now examine all three categories carefully. These are not simply the same as English noun, verb, and preposition labels; Arabic grammar has its own definitions.</p>
+        </section>
+        <section className="lesson-block discovery-block">
+          <span className="section-kicker">STEP 1 · DISCOVER BEFORE NAMING</span>
+          <h2>Can you spot what these words share?</h2>
+          <p>Look at these words first. You do not need to know any grammar terms yet. Read the meanings and notice the Arabic letters.</p>
+          <div className="discovery-word-grid">
+            <div><b lang="ar" dir="rtl">كَتَبَ</b><strong>kataba</strong><span>he wrote</span></div>
+            <div><b lang="ar" dir="rtl">يَكْتُبُ</b><strong>yaktubu</strong><span>he writes</span></div>
+            <div><b lang="ar" dir="rtl">كَاتِبٌ</b><strong>kātibun</strong><span>a writer</span></div>
+            <div><b lang="ar" dir="rtl">مَكْتُوبٌ</b><strong>maktūbun</strong><span>written</span></div>
+          </div>
+          <div className="discovery-question">
+            <strong>What do you think stays the same in all four words?</strong>
+            <div className="discovery-options">
+              <button type="button" className={discoveryChoice==='root'?'chosen':''} aria-pressed={discoveryChoice==='root'} onClick={()=>{setDiscoveryChoice('root');setDiscoveryRevealed(false)}}>The consonants ك · ت · ب</button>
+              <button type="button" className={discoveryChoice==='whole'?'chosen':''} aria-pressed={discoveryChoice==='whole'} onClick={()=>{setDiscoveryChoice('whole');setDiscoveryRevealed(false)}}>Every letter and vowel is identical</button>
+              <button type="button" className={discoveryChoice==='meaning'?'chosen':''} aria-pressed={discoveryChoice==='meaning'} onClick={()=>{setDiscoveryChoice('meaning');setDiscoveryRevealed(false)}}>Only the English translations</button>
+            </div>
+            <button type="button" className="primary-button" disabled={!discoveryChoice} onClick={()=>setDiscoveryRevealed(true)}>Reveal what is happening</button>
+            {discoveryRevealed&&<div className={discoveryChoice==='root'?'discovery-feedback correct':'discovery-feedback'}>
+              <strong>{discoveryChoice==='root'?'You noticed the important clue.':'Good attempt. Now compare the Arabic letters again.'}</strong>
+              <p>All four examples contain the consonants ك، ت، ب in the same order. The vowels and other letters around them change. These three consonants are the shared root in these examples; the complete words are not identical.</p>
+            </div>}
+          </div>
+          <div className="discovery-coach"><strong>Notice something important</strong><p>You have just begun to recognise a word family by looking and comparing. That is the first step: observe examples, form a guess, and then check it. We will now give the pattern a proper name.</p></div>
+        </section>
+        <section className="lesson-block bridge-block">
+          <span className="section-kicker">STEP 2 · CONNECT YOUR DISCOVERY TO SARF</span>
+          <h2>Now let's name what you noticed</h2>
+          <div className="bridge-pair"><div><span>WHAT YOU SAW</span><strong>ك · ت · ب</strong><p>A group of consonants shared by related words.</p></div><div><span>THE SARF TERM</span><strong lang="ar" dir="rtl">جِذْرٌ</strong><p><b>Jidhr</b> — the root. A root is a useful structural clue, not a complete dictionary definition.</p></div></div>
+          <p>In traditional Sarf, we also compare the shape of a word with a pattern. The root tells us which core consonants are involved; the pattern helps describe how a particular word is formed.</p>
+        </section>
         <section className="lesson-block">
           <div className="lesson-term" lang="ar" dir="rtl">عِلْمُ الصَّرْفِ</div>
           {showTransliteration && <div className="lesson-translit" dir="ltr">ʿilm al-ṣarf</div>}
@@ -150,7 +227,7 @@ function LessonPage() {
           <h3 className="subheading">{copy.whyTitle}</h3><p lang={language}>{copy.why}</p>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">TWO COMPLEMENTARY LENSES</span>
+          <span className="section-kicker">STEP 4 · PLACE IT IN THE TRADITIONAL SCIENCES</span>
           <h2>Sarf and Nahw: what is the difference?</h2>
           <div className="compare-grid">
             <div><span className="compare-label">الصَّرْفُ · SARF</span><h3>{copy.sarfTitle}</h3><p lang={language}>{copy.sarfDesc}</p></div>
@@ -159,7 +236,7 @@ function LessonPage() {
           <p className="example-sentence" lang={language}>{copy.compare}</p>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">YOUR FIRST WORD FAMILY</span>
+          <span className="section-kicker">STEP 5 · EXPLORE MORE EXAMPLES</span>
           <h2>Look closely at كَتَبَ</h2>
           <p lang={language}>{copy.familyIntro}</p>
           <div className="word-family">
@@ -172,6 +249,22 @@ function LessonPage() {
           </div>
           <div className="root-callout"><span>THE ROOT CONSONANTS · الْحُرُوفُ الْأَصْلِيَّةُ</span><strong lang="ar" dir="rtl">ك · ت · ب</strong><p>{copy.rootNote}</p></div>
           <div className="caution-note" lang={language}>{copy.patternCaution}</div>
+          <div className="formal-pattern-panel">
+            <span className="section-kicker">STEP 3 · THE CONVENTIONAL EXPLANATION</span>
+            <h3>Root and pattern: a worked comparison</h3>
+            <p>For these familiar Form I examples, compare the root consonants with the pattern. The symbols ف، ع، ل stand in for the first, second, and third root consonants.</p>
+            <div className="pattern-comparison">
+              <div><span>THE PATTERN</span><b lang="ar" dir="rtl">فَعَلَ</b><small>faʿala</small></div>
+              <div><span>THE EXAMPLE</span><b lang="ar" dir="rtl">كَتَبَ</b><small>kataba · he wrote</small></div>
+              <div><span>ROOT MAPPING</span><b lang="ar" dir="rtl">ف ← ك · ع ← ت · ل ← ب</b><small>first · second · third</small></div>
+            </div>
+            <div className="pattern-comparison">
+              <div><span>THE PATTERN</span><b lang="ar" dir="rtl">فَعَلَ</b><small>faʿala</small></div>
+              <div><span>ANOTHER ROOT</span><b lang="ar" dir="rtl">نَصَرَ</b><small>naṣara · he helped</small></div>
+              <div><span>ROOT MAPPING</span><b lang="ar" dir="rtl">ف ← ن · ع ← ص · ل ← ر</b><small>first · second · third</small></div>
+            </div>
+            <p className="formal-caveat">Important: this is one common past-tense pattern, not the only pattern in Arabic. The vowel of the present tense varies across the known Abwāb, and a learner should not guess it from the root alone. We will study those patterns separately.</p>
+          </div>
         </section>
         <section className="lesson-block">
           <span className="section-kicker">A QUESTION BEGINNERS OFTEN ASK</span>
@@ -180,7 +273,7 @@ function LessonPage() {
           <div className="mini-example"><b lang="ar" dir="rtl">كَتَبَ</b><span>Verb · فعل</span><b lang="ar" dir="rtl">كِتَابٌ</b><span>Noun · اسم</span></div>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">CHECK YOUR UNDERSTANDING</span>
+          <span className="section-kicker">STEP 6 · RETRIEVE WHAT YOU LEARNED</span>
           <h2>{copy.practiceTitle}</h2>
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="answer-options">
@@ -190,7 +283,7 @@ function LessonPage() {
           {showAnswer&&<p className={answer==='1'?'answer-feedback correct':'answer-feedback'}>{answer==='1'?copy.correct:copy.incorrect}</p>}
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">SAY IT BACK</span>
+          <span className="section-kicker">STEP 7 · EXPLAIN IT IN YOUR OWN WORDS</span>
           <h2>{copy.teachTitle}</h2>
           <p lang={language}>{copy.teach}</p>
           <div className="audio-unavailable"><Volume2 size={16}/>{copy.audio}</div>
@@ -312,6 +405,7 @@ function LessonTwoPage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonTwoCopy[language]
   const rtl = language !== 'en'
   const score = classificationExamples.filter((item,index)=>answers[index]===item.answer).length
@@ -339,7 +433,7 @@ function LessonTwoPage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">THE THREE CATEGORIES</span>
+          <span className="section-kicker">STEP 3 · THE CONVENTIONAL CLASSIFICATION</span>
           <div className="category-grid">
             <div className="category-card"><div className="category-number">01</div><b lang="ar" dir="rtl">اِسْمٌ</b>{showTransliteration&&<span dir="ltr">ism</span>}<h3>Noun / nominal word</h3><p lang={language}>{copy.ism}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.ismExampleWithTranslit:copy.ismExample}</small></div>
             <div className="category-card"><div className="category-number">02</div><b lang="ar" dir="rtl">فِعْلٌ</b>{showTransliteration&&<span dir="ltr">fiʿl</span>}<h3>Verb</h3><p lang={language}>{copy.fiil}</p><small dir={rtl?'rtl':'ltr'}>{showTransliteration?copy.fiilExampleWithTranslit:copy.fiilExample}</small></div>
@@ -355,7 +449,7 @@ function LessonTwoPage() {
           <h3 className="subheading">Word or sentence?</h3><p lang={language}>{copy.wordSentence}</p>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">PRACTISE · CLASSIFY THE WORD</span>
+          <span className="section-kicker">STEP 4 · PRACTISE RECOGNISING THE CATEGORIES</span>
           <h2>Can you recognise the category?</h2>
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="classification-list">
@@ -371,7 +465,7 @@ function LessonTwoPage() {
           {checked&&<p className="score-feedback">{copy.score}: <strong>{score} / {classificationExamples.length}</strong></p>}
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">RECALL AND TEACH</span>
+          <span className="section-kicker">STEP 5 · RECALL AND TEACH</span>
           <h2>Say it back</h2>
           <p lang={language}>{copy.teach}</p>
           <div className="example-sentence" lang={language}>{copy.summary}</div>
@@ -478,6 +572,7 @@ function LessonThreePage() {
   const [showTransliteration,setShowTransliteration] = useState(true)
   const [answers,setAnswers] = useState<Record<number,string>>({})
   const [checked,setChecked] = useState(false)
+  const [discoveryRevealed,setDiscoveryRevealed] = useState(false)
   const copy = lessonThreeCopy[language]
   const rtl = language !== 'en'
   const score = verbMasdarExamples.filter((item,index)=>answers[index]===item.answer).length
@@ -505,7 +600,7 @@ function LessonThreePage() {
           <div className="objective-panel"><strong>Learning objectives</strong><p lang={language}>{copy.objective}</p></div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">1 · THE VERB</span>
+          <span className="section-kicker">STEP 3 · FORMAL STUDY: THE VERB</span>
           <h2>{copy.verbTitle}</h2>
           <p lang={language}>{copy.verbText}</p>
           <div className="verb-forms-grid">
@@ -516,7 +611,7 @@ function LessonThreePage() {
           <div className="caution-note">The command form is an imperative form, not simply another past or present tense. We will study the full verb system later.</div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">2 · THE MAṢDAR</span>
+          <span className="section-kicker">STEP 4 · FORMAL STUDY: THE MAṢDAR</span>
           <h2>{copy.masdarTitle}</h2>
           <p lang={language}>{copy.masdarText}</p>
           <div className="masdar-highlight"><span>مَصْدَرٌ · VERBAL NOUN</span><b lang="ar" dir="rtl">كِتَابَةٌ</b>{showTransliteration&&<small>kitābatun</small>}<strong>writing</strong></div>
@@ -528,7 +623,7 @@ function LessonThreePage() {
           <div className="caution-note" lang={language}>{copy.caution}</div>
         </section>
         <section className="lesson-block">
-          <span className="section-kicker">COMPARE THE WORDS</span>
+          <span className="section-kicker">STEP 5 · COMPARE AND APPLY</span>
           <h2>كَتَبَ · كِتَابَةٌ · كِتَابٌ</h2>
           <p lang={language}>{copy.compare}</p>
           <div className="comparison-strip">
@@ -543,7 +638,7 @@ function LessonThreePage() {
           <p lang={language}>{copy.answer}</p>
         </section>
         <section className="lesson-block practice-block">
-          <span className="section-kicker">PRACTISE · VERB OR NOUN?</span>
+          <span className="section-kicker">STEP 6 · PRACTISE WITHOUT THE EXPLANATION</span>
           <h2>Classify the forms</h2>
           <p lang={language}>{copy.practicePrompt}</p>
           <div className="classification-list">
@@ -3095,7 +3190,7 @@ export default function App() {
       </aside>
       <main className="main-content">
         <section className="welcome-row"><div><div className="eyebrow">YOUR PATH INTO ARABIC MORPHOLOGY</div><h1>Understand Arabic.<br/><em>Master Sarf.</em></h1><p className="intro">A clear, step-by-step journey from your very first root to confident word analysis.</p></div><div className="hero-ornament"><span lang="ar" dir="rtl">عِلْمُ الصَّرْفِ</span><small>THE SCIENCE OF WORD FORMS</small><i/></div></section>
-        <section className="progress-card"><div className="progress-top"><div><span className="section-kicker">YOUR FOUNDATION COURSE</span><h2>60 days to a stronger foundation</h2></div><span className="progress-pill">Ready when you are</span></div><div className="progress-meta"><span>Lessons available</span><strong>12 lesson drafts</strong></div><div className="progress-bottom"><span>8 carefully sequenced learning units</span><span>20–30 min / day</span></div></section>
+        <section className="progress-card"><div className="progress-top"><div><span className="section-kicker">YOUR FOUNDATION COURSE</span><h2>60 days to a stronger foundation</h2></div><span className="progress-pill">Ready when you are</span></div><div className="progress-meta"><span>Lessons available</span><strong>19 lesson drafts</strong></div><div className="progress-bottom"><span>8 carefully sequenced learning units</span><span>20–30 min / day</span></div></section>
         <section className="course-section" id="course"><div className="section-heading"><div><span className="section-kicker">THE LEARNING PATH</span><h2>Build your understanding, one layer at a time</h2></div><span className="text-action">8 learning units <ChevronRight size={15}/></span></div>
           <div className="unit-grid">{units.map(([num,title,days,detail,status],i)=><article className={`unit-card ${i===0?'unit-featured':''}`} key={num}><div className="unit-top"><span className="unit-number">{num}</span><span className={i===0?'unit-status ready':'unit-status'}>{status}</span></div><h3>{title}</h3><p>{detail}</p><div className="unit-bottom"><span>{days}</span><ChevronRight size={17}/></div></article>)}</div>
         <div className="lesson-library">

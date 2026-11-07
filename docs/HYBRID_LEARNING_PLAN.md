@@ -285,7 +285,23 @@ A lesson is not complete merely because a route renders or a paragraph exists. M
 - Check console errors, broken links, Arabic rendering, accessibility basics, and touch controls.
 - Publish from main and verify the GitHub Pages deployment before calling the checkpoint live.
 
-## 12. Honest status and immediate priorities
+## 12. First implementation checkpoint (7 November 2026)
+
+The first hybrid-learning implementation is being developed on branch `feat/hybrid-beginner-lesson` and tracked in PR #21.
+
+Implemented in this checkpoint:
+- Lesson 1 now begins with four related words and a learner prediction activity before introducing the word root as a technical term.
+- A bridge panel explicitly names the learner's observation as جِذْرٌ (jidhr).
+- The formal section demonstrates root-to-pattern mapping with كَتَبَ and نَصَرَ against فَعَلَ.
+- The lesson distinguishes root consonants from vowels and pattern material, and cautions that the present-tense vowel is not guessed from the root.
+- Lesson 2 begins with كِتَابٌ، كَتَبَ، فِي and asks learners to notice their different jobs before introducing اِسْمٌ، فِعْلٌ، حَرْفٌ.
+- Lesson 3 begins by contrasting كَتَبَ، يَكْتُبُ، كِتَابَةٌ before formally naming verb and maṣdar.
+- Responsive discovery cards, bridge panels, and pattern comparison panels have been added.
+- Dashboard lesson draft count corrected to 19.
+
+This is a first teaching-pattern prototype, not a claim that the full 60-day course is complete. It still needs automated build confirmation, careful Arabic/Sarf review, and hands-on desktop/tablet/mobile testing. The same hybrid architecture should be reused for Lessons 4–5 only after the first three lessons are reviewed.
+
+## 13. Honest status and immediate priorities
 
 The existing 19 lessons are drafts and should not be advertised as 19 complete lessons. The app shell and GitHub Pages pipeline exist, but the course is not yet a complete self-study programme.
 

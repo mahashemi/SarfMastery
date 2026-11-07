@@ -276,3 +276,53 @@
 .participle-example-table .masdar-example-head,.participle-example-table .masdar-example-row{grid-template-columns:minmax(74px,1fr) minmax(88px,1fr) minmax(88px,1fr) 34px}
 .participle-example-table .masdar-example-row>span{grid-column:1/-1;font-size:10px;color:#697568}
 @media(max-width:600px){.participle-example-table .masdar-example-head{display:none}.participle-example-table .masdar-example-row{grid-template-columns:1fr 1fr;grid-template-areas:"verb active" "passive form" "gloss gloss"}.participle-example-table .masdar-example-row>div:first-child{grid-area:verb}.participle-example-table .masdar-example-row>div:nth-child(2){grid-area:active}.participle-example-table .masdar-example-row>div:nth-child(3){grid-area:passive}.participle-example-table .masdar-example-row>small{grid-area:form;justify-self:end}.participle-example-table .masdar-example-row>span{grid-area:gloss}}
+
+/* Hybrid beginner lesson: discovery before formal terminology */
+.discovery-block{background:linear-gradient(145deg,#fbfaf4,#f3f5ed);border:1px solid #e1e7da;border-radius:14px;padding:clamp(17px,3vw,26px)}
+.discovery-word-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:18px 0}
+.discovery-word-grid>div{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0;padding:13px 8px;background:#fffefa;border:1px solid #e4e8dc;border-radius:10px}
+.discovery-word-grid b{font:700 clamp(25px,4vw,34px)/1.6 Amiri,serif;color:var(--green);white-space:nowrap}
+.discovery-word-grid strong{font-size:11px;color:#9a8051;direction:ltr}
+.discovery-word-grid span{font-size:11px;color:#68756c;text-align:center}
+.discovery-question{padding:16px;background:#fffefa;border:1px solid #e2e7dc;border-radius:10px}
+.discovery-question>strong{display:block;margin-bottom:12px;color:#3f5747;font:600 15px Georgia,serif}
+.discovery-options{display:grid;gap:7px;margin-bottom:13px}
+.discovery-options button{padding:11px 13px;border:1px solid #e1e5dc;border-radius:8px;background:#fafbf7;color:#526254;text-align:start;font:inherit;font-size:12px;cursor:pointer}
+.discovery-options button.chosen{border-color:#78977c;background:#edf4eb;color:#315b40;font-weight:700;box-shadow:inset 3px 0 #78977c}
+.discovery-feedback{margin-top:12px;padding:12px 14px;background:#f8efe5;border:1px solid #eee0cc;border-radius:8px;color:#66533a}
+.discovery-feedback.correct{background:#edf4eb;border-color:#d9e6d6;color:#355940}
+.discovery-feedback strong{font-size:12px}
+.discovery-feedback p{margin:5px 0 0;font-size:12px;line-height:1.75}
+.discovery-coach{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;margin-top:14px;padding:12px 14px;border-left:3px solid #b99c66;background:#f7f4eb;border-radius:0 8px 8px 0}
+.discovery-coach strong{font:600 12px Georgia,serif;color:#79623b}
+.discovery-coach p{margin:0;font-size:11px;line-height:1.7;color:#687267}
+.bridge-block{border:1px solid #e6e1d2;border-radius:12px;padding:clamp(16px,3vw,23px);background:#fffdf7}
+.bridge-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.bridge-pair>div{padding:14px;background:#f7f8f2;border:1px solid #e6e9df;border-radius:9px}
+.bridge-pair span,.pattern-comparison span{display:block;margin-bottom:8px;font-size:9px;font-weight:700;letter-spacing:.07em;color:#8b806b}
+.bridge-pair strong{display:block;font:700 27px/1.5 Amiri,serif;color:var(--green)}
+.bridge-pair p{margin:6px 0 0;font-size:11px;line-height:1.65;color:#6d786d}
+.formal-pattern-panel{margin:18px 0;padding:17px;background:#f5f7f0;border:1px solid #dfe7d9;border-radius:11px}
+.formal-pattern-panel h3{margin:4px 0 8px;font:600 18px Georgia,serif;color:#3f5948}
+.pattern-comparison{display:grid;grid-template-columns:.7fr .8fr 1.5fr;gap:8px;margin:11px 0}
+.pattern-comparison>div{min-width:0;padding:11px 9px;background:#fffefa;border:1px solid #e2e7dc;border-radius:8px}
+.pattern-comparison b{display:block;font:700 clamp(19px,2.6vw,25px)/1.7 Amiri,serif;color:var(--green);overflow-wrap:anywhere}
+.pattern-comparison small{display:block;font-size:10px;line-height:1.5;color:#8a7959}
+.formal-caveat{margin:12px 0 0;padding:11px 13px;background:#fbf4e7;border-radius:8px;color:#66583f;font-size:11px;line-height:1.75}
+@media(max-width:650px){
+ .discovery-word-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .bridge-pair{grid-template-columns:1fr}
+ .pattern-comparison{grid-template-columns:1fr 1fr}
+ .pattern-comparison>div:last-child{grid-column:1/-1}
+ .discovery-coach{grid-template-columns:1fr;gap:4px}
+}
+@media(max-width:380px){
+ .discovery-word-grid b{font-size:25px}
+ .discovery-question{padding:12px}
+ .pattern-comparison{grid-template-columns:1fr}
+ .pattern-comparison>div:last-child{grid-column:auto}
+}
+
+.discovery-word-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:650px){.discovery-word-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:390px){.discovery-word-grid.three{grid-template-columns:1fr}.discovery-word-grid.three>div{display:grid;grid-template-columns:auto 1fr;column-gap:12px;justify-items:start}.discovery-word-grid.three>div>b{grid-row:span 2}.discovery-word-grid.three>div>strong,.discovery-word-grid.three>div>span{align-self:center}}
