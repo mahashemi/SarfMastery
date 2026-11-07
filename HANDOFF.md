@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-06  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** GitHub Pages is working and the latest TypeScript/Vite build plus custom deployment succeeded (Actions run 42153210918). Lessons 1–19 have core Persian/Urdu explanations and documented linguistic sources. Device QA, expert review, and Pages source cleanup remain pending.
+**Current phase:** Hybrid beginner-learning redesign is in progress in PR #21 (`feat/hybrid-beginner-lesson`). Lessons 1–3 now have discovery-first sections bridged to conventional Sarf instruction. Automated build status for PR #21 is not yet confirmed; expert review and responsive device QA remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -41,6 +41,14 @@
 - Learn → Understand → Memorise → Apply → Explain → Teach.
 - Verified Qur'an/Hadith references; distinguish morphology from tafsir.
 - Qur'an deep-link format: `https://mahashemi.github.io/QuranMemorizer/#/surah/{surah}/ayah/{ayah}`.
+
+## Active hybrid redesign (PR #21)
+- Lesson 1: interactive root discovery → bridge to جِذْرٌ → formal root/pattern comparison → practice and teach-back.
+- Lesson 2: discover word functions through كِتَابٌ، كَتَبَ، فِي before naming اِسْمٌ، فِعْلٌ، حَرْفٌ.
+- Lesson 3: compare verb forms and maṣdar in context before introducing the formal terminology.
+- Responsive styling for discovery, bridge, and pattern panels.
+- Plan updated in `docs/HYBRID_LEARNING_PLAN.md`.
+- Do not merge until CI/build status is checked; do not describe these three lessons as expert-reviewed or complete until qualified review and device QA are done.
 
 ## Current implementation
 - [x] Public GitHub repository exists.
