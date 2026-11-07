@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-06  
 **Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** Hybrid beginner-learning redesign PRs #21 and #22 have been merged to main (latest merge commit `bf0d75295f21aa0b0858f75c60e0ff3656a300b8`). Lessons 1–5 now have discovery-first sections bridged to conventional Sarf instruction. Build/deployment status is not independently confirmed; expert review and responsive device QA remain pending.
+**Current phase:** Hybrid beginner-learning redesign PRs #21–#24 have been merged to main (latest merge commit `57a07e0aaf5e886b7a24e59f19b20011c88f0468`). Lessons 1–11 now begin with meaning-first discovery activities bridged to conventional Sarf instruction. Build/deployment status is not independently confirmed; expert review and responsive device QA remain pending.
 
 ## Read first
 1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
@@ -42,12 +42,17 @@
 - Verified Qur'an/Hadith references; distinguish morphology from tafsir.
 - Qur'an deep-link format: `https://mahashemi.github.io/QuranMemorizer/#/surah/{surah}/ayah/{ayah}`.
 
-## Merged hybrid redesign (PRs #21 and #22)
+## Merged hybrid redesign (PRs #21–#24)
 - Lesson 1: interactive root discovery → bridge to جِذْرٌ → formal root/pattern comparison → practice and teach-back.
 - Lesson 2: discover word functions through كِتَابٌ، كَتَبَ، فِي before naming اِسْمٌ، فِعْلٌ، حَرْفٌ.
 - Lesson 3: compare verb forms and maṣdar in context before introducing the formal terminology.
 - Lesson 4: compare a root family with unaugmented and augmented forms before naming mujarrad/mazīd.
 - Lesson 5: compare different roots sharing a pattern before formalising the Mīzān Ṣarfī.
+- Lesson 6: discover pronoun perspectives before the 6+6+2 14-slot order.
+- Lesson 7: compare past forms for singular, dual, and plural subjects before the conjugation table.
+- Lesson 8: notice present-tense prefixes through subject contrasts.
+- Lessons 9–10: discover active/passive voice contrasts before full paradigms.
+- Lesson 11: compare command and prohibition before formal derivation.
 - Responsive styling for discovery, bridge, and pattern panels.
 - Plan updated in `docs/HYBRID_LEARNING_PLAN.md`.
 - PR #21 is merged. GitHub connector returned no workflow runs/status checks for the merge commit, so verify the live deployment before claiming it is published. Do not describe these three lessons as expert-reviewed until qualified review and device QA are done.
