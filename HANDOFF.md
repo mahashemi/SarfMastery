@@ -1,3 +1,31 @@
+# Important handoff — language-first curriculum (27 November 2026)
+
+**This is the current product direction. Read first:** [docs/LANGUAGE_FIRST_CURRICULUM.md](docs/LANGUAGE_FIRST_CURRICULUM.md).
+
+The learner must first acquire usable Arabic. Only after reaching a demonstrated readiness threshold should formal grammar be taught primarily in Arabic. Do not continue the old Sarf-only lesson sequence or build Lesson 20 as the next learner lesson.
+
+## New sequence
+1. Optional Stage 0 Arabic-script literacy bridge.
+2. Stage 1 functional beginner Arabic (A1-like).
+3. Stage 2 connected Arabic (A2-like).
+4. Stage 3 Arabic as the language of learning; prepare to understand grammar explanations.
+5. Stage 4 formal النَّحْوُ and الصَّرْفُ taught primarily in Arabic.
+6. Stage 5 traditional Hawza texts and advanced analysis.
+
+Use clear الفصحى as the core variety, with carefully labelled classical/Qur'anic language introduced progressively. English, Persian, and Urdu are temporary supports, not the permanent grammar teaching language. Preserve full tashkīl in early materials; fade transliteration and vowel marks only as reading proficiency grows. Do not claim official CEFR certification.
+
+## Immediate next steps
+- Redesign dashboard/course map around the language-first path.
+- Build a short entry diagnostic for script literacy and all four language skills.
+- Add the optional literacy bridge.
+- Build Week 1 as a complete learning slice: phrases, listening, comprehension, pronunciation, speaking, reading, writing, vocabulary retrieval, and progress.
+- Define and implement the Arabic-medium grammar readiness gate.
+- Only after language foundation is established, adapt the existing 19 Sarf drafts for Arabic-first teaching.
+
+The previous hybrid discovery design remains useful as a teaching technique inside the language curriculum; it no longer means formal Sarf begins in the first weeks. The full course map and rationale are in the language-first curriculum document. Keep responses to the user concise and report actual commits, PRs, tests, and deployment status accurately.
+
+---
+
 # Chat Handoff — Sarf Mastery
 
 **Last updated:** 2026-11-06  
