@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import { BookOpen, Headphones, Brain, GraduationCap, ChevronRight, Volume2, Sparkles } from 'lucide-react'
 
 type Level = 'comfortable' | 'some' | 'beginner' | ''
@@ -70,7 +70,7 @@ function Diagnostic() {
   return <Shell title="Starting-point check"><main className="language-page"><div className="eyebrow">A SHORT, FRIENDLY SELF-CHECK</div><h1>Where should we begin?</h1><p className="language-page-lead">This is not an exam. It helps us choose a comfortable starting point. Be honest; you can change your path later.</p><div className="diagnostic-fields">{labels.map((f,i)=><section className="diagnostic-field" key={f[0]}><div className="diagnostic-field-title"><span>{String(i+1).padStart(2,'0')}</span><div><strong>{f[0]}</strong><p>{f[1]}</p></div></div><div className="diagnostic-options">{[['comfortable','Yes, comfortably'],['some','A little / with support'],['beginner','Not yet']].map(([v,t])=><button type="button" key={v} className={a[i]===v?'selected':''} aria-pressed={a[i]===v} onClick={()=>{setA(old=>old.map((x,j)=>j===i?v as Level:x));setResult(false)}}>{t}</button>)}</div></section>)}</div>{!result?<button className="primary-button diagnostic-submit" disabled={!complete} onClick={()=>{localStorage.setItem('arabic-diagnostic-done','yes');localStorage.setItem('arabic-literacy-needed',literacy?'yes':'no');setResult(true)}}>See my suggested starting point <ChevronRight size={16}/></button>:<section className="diagnostic-result"><span className="section-kicker">YOUR SUGGESTED START</span><h2>{literacy?'Begin with the Arabic script bridge.':mostlyNew?'Start with functional beginner Arabic.':'Start with Week 1 and use the supports you need.'}</h2><p>{literacy?'Strengthen letter recognition, joining, and short vowels. You can explore spoken phrases alongside it.':'The first lessons build listening, speaking, reading, and writing together. Use the supports you need and repeat activities at your own pace.'}</p><div className="diagnostic-result-actions">{literacy&&<a className="quiet-button" href="#/literacy">Open literacy bridge</a>}<a className="primary-button" href="#/week/01">Continue to Week 1 <ChevronRight size={16}/></a></div></section>}<p className="diagnostic-footnote">Your answers stay in this browser on this device. This is guidance, not a certified proficiency assessment.</p></main></Shell>
 }
 
-function Shell({children,title}:{children:React.ReactNode;title:string}) {
+function Shell({children,title}:{children:ReactNode;title:string}) {
  return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar">عَرَبِيَّة</span><span className="brand-copy"><strong>ARABIC LEARNING</strong><small>{title}</small></span></a><a className="back-link" href="#/">← Learning path</a></header>{children}</div>
 }
 
