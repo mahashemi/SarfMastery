@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import LanguageFirstApp from './LanguageFirst'
 import { BookOpen, Headphones, Brain, Search, GraduationCap, Bookmark, ChevronRight, Menu, X, CircleHelp, Sparkles, Volume2, Languages } from 'lucide-react'
 
 const units = [
@@ -3279,70 +3280,5 @@ export default function App() {
   if (route === '#/lesson/17') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 17</span></header><LessonSeventeenPage/></div>
   if (route === '#/lesson/18') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 18</span></header><LessonEighteenPage/></div>
   if (route === '#/lesson/19') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 07 · LESSON 19</span></header><LessonNineteenPage/></div>
-  return <div className="app-shell">
-    <header className="topbar">
-      <a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a>
-      <button className="mobile-menu" onClick={()=>setMenu(!menu)} aria-label={menu?'Close navigation':'Open navigation'}>{menu?<X/>:<Menu/>}</button>
-      <div className="topbar-right"><span className="streak"><Sparkles size={15}/> Build a daily habit</span><span className="profile-mark" aria-label="Learner profile"><GraduationCap size={16}/></span></div>
-    </header>
-    <div className="layout">
-      <aside className={`sidebar ${menu?'sidebar-open':''}`}>
-        <div className="nav-caption">YOUR LEARNING SPACE</div>
-        <nav aria-label="Main navigation">{navItems.map(({label,icon:Icon})=><button key={label} className={`nav-link ${active===label?'active':''}`} disabled={label!=='Learn'} onClick={()=>{setActive(label);setMenu(false)}}><Icon size={18}/><span>{label}</span>{label==='Learn'&&<i className="nav-dot"/>}</button>)}</nav>
-        <div className="sidebar-card"><span className="help-icon"><CircleHelp size={17}/></span><strong>New to Sarf?</strong><p>Begin with the foundations. No prior knowledge is needed.</p><a href="#course">Explore the course <ChevronRight size={14}/></a></div>
-        <div className="sidebar-foot">A thoughtful step, every day.</div>
-      </aside>
-      <main className="main-content">
-        <section className="welcome-row"><div><div className="eyebrow">YOUR PATH INTO ARABIC MORPHOLOGY</div><h1>Understand Arabic.<br/><em>Master Sarf.</em></h1><p className="intro">A clear, step-by-step journey from your very first root to confident word analysis.</p></div><div className="hero-ornament"><span lang="ar" dir="rtl">عِلْمُ الصَّرْفِ</span><small>THE SCIENCE OF WORD FORMS</small><i/></div></section>
-        <section className="progress-card"><div className="progress-top"><div><span className="section-kicker">YOUR FOUNDATION COURSE</span><h2>60 days to a stronger foundation</h2></div><span className="progress-pill">Ready when you are</span></div><div className="progress-meta"><span>Lessons available</span><strong>19 lesson drafts</strong></div><div className="progress-bottom"><span>8 carefully sequenced learning units</span><span>20–30 min / day</span></div></section>
-        <section className="course-section" id="course"><div className="section-heading"><div><span className="section-kicker">THE LEARNING PATH</span><h2>Build your understanding, one layer at a time</h2></div><span className="text-action">8 learning units <ChevronRight size={15}/></span></div>
-          <div className="unit-grid">{units.map(([num,title,days,detail,status],i)=><article className={`unit-card ${i===0?'unit-featured':''}`} key={num}><div className="unit-top"><span className="unit-number">{num}</span><span className={i===0?'unit-status ready':'unit-status'}>{status}</span></div><h3>{title}</h3><p>{detail}</p><div className="unit-bottom"><span>{days}</span><ChevronRight size={17}/></div></article>)}</div>
-        <div className="lesson-library">
-            <div className="lesson-library-heading"><span className="section-kicker">LESSON LIBRARY</span><h3>Open any lesson directly</h3><p>Each lesson has a stable link, so you can bookmark it or return to it after refreshing.</p></div>
-            <div className="lesson-library-groups">
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 1 · Foundations</strong><span>Days 1–6</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/01"><span>01</span><div><strong>Introduction to Sarf</strong><small>What the science studies and why it matters</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/02"><span>02</span><div><strong>Arabic word categories</strong><small>Ism, fiʿl, and ḥarf</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/03"><span>03</span><div><strong>Verb and maṣdar</strong><small>Recognising actions and verbal nouns</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/04"><span>04</span><div><strong>Original and added letters</strong><small>Root structure and mujarrad/mazīd</small></div><ChevronRight size={16}/></a>
-              </div></div>
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 2 · The Morphological Scale</strong><span>Days 7–12</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/05"><span>05</span><div><strong>The Mīzān Ṣarfī</strong><small>Weighing roots and derived patterns</small></div><ChevronRight size={16}/></a>
-              </div></div>
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 3 · The Fourteen Forms</strong><span>Days 13–22</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/06"><span>06</span><div><strong>The 14 ṣīghahs</strong><small>Pronoun order and the three groups</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/07"><span>07</span><div><strong>Past active</strong><small>Al-māḍī al-maʿrūf</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/08"><span>08</span><div><strong>Present active</strong><small>Al-muḍāriʿ al-maʿrūf</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/09"><span>09</span><div><strong>Past passive</strong><small>Al-māḍī al-majhūl</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/10"><span>10</span><div><strong>Present passive</strong><small>Al-muḍāriʿ al-majhūl</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/11"><span>11</span><div><strong>Imperative and prohibitive</strong><small>Amr and nahy · six addressee slots</small></div><ChevronRight size={16}/></a>
-              </div></div>
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 4 · The Six Common Abwāb</strong><span>Days 23–30</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/12"><span>12</span><div><strong>The six Abwāb</strong><small>Past/present patterns of triliteral mujarrad verbs</small></div><ChevronRight size={16}/></a>
-              </div></div>
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 5 · Mujarrad and Mazīd</strong><span>Days 31–38</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/13"><span>13</span><div><strong>Triliteral forms I–X</strong><small>Root, pattern, augmentation, and quadriliteral forms</small></div><ChevronRight size={16}/></a>
-              </div></div>
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 6 · Derived Nouns</strong><span>Days 39–45</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/14"><span>14</span><div><strong>The maṣdar</strong><small>Action nouns and verbal noun patterns</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/15"><span>15</span><div><strong>Active and passive participles</strong><small>Ism fāʿil and ism mafʿūl</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/16"><span>16</span><div><strong>Time, place, and instrument nouns</strong><small>Ism zamān, ism makān, ism ālah</small></div><ChevronRight size={16}/></a>
-              </div></div>
-              <div className="lesson-library-group"><div className="lesson-library-group-title"><strong>Unit 7 · Sound and Weak Roots</strong><span>Days 46–53</span></div><div className="lesson-library-list">
-                <a className="lesson-library-link" href="#/lesson/17"><span>17</span><div><strong>Weak verbs: four root classes</strong><small>Mithāl, Ajwaf, Nāqiṣ, and Lafīf</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/18"><span>18</span><div><strong>Hamzated and doubled roots</strong><small>Mahmūz and Muḍāʿaf</small></div><ChevronRight size={16}/></a>
-                <a className="lesson-library-link" href="#/lesson/19"><span>19</span><div><strong>Iʿlāl and idghām</strong><small>Weak-letter changes and assimilation</small></div><ChevronRight size={16}/></a>
-              </div></div>
-            </div>
-          </div>
-        </section>
-        <section className="lesson-preview"><div className="lesson-copy"><span className="section-kicker">A FIRST LOOK · UNIT 01</span><h2>Every word has a story.<br/>Let's find its root.</h2><p>Take the verb <b lang="ar" dir="rtl" className="inline-arabic">كَتَبَ</b>. Before memorising a table, learn to see the three root letters beneath its pattern.</p><a className="primary-button" href="#/lesson/01">Begin lesson one <ChevronRight size={16}/></a></div>
-          <div className="word-study"><div className="word-label">A WORD TO EXPLORE</div><div className="arabic-word" lang="ar" dir="rtl">كَتَبَ</div>{translit&&<div className="transliteration">kataba</div>}<div className="word-meaning">He wrote</div><div className="word-divider"/><div className="root-row"><span>ROOT LETTERS</span><strong lang="ar" dir="rtl">ك · ت · ب</strong></div><div className="root-row"><span>ROOT IDEA</span><strong>Writing</strong></div><button className="reveal-button" onClick={()=>setTranslit(!translit)}>{translit?'Hide':'Show'} transliteration</button><div className="audio-note"><Volume2 size={15}/> Verified pronunciation audio will be added with the lesson.</div></div>
-        </section>
-        <section className="principle-row"><div className="principle-icon"><Brain size={21}/></div><div><strong>Understand first. Memorise with meaning.</strong><p>Each lesson explains the reason behind a rule, answers the questions a beginner is likely to ask, and gives you examples to practise until the pattern becomes familiar.</p></div></section>
-        <footer className="footer"><span>SARF MASTERY <b lang="ar" dir="rtl">صَرْف</b></span><span>Learn · Understand · Apply · Teach</span></footer>
-      </main>
-    </div>
-    <nav className="mobile-bottom-nav" aria-label="Mobile navigation">{navItems.slice(0,4).map(({label,icon:Icon})=><button key={label} className={active===label?'selected':''} disabled={label!=='Learn'} onClick={()=>setActive(label)}><Icon size={18}/><span>{label}</span></button>)}</nav>
-  </div>
+  return <LanguageFirstApp route={route}/>
 }
