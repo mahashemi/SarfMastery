@@ -321,3 +321,19 @@ The existing 19 lessons are drafts and should not be advertised as 19 complete l
 6. Complete QA and publish a verified checkpoint.
 
 **Definition of success:** a learner with no prior Sarf knowledge can open Lesson 1, follow the guided sequence, understand the examples, practise independently, receive useful explanations, and know exactly what to study next—without needing a teacher to fill gaps left by the website.
+
+
+## Superseding curriculum decision — 27 November 2026
+
+The learner-facing sequence is now **Arabic language first, formal grammar second**. This decision supersedes the earlier 60-day plan as the starting course. The detailed governing specification is [Language-First Arabic Curriculum](docs/LANGUAGE_FIRST_CURRICULUM.md).
+
+- Stage 0: optional Arabic-script literacy bridge.
+- Stage 1: functional beginner Arabic (A1-like).
+- Stage 2: connected Arabic (A2-like).
+- Stage 3: Arabic as the language of learning; prepare for grammar instruction.
+- Stage 4: teach formal النَّحْوُ and الصَّرْفُ primarily in Arabic.
+- Stage 5: traditional Hawza study and classical text application.
+
+The existing natural-discovery / formal-bridge pedagogy remains useful, but it now operates inside the language course. During the early stages, learners notice patterns through meaningful communication without being required to memorise formal paradigms. The old 19 Sarf lessons are draft source material for the later grammar stage, not the starting learner path. **Do not proceed to Lesson 20.**
+
+Progression is based on demonstrated listening, speaking, reading, writing, vocabulary, and ability to follow Arabic instructions—not elapsed days or a quiz score alone. The 20–30 minute daily target remains a habit target, not a promise of fluency in 12 weeks.
