@@ -2,7 +2,7 @@
 
 ## Current implementation checkpoint — 27 November 2026
 
-The first language-first application slice is now implemented on branch `feat/language-first-entry-week-one`:
+The first language-first application slice is merged to `main` in PR #28 (squash commit `631203988b85733f0670d715e12b3327a9f8eb11`):
 - [x] Replace the learner home screen with a staged language-first pathway.
 - [x] Add a self-check for script literacy, listening, speaking, reading, and writing.
 - [x] Add an optional literacy bridge for letters, short vowels, sukūn, shaddah, and long vowels.
@@ -11,7 +11,7 @@ The first language-first application slice is now implemented on branch `feat/la
 - [x] Keep the 19 Sarf lessons as later-stage material and gate their direct routes behind the grammar preview.
 - [x] Add pull-request build validation workflow.
 - [x] Add initial spaced phrase recall (recognition vs active recall) to Week 1.
-- [x] GitHub Actions TypeScript + Vite production build passed (run 46038031627); a follow-up voice-selection safeguard was added and is awaiting its validation run.
+- [x] Fresh PR #28 GitHub Actions validation run 46043100323 completed the TypeScript + Vite production-build step successfully. The GitHub Pages deployment triggered by the main-branch push still needs live-site confirmation.
 - [ ] Complete visual QA on desktop, tablet, and mobile (not yet performed).
 - [ ] Arabic-language review by a competent speaker is still required before content is labelled verified.
 
@@ -30,7 +30,7 @@ Progress indicators currently record activities explored, not demonstrated profi
 - [x] P0: add diagnostic for script, listening, speaking, reading, and writing.
 - [x] P0: define and implement the first Week 1 learning slice.
 - [x] P0: create optional literacy bridge and Arabic classroom-language starter.
-- [ ] P1: implement phrase bank, listening comprehension, speaking, reading, writing, and vocabulary review.
+- [x] P1: implement the initial phrase bank, listening comprehension, speaking, reading, writing, and phrase-level spaced recall. Full vocabulary management remains open.
 - [ ] P1: add readiness gate before Arabic-medium grammar.
 - [ ] P2: expand the first 12 weeks after Week 1 quality review.
 - [ ] P3: adapt existing Sarf drafts into Arabic-first formal lessons with optional translations.
@@ -53,7 +53,7 @@ A new learner can complete Week 1 from the app, understand and use the target ph
 
 # Sarf Mastery — Project Status & Task Tracker
 
-**Last updated:** 2026-11-06  
+**Last updated:** 2026-11-27  
 **Overall status:** Lessons 1–19 have implementation drafts and multilingual core explanations. Latest production TypeScript/Vite build and GitHub Pages deployment succeeded in Actions run 42153210918. Course content draft progress: 19/60 lessons (31.7%). Overall product readiness is estimated at about 30%; this is a planning estimate, not a measured QA score. Responsive layouts are implemented for desktop/tablet/mobile, but real-device QA and accessibility checks remain pending.  
 **Repository:** https://github.com/mahashemi/SarfMastery
 
