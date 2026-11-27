@@ -1,48 +1,24 @@
-# 60-Day Sarf Foundation Curriculum
+# Curriculum Plan — Language First, Grammar Second
 
-A structured foundation course, not a promise of mastery of every advanced Sarf topic in 60 days.
+**Current governing plan:** [Language-First Arabic Curriculum](LANGUAGE_FIRST_CURRICULUM.md).
 
-## Daily study rhythm (20–30 minutes)
-- 5 min: concept and traditional definition.
-- 5 min: worked examples.
-- 7 min: guided/independent practice.
-- 5 min: Qur'an/Hadith application when appropriate.
-- 3 min: recall without looking.
+The learner-facing path is no longer the previous 60-day Sarf-first sequence. It is:
 
-## Unit 1 — Foundations (Days 1–6)
-علم الصرف and its purpose; كَلِمَة and word categories; فِعْل and مَصْدَر; root letters vs vowels/patterns; original and additional letters; Sarf vs Nahw; triliteral roots.
+1. **Optional literacy bridge:** Arabic script, joining, vowels, and decoding, only if needed.
+2. **Functional beginner Arabic:** useful language for familiar situations; listening, speaking, reading, and writing.
+3. **Connected Arabic:** short narratives, descriptions, explanations, and paragraph-level comprehension/production.
+4. **Arabic as the language of learning:** classroom instructions, simple explanations, and the ability to discuss familiar language patterns.
+5. **Arabic-medium grammar:** formal النَّحْوُ and الصَّرْفُ taught primarily in accessible Arabic.
+6. **Traditional Hawza study:** align terminology, paradigms, and text analysis with verified editions and teacher expectations.
 
-## Unit 2 — Mīzān Ṣarfī (Days 7–12)
-الميزان الصرفي; why ف ع ل is the scale; matching root letters; added letters; sound, doubled, and weak examples.
+## What happens to the old 60-day Sarf syllabus?
 
-## Unit 3 — Fourteen forms (Days 13–22)
-Pronoun sequence:
-هُوَ، هُمَا (masculine dual)، هُمْ، هِيَ، هُمَا (feminine dual)، هُنَّ،
-أَنْتَ، أَنْتُمَا (masculine dual)، أَنْتُمْ، أَنْتِ، أَنْتُمَا (feminine dual)، أَنْتُنَّ،
-أَنَا، نَحْنُ.
+Its topics are retained as a later grammar syllabus, not discarded. The 19 existing lesson drafts are source material to be revised after the language foundation. Do not build Lesson 20 as the next learner lesson.
 
-Teach full 14-form tables for Māḍī Maʿrūf, Māḍī Majhūl, Muḍāriʿ Maʿrūf, and Muḍāriʿ Majhūl. Amr and Nahy normally use six second-person forms, not fourteen; explain this explicitly.
+## Progression
 
-## Unit 4 — Six common Abwāb (Days 23–30)
-نَصَرَ يَنْصُرُ؛ ضَرَبَ يَضْرِبُ؛ فَتَحَ يَفْتَحُ؛ سَمِعَ يَسْمَعُ؛ كَرُمَ يَكْرُمُ؛ حَسِبَ يَحْسِبُ.
-Verify exact naming and presentation against the selected textbook edition; conventions may differ.
+Advancement is based on demonstrated listening, speaking, reading, writing, vocabulary retrieval, and ability to follow Arabic classroom instructions. The readiness gate for Arabic-medium grammar requires consistent performance across several task types. A quiz score or fixed number of weeks is not sufficient.
 
-## Unit 5 — Mujarrad and Mazīd (Days 31–38)
-المُجَرَّدُ وَالْمَزِيدُ; triliteral Mujarrad; common derived forms; additional letters and semantic effects; quadriliteral roots/patterns.
+**Daily target:** 20–30 minutes. This is a sustainable habit target, not a promise of fluency in 12 weeks.
 
-## Unit 6 — Derived nouns (Days 39–45)
-مَصْدَر; اِسْمُ الْفَاعِلِ; اِسْمُ الْمَفْعُولِ; اِسْمُ الزَّمَانِ; اِسْمُ الْمَكَانِ; اِسْمُ الْآلَةِ.
-
-## Unit 7 — Sound and weak verbs (Days 46–53)
-الصَّحِيحُ وَالْمُعْتَلُّ; Ṣaḥīḥ; Mithāl; Ajwaf; Nāqiṣ; Lafīf and subtypes; hamzated/doubled verbs; Iʿlāl, Ibdāl, and Idghām as appropriate.
-
-## Unit 8 — Application and teaching (Days 54–60)
-Qur'anic/hadith word analysis; root, pattern, form, derived meaning; limits of morphology vs context/tafsir; unseen-word analysis; written/oral assessment; teach-back.
-
-## References to verify
-1. Mīzān uṣ-Ṣarf (میزان الصرف).
-2. Mīzān wa Munshaʿib (میزان و منشعب).
-3. Dānesh-e Ṣarf (دانش صرف), Seyyed Hamid Jazayeri, publisher نصایح.
-Potential supplements: Ṣarf-e Bahāʾī, Taṣrīf al-ʿIzzī, Irshād al-Ṣarf.
-
-Do not map page/chapter numbers until the exact edition is identified and inspected.
+See the governing document for the staged curriculum, provisional 12-week map, daily lesson loop, content standards, assessment, and implementation roadmap.
