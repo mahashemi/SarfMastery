@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import LanguageFirstApp from './LanguageFirst'
-import { BookOpen, Headphones, Brain, Search, GraduationCap, Bookmark, Volume2, Languages } from 'lucide-react'
+import { Volume2, Languages } from 'lucide-react'
 
 type Language = 'en' | 'fa' | 'ur'
 const lessonCopy = {
