@@ -10,8 +10,8 @@ The first language-first application slice is now implemented on branch `feat/la
 - [x] Label browser speech as computer-generated and not verified human audio.
 - [x] Keep the 19 Sarf lessons as later-stage material and gate their direct routes behind the grammar preview.
 - [x] Add pull-request build validation workflow.
-- [ ] Run the first CI build and resolve any failures.
-- [ ] Complete visual QA on desktop, tablet, and mobile.
+- [x] GitHub Actions TypeScript + Vite production build passed (run 46038031627); a follow-up voice-selection safeguard was added and is awaiting its validation run.
+- [ ] Complete visual QA on desktop, tablet, and mobile (not yet performed).
 - [ ] Arabic-language review by a competent speaker is still required before content is labelled verified.
 
 Progress indicators currently record activities explored, not demonstrated proficiency. They must not be interpreted as a fluency score. The diagnostic is a self-check, not a certified placement test. Week 1 is an initial learning slice, not a complete 12-week language course.
