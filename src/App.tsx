@@ -1,21 +1,6 @@
 import { useEffect, useState } from 'react'
 import LanguageFirstApp from './LanguageFirst'
-import { BookOpen, Headphones, Brain, Search, GraduationCap, Bookmark, ChevronRight, Menu, X, CircleHelp, Sparkles, Volume2, Languages } from 'lucide-react'
-
-const units = [
-  ['01','Foundations of Sarf','Days 1–6','Understand morphology, Arabic word structure, and what a root really is.','4 lessons drafted'],
-  ['02','The Morphological Scale','Days 7–12','Learn الميزان الصرفي and how words are weighed against ف ع ل.','1 lesson drafted'],
-  ['03','The Fourteen Forms','Days 13–22','Build confidence with pronouns, conjugation, person, number, and gender.','6 lessons drafted'],
-  ['04','The Six Common Abwāb','Days 23–30','Recognise common past-to-present verb patterns.','1 lesson drafted'],
-  ['05','Mujarrad and Mazīd','Days 31–38','See how additional letters create related verb forms.','1 lesson drafted'],
-  ['06','Derived Nouns','Days 39–45','Understand maṣdar, active/passive participles, and more.','Coming next'],
-  ['07','Sound and Weak Verbs','Days 46–53','Explore sound, weak, hamzated, and doubled verb categories.','Coming next'],
-  ['08','Apply, Analyse, Teach','Days 54–60','Analyse real words and explain what you have learned.','Coming next'],
-] as const
-const navItems = [
-  {label:'Learn',icon:BookOpen},{label:'Listen',icon:Headphones},{label:'Practice',icon:Brain},
-  {label:'Explore',icon:Search},{label:'Revise',icon:Bookmark},{label:'Teach',icon:GraduationCap},
-]
+import { BookOpen, Headphones, Brain, Search, GraduationCap, Bookmark, Volume2, Languages } from 'lucide-react'
 
 type Language = 'en' | 'fa' | 'ur'
 const lessonCopy = {
@@ -3258,9 +3243,6 @@ export default function App() {
     window.addEventListener('hashchange',syncRoute)
     return ()=>window.removeEventListener('hashchange',syncRoute)
   },[])
-  const [active,setActive] = useState('Learn')
-  const [menu,setMenu] = useState(false)
-  const [translit,setTranslit] = useState(true)
   if (route.startsWith('#/lesson/')) return <LanguageFirstApp route="#/grammar-preview"/>
   if (route === '#/lesson/01') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 01</span></header><LessonPage/></div>
   if (route === '#/lesson/02') return <div className="app-shell"><header className="topbar"><a className="brand" href="#/"><span className="brand-mark" lang="ar" dir="rtl">صَرْف</span><span className="brand-copy"><strong>SARF MASTERY</strong><small>Arabic morphology, made clear</small></span></a><span className="lesson-top-unit">UNIT 01 · LESSON 02</span></header><LessonTwoPage/></div>
