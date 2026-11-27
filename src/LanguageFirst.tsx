@@ -32,8 +32,11 @@ const commands = [
 function sayArabic(text:string) {
   if (!('speechSynthesis' in window)) return
   window.speechSynthesis.cancel()
+  const arabicVoice = window.speechSynthesis.getVoices().find(voice => voice.lang.toLowerCase().startsWith('ar'))
+  if (!arabicVoice) return
   const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'ar-SA'
+  utterance.voice = arabicVoice
+  utterance.lang = arabicVoice.lang
   utterance.rate = 0.78
   window.speechSynthesis.speak(utterance)
 }
