@@ -1,15 +1,34 @@
 # Curriculum direction update — 27 November 2026
 
+## Current implementation checkpoint — 27 November 2026
+
+The first language-first application slice is now implemented on branch `feat/language-first-entry-week-one`:
+- [x] Replace the learner home screen with a staged language-first pathway.
+- [x] Add a self-check for script literacy, listening, speaking, reading, and writing.
+- [x] Add an optional literacy bridge for letters, short vowels, sukūn, shaddah, and long vowels.
+- [x] Build a Week 1 learning slice: greetings, introductions, classroom instructions, listening/comprehension, reading, speaking prompts, and writing.
+- [x] Label browser speech as computer-generated and not verified human audio.
+- [x] Keep the 19 Sarf lessons as later-stage material and gate their direct routes behind the grammar preview.
+- [x] Add pull-request build validation workflow.
+- [ ] Run the first CI build and resolve any failures.
+- [ ] Complete visual QA on desktop, tablet, and mobile.
+- [ ] Arabic-language review by a competent speaker is still required before content is labelled verified.
+
+Progress indicators currently record activities explored, not demonstrated proficiency. They must not be interpreted as a fluency score. The diagnostic is a self-check, not a certified placement test. Week 1 is an initial learning slice, not a complete 12-week language course.
+
+---
+
+
 **Current priority:** redesign the learner-facing course as Arabic language acquisition first, Arabic-medium grammar second. The new governing plan is [docs/LANGUAGE_FIRST_CURRICULUM.md](docs/LANGUAGE_FIRST_CURRICULUM.md). The earlier 19 Sarf lesson drafts are retained as later-stage source material; they are not the starting curriculum. Do not continue to Lesson 20.
 
 ## New priority board
 - [x] Confirm language-first direction.
 - [x] Draft staged pathway: optional literacy, functional beginner Arabic, connected Arabic, Arabic-learning readiness, Arabic-medium grammar, Hawza study.
 - [x] Define readiness evidence and language-skill progression.
-- [ ] P0: update dashboard/course map to make language foundation the entry path.
-- [ ] P0: add diagnostic for script, listening, speaking, reading, and writing.
-- [ ] P0: define Week 1 lesson content and complete it end-to-end.
-- [ ] P0: create optional literacy bridge and Arabic classroom-language starter.
+- [x] P0: update dashboard/course map to make language foundation the entry path.
+- [x] P0: add diagnostic for script, listening, speaking, reading, and writing.
+- [x] P0: define and implement the first Week 1 learning slice.
+- [x] P0: create optional literacy bridge and Arabic classroom-language starter.
 - [ ] P1: implement phrase bank, listening comprehension, speaking, reading, writing, and vocabulary review.
 - [ ] P1: add readiness gate before Arabic-medium grammar.
 - [ ] P2: expand the first 12 weeks after Week 1 quality review.
@@ -21,7 +40,7 @@
 - [x] Responsive layout foundation and refresh-safe lesson routes.
 - [x] 19 Sarf lesson drafts and source-note documents.
 - [x] Initial hybrid discovery activities across early Sarf lessons.
-- [ ] Arabic language foundation implemented (not started).
+- [x] Initial Week 1 language-learning slice implemented; broader foundation remains incomplete.
 - [ ] Verified human audio (not available/implemented).
 - [ ] Arabic-medium grammar readiness gate (not implemented).
 - [ ] Full learner skill tracking and revision (not implemented).
