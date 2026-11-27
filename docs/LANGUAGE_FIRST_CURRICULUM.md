@@ -264,15 +264,15 @@ The app should become a staged Arabic-learning environment, not a dashboard that
 
 **P0 — Curriculum and entry experience**
 - [x] Adopt language-first direction.
-- [ ] Make the course map clearly show language foundation before grammar.
-- [ ] Add a learner entry diagnostic (script literacy, listening, speaking, reading, writing).
-- [ ] Create Stage 0 literacy bridge as an optional path.
+- [x] Make the course map clearly show language foundation before grammar.
+- [x] Add a learner entry diagnostic (script literacy, listening, speaking, reading, writing).
+- [x] Create Stage 0 literacy bridge as an optional path.
 - [ ] Define first 12 weeks of language content at lesson level.
 - [ ] Add a clear grammar-readiness gate and explain why it exists.
 
 **P1 — Build a complete first learning slice**
-- [ ] Implement Week 1 end-to-end: lesson, audio status, phrase bank, listening comprehension, speaking prompts, reading, writing, vocabulary review, and progress.
-- [ ] Add useful functional classroom Arabic and phrase-level practice.
+- [x] Implement an initial Week 1 slice: phrase bank, browser-speech fallback with explicit provenance, comprehension, speaking prompts, reading, writing, and activity progress. Spaced vocabulary review and verified human audio remain open.
+- [x] Add useful functional classroom Arabic and phrase-level practice.
 - [ ] Add spaced vocabulary review with recognition vs recall distinction.
 - [ ] Test mobile, tablet, and desktop.
 
