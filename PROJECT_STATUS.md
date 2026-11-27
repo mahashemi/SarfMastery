@@ -10,6 +10,7 @@ The first language-first application slice is now implemented on branch `feat/la
 - [x] Label browser speech as computer-generated and not verified human audio.
 - [x] Keep the 19 Sarf lessons as later-stage material and gate their direct routes behind the grammar preview.
 - [x] Add pull-request build validation workflow.
+- [x] Add initial spaced phrase recall (recognition vs active recall) to Week 1.
 - [x] GitHub Actions TypeScript + Vite production build passed (run 46038031627); a follow-up voice-selection safeguard was added and is awaiting its validation run.
 - [ ] Complete visual QA on desktop, tablet, and mobile (not yet performed).
 - [ ] Arabic-language review by a competent speaker is still required before content is labelled verified.
