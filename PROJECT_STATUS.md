@@ -1,3 +1,36 @@
+# Curriculum direction update — 27 November 2026
+
+**Current priority:** redesign the learner-facing course as Arabic language acquisition first, Arabic-medium grammar second. The new governing plan is [docs/LANGUAGE_FIRST_CURRICULUM.md](docs/LANGUAGE_FIRST_CURRICULUM.md). The earlier 19 Sarf lesson drafts are retained as later-stage source material; they are not the starting curriculum. Do not continue to Lesson 20.
+
+## New priority board
+- [x] Confirm language-first direction.
+- [x] Draft staged pathway: optional literacy, functional beginner Arabic, connected Arabic, Arabic-learning readiness, Arabic-medium grammar, Hawza study.
+- [x] Define readiness evidence and language-skill progression.
+- [ ] P0: update dashboard/course map to make language foundation the entry path.
+- [ ] P0: add diagnostic for script, listening, speaking, reading, and writing.
+- [ ] P0: define Week 1 lesson content and complete it end-to-end.
+- [ ] P0: create optional literacy bridge and Arabic classroom-language starter.
+- [ ] P1: implement phrase bank, listening comprehension, speaking, reading, writing, and vocabulary review.
+- [ ] P1: add readiness gate before Arabic-medium grammar.
+- [ ] P2: expand the first 12 weeks after Week 1 quality review.
+- [ ] P3: adapt existing Sarf drafts into Arabic-first formal lessons with optional translations.
+- [ ] P4: expert Arabic review, audio licensing, accessibility, and real-device QA.
+
+## Existing implementation inventory (not a completion claim)
+- [x] React + TypeScript + Vite app shell and GitHub Pages workflow.
+- [x] Responsive layout foundation and refresh-safe lesson routes.
+- [x] 19 Sarf lesson drafts and source-note documents.
+- [x] Initial hybrid discovery activities across early Sarf lessons.
+- [ ] Arabic language foundation implemented (not started).
+- [ ] Verified human audio (not available/implemented).
+- [ ] Arabic-medium grammar readiness gate (not implemented).
+- [ ] Full learner skill tracking and revision (not implemented).
+
+## Definition of done for the first language-learning release
+A new learner can complete Week 1 from the app, understand and use the target phrases, demonstrate basic listening and reading comprehension, produce short spoken and written responses, review vocabulary, and see a truthful skill-level progress summary. All Arabic content must be checked before being labelled verified.
+
+---
+
 # Sarf Mastery — Project Status & Task Tracker
 
 **Last updated:** 2026-11-06  
