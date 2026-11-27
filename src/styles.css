@@ -463,3 +463,19 @@
  .literacy-topic-grid{grid-template-columns:1fr 1fr}
  .phrase-reveal b{font-size:26px}
 }
+
+.phrase-review-card{margin:20px 0 5px;padding:20px;background:#f8f7f1;border:1px solid #e8e5d9;border-radius:12px}
+.phrase-review-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}
+.phrase-review-head h3{font:500 19px Georgia,serif;color:#365344;margin:7px 0}
+.phrase-review-head>small{font-size:10px;color:#9b8b69}
+.phrase-review-prompt{display:grid;justify-items:center;gap:9px;padding:22px 15px;margin-top:12px;background:#fffefa;border:1px solid #e9e6dc;border-radius:10px;text-align:center}
+.phrase-review-prompt>span{font-size:8px;letter-spacing:.13em;color:#a18c64}
+.phrase-review-prompt>strong{font:500 19px Georgia,serif;color:#405a49}
+.phrase-review-prompt>b{font:700 35px/1.5 Amiri,serif;color:#254c3d}
+.phrase-review-prompt>small{font-size:11px;color:#a17f4a}
+.phrase-review-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.phrase-review-actions button{padding:10px 14px;border-radius:7px;font-size:10px;font-weight:700}
+.review-again{border:1px solid #e5d8c4;background:#fbf5eb;color:#866b45}
+.review-known{border:1px solid #cbdac8;background:#edf4eb;color:#3d6b4d}
+.phrase-review-note{font-size:9px;line-height:1.7;color:#99978b;margin:12px 0 0}
+@media(max-width:560px){.phrase-review-card{padding:15px}.phrase-review-prompt>b{font-size:31px}}
