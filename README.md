@@ -21,7 +21,7 @@ Learn through meaningful language and pattern discovery before formalising gramm
 
 ## Project status
 
-The React/TypeScript/Vite app shell, responsive foundation, GitHub Pages workflow, and 19 Sarf lesson drafts exist. The Arabic language foundation, four-skill learning sequence, verified human audio, readiness gate, and full learner progress/revision experience remain to be built.
+The React/TypeScript/Vite app now opens on a language-first pathway with a self-check, optional literacy bridge, and an initial Week 1 slice covering useful phrases, browser speech fallback, comprehension, reading, speaking, and writing. The 19 Sarf lesson drafts are retained for the later grammar stage. A complete 12-week language foundation, verified human audio, formal grammar readiness assessment, spaced vocabulary review, and expert Arabic review remain in progress.
 
 See:
 - [Language-First Curriculum](docs/LANGUAGE_FIRST_CURRICULUM.md)
