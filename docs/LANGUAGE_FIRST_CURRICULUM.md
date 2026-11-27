@@ -273,7 +273,7 @@ The app should become a staged Arabic-learning environment, not a dashboard that
 **P1 — Build a complete first learning slice**
 - [x] Implement an initial Week 1 slice: phrase bank, browser-speech fallback with explicit provenance, comprehension, speaking prompts, reading, writing, and activity progress. Spaced vocabulary review and verified human audio remain open.
 - [x] Add useful functional classroom Arabic and phrase-level practice.
-- [ ] Add spaced vocabulary review with recognition vs recall distinction.
+- [x] Add initial Week 1 phrase-level spaced recall with recognition vs active recall distinction; full vocabulary management remains open.
 - [ ] Test mobile, tablet, and desktop.
 
 **P2 — Expand language foundation**
