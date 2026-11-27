@@ -1,153 +1,34 @@
-# Important handoff — language-first curriculum (27 November 2026)
+# Current handoff — language-first implementation (27 November 2026)
 
-**This is the current product direction. Read first:** [docs/LANGUAGE_FIRST_CURRICULUM.md](docs/LANGUAGE_FIRST_CURRICULUM.md).
+**Governing curriculum:** [docs/LANGUAGE_FIRST_CURRICULUM.md](docs/LANGUAGE_FIRST_CURRICULUM.md)
 
-The learner must first acquire usable Arabic. Only after reaching a demonstrated readiness threshold should formal grammar be taught primarily in Arabic. Do not continue the old Sarf-only lesson sequence or build Lesson 20 as the next learner lesson.
+**Current application PR:** [#27 — Build language-first Arabic entry and Week 1](https://github.com/mahashemi/SarfMastery/pull/27)  
+**Dependency:** stacked on [#26 — Adopt language-first Arabic learning pathway](https://github.com/mahashemi/SarfMastery/pull/26). Merge #26 first; #27 targets its branch. Neither PR has been merged and the live app has not changed.
 
-## New sequence
-1. Optional Stage 0 Arabic-script literacy bridge.
-2. Stage 1 functional beginner Arabic (A1-like).
-3. Stage 2 connected Arabic (A2-like).
-4. Stage 3 Arabic as the language of learning; prepare to understand grammar explanations.
-5. Stage 4 formal النَّحْوُ and الصَّرْفُ taught primarily in Arabic.
-6. Stage 5 traditional Hawza texts and advanced analysis.
+## Implemented in PR #27
+- Language-first home page and six-stage pathway.
+- Self-check for Arabic script, listening, speaking, reading, and writing.
+- Optional literacy bridge.
+- Initial Week 1 lesson slice: greetings, introductions, classroom instructions, dialogue comprehension, reading, speaking prompts, and writing.
+- Browser speech fallback only uses an installed Arabic voice and is explicitly described as computer-generated, not verified human audio.
+- Legacy Sarf lesson URLs route to a later-stage grammar preview rather than bypassing the language-first sequence.
+- Pull-request validation workflow.
 
-Use clear الفصحى as the core variety, with carefully labelled classical/Qur'anic language introduced progressively. English, Persian, and Urdu are temporary supports, not the permanent grammar teaching language. Preserve full tashkīl in early materials; fade transliteration and vowel marks only as reading proficiency grows. Do not claim official CEFR certification.
+## Validation
+- First validation attempt failed because the repository has no npm lockfile and the workflow incorrectly used npm cache.
+- Workflow corrected to use `npm install`.
+- Second build exposed unused imports/state from the retired dashboard; cleaned up.
+- GitHub Actions run 46038031627 passed TypeScript and Vite production build.
+- A final audio-voice safeguard was committed after that passing run and needs one more CI run.
+- No desktop/tablet/mobile visual QA has been performed yet. Do not claim visual verification or deployment.
 
-## Immediate next steps
-- Redesign dashboard/course map around the language-first path.
-- Build a short entry diagnostic for script literacy and all four language skills.
-- Add the optional literacy bridge.
-- Build Week 1 as a complete learning slice: phrases, listening, comprehension, pronunciation, speaking, reading, writing, vocabulary retrieval, and progress.
-- Define and implement the Arabic-medium grammar readiness gate.
-- Only after language foundation is established, adapt the existing 19 Sarf drafts for Arabic-first teaching.
+## Remaining priorities
+1. Confirm the latest commit passes CI.
+2. Perform visual QA at desktop, tablet, and mobile widths.
+3. Get Arabic content reviewed by a competent speaker; do not label it verified before review.
+4. Add phrase-level spaced retrieval and distinguish recognition from active recall.
+5. Improve Week 1 with a fuller listening/speaking progression and a real assessment rubric.
+6. Build Weeks 2–4 after Week 1 review.
+7. Later: add a genuine grammar-readiness assessment and rework Sarf drafts into Arabic-first lessons.
 
-The previous hybrid discovery design remains useful as a teaching technique inside the language curriculum; it no longer means formal Sarf begins in the first weeks. The full course map and rationale are in the language-first curriculum document. Keep responses to the user concise and report actual commits, PRs, tests, and deployment status accurately.
-
----
-
-# Chat Handoff — Sarf Mastery
-
-**Last updated:** 2026-11-06  
-**Repository:** https://github.com/mahashemi/SarfMastery  
-**Current phase:** Hybrid beginner-learning redesign PRs #21–#24 have been merged to main (latest merge commit `57a07e0aaf5e886b7a24e59f19b20011c88f0468`). Lessons 1–11 now begin with meaning-first discovery activities bridged to conventional Sarf instruction. PR #25 also corrected the placement of the Lesson 2 and Lesson 3 activities; each of Lessons 1–11 now has one discovery panel and one bridge panel. Build/deployment status is not independently confirmed; expert review and responsive device QA remain pending.
-
-## Read first
-1. `PROJECT_STATUS.md` — authoritative checkbox task tracker.
-2. `docs/LESSON_01_SOURCES.md` — source map and linguistic verification boundaries for Lesson 1.
-3. `docs/LESSON_02_SOURCES.md` — source map and linguistic verification boundaries for Lesson 2.
-4. `docs/LESSON_03_SOURCES.md` — source map and linguistic verification boundaries for Lesson 3.
-5. `docs/LESSON_04_SOURCES.md` — source map and linguistic verification boundaries for Lesson 4.
-6. `docs/LESSON_05_SOURCES.md` — source map and linguistic verification boundaries for Lesson 5.
-7. `docs/LESSON_06_SOURCES.md` — source map and linguistic verification boundaries for Lesson 6.
-8. `docs/LESSON_07_SOURCES.md` — source map and linguistic verification boundaries for Lesson 7.
-9. `docs/LESSON_08_SOURCES.md` — source map and linguistic verification boundaries for Lesson 8.
-10. `docs/LESSON_09_SOURCES.md` — source map and linguistic verification boundaries for Lesson 9.
-11. `docs/LESSON_10_SOURCES.md` — source map and linguistic verification boundaries for Lesson 10.
-12. `docs/LESSON_11_SOURCES.md` — source map and linguistic verification boundaries for Lesson 11.
-13. `docs/LESSON_12_SOURCES.md` — source map and linguistic verification boundaries for Lesson 12.
-14. `docs/LESSON_13_SOURCES.md` — source map and linguistic verification boundaries for Lesson 13.
-15. `docs/LESSON_14_SOURCES.md` — source map and linguistic verification boundaries for Lesson 14.
-16. `docs/LESSON_15_SOURCES.md` — source map and linguistic verification boundaries for Lesson 15.
-17. `docs/LESSON_16_SOURCES.md` — source map and linguistic verification boundaries for Lesson 16.
-18. `docs/LESSON_17_SOURCES.md` — source map and linguistic verification boundaries for Lesson 17.
-19. `docs/LESSON_18_SOURCES.md` — source map and linguistic verification boundaries for Lesson 18.
-20. `docs/LESSON_19_SOURCES.md` — source map and linguistic verification boundaries for Lesson 19.
-21. `docs/PRODUCT_SPEC.md` — product and UX requirements.
-22. `docs/CURRICULUM_PLAN.md` — agreed 60-day course.
-23. `docs/DECISIONS.md` — decisions and open questions.
-
-## Agreed requirements
-- Product name: Sarf Mastery — صَرْف.
-- No personal name or signature in the app.
-- Responsive desktop/tablet/mobile web app.
-- English primary; core explanations in Lessons 1–12 are available in Persian and Urdu; full UI translation and fluent review remain pending.
-- Absolute beginner start, traditional Hawza sequence.
-- Arabic with full tashkīl, transliteration, and pronunciation support.
-- Lots of examples, anticipated beginner questions, exercises, revision, teach-back.
-- 20–30 minutes/day; 60-day foundation, optional advanced consolidation later.
-- Learn → Understand → Memorise → Apply → Explain → Teach.
-- Verified Qur'an/Hadith references; distinguish morphology from tafsir.
-- Qur'an deep-link format: `https://mahashemi.github.io/QuranMemorizer/#/surah/{surah}/ayah/{ayah}`.
-
-## Merged hybrid redesign (PRs #21–#24)
-- Lesson 1: interactive root discovery → bridge to جِذْرٌ → formal root/pattern comparison → practice and teach-back.
-- Lesson 2: discover word functions through كِتَابٌ، كَتَبَ، فِي before naming اِسْمٌ، فِعْلٌ، حَرْفٌ.
-- Lesson 3: compare verb forms and maṣdar in context before introducing the formal terminology.
-- Lesson 4: compare a root family with unaugmented and augmented forms before naming mujarrad/mazīd.
-- Lesson 5: compare different roots sharing a pattern before formalising the Mīzān Ṣarfī.
-- Lesson 6: discover pronoun perspectives before the 6+6+2 14-slot order.
-- Lesson 7: compare past forms for singular, dual, and plural subjects before the conjugation table.
-- Lesson 8: notice present-tense prefixes through subject contrasts.
-- Lessons 9–10: discover active/passive voice contrasts before full paradigms.
-- Lesson 11: compare command and prohibition before formal derivation.
-- Responsive styling for discovery, bridge, and pattern panels.
-- Plan updated in `docs/HYBRID_LEARNING_PLAN.md`.
-- PR #21 is merged. GitHub connector returned no workflow runs/status checks for the merge commit, so verify the live deployment before claiming it is published. Do not describe these three lessons as expert-reviewed until qualified review and device QA are done.
-
-## Current implementation
-- [x] Public GitHub repository exists.
-- [x] Initial React + TypeScript + Vite project committed.
-- [x] Responsive dashboard shell and eight-unit course overview.
-- [x] Neutral branding; no personal-name footer.
-- [x] Product spec, curriculum plan, decisions, tracker, and handoff docs.
-- [x] Run and verify production TypeScript/Vite build.
-- [x] Confirm custom GitHub Pages deployment (latest code Actions run 42107792676).
-- [ ] Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; some runs have been cancelled during pushes, so confirm the source setting to keep one deployment path. This setting change is not exposed through the available GitHub connector actions.
-- [x] Add refresh-safe hash route for Unit 1, Lesson 1.
-- [x] Add introductory Sarf/Nahw explanation, كَتَبَ word-family examples, beginner FAQ, interactive root-letter check, and teach-back prompt.
-- [x] Add core Lesson 1 explanatory paragraphs in English, Persian, and Urdu (remaining UI labels and dashboard are still English).
-- [x] Add Lesson 2 at `#/lesson/02`, with the three word categories, multilingual explanations, six-question scored practice, and explicit audio-unavailable state.
-- [x] Add Lesson 3 at `#/lesson/03`, with fiʿl/maṣdar distinctions, three verb forms, multilingual explanations, seven-question scored practice, and explicit audio-unavailable state.
-- [x] Add Lesson 4 at `#/lesson/04`, with root/added-letter distinctions, mujarrad/mazīd examples, mnemonic limitations, seven-question scored practice, and explicit audio-unavailable state.
-- [x] Add Lesson 5 at `#/lesson/05`, with Mīzān Ṣarfī, ف ع ل mapping, six verb/noun patterns, and scored practice.
-- [x] Add Lesson 6 at `#/lesson/06`, with the 14-slot pronoun overview and ghāʾib/mukhāṭab/mutakallim groups.
-- [x] Add Lesson 7 at `#/lesson/07`, with the 14-slot active-past table, transliteration, English/Persian/Urdu glosses, and pronoun practice.
-- [x] Add Lesson 8 at `#/lesson/08`, with the 14-slot active-muḍāriʿ table, four prefixes, shared-form cautions, transliteration, and pronoun practice.
-- [x] Add Lesson 9 at `#/lesson/09`, with the passive-past table, Form I pattern, and Qur’anic morphology example.
-- [x] Add Lesson 10 at `#/lesson/10`, with the passive-muḍāriʿ table and shared-form cautions.
-- [x] Add Lesson 11 at `#/lesson/11`, with six second-person imperative/prohibitive slots, hamzat al-waṣl, and jussive nūn deletion.
-- [x] Move the six Abwāb to Lesson 12 (`#/lesson/12`) in Unit 4, after the 14 ṣīghahs.
-- [x] Add a direct lesson library on the dashboard with stable links to all 13 lessons.
-- [x] Add Lesson 13 at `#/lesson/13`, introducing mujarrad/mazīd, forms I–X, and quadriliteral patterns.
-- [x] Add Lesson 14 at `#/lesson/14`, introducing the maṣdar and common derived maṣdar patterns.
-- [x] Add Lesson 15 at `#/lesson/15`, introducing active and passive participles.
-- [x] Add Lesson 16 at `#/lesson/16`, introducing nouns of time, place, and instrument.
-- [x] Add Lesson 17 at `#/lesson/17`, introducing the weak-root classes Mithāl, Ajwaf, Nāqiṣ, and Lafīf.
-- [x] Add Lesson 18 at `#/lesson/18`, introducing hamzated and doubled roots.
-- [x] Add Lesson 19 at `#/lesson/19`, introducing iʿlāl and idghām.
-- [x] Add six ك ت ب family examples, vocabulary glossary, root/pattern caveats, and claim-to-source notes.
-- [ ] Qualified Arabic/Sarf teacher review of Lessons 1–3.
-- [ ] Fluent Persian and Urdu review of Lessons 1–3.
-- [ ] Verified human audio remains outstanding for all lessons.
-- [ ] Verify textbook editions and source mapping for the full curriculum.
-- [ ] Build audio/pronunciation pipeline.
-- [x] Add interactive scored classification practice in Lessons 2 and 3.
-- [ ] Expand practice types, progress persistence, and revision.
-
-## GitHub issues
-- [ ] [#1 Verify first GitHub Pages build and responsive UI checkpoint](https://github.com/mahashemi/SarfMastery/issues/1)
-- [ ] [#2 Review and complete Unit 1, Lesson 1](https://github.com/mahashemi/SarfMastery/issues/2)
-- [ ] [#3 Review and complete Unit 1, Lesson 2](https://github.com/mahashemi/SarfMastery/issues/3)
-- [ ] [#4 Review and complete Unit 1, Lesson 3](https://github.com/mahashemi/SarfMastery/issues/4)
-- [ ] [#5 Review and complete Unit 1, Lesson 4](https://github.com/mahashemi/SarfMastery/issues/5)
-- [ ] [#6 Review and complete Unit 2, Lesson 5](https://github.com/mahashemi/SarfMastery/issues/6)
-- [ ] [#7 Review and complete Unit 4, Lesson 12](https://github.com/mahashemi/SarfMastery/issues/7)
-- [ ] [#8 Review and complete Unit 3, Lesson 7](https://github.com/mahashemi/SarfMastery/issues/8)
-- [ ] [#9 Review and complete Unit 3, Lesson 8](https://github.com/mahashemi/SarfMastery/issues/9)
-- [ ] [#10 Review and complete Unit 3, Lesson 9](https://github.com/mahashemi/SarfMastery/issues/10)
-- [ ] [#11 Review and complete Unit 3, Lesson 10](https://github.com/mahashemi/SarfMastery/issues/11)
-- [ ] [#12 Review and complete Unit 3, Lesson 11](https://github.com/mahashemi/SarfMastery/issues/12)
-- [ ] [#13 Review and complete Unit 3, Lesson 6](https://github.com/mahashemi/SarfMastery/issues/13)
-
-## Next session
-1. Verify repository Settings → Pages → Source is GitHub Actions. GitHub also triggers a generated Jekyll Pages workflow; its runs have been cancelled in some pushes, so confirm the source setting to keep one deployment path.
-2. Confirm the latest GitHub Actions build and custom Pages deployment after the documentation updates.
-3. Run desktop/tablet/mobile QA, including 320px mobile width and RTL/LTR mixed text.
-4. Obtain qualified Arabic/Sarf teacher review of Lessons 1–12.
-5. Obtain fluent Persian and Urdu review of Lessons 1–12.
-6. Add Lesson 20 on Qur'an and Hadith morphology practice, following the agreed curriculum sequence. Current draft coverage is 19/60 lessons (31.7%); overall product readiness remains about 30% pending expert review, audio, learner features, accessibility, and device QA. Current course draft coverage is 18/60 lessons (30%); overall product readiness is approximately 30% pending expert review, audio, learner features, accessibility, and device QA.
-7. Add tests, progress persistence, and revision intervals after the lesson structure stabilises.
-
-## Guardrails
-Do not mark work complete unless implemented and verified. Do not invent book contents, page refs, narrations, or audio provenance. Do not add personal-name branding. Keep scholarly correctness and beginner usability together.
+The activity counter records sections explored, not language proficiency. The diagnostic is a self-check, not a certified placement test. Keep the user's response concise and report actual validation and deployment status.
